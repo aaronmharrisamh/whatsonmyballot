@@ -1,7 +1,7 @@
 {
   "format": "whatsonmyballot-release",
-  "appVersion": "0.1.0",
-  "release": "v0.1.0",
+  "appVersion": "0.1.2",
+  "release": "v0.1.2",
   "preparedOn": "2026-09-13",
   "datasetId": "mi-2024-11-05-tuscola-akron-1af",
   "schemaVersion": "1.0.0",
@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1853,
-      "sha256": "dc4c369b9b8149bbb17443e3b1b42c942bcebd93507bbcbccfc9c1955ae6cfa0"
+      "bytes": 2177,
+      "sha256": "a18a75c92007c60660bed620b7ce8077474f2df8b5b1e89146b335e0ea6cd4cc"
     },
     {
       "path": "finishedmockups/Mockup A/.nojekyll",
@@ -183,14 +183,159 @@
       "sha256": "e3e2fb3c941102aabf2613a183ce2a4807818d1b9becd2228f20ddff9089fb3a"
     },
     {
+      "path": "finishedmockups/Mockup B.1/README.md",
+      "bytes": 172,
+      "sha256": "1ef5f2783a9125ed407d72711273f36fb89d73f9191e1168e331ddbd556e8bc7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/app.html",
+      "bytes": 1178,
+      "sha256": "af8bd63c380e045b4a152af7ac115f8946e51ad5a29011503cb8f523513f2a94"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/app.css",
+      "bytes": 7328,
+      "sha256": "e31cf01f6c49e722039a28a4be0783fa5636bc819d4cd5bbe7658dffa51636d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/app.js",
+      "bytes": 65283,
+      "sha256": "4f6622c150326d5e72f3f1728d1504271d814c423b6712ab4548ae4398e05dcc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/idle-hint.js",
+      "bytes": 1247,
+      "sha256": "5e23f167e4413b68bf91bc3da8cece6e165594410b4ae85e81c6a230031fc614"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/paper.js",
+      "bytes": 7016,
+      "sha256": "09dfbb649467e65409f0b844d7dfb1ed8c3c518c51652c6589383d7c67ce1f87"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/desktop.png",
+      "bytes": 170451,
+      "sha256": "63db0a7681f6b1e71684414805bf3d6be4a8521f18ee76d08466c459ce8ed591"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/mobile.png",
+      "bytes": 72886,
+      "sha256": "7730b92489264fc40e84cedf6d33e051bde90b97b65681771fe43835c1331f1a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/section-mobile.png",
+      "bytes": 49867,
+      "sha256": "99ba156bfd303280d16dc33869ac045b54351d073f947f7f224e254392d182a4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/shell.js",
+      "bytes": 4474,
+      "sha256": "e2de713528b10c3b8406618ab3a5d6bf480e28603e9ff5703ba02f19ffcf5694"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/data/notes.seed.json",
+      "bytes": 49516,
+      "sha256": "9768f36bbbba8d1ff290fe0ea5cf964baf6037e7a7572f2fdc02825684333220"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/index.html",
+      "bytes": 1937,
+      "sha256": "b3a420330a955337ac5a7eb75371e3e10e2214937c5c4084a857e92ed6acc927"
+    },
+    {
+      "path": "finishedmockups/Mockup B/README.md",
+      "bytes": 600,
+      "sha256": "d6a6ff174a6341464883a3517966b9810ee846a6b08790a21eb66b7b855d598e"
+    },
+    {
+      "path": "finishedmockups/Mockup B/app.html",
+      "bytes": 1118,
+      "sha256": "b9736c6a883fd000eb58cba5fe0da649f38e6059fc70f6b60d98069c6c184281"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/app.css",
+      "bytes": 16070,
+      "sha256": "10674a4f450eda085e508052ae530a12f5daf971e3bc5a88ec40f9d862ad1c06"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/app.js",
+      "bytes": 52179,
+      "sha256": "f4588b9d65cbd9946a5df947953364bed23639ff9e58c49198665cee01836af0"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/paper.js",
+      "bytes": 5631,
+      "sha256": "d38344afbaa09899dc0d75ffa9d22e69112ffe15853134c1d56e2e364eab2e10"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-desktop.png",
+      "bytes": 237547,
+      "sha256": "eb009b106b70147eed40fbada90a2d9a28040e799581841d7768af04bb4a49af"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-mobile.png",
+      "bytes": 93044,
+      "sha256": "2f33e6c1395a86da08b54c064063642dbd6a2e018751fcbfd867b983e4a300f2"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-section-desktop.png",
+      "bytes": 135407,
+      "sha256": "d50c749ebbfd8d86c3e8498671eb8ab3c167f7819b996b4a5b04b057d3bed16b"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-section-mobile.png",
+      "bytes": 50879,
+      "sha256": "7a4ec84d037105cad35736fa2a566626d98b78add6e70c738330e333bbb9364f"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/shell.css",
+      "bytes": 1907,
+      "sha256": "fb4d86578d96952bdd9f3920a2e3f8645aeb1e1cde5baad6513ac7487bfc7b5e"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/shell.js",
+      "bytes": 4422,
+      "sha256": "e05d2b5831f669bbeadd8e00cdab1c38a3964d7886e6a5c798408957f023fe1f"
+    },
+    {
+      "path": "finishedmockups/Mockup B/index.html",
+      "bytes": 1930,
+      "sha256": "8003142495a90db9fe03b50fc25ea95d219bb83cf7167efd7d9555b6fc30f1e3"
+    },
+    {
       "path": "finishedmockups/README.md",
-      "bytes": 734,
-      "sha256": "2f648567c5ffc1dd5c73a27eebeb070723fb317c2fda1a39c6243a134d24c2a1"
+      "bytes": 1075,
+      "sha256": "96eab829c114f6cc6b1a56c15da62b3e73e5f2893672fedbdec87afe7bef91e3"
     },
     {
       "path": "finishedmockups/index.html",
-      "bytes": 1916,
-      "sha256": "c6f17f810b117c0954b3d8b23dc8d8c51c9964cf3fe19750a1071e5d9703ce54"
+      "bytes": 3430,
+      "sha256": "267f8ecdd45aee512ae3316c2f3de027f1ae70bde138c54d97f1481d3c819d0a"
+    },
+    {
+      "path": "finishedmockups/landing.css",
+      "bytes": 1181,
+      "sha256": "3e575f068b2f56ac95df0a827a2a97ad17fa2da941fb6b4d4c4416ca829aa235"
     },
     {
       "path": "index.html",
@@ -204,8 +349,8 @@
     },
     {
       "path": "sharedrefs/README.md",
-      "bytes": 1000,
-      "sha256": "257803faa68b7bf8dd4264db9417a9ac628420b4fc1bbce17842e0a0eefca99e"
+      "bytes": 1089,
+      "sha256": "a238a92755ed03f3dc1b1b4ad7628c8bbe28e7dfd6bfc1404331fd147a4d5b9a"
     },
     {
       "path": "sharedrefs/ballots/2024-11-05-akron-1af-provenance.json",
@@ -248,6 +393,26 @@
       "sha256": "c036258750f2971bcf8334a15bffe9184f0f928a2500c597f6a8ec87905349d9"
     },
     {
+      "path": "sharedrefs/mockup-b.1/README.md",
+      "bytes": 4328,
+      "sha256": "fe73aa0d933d9b6d6bd201adfd6de03310b50adb1f386c0390ba30cf18386c93"
+    },
+    {
+      "path": "sharedrefs/mockup-b.1/VERIFICATION.md",
+      "bytes": 1441,
+      "sha256": "16295c6a4fa6b1ce4ccc2ea603b5ae4eac544395087c86de5c8803093742a101"
+    },
+    {
+      "path": "sharedrefs/mockup-b/README.md",
+      "bytes": 4180,
+      "sha256": "f8269205749cba18c6b15c73f03ec172d3b3fb87d11436230de0b39eeeacd7bc"
+    },
+    {
+      "path": "sharedrefs/mockup-b/VERIFICATION.md",
+      "bytes": 1811,
+      "sha256": "946b45ba811362f39f129391b85caf341e46a4b49946395ba213e0c07995787e"
+    },
+    {
       "path": "sharedrefs/registry.js",
       "bytes": 549,
       "sha256": "b30cf974e1c8b7b16ae034537b929cd14f0041882debdc648c8c59b5408624c3"
@@ -255,7 +420,7 @@
     {
       "path": "version.js",
       "bytes": 233,
-      "sha256": "9cff5f75b17eeb6eddf6ae97705219a74c06484b3cb646177cf65b11de0453f1"
+      "sha256": "ff8174640b194011413979c4c67caa50e109f6f800a1e4ec5962213a11421081"
     }
   ]
 }
