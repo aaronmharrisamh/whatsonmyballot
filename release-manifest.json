@@ -1,0 +1,261 @@
+{
+  "format": "whatsonmyballot-release",
+  "appVersion": "0.1.0",
+  "release": "v0.1.0",
+  "preparedOn": "2026-09-13",
+  "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+  "schemaVersion": "1.0.0",
+  "baseDatasetVersion": "1.0.0",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1853,
+      "sha256": "dc4c369b9b8149bbb17443e3b1b42c942bcebd93507bbcbccfc9c1955ae6cfa0"
+    },
+    {
+      "path": "finishedmockups/Mockup A/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "finishedmockups/Mockup A/README.md",
+      "bytes": 547,
+      "sha256": "77f5857dc5fab066c8cebc3113c9618253c929f3c8b6a7906fe827d5c6d4bc78"
+    },
+    {
+      "path": "finishedmockups/Mockup A/app.html",
+      "bytes": 1119,
+      "sha256": "16db5c21dd4035f1eb63493205907a5ce8c08b2534de94d76fa1be066ebea179"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/app.css",
+      "bytes": 21815,
+      "sha256": "cb2099e9ec49239e7716286ceb5d2ac14597097349db70101ff9dce8aab2e5f1"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/app.js",
+      "bytes": 53088,
+      "sha256": "35dc24afda96e59237c9c42512f9bf65032c6b34d480bbf9b17d2dbfc5e7c3a9"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/ballot-mark.svg",
+      "bytes": 296,
+      "sha256": "92ab7eb4229e48a89a35be90a135eac7cd8fdf15ee481c3d46ce0e30c23863b4"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-contract.js",
+      "bytes": 5695,
+      "sha256": "b0772d3e98ee7b2fc88ef746dc6b2c199a3a6cbffd162ce7c7dce67d2e4e479d"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-fields.js",
+      "bytes": 5996,
+      "sha256": "94fee2736d2a37dab2a59466a95f857e6fe70a4ffd45c729f9af61f7ebec1efc"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-renderer.js",
+      "bytes": 1363,
+      "sha256": "676ca6bb279d1708865c6d32c96d2799ede0b435d53c0870742e6f101d1d9cf0"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-store.js",
+      "bytes": 6352,
+      "sha256": "82e45833ad4b6821ca3390c34c71f3cea93ff151e354adb06c525c7002f2eaee"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/model.js",
+      "bytes": 6400,
+      "sha256": "1b2548b37d6a0ecfbfd0f7795060667f6578f43ec84a694b15cb90b4376a7e48"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/paper.js",
+      "bytes": 4827,
+      "sha256": "8df1bb4443e485a5931e276589ebcbe1cfd76623d48a70228b8f060f79d4ebc4"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/portrait-placeholder.svg",
+      "bytes": 331,
+      "sha256": "d1a793a253614c72d61eff1980fc97ca20f0e073657796fcf362833fa2dd2f7b"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a1.png",
+      "bytes": 38239,
+      "sha256": "0452478bf48173d683f180c4fafb57278c38848d21986859e06124c5ec9dcadc"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a2.png",
+      "bytes": 38255,
+      "sha256": "b9fbe27e42978d5969f72f475bf1ee1cc1906e8768d44afb21778aae3099dffb"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a3.png",
+      "bytes": 38467,
+      "sha256": "430d9dd3f3650ff0f034656ed375c20d99f3f7bebf6cd2fee619345d691f4d63"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a4.png",
+      "bytes": 38714,
+      "sha256": "c9cbed38252594ae4038a7719d819007d899a3ed9acb9718923e849ee31b1857"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a5.png",
+      "bytes": 37634,
+      "sha256": "f94f1f3e370b944a9f0d4582e0fbdef36f754a11cb92dbedd7558f61cd906aed"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shared.js",
+      "bytes": 2502,
+      "sha256": "8641c3d6e35f7a1bf3c2023581e65e54943eaae4d4ff768f213847bce794c971"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shell.css",
+      "bytes": 10846,
+      "sha256": "691edc41b473f76a11256110609e6fcfe758227d750f1753ea249604a0efc64e"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shell.js",
+      "bytes": 11424,
+      "sha256": "2b549e47a160b84e1a438aa8a3f42b7409106eb85011f2dc6c36e8d7c827ae81"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/README.md",
+      "bytes": 1302,
+      "sha256": "19df42ebd28058cb3d194c8af641f1513e0f824e5930a71aec451db31a2a4f26"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/ajv-formats.LICENSE",
+      "bytes": 1074,
+      "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/ajv.LICENSE",
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/dompurify-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/marked-LICENSE.txt",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/marked.esm.js",
+      "bytes": 43991,
+      "sha256": "4f7117dd998780fe6fa17a25d06489b8ddaabda73d3a5a9451cb400f1925c56d"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/purify.min.js",
+      "bytes": 29369,
+      "sha256": "f263b05369e050fa175d4ecb9c9358eb4253602d510297adfb31df48b2f1c4d5"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/validate-content.js",
+      "bytes": 294653,
+      "sha256": "1e8d9b85b916067da2691b1294ae3ac40e21e0113a3b6e32467dea81340dfcd5"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/ballot.seed.json",
+      "bytes": 255338,
+      "sha256": "62e483bb3a4177e774414584c8240e869f5c852a883b1e84f44fff9a39491fbd"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/schemas/ballot-content.v1.schema.json",
+      "bytes": 45243,
+      "sha256": "c30e93effbce574b89fa84a900309c5925b498578eb5a8c7b9af1d3011d652bb"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/variants.json",
+      "bytes": 2900,
+      "sha256": "19e098ac016beb1b4d8b544afa6d0ef24f48a4804f627f647d6112aa533f452a"
+    },
+    {
+      "path": "finishedmockups/Mockup A/index.html",
+      "bytes": 2324,
+      "sha256": "e3e2fb3c941102aabf2613a183ce2a4807818d1b9becd2228f20ddff9089fb3a"
+    },
+    {
+      "path": "finishedmockups/README.md",
+      "bytes": 734,
+      "sha256": "2f648567c5ffc1dd5c73a27eebeb070723fb317c2fda1a39c6243a134d24c2a1"
+    },
+    {
+      "path": "finishedmockups/index.html",
+      "bytes": 1916,
+      "sha256": "c6f17f810b117c0954b3d8b23dc8d8c51c9964cf3fe19750a1071e5d9703ce54"
+    },
+    {
+      "path": "index.html",
+      "bytes": 322,
+      "sha256": "a53f9bad2b4de04c02a75896ede1f27da42c05b1f923aeb7161e1c92965e6c5e"
+    },
+    {
+      "path": "preview.mjs",
+      "bytes": 2348,
+      "sha256": "8e27e17cf41313a3c8e7a48059d5160290fb52f4b4a8d7a7b26ebc1492547431"
+    },
+    {
+      "path": "sharedrefs/README.md",
+      "bytes": 1000,
+      "sha256": "257803faa68b7bf8dd4264db9417a9ac628420b4fc1bbce17842e0a0eefca99e"
+    },
+    {
+      "path": "sharedrefs/ballots/2024-11-05-akron-1af-provenance.json",
+      "bytes": 1553,
+      "sha256": "05c2bb26b89b768d79921c467054e5cfd98dafc4c6a482d6270b21f25aae0cfa"
+    },
+    {
+      "path": "sharedrefs/ballots/2024-11-05-akron-1af.pdf",
+      "bytes": 147891,
+      "sha256": "4a8b90925a739712f0f7489547c45b7afeadf1a002f22843b72823d0ad981c72"
+    },
+    {
+      "path": "sharedrefs/candidates/profile-example.md",
+      "bytes": 1381,
+      "sha256": "5b6f51acfe7d618975b1446d9287203500396ee9c3f57bcaad352037f8c4dcfa"
+    },
+    {
+      "path": "sharedrefs/mockup-a/CONTENT.md",
+      "bytes": 9110,
+      "sha256": "a8d7115f19d4c49618590e93924595163ad539cd28430ef2572e6109051e4b21"
+    },
+    {
+      "path": "sharedrefs/mockup-a/HOSTING.md",
+      "bytes": 2101,
+      "sha256": "fbe227dd5e96ccee6679142d3e08dafc430c14c7d5a6e9098ad06ba414eb32bb"
+    },
+    {
+      "path": "sharedrefs/mockup-a/README.md",
+      "bytes": 9603,
+      "sha256": "d4134d5d9ae58f38303f4d417c563aeb84538963789266f733771399a7cd0dce"
+    },
+    {
+      "path": "sharedrefs/mockup-a/REVIEW.md",
+      "bytes": 5281,
+      "sha256": "33604a4542fc9e00dea9fe8e6fcacf2c2f9348141ef77cfb2d431a411aaf460c"
+    },
+    {
+      "path": "sharedrefs/mockup-a/VERIFICATION.md",
+      "bytes": 9691,
+      "sha256": "c036258750f2971bcf8334a15bffe9184f0f928a2500c597f6a8ec87905349d9"
+    },
+    {
+      "path": "sharedrefs/registry.js",
+      "bytes": 549,
+      "sha256": "b30cf974e1c8b7b16ae034537b929cd14f0041882debdc648c8c59b5408624c3"
+    },
+    {
+      "path": "version.js",
+      "bytes": 233,
+      "sha256": "9cff5f75b17eeb6eddf6ae97705219a74c06484b3cb646177cf65b11de0453f1"
+    }
+  ]
+}

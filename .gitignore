@@ -1,0 +1,10 @@
+/docs/
+/tools/
+/.claude/
+/AGENTS.md
+/CLAUDE.md
+
+# Local dependencies and operating-system files
+**/node_modules/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,3 @@
+# Preserve exact release bytes so clean clones match release-manifest.json.
+# Disable automatic line-ending conversion; Git still detects text for diffs.
+* -text
