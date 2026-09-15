@@ -1,7 +1,7 @@
 {
   "format": "whatsonmyballot-release",
-  "appVersion": "0.1.7",
-  "release": "v0.1.7",
+  "appVersion": "0.1.8",
+  "release": "v0.1.8",
   "preparedOn": "2026-09-15",
   "datasetId": "mi-2024-11-05-tuscola-akron-1af",
   "datasets": [
@@ -16,6 +16,10 @@
     {
       "datasetId": "b6-fictional-ballot-demo",
       "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
     }
   ],
   "schemaVersion": "1.0.0",
@@ -28,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3105,
-      "sha256": "b891e61885c14960073204ff6517b058970b71e4de96c156f77e90dc1710d9da"
+      "bytes": 3267,
+      "sha256": "89f3dee4da8c18e31e3f2e565fb729f9c1b008727ec846148946e97c95017d48"
     },
     {
       "path": "finishedmockups/Mockup A/.nojekyll",
@@ -992,6 +996,171 @@
       "sha256": "5115ea58b1856c0a56bf0a6f939b09ba13d066378dd958acbe4913d7c067356f"
     },
     {
+      "path": "finishedmockups/Mockup B.7/README.md",
+      "bytes": 969,
+      "sha256": "239f1a5dd10d8df977ebb00b1555e3e70d6968a3507e4994920e567897cba1d5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/app.html",
+      "bytes": 1340,
+      "sha256": "a09373f6e80ea67786e14a67140ffd53062d4a44f07fe5744d02938f7d0a33ad"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/app.css",
+      "bytes": 55394,
+      "sha256": "82e6a8a21ae84ef415631ce1b96031ed61c42379729250a1b75722662fa90f83"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/app.js",
+      "bytes": 106642,
+      "sha256": "0bbaff5457f3f41991b24652e30471a3db52716446196a1217cb31978f0f71a9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/lime-filled.svg",
+      "bytes": 158,
+      "sha256": "d793b5ce22e823119841f845822722987efb85e4abb68a8234be9dc8c36c6548"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/slate-filled.svg",
+      "bytes": 158,
+      "sha256": "ad7cd3a483965a7545d302a59641e952e481c78d02c2e81c15402b313bf4878d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/paper.js",
+      "bytes": 11809,
+      "sha256": "c82cf02b8e2005e9f4a568c838766ba6b1d0ff633db636b4430326c3a00fa3ea"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/ballot-mobile.png",
+      "bytes": 83578,
+      "sha256": "ed252b2bfa3a63e4786fe1cdb93bb129cb1228d5e9f8d75d8139d4326398065b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/desktop.png",
+      "bytes": 479623,
+      "sha256": "e3d9e931c035e7b0aa9ba757a49d78b45cef05736869062c85213bcc2c5b12ff"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/mobile.png",
+      "bytes": 53430,
+      "sha256": "0f44c7968120ce570459e7f3bbdb5c45a9105c83524c3c53babb4d3a5c14b04c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/section-mobile.png",
+      "bytes": 47593,
+      "sha256": "a4936e9dbab3f0aade3b9df70b93800f9a25e4d08c66b0be8cc7d0df6257da09"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/shell.js",
+      "bytes": 4436,
+      "sha256": "a4a2c43157b9d13a969a8f162fd630436a4908cc1c2afe837971940a589a7284"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/annotations.seed.json",
+      "bytes": 25417,
+      "sha256": "02d1af940e499311f93d8dd680a4d4941889247875b2942975e14c1fa0729e8f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/areas.json",
+      "bytes": 1921,
+      "sha256": "9def10abc274b8a72609624d4c41405b3a075b10aabb6a2b567d3bf58c4b8413"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/ballot.seed.json",
+      "bytes": 240318,
+      "sha256": "c872f3693a92faa9f887bda35df7f48e1548828ac425324a08adc8383f8466a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "8be462ef850b08909557b555c65f30d50971fe2b12088062123c1c0ed29c5520"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/notes.seed.json",
+      "bytes": 58744,
+      "sha256": "34b6143c90196545d06820f5e45c1d7a2df28fda510821b5835bce6b56b259a5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/variants.json",
+      "bytes": 2893,
+      "sha256": "98365b92d6c6783edd409ffb5c09b75813d887cd6b6a8347892223e235773c39"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/index.html",
+      "bytes": 1922,
+      "sha256": "062438418b7af62a097035ac1de7531a54504ff6edc118515a0cf45c25fb7054"
+    },
+    {
       "path": "finishedmockups/Mockup B/README.md",
       "bytes": 600,
       "sha256": "d6a6ff174a6341464883a3517966b9810ee846a6b08790a21eb66b7b855d598e"
@@ -1058,13 +1227,13 @@
     },
     {
       "path": "finishedmockups/README.md",
-      "bytes": 2132,
-      "sha256": "fb140e842ef79e2cb7562528bdbd3e0493cdfde0e8fc59f6d3637da59050025b"
+      "bytes": 2319,
+      "sha256": "1b6227af4ad39522b884c71de6ed4663f85e7eeb719a66629799d24778a6d663"
     },
     {
       "path": "finishedmockups/index.html",
-      "bytes": 7074,
-      "sha256": "cc5a66e6a14b51a9661b224dab30967379a6a4c794cfa62720372583e8a4cf99"
+      "bytes": 7818,
+      "sha256": "928d804fe3852caa4c03fb3b4dbbf20e6dc39ad577532c118349728e6acb30de"
     },
     {
       "path": "finishedmockups/landing.css",
@@ -1083,8 +1252,8 @@
     },
     {
       "path": "sharedrefs/README.md",
-      "bytes": 1319,
-      "sha256": "0ea17bcb9322c6121dfc79f6c90988f0f2b9c09c9b13e33b0a8dd73d2018e32f"
+      "bytes": 1365,
+      "sha256": "e5a40f556274c8c723c42efd81089c125bba60f4918aeeda9fe0269052d0c1f2"
     },
     {
       "path": "sharedrefs/ballots/2024-11-05-akron-1af-provenance.json",
@@ -1202,6 +1371,21 @@
       "sha256": "8a7895b3c6a6921797620b0ffe9d4d988e480e5dfa21a0f8549021722646bcbf"
     },
     {
+      "path": "sharedrefs/mockup-b.7/BEHAVIOR.md",
+      "bytes": 2271,
+      "sha256": "3d462503c4eeddd4259c98879391b9e679aee301cc12f093a4994ba99019ec4a"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7/README.md",
+      "bytes": 1360,
+      "sha256": "116ef365b1dca0b6522ce61e0476c3e927cc50a3966c8fe6f97b98edf43c8297"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7/VERIFICATION.md",
+      "bytes": 1367,
+      "sha256": "21bfaac748464948ef5688768104759fe9b8e5c72e88aaae2bde8de9e7fa9ed3"
+    },
+    {
       "path": "sharedrefs/mockup-b/README.md",
       "bytes": 4180,
       "sha256": "f8269205749cba18c6b15c73f03ec172d3b3fb87d11436230de0b39eeeacd7bc"
@@ -1219,7 +1403,7 @@
     {
       "path": "version.js",
       "bytes": 88,
-      "sha256": "5f22a1b7bf25e156f0ca80081b1e1172f6314744e4f88419ed14c1227b39370a"
+      "sha256": "9626ad08369194360bb0f4458d94c90d0f51c8062e78a291159b0dd461d0f56c"
     }
   ]
 }

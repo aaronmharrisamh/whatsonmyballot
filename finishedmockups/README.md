@@ -2,6 +2,7 @@
 
 Open [the landing page](index.html) through HTTP or GitHub Pages.
 
+- [B.7](Mockup%20B.7/index.html) adds recommendation arrows, shared filtering, temporary section reveals, and bounded zoom. See the [B.7 guide](../sharedrefs/mockup-b.7/README.md).
 - [B.6](Mockup%20B.6/index.html) starts fresh and adds left-hand guide hints, District selection, Menu, and zoom-preserving viewer navigation. See the [B.6 guide](../sharedrefs/mockup-b.6/README.md).
 - [B.5](Mockup%20B.5/index.html) adds a populated fictional guide, oval marks, nearby-section chips, and a floating viewer with Snap. See the [B.5 guide](../sharedrefs/mockup-b.5/README.md).
 - [B.4](Mockup%20B.4/index.html) adds softer sections, inline opinions, editor guide marks, weighted progress, and a zoom slider in Ballot View. See the [B.4 guide](../sharedrefs/mockup-b.4/README.md).
@@ -11,6 +12,6 @@ Open [the landing page](index.html) through HTTP or GitHub Pages.
 - [B1](Mockup%20B/index.html) opens the virtual ballot, with pinch, zoom, and a readable one-section view. See the [B1 review guide](../sharedrefs/mockup-b/README.md) and [verification](../sharedrefs/mockup-b/VERIFICATION.md).
 - [Mockup A](Mockup%20A/index.html?design=a5) includes A1–A5, the mobile/desktop shell, and the gallery.
 
-Visitor choices and Admin content save separately in this browser. Earlier A and B mockups share historical saved data at this site. B.5 and B.6 each use a separate fictional dataset and separate saves. See the [content guide](../sharedrefs/mockup-a/CONTENT.md) and [hosting guide](../sharedrefs/mockup-a/HOSTING.md).
+Visitor choices and Admin content save separately in this browser. Earlier A and B mockups share historical saved data at this site. B.5, B.6, and B.7 each use a separate fictional dataset and separate saves. See the [content guide](../sharedrefs/mockup-a/CONTENT.md) and [hosting guide](../sharedrefs/mockup-a/HOSTING.md).
 
 From the repository or extracted ZIP root, run `node preview.mjs`. The generated ZIP lives in `finishedmockups/packages/`. It includes all mockups, `sharedrefs/`, `version.js`, and the public project layout. Keep that layout together when copying or publishing.
