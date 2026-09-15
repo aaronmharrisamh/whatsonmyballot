@@ -1,9 +1,19 @@
 {
   "format": "whatsonmyballot-release",
-  "appVersion": "0.1.3",
-  "release": "v0.1.3",
-  "preparedOn": "2026-09-13",
+  "appVersion": "0.1.6",
+  "release": "v0.1.6",
+  "preparedOn": "2026-09-14",
   "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+  "datasets": [
+    {
+      "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+      "kind": "historical-reference"
+    },
+    {
+      "datasetId": "b5-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    }
+  ],
   "schemaVersion": "1.0.0",
   "baseDatasetVersion": "1.0.0",
   "files": [
@@ -14,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2286,
-      "sha256": "92ffa3d870170f69b4f1ab1992cf81724e0bad879fc64456a619fb9d270e0b63"
+      "bytes": 2914,
+      "sha256": "1c720a0892fb64fe4c49c0423fa27c1f5d02f9e1e27f0455669d85d29fa6eba5"
     },
     {
       "path": "finishedmockups/Mockup A/.nojekyll",
@@ -393,6 +403,426 @@
       "sha256": "16a1d35b55aa895b685a570e1e0396ebd2feda637807844c78dc35279f983468"
     },
     {
+      "path": "finishedmockups/Mockup B.3/README.md",
+      "bytes": 387,
+      "sha256": "580ca8c3a40edb02393642a342b8529b94e6e233c4858d4e7baf3af9172a338b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/app.html",
+      "bytes": 1274,
+      "sha256": "5655fa4f9019f2c8203d7fbc6455fd476f5673e02ad22b966661cd666e20794d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/app.css",
+      "bytes": 17316,
+      "sha256": "bedb1336a361a79617b703199d7bbdda44da16b2da46859de0c47be01ce79064"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/app.js",
+      "bytes": 72921,
+      "sha256": "b03f52d153a69beae08a6b8b57b051edd1b95685b1b7d55213a93ea01db4cd15"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "a4b927614d111ee6c8ff0f4f1e08067cce0054c36d3e8ed9e6aa923b3156d84d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "46e55680e76067e3a9a9067f8a2e207373ed3661b231567d7e6e6ea0d152619e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "4cac77a4db85c364ad54515b2a036421ede760f7dda5398a64f1c2247e3edbd8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-checked.svg",
+      "bytes": 283,
+      "sha256": "394d264127125c1794dca383428b115ee91a0bda31c8bb3a9fa24292af2112bb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-empty.svg",
+      "bytes": 160,
+      "sha256": "d208efbbb7168fc71bf23dafa49169dc9377b0dbefc3dc46b2ddfa1d0801e7d5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "8895feb64f5e562c154fd1f63fead26c1bbc853a7d9c975bf9bec32df7d3c2c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "eaec81bba15ea04e941163aeacf121537724b8f6a1f43b534b0d0f6ab3461847"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "13268112b60c7ba28156b200c2880aee8a76dfee020a5d3a8217d83933cd3e93"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-checked.svg",
+      "bytes": 283,
+      "sha256": "fb2459e98da8056c92c9c7076e54f431017a5983d6c0d4b4ac1fc40baa7743c8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-empty.svg",
+      "bytes": 160,
+      "sha256": "812027d4b13563193f5ae1813d19634d565638e22cae47c10231513a3a63cd28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/paper.js",
+      "bytes": 8727,
+      "sha256": "eb330c092dfc7523fb217e78fac7317c665e539c2c8f8165095d9af1ac204795"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/ballot-mobile.png",
+      "bytes": 58207,
+      "sha256": "f789dc973edb441bca57c1c413ef3d73418559cb8bc695010eeca6beb776dd79"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/desktop.png",
+      "bytes": 511697,
+      "sha256": "134ec14ae741522646e220692a1a15f597934f9a94b0313f844289e4798c9174"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/mobile.png",
+      "bytes": 48223,
+      "sha256": "061ae236dd1bd78dba11b37beaef1a08a33d68f7c80db4853635d061088887c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/section-mobile.png",
+      "bytes": 50011,
+      "sha256": "c1afd393078ab38f52ea423d6048d8eb2899a1bcad29b0dd6e6394f5f1b48ee7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/shell.js",
+      "bytes": 4600,
+      "sha256": "82ad145ad3aa45983ac66a06ea4e2e74afd7bf4bf9ee053649e8be36993d39a3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/data/notes.seed.json",
+      "bytes": 65518,
+      "sha256": "49eeba6fac2af9f5a45d62d1fc37e524791d4a2f553e8cd3ac4cd6e03b2c48a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/index.html",
+      "bytes": 1925,
+      "sha256": "6132fbedfc5a7c55118ade75b48c90ceb325f636ddac880b87e922adbacb4e78"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/README.md",
+      "bytes": 889,
+      "sha256": "0df2b1f6db94a32e94fb2ac622be5ee7cc5a72c5a185b73af1d3f7190e0fc66c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/app.html",
+      "bytes": 1274,
+      "sha256": "2b8cfddf8f36d53b113db680b4d3fa3da585989468b6eabd71781551497f4908"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/app.css",
+      "bytes": 28364,
+      "sha256": "719567e51d66da0300939420f10727110317f41d44951ee2a62cba0f2c487268"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/app.js",
+      "bytes": 87425,
+      "sha256": "80c5a4b009b028669fd6f838bbc91ace51549e59b4a57dad4d4da8182a1a0283"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/lime-empty.svg",
+      "bytes": 148,
+      "sha256": "e4936b21461c8963702ea14d9a8a4f842c3fb41e61545cfe1ee3ba1393273485"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/lime-filled.svg",
+      "bytes": 148,
+      "sha256": "819903ccd92ae1a1be3d503d154697f93aef5c4a829dad8bde5e95c67694caf0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/slate-empty.svg",
+      "bytes": 148,
+      "sha256": "26b1a5029b887ffd5dcb06cb5abca0d6285444b3b7702607e9dcef352130a500"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/slate-filled.svg",
+      "bytes": 148,
+      "sha256": "440902718d4fe55cce5cb9bc4ec146d6bb754af64445c19cc843ae3bf2f9b73e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/paper.js",
+      "bytes": 8892,
+      "sha256": "44c086ab32f0e53206380efa0af562599efe7b4bd92face56c1334fff1dcb106"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/ballot-mobile.png",
+      "bytes": 59452,
+      "sha256": "c316989f5e536dffad6bcc279db5cbe8ef20d0df2f8aa5350cb5b8247f9a56b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/desktop.png",
+      "bytes": 476893,
+      "sha256": "57d2979fc00aa79b8e4e3b9cd9836e910faa2c9e003b76b8727a78506a8c48f4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/mobile.png",
+      "bytes": 49964,
+      "sha256": "ec9f843efc583d0387207ddbe792c536241ac7cabd9752203beb344d3c3a9002"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/section-mobile.png",
+      "bytes": 49324,
+      "sha256": "520e6c08b1e6369d23f81b5b83cadcbe6f38041f19b9a250bd51501f88753231"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/progress.js",
+      "bytes": 1482,
+      "sha256": "cbd16b168ab29c6f2518c7eea66ca6fb8cbda8189ed5c1040ce8177a084226fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/shell.js",
+      "bytes": 4525,
+      "sha256": "7198cec64a780326ea495131533b468963b3dc94017224725347d20973a23c2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/annotations.seed.json",
+      "bytes": 27722,
+      "sha256": "cd14a9d76bf8ea765e2b9e85065ba54fc6c83517035de5cc8cd7148b684818bb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/notes.seed.json",
+      "bytes": 65518,
+      "sha256": "49eeba6fac2af9f5a45d62d1fc37e524791d4a2f553e8cd3ac4cd6e03b2c48a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/index.html",
+      "bytes": 1914,
+      "sha256": "6ec9c02c081bd17703ce4aaa79f40d0e62f6e0f0b72649660a537d144b23e11b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/README.md",
+      "bytes": 1124,
+      "sha256": "3ed573f34bf81d0f126f55e7d0179dce3a0e89a4f889ba938e1995422c388365"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/app.html",
+      "bytes": 1274,
+      "sha256": "953851ae7ff24a5cd22bae2c66fa967c7bfc909460ce1c2d1ad578169b5227ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/app.css",
+      "bytes": 39175,
+      "sha256": "4b22817dc018f97bf96d261b90e70eebd8e8eb33c0cdb6dd6ce0c97255bc3b15"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/app.js",
+      "bytes": 92792,
+      "sha256": "3494cee3db8b2588b069b2126d85309e95221b2a9410e55a3cf407cf5d604161"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/lime-filled.svg",
+      "bytes": 158,
+      "sha256": "d793b5ce22e823119841f845822722987efb85e4abb68a8234be9dc8c36c6548"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/slate-filled.svg",
+      "bytes": 158,
+      "sha256": "ad7cd3a483965a7545d302a59641e952e481c78d02c2e81c15402b313bf4878d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/paper.js",
+      "bytes": 10078,
+      "sha256": "967b02f90310ef163e7923b20e487b0699f1e6f9ebf424883ffb7fae0439abcd"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/ballot-mobile.png",
+      "bytes": 114059,
+      "sha256": "39ee5b4995a33fc78821309936bf46048d3b8c647cb9a4b663f6689c8dc3e1c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/desktop.png",
+      "bytes": 483603,
+      "sha256": "df8d0936c2602f51c161291c3dfd276b801cb96d5dc3ce7b630b3294823babbe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/mobile.png",
+      "bytes": 55182,
+      "sha256": "9f6a72dacfea475ad5c18545178c6ea00682d1983e1fb6a455c415b5f83ac1fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/section-mobile.png",
+      "bytes": 49324,
+      "sha256": "520e6c08b1e6369d23f81b5b83cadcbe6f38041f19b9a250bd51501f88753231"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/progress.js",
+      "bytes": 1482,
+      "sha256": "cbd16b168ab29c6f2518c7eea66ca6fb8cbda8189ed5c1040ce8177a084226fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/shell.js",
+      "bytes": 4726,
+      "sha256": "63137a4b2ab6a39bd638a857e6bee6c3b1c5f3ce00a7a51b3a50081f647a7350"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/annotations.seed.json",
+      "bytes": 25413,
+      "sha256": "1124199a9e68ca88d9acec538bbf8af4fe651bfc04453a95081206ff906414a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/ballot.seed.json",
+      "bytes": 240318,
+      "sha256": "5d381ae0fad4a0126a0158bd27646e0e92b628e12a9079543e9f8dd41d453a7c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "e207da4c430361fefcee25422c62454cd0f7252093787ad85765fa0366233875"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/notes.seed.json",
+      "bytes": 63331,
+      "sha256": "ab487de7b1e5cae32b8d6fc4448b48dd0a34b7714fd420db0aab82304160930d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/variants.json",
+      "bytes": 2893,
+      "sha256": "05e179c9107d0a48e95d513df670eb11146cd3539bb50872986b024a3c944b1d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/index.html",
+      "bytes": 1915,
+      "sha256": "0ea88cf543b2c4e82974f4d10049ce280dad4b347c9faba871c1d56b36d14446"
+    },
+    {
       "path": "finishedmockups/Mockup B/README.md",
       "bytes": 600,
       "sha256": "d6a6ff174a6341464883a3517966b9810ee846a6b08790a21eb66b7b855d598e"
@@ -459,13 +889,13 @@
     },
     {
       "path": "finishedmockups/README.md",
-      "bytes": 1274,
-      "sha256": "b34d8866fcf59318fba1fc93aa79e65372cb88b8bbedd69237b16bd4a8a30be7"
+      "bytes": 1920,
+      "sha256": "a6977e755ba57b30bfb0022772d2a6f1c2a63ae826f380c00c448016ee04d0d5"
     },
     {
       "path": "finishedmockups/index.html",
-      "bytes": 4132,
-      "sha256": "facbd509d95f32cfc0ae94d9948dcf6f53863ed1ed7629c6b4164a4d0e0b072c"
+      "bytes": 6337,
+      "sha256": "0685fd4c4de52f87c5ff297e9ea3a118e12d4367a6ce57cede18d5e1ce87a8a6"
     },
     {
       "path": "finishedmockups/landing.css",
@@ -484,8 +914,8 @@
     },
     {
       "path": "sharedrefs/README.md",
-      "bytes": 1135,
-      "sha256": "5f531db5cb8dc126eef6423c18eebfcb03c2cd53f82c1a60ab138271481b6042"
+      "bytes": 1273,
+      "sha256": "3d15ede6810f0b52abfaf92c634c211129ba6f6575ef77694110fd372c239032"
     },
     {
       "path": "sharedrefs/ballots/2024-11-05-akron-1af-provenance.json",
@@ -548,6 +978,46 @@
       "sha256": "8384be1b836ba5d629241918502dc4be1d20ff0fb4fc8c93738939ba6cb8dded"
     },
     {
+      "path": "sharedrefs/mockup-b.3/README.md",
+      "bytes": 3259,
+      "sha256": "3f6bca993c4c8023eab6f19f40043424c11116edde77808d775a7393d82234fe"
+    },
+    {
+      "path": "sharedrefs/mockup-b.3/VERIFICATION.md",
+      "bytes": 2515,
+      "sha256": "8481a1ca446b26e0d253c359371779626cb643ad26fbbbfbfe014f8c8604793e"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/ANNOTATIONS.md",
+      "bytes": 2511,
+      "sha256": "b2ea6f40497bd7d43840fe2766ce1133664ae806151a89279c990bfac647149d"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/README.md",
+      "bytes": 3425,
+      "sha256": "1fd159cbe36b75999631d05378b7c2abdbf771a736e12ffd5724f249f1b547a5"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/VERIFICATION.md",
+      "bytes": 3649,
+      "sha256": "b28e7e5c968dd6812af577f4f59e56b79ff397a2180a29fbf13e973886c79565"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/DATA.md",
+      "bytes": 2445,
+      "sha256": "ccecb3dc0bd772536a82e7b0f789dbeaef08dbc530a19c5edffa553e2f534c43"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/README.md",
+      "bytes": 2864,
+      "sha256": "ea97334f19970b2cc191042958c18a35db2615b85b02e98203ab1e96fd87d3c1"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/VERIFICATION.md",
+      "bytes": 3232,
+      "sha256": "96b942a9d2d6b77af9298aa5e5da36e0eab66619ce07086a657ebaa004212efb"
+    },
+    {
       "path": "sharedrefs/mockup-b/README.md",
       "bytes": 4180,
       "sha256": "f8269205749cba18c6b15c73f03ec172d3b3fb87d11436230de0b39eeeacd7bc"
@@ -564,8 +1034,8 @@
     },
     {
       "path": "version.js",
-      "bytes": 233,
-      "sha256": "dac1aa0bf5d05af6f0a6cd2fecd1c8f158eb77f6baafda53eb1dc44d84f2f730"
+      "bytes": 88,
+      "sha256": "c28913d5a4e1204e11b720dde64ca8272c58819770af96cfc666054272909564"
     }
   ]
 }

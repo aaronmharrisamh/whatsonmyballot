@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "label": "Fictional layout example",
+  "options": [
+    {
+      "id": "fictional-0",
+      "label": "Jim Johnson",
+      "mark": "this",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of a THIS note. A guide mark does not fill your own ballot circle."
+    },
+    {
+      "id": "fictional-1",
+      "label": "Sample person B",
+      "mark": "or",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of an OR note. An editor can add more than one OR option."
+    },
+    {
+      "id": "fictional-2",
+      "label": "Sample person C",
+      "mark": "or",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of an OR note. An editor can add more than one OR option."
+    },
+    {
+      "id": "fictional-3",
+      "label": "Sample person D",
+      "mark": "or",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of an OR note. An editor can add more than one OR option."
+    },
+    {
+      "id": "fictional-4",
+      "label": "Sample person E",
+      "mark": "or",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of an OR note. An editor can add more than one OR option."
+    },
+    {
+      "id": "fictional-5",
+      "label": "Sample person F",
+      "mark": "or",
+      "color": "red",
+      "author": "Demo editor (fictional)",
+      "opinion": "This is an example of an OR note. An editor can add more than one OR option."
+    }
+  ]
+}

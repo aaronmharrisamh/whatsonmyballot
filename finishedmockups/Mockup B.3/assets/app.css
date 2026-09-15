@@ -1,0 +1,172 @@
+
+:root{--lime:#c3f56b;--green-edge:#497315;--focus:#436f10}
+.b-canvas-body{position:relative;flex:1;min-height:0;overflow:hidden}.b-canvas-body .paper-viewport{position:absolute;inset:0;min-height:0;height:100%;width:100%;border:0;outline-offset:-4px}
+.b-section-nav{display:grid;grid-template-columns:1fr 76px 1fr;gap:8px}.b-section-nav>.btn{min-height:44px;gap:6px;font-size:14px;justify-content:center}.b-section-nav>.btn:last-child{justify-self:end}.b-section-nav>.btn:disabled{opacity:.45;cursor:default}
+.b-position{display:flex;flex-direction:column;align-items:center;line-height:1.5;color:#334b5a}.b-position strong{font-size:16px}.b-position span{font-size:10px;white-space:nowrap}
+.b-zoom-controls{width:100%;max-width:470px;gap:10px}.b-zoom-controls .btn{width:auto;flex:1;gap:8px;min-height:48px;padding:8px 11px}.b-zoom-controls .icon{width:23px;height:23px}.b-zoom-controls .btn[aria-pressed=true]{background:#203b40;color:var(--lime)}
+.b-ballot-section{position:relative;isolation:isolate;cursor:pointer}.b-ballot-section.is-focused{z-index:2}.b-ballot-section.is-focused::after{content:"";position:absolute;inset:0;pointer-events:none;border:calc(3px / var(--paper-scale,1)) solid var(--lime);outline:calc(1px / var(--paper-scale,1)) solid var(--green-edge);z-index:3;animation:b-breathe 3.5s ease-in-out infinite}
+.b-ballot-section.is-focused.focus-arriving::after{animation:b-focus-arrive 1000ms cubic-bezier(.2,.65,.2,1) both,b-breathe 3.5s 1000ms ease-in-out infinite}
+.b-focus-label{display:none;font-size:10px;line-height:1.4;align-items:center;gap:4px;margin-top:3px;color:var(--lime);font-weight:normal}.b-focus-label .icon{width:12px;height:12px}.is-focused .b-focus-label{display:flex}
+.b-race-heading{display:block}.b-race-heading .b-row-tools,.is-readable .b-race-heading .b-row-tools{flex-direction:row;justify-content:flex-end;margin-top:10px}
+.b-row-tools{gap:3px;flex:none;display:flex;align-items:center}.b-icon-btn,.b-race-heading .b-icon-btn{width:46px;height:46px;min-width:46px;min-height:46px;border:1px solid #8495a0;border-radius:5px;color:#415b6a;background:#fff}.b-icon-btn .icon{width:21px;height:21px}
+.is-focused .b-icon-btn{color:var(--lime);background:#203747;border-color:#203747}.is-focused .b-icon-btn:hover,.is-focused .b-icon-btn[aria-expanded=true]{background:#334d35;color:#d8ff98;border-color:#537629}
+.is-focused .candidate-choice input{background:#fffefb;border-color:#4a6924;box-shadow:inset 0 0 0 2px var(--lime)}
+.is-focused .candidate-choice input:checked,.is-focused .b-oval-demo.filled{background-color:var(--lime);border-color:#4b681e;box-shadow:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16'%3E%3Cpath d='m5 8 4 4 10-9' fill='none' stroke='%23233719' stroke-width='2.6'/%3E%3C/svg%3E")}
+.b-candidate.is-selected{background:#f0f6e7}.b-candidate .candidate-choice{gap:7px}.b-candidate .candidate-name{overflow-wrap:anywhere}.b-candidate .selected-word{color:#304b12;font-size:12px;font-weight:700}
+.b-reference-row{display:block;padding:0}.b-reference-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 8px}.b-reference-heading>span{font-size:14px;line-height:1.35;overflow-wrap:anywhere;min-width:0}
+.b-write-row{border-bottom:1px solid #c5cdd1}.b-write-open.btn{background:none;border:0;box-shadow:none;min-width:0;padding:5px 0;flex:1;text-align:left;justify-content:flex-start;gap:7px;font-size:14px;line-height:1.35}.b-write-open>span:nth-child(2){overflow-wrap:anywhere;min-width:0;flex:1}.b-write-open>.icon{width:16px;height:16px;flex:none}.is-focused .b-write-open>.icon{background:#203747;color:var(--lime);border-radius:2px;padding:2px;width:20px;height:20px}
+.b-inline{cursor:default;background:#f1f4ed}.b-inline .tag{color:#425137;background:#e1e8d9}.b-inline p{margin-bottom:0}.is-readable .b-row-tools{gap:4px}.is-readable .b-race-heading{display:block}.is-readable .b-icon-btn,.is-readable .b-race-heading .b-icon-btn{width:46px;min-width:46px;height:48px;min-height:48px}
+.is-readable .b-reference-heading{padding:11px 10px}.is-readable .b-reference-heading>span,.is-readable .b-write-open{font-size:17px}.is-readable .b-candidate-row{gap:7px}.is-readable .candidate-name{font-size:18px}
+.b-idle-hint{position:absolute;left:50%;bottom:28px;transform:translate(-50%,8px);display:flex;align-items:center;gap:9px;white-space:nowrap;z-index:5;background:#18354fee;color:#edffd6;border:1px solid #b0d772;border-radius:30px;padding:13px 21px;font-size:17px;box-shadow:0 5px 24px #172c3d35;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s}.b-idle-hint.is-visible{opacity:1;transform:translate(-50%,0)}.b-idle-hint .icon{width:24px;height:24px;color:var(--lime)}
+.b-opinion{padding:18px;background:#edf0ef;border:1px solid #b8c3c2;border-radius:8px;color:#35494e}.b-opinion-label{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700}.b-opinion-author{font-weight:600}.b-opinion-copy p{white-space:pre-wrap}.b-opinion-label .icon{width:24px;height:24px}.b-opinion+.edit-pill{margin-top:15px}
+@keyframes b-focus-arrive{from{transform:scale(1.4);opacity:.2}to{transform:scale(1);opacity:1}}
+@keyframes b-breathe{0%,100%{box-shadow:0 0 calc(9px / var(--paper-scale,1)) #9bde5a55,inset 0 0 calc(5px / var(--paper-scale,1)) #97d65922}50%{box-shadow:0 0 calc(20px / var(--paper-scale,1)) #9bde5a99,inset 0 0 calc(11px / var(--paper-scale,1)) #97d65944}}
+@media(max-width:500px){.b-section-nav{padding:6px;gap:5px;grid-template-columns:1fr 64px 1fr}.b-section-nav>.btn{padding:6px 9px;font-size:13px;min-height:44px}.b-position strong{font-size:15px}.b-zoom-strip{padding:7px}.b-zoom-controls{gap:6px}.b-zoom-controls .btn{font-size:12px;padding:8px 6px;gap:5px;min-height:48px}.b-zoom-controls .icon{width:20px;height:20px}.is-readable .b-candidate-row{padding:10px 8px;gap:5px}.is-readable .candidate-name{font-size:17px}.is-readable .b-row-tools{gap:3px}.is-readable .b-icon-btn{width:44px;min-width:44px}.b-idle-hint{font-size:15px;bottom:20px}}
+@media(max-height:520px){.b-section-nav>.btn{min-height:36px}.b-position{line-height:1.2}.b-position span{font-size:9px}.b-zoom-controls .btn{min-height:36px;padding:5px}.b-idle-hint{padding:8px 14px;bottom:10px}}
+@media(prefers-reduced-motion:reduce){.b-ballot-section.is-focused::after,.b-ballot-section.is-focused.focus-arriving::after{animation:none;box-shadow:0 0 8px #9bde5a77}.b-idle-hint{transition:none}}
+@media print{.b-ballot-section::after,.b-idle-hint{display:none!important}}
+
+@media(max-height:420px) and (min-width:501px){body[data-screen=home] .b-masthead{display:none}body[data-screen=home] .bottom-nav{min-height:46px}body[data-screen=home] .bottom-nav button{min-height:44px;font-size:11px}body[data-screen=home] .bottom-nav .icon{width:18px;height:18px}.b-workspace{padding:6px 14px}.b-view-tabs .btn,.b-find{min-height:40px}.b-section-nav>.btn{min-height:44px}.b-zoom-controls .btn{min-height:44px}}
+
+.paper-document[data-wide=true] .b-race-heading{display:flex;align-items:center;gap:20px}.paper-document[data-wide=true] .b-race-heading>div:first-child{flex:1;min-width:0}.paper-document[data-wide=true] .b-race-heading .b-row-tools{margin-top:0}
+
+/* Let the browser redraw crisp text after the zoom animation ends. */
+.paper-document{will-change:auto}
+
+/* B.3: controls appear only in the selected section without changing its geometry. */
+.b-ballot-section:not(.is-focused) .b-row-tools,.b-ballot-section:not(.is-focused) .b-inline-chevron{visibility:hidden;pointer-events:none}
+.b-focus-label{display:flex;visibility:hidden}.is-focused .b-focus-label{visibility:visible}
+.b-view-status{padding:9px 14px;background:#f4f6f5;border-bottom:1px solid #c2ccd3;flex:none;min-height:64px}
+.b-view-status>span{display:block;font-size:11px;line-height:1.35;color:#50616d}
+.b-view-status>strong{display:block;font-size:17px;line-height:1.3;margin-top:3px;font-weight:700;overflow-wrap:anywhere}
+.b-ballot-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:8px 10px;background:#f7f8f7;border-top:1px solid #c0ccd3;flex:none}
+.b-ballot-toolbar .btn{gap:6px;padding:7px 9px;font-size:14px;min-height:48px;min-width:0}
+.b-ballot-toolbar .icon{width:21px;height:21px;flex:none}
+.b-ballot-toolbar .btn[aria-pressed=true]{background:#203747;color:var(--lime);border-color:#203747}
+.b-ballot-toolbar .btn:disabled{opacity:.45;cursor:default}
+.b-text-toggle.btn{display:flex;flex:1;min-width:0;align-items:center;justify-content:flex-start;text-align:left;font:inherit;line-height:inherit;color:inherit;background:transparent;border:0;border-radius:3px;box-shadow:none;padding:3px 0;gap:7px;min-height:48px;white-space:normal}
+.b-text-toggle>span:first-child{min-width:0;overflow-wrap:anywhere}
+.b-text-toggle .candidate-name,.b-text-toggle .candidate-party{display:block}
+.b-text-toggle:hover{background:#f1f5ed}
+.b-inline-chevron{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;flex:none;background:#203747;color:var(--lime);border-radius:4px;width:22px;height:24px}
+.b-inline-chevron .icon{width:18px;height:18px;transition:transform .2s}
+.b-text-toggle[aria-expanded=true] .b-inline-chevron .icon{transform:rotate(180deg)}
+.b-row-tools{gap:5px}
+.b-icon-btn,.b-race-heading .b-icon-btn,.is-readable .b-icon-btn,.is-readable .b-race-heading .b-icon-btn{width:48px;min-width:48px;height:50px;min-height:50px;border-radius:7px}
+.b-icon-btn .icon,.is-readable .b-icon-btn .icon{width:25px;height:25px}
+.b-race-heading .b-row-tools{margin-top:8px}
+.b-race-heading>div:first-child{min-width:0}
+.b-tick,.b-write-tick.btn{position:relative;display:flex;align-items:center;justify-content:center;flex:none;width:48px;min-width:48px;min-height:48px;padding:0;background:transparent;border:0;border-radius:5px;cursor:pointer}
+.b-tick:focus-within,.b-write-tick:focus-visible{outline:3px solid #436f10;outline-offset:1px}
+.b-choice-mark{display:block;width:48px;height:32px;max-width:none;pointer-events:none}
+.b-candidate-row{gap:7px;padding:9px 7px}
+.b-inline,.is-readable .b-inline{border:0;border-left:3px solid #587d30;margin:2px 12px 12px;padding:5px 12px;background:#f3f5ef;animation:b-reveal .18s ease-out}
+.b-inline p,.is-readable .b-inline p{margin:0;font-size:15px;line-height:1.55}
+.is-readable .b-inline p{font-size:17px}
+.b-section-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.b-section-intro>div{min-width:0;flex:1}
+.b-section-intro p{font-size:13px;color:#536774;margin:8px 0}
+.b-minimap.btn{display:flex;flex:none;align-items:center;justify-content:center;width:92px;height:100px;padding:5px;background:#e9eef0;border:1px solid #b4c3cb;border-radius:7px}
+.b-minimap-svg{width:100%;height:100%;display:block}
+.is-readable .b-candidate-row{gap:7px;padding:11px 9px}
+.is-readable .b-text-toggle{min-height:50px}
+.is-readable .candidate-name{font-size:18px;line-height:1.4}
+.is-readable .b-row-tools{gap:5px}
+.b-race-heading .race-title .b-text-toggle{font:inherit}
+@media(max-width:500px){
+ .b-ballot-toolbar{gap:4px;padding:7px 5px}
+ .b-ballot-toolbar .btn{font-size:12px;gap:4px;padding:7px 3px;min-height:48px}
+ .b-ballot-toolbar .icon{width:18px;height:18px}
+ .b-view-status{padding:7px 10px;min-height:59px}
+ .b-view-status>strong{font-size:16px}
+ .b-section-view{padding:16px 10px}
+ .b-section-intro{gap:8px}
+ .b-section-intro h1{font-size:25px}
+ .b-minimap.btn{width:76px;height:92px}
+ .is-readable .b-candidate-row{gap:5px;padding:10px 6px}
+ .is-readable .candidate-name{font-size:17px}
+ .is-readable .b-row-tools{gap:4px}
+ .is-readable .b-tick,.is-readable .b-write-tick{width:44px;min-width:44px}
+ .is-readable .b-choice-mark{width:44px}
+ .is-readable .b-icon-btn{width:46px;min-width:46px}
+ .is-readable .b-text-toggle{gap:4px}
+ .is-readable .b-inline-chevron{width:18px;height:22px}
+}
+@media(max-width:350px){
+ .is-readable .b-candidate-row{display:grid;grid-template-columns:44px minmax(0,1fr) 48px;align-items:center}
+ .is-readable .b-candidate-row .b-row-tools{flex-direction:column;gap:6px}
+ .is-readable .b-icon-btn{width:48px;min-width:48px}
+}
+@media(max-height:520px){
+ .b-view-status{min-height:45px;padding:4px 10px}
+ .b-view-status>span{font-size:10px}.b-view-status>strong{font-size:14px;margin-top:0}
+ .b-ballot-toolbar{padding:4px 6px}.b-ballot-toolbar .btn{min-height:44px}
+}
+@media print{.b-row-tools,.b-inline-chevron,.b-ballot-toolbar,.b-minimap{display:none!important}}
+
+/* Native input owns the full tap target; the SVG is the only visible mark. */
+.b-tick input{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;clip:auto;opacity:0;z-index:1;cursor:pointer}
+
+/* A changing title must never resize or shift the zoom canvas. */
+.b-view-status{height:82px;min-height:82px;max-height:82px}
+.b-view-status>strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+@media(max-width:500px){.b-view-status{height:76px;min-height:76px;max-height:76px}}
+@media(max-height:520px){.b-view-status{height:64px;min-height:64px;max-height:64px}}
+
+@media(max-height:520px){.b-view-status{height:48px;min-height:48px;max-height:48px}.b-view-status>span{display:none}}
+
+/* B.3: readable sections first; the whole ballot is a separate dialog tool. */
+.b-section-view{padding-top:18px}
+.b-section-intro{margin-bottom:12px}
+.b-section-intro h1{margin:5px 0;font-size:28px}
+.b-section-intro p{margin:5px 0 0}
+.flow-action-inner{grid-template-columns:62px minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:10px;max-width:720px;padding:8px 16px}
+.flow-action-inner>.btn{min-height:52px;font-size:17px;padding:9px 10px}
+.b-dock-map.b-minimap.btn{flex-direction:column;gap:1px;width:62px;min-width:62px;height:56px;min-height:56px;padding:4px 8px;border-radius:8px;background:#edf1f2;border-color:#adbdc7;color:#28475c}
+.b-dock-map .b-minimap-svg{width:44px;height:34px;flex:none}
+.b-dock-map>span{font-size:10px;line-height:1.2;font-weight:650}
+.b-dock-map:hover{background:#e0e9e5}
+.b-ballot-dialog{position:fixed;inset:8px;margin:auto;padding:0;width:calc(100vw - 16px);height:calc(100dvh - 16px);max-width:none;max-height:none;overflow:hidden;border:1px solid #79909f;border-radius:14px;background:#f8faf8;color:var(--ink);box-shadow:0 20px 70px #06152266}
+.b-ballot-dialog[open]{display:flex;flex-direction:column}
+.b-ballot-dialog::backdrop{background:#071b2dcc;backdrop-filter:blur(3px)}
+.b-tool-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;flex:none;background:#fcfbf8;border-top:3px solid #ac4741;border-bottom:1px solid #c0cbd1}
+.b-tool-header h2{font:600 22px/1.3 "Segoe UI",Arial,sans-serif;margin:0;color:#18354f}
+.b-tool-header p{font-size:12px;line-height:1.4;color:#526675;margin:3px 0 0}
+.b-tool-close.btn{width:48px;min-width:48px;height:48px;min-height:48px;display:grid;place-items:center;padding:0;border-radius:50%;border-color:#9eafba;background:#fff}
+.b-tool-close .icon{width:24px;height:24px}
+.b-tool-canvas.b-canvas{flex:1;min-height:0;width:100%;border:0;border-radius:0;box-shadow:none}
+.b-tool-canvas .b-ballot-toolbar{gap:8px;padding:9px 12px max(9px,env(safe-area-inset-bottom));background:#fcfbf8}
+.b-tool-canvas .b-ballot-toolbar .btn{border-radius:24px;min-height:46px;font-size:14px}
+.b-ballot-dialog .b-choice-message{margin:0;max-height:80px;overflow:auto}
+.b-tool-canvas .b-view-status{height:76px;min-height:76px;max-height:76px;padding:7px 14px}
+.b-tool-canvas .b-view-status>strong{font-size:16px}
+@media(max-width:500px){
+ .b-section-view{padding:13px 10px 16px}
+ .b-section-intro h1{font-size:25px}
+ .flow-action-inner{gap:8px;padding:7px 10px;grid-template-columns:58px minmax(0,1fr) minmax(0,1.12fr)}
+ .flow-action-inner>.btn{font-size:16px;padding:8px}
+ .b-dock-map.b-minimap.btn{width:58px;min-width:58px}
+ .b-ballot-dialog{inset:6px;width:calc(100vw - 12px);height:calc(100dvh - 12px);border-radius:11px}
+ .b-tool-header{padding:8px 10px}
+ .b-tool-header h2{font-size:21px}
+ .b-tool-header p{font-size:11px}
+ .b-tool-canvas .b-ballot-toolbar{gap:4px;padding:8px 5px max(8px,env(safe-area-inset-bottom))}
+ .b-tool-canvas .b-ballot-toolbar .btn{font-size:12px;gap:4px;padding:7px 4px;min-height:46px}
+ .b-tool-canvas .b-ballot-toolbar .icon{width:18px;height:18px}
+}
+@media(max-height:520px){
+ .b-section-view{padding-top:10px}.b-section-intro h1{font-size:23px}
+ .b-tool-header{padding:5px 10px}.b-tool-header h2{font-size:19px}.b-tool-header p{font-size:11px}
+ .b-tool-canvas .b-view-status{height:46px;min-height:46px;max-height:46px;padding:4px 10px}
+ .b-tool-canvas .b-view-status>strong{font-size:14px}
+ .b-tool-canvas .b-ballot-toolbar{padding:5px 6px}.b-tool-canvas .b-ballot-toolbar .btn{min-height:44px}
+ .flow-action-inner{padding-top:5px;padding-bottom:5px}.b-dock-map.b-minimap.btn{height:50px;min-height:50px;padding-top:2px;padding-bottom:2px}
+ .b-dock-map .b-minimap-svg{height:30px}
+}
+@media(prefers-reduced-motion:reduce){.b-ballot-dialog::backdrop{backdrop-filter:none}}
+@media print{.b-ballot-dialog{display:none!important}.flow-actions{display:none!important}}
+
+/* Clear inherited size limits now that the ballot owns a full-screen tool. */
+.flow-actions{padding:0}
+.flow-action-inner{display:grid}
+.b-tool-canvas .paper-viewport{max-height:none}
