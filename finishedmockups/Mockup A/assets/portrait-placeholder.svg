@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Photo not added</title>
+  <rect width="160" height="160" rx="20" fill="#f1f3f5"/>
+  <circle cx="80" cy="57" r="27" fill="#81858b"/>
+  <path d="M29 139v-11c0-29 23-48 51-48s51 19 51 48v11Z" fill="#81858b"/>
+</svg>

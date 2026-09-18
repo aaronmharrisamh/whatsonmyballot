@@ -1,0 +1,31 @@
+/* Dedicated author-only output; no camera, navigation, or practice marks. */
+#b-guide-print{display:none}
+@media print{
+ @page{size:letter portrait;margin:.42in .4in}
+ html:has(body[data-guide-print=ready]),body[data-guide-print=ready]{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0!important;background:#fff!important}
+ body[data-guide-print=ready]>:not(#b-guide-print){display:none!important}
+ body[data-guide-print=ready] #b-guide-print{display:block!important;color:#18354f;background:#fff;font:10.5pt/1.2 "Segoe UI",Arial,sans-serif;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ #b-guide-print *{box-sizing:border-box;animation:none!important;transition:none!important}
+ #b-guide-print .b-print-heading{display:block;border-bottom:1.2pt solid #244459;margin:0 0 5pt;padding:0 0 5pt;break-after:avoid}
+ #b-guide-print h1{font-size:17pt;line-height:1.1;margin:0 0 4pt}
+ #b-guide-print .b-print-heading p{font-size:11pt;line-height:1.3;margin:0}
+ #b-guide-print .b-print-group{display:table;width:100%;border-spacing:0;table-layout:fixed;border:1pt solid #afc0ca;border-radius:9pt;margin:0 0 8pt;padding:5pt;break-inside:auto;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ #b-guide-print .b-print-group h2{font-size:13pt;line-height:1.15;padding:5pt 8pt;margin:0 0 6pt;background:#244459;color:#fff;border-radius:7pt;break-after:avoid}
+ #b-guide-print .b-print-group td{padding:0;border:0;vertical-align:top}
+ #b-guide-print .b-print-group thead{display:table-header-group}
+ #b-guide-print .b-print-columns{column-count:2;column-gap:13pt;column-rule:.5pt solid #d7e0e6;column-fill:balance}
+ #b-guide-print .b-print-race{display:block;break-inside:auto;margin:0 0 7pt;padding:0}
+ #b-guide-print h3{font-size:11.5pt;line-height:1.15;font-weight:700;margin:0 0 3pt;padding:3pt 1pt;border-bottom:.7pt solid #bccbd5;break-after:avoid;break-inside:avoid}
+ #b-guide-print .b-print-choice{margin:0 0 3pt;padding:2.5pt 5pt;border: .5pt solid #e3d5d7;border-left:2pt solid var(--print-ink);border-radius:5pt;background:var(--print-tint);break-inside:avoid}
+ #b-guide-print .b-print-leading{break-inside:avoid}
+ #b-guide-print .b-print-choice-top{display:flex;align-items:center;gap:5pt;break-inside:avoid;break-after:avoid}
+ #b-guide-print .b-print-choice-top>div{min-width:0}
+ #b-guide-print .b-print-mark{display:block;flex:0 0 26pt;width:26pt;color:var(--print-ink)}
+ #b-guide-print .b-print-mark svg{display:block;width:26pt;height:22pt;max-width:none}
+ #b-guide-print .b-print-mark svg text{font-size:24px}
+ #b-guide-print .b-print-kind{display:inline;color:var(--print-ink);font-size:10.25pt;font-weight:700;line-height:1.15;margin:0 4pt 0 0}
+ #b-guide-print .b-print-choice strong{display:inline;font-size:11.5pt;line-height:1.18;color:#18354f;overflow-wrap:anywhere}
+ #b-guide-print .b-print-author{display:block;font-size:9.5pt;line-height:1.2;color:#435767;margin-top:2pt}
+ #b-guide-print .b-print-opinion p{font-size:10.5pt;line-height:1.16;margin:2pt 0 0;white-space:pre-line;overflow-wrap:anywhere;orphans:3;widows:3}
+ #b-guide-print .b-print-opinion a{display:block;color:#435767;font-size:9.5pt;line-height:1.2;margin-top:3pt;overflow-wrap:anywhere;text-decoration:none}
+}

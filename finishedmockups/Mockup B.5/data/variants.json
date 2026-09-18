@@ -1,0 +1,111 @@
+{
+  "format": "whatsonmyballot-design-settings",
+  "schemaVersion": "1.0.0",
+  "defaultVariantId": "A5",
+  "datasetId": "b5-fictional-ballot-demo",
+  "ballotStyleId": "ballot-mi-2024-11-05-akron-1af",
+  "seedPath": "data/ballot.seed.json",
+  "shared": {
+    "reviewMode": "rows",
+    "navigation": "explicit-next-and-skip",
+    "candidateOrder": "official",
+    "defaultSelections": "none",
+    "minimumBodyFontPx": 18,
+    "minimumTargetPx": 48,
+    "preserveStateAcrossVariants": true,
+    "officialInstructionsAlwaysVisible": true,
+    "candidateDetailsAvailable": true,
+    "sourcesAvailable": true,
+    "detailModalAvailable": true,
+    "adminAvailable": true,
+    "pdfAvailable": true,
+    "printAvailable": true,
+    "paperZoom": {
+      "initial": "fit",
+      "stages": [
+        "fit",
+        2,
+        3
+      ],
+      "pinch": true,
+      "bounded": true,
+      "reset": true
+    },
+    "shell": {
+      "desktopDevice": "phone",
+      "phoneWidthPx": 390,
+      "phoneHeightPx": 867,
+      "mobileMode": "fill-available-space",
+      "controls": [
+        "demo",
+        "device",
+        "designs",
+        "fit"
+      ],
+      "footerOutsideApp": true,
+      "defaultVariantId": "A5"
+    }
+  },
+  "variants": [
+    {
+      "id": "A1",
+      "label": "Simplest",
+      "densityRank": 1,
+      "recommended": false,
+      "showPurpose": false,
+      "showNextStepCue": false,
+      "candidateSummaryMode": "collapsed",
+      "showSelectionExplanation": false,
+      "showOfficeExplanation": false,
+      "showSourceMetadata": false
+    },
+    {
+      "id": "A2",
+      "label": "Light guidance",
+      "densityRank": 2,
+      "recommended": false,
+      "showPurpose": true,
+      "showNextStepCue": true,
+      "candidateSummaryMode": "collapsed",
+      "showSelectionExplanation": false,
+      "showOfficeExplanation": false,
+      "showSourceMetadata": false
+    },
+    {
+      "id": "A3",
+      "label": "More context",
+      "densityRank": 3,
+      "recommended": false,
+      "showPurpose": true,
+      "showNextStepCue": true,
+      "candidateSummaryMode": "overview-line",
+      "showSelectionExplanation": true,
+      "showOfficeExplanation": false,
+      "showSourceMetadata": false
+    },
+    {
+      "id": "A4",
+      "label": "Most detailed",
+      "densityRank": 4,
+      "recommended": false,
+      "showPurpose": true,
+      "showNextStepCue": true,
+      "candidateSummaryMode": "three-sentences",
+      "showSelectionExplanation": true,
+      "showOfficeExplanation": true,
+      "showSourceMetadata": true
+    },
+    {
+      "id": "A5",
+      "label": "2026 UX Developer's Choice",
+      "densityRank": 2,
+      "recommended": true,
+      "showPurpose": true,
+      "showNextStepCue": true,
+      "candidateSummaryMode": "collapsed",
+      "showSelectionExplanation": true,
+      "showOfficeExplanation": false,
+      "showSourceMetadata": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# B.7D behavior and data
+
+App version 0.2.3; isolated dataset b7d-fictional-ballot-demo; area catalog b7d-sample-areas. B.7D is a copy of B.7C with the same separate ballot, notes, annotations, and area contracts. Schemas are unchanged from B.7C. No B.8 collection or output architecture is used.
+
+My Guide opens directly into its existing review tools and ballot groups. It omits the workflow steps, introductory heading and area text, marked/undecided counters, and the reminder below them. Each existing ballot group has a rounded capsule container. The narrow layout stacks the containers; wider layouts place Partisan and Non-Partisan side by side, with additional groups continuing below. Choice summaries remain unchanged, and per-item Change buttons are removed. The Ballot navigation remains available for editing personal choices. The current sample has Partisan and Non-Partisan groups and no proposals; no proposal content was added.
+
+Turning Snap on chooses the ballot section nearest the center of the current viewer, then fits that section and shows its green focus. A section containing the center takes priority; in a gap or blank area the closest section is used. This uses the current camera position across both mounted sheets, rather than returning to the previously selected section. If no valid section can be measured, the existing selected section remains the fallback. Turning Snap off still preserves the current camera position. Opening the viewer and All still fit both sheets with Snap off; section taps and Next/Prev keep their existing behavior.
+
+B.7C header highlights, colored ovals, shared recommendation filtering, local editor storage, dirty guards, and camera anchors remain in place. Visitor choices remain separate from author data. Earlier mockups and public reference folders are preserved; B.8 stays outmoded.

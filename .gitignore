@@ -1,0 +1,17 @@
+/docs/
+/tools/
+/.claude/
+/AGENTS.md
+/CLAUDE.md
+
+# Local dependencies and operating-system files
+**/node_modules/
+.DS_Store
+Thumbs.db
+
+# Local mockups and release files held from publication
+/unreleasedmockups/
+
+# Generated release archives are retired; do not commit new ZIP files.
+*.[zZ][iI][pP]
+/finishedmockups/packages/

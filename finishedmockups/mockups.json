@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.1.0",
+  "activeLine": {
+    "series": "B",
+    "revision": 9,
+    "minimumSuffix": "A"
+  },
+  "availableMockup": "B.9A",
+  "unavailable": [
+    "B.9B",
+    "B.9C",
+    "B.9D",
+    "B.9E",
+    "B.9F",
+    "B.9G",
+    "B.9H",
+    "B.9I-TEST",
+    "B.9J"
+  ],
+  "outmoded": [
+    "B.8"
+  ]
+}

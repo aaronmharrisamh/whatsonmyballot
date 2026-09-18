@@ -1,0 +1,220 @@
+{
+  "format": "whatsonmyballot-demo-choices",
+  "schemaVersion": "1.0.0",
+  "datasetId": "b7b-fictional-ballot-demo",
+  "randomSeed": "b50006",
+  "records": [
+    {
+      "raceId": "contest-straight-party",
+      "candidateIds": [],
+      "optionIds": [
+        "demo-group-02"
+      ],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-president",
+      "candidateIds": [
+        "demo-candidate-007"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-us-senate",
+      "candidateIds": [
+        "demo-candidate-012"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-us-house-mi-09",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-state-house-mi-97",
+      "candidateIds": [
+        "demo-candidate-019"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-state-education",
+      "candidateIds": [
+        "demo-candidate-023"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-um-regent",
+      "candidateIds": [
+        "demo-candidate-031",
+        "demo-candidate-032"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-msu-trustee",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-wsu-governor",
+      "candidateIds": [
+        "demo-candidate-044",
+        "demo-candidate-049"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-prosecutor",
+      "candidateIds": [
+        "demo-candidate-052"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-sheriff",
+      "candidateIds": [
+        "demo-candidate-053"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-clerk",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-treasurer",
+      "candidateIds": [
+        "demo-candidate-056"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-register",
+      "candidateIds": [
+        "demo-candidate-057"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-road",
+      "candidateIds": [
+        "demo-candidate-059"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-drain",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-county-commissioner-01",
+      "candidateIds": [
+        "demo-candidate-061"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-township-supervisor",
+      "candidateIds": [
+        "demo-candidate-062"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-township-clerk",
+      "candidateIds": [
+        "demo-candidate-063"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-township-treasurer",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-township-trustee",
+      "candidateIds": [
+        "demo-candidate-066"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-supreme-full",
+      "candidateIds": [
+        "demo-candidate-067"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-supreme-partial-2029",
+      "candidateIds": [
+        "demo-candidate-069"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-appeals-04-full",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-appeals-04-partial-2027",
+      "candidateIds": [
+        "demo-candidate-072"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-circuit-54",
+      "candidateIds": [
+        "demo-candidate-073"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-probate-tuscola",
+      "candidateIds": [
+        "demo-candidate-074"
+      ],
+      "optionIds": [],
+      "writeIns": {}
+    },
+    {
+      "raceId": "contest-school-akron-fairgrove",
+      "candidateIds": [],
+      "optionIds": [],
+      "writeIns": {}
+    }
+  ]
+}

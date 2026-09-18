@@ -1,0 +1,2077 @@
+{
+  "format": "whatsonmyballot-collection",
+  "schemaVersion": "1.0.0",
+  "collectionId": "b8-fictional-collection",
+  "revision": 0,
+  "exportedAt": "2026-09-15T12:00:00Z",
+  "defaultSelection": {
+    "areaId": "sample-precinct",
+    "ballotId": "demo-2026-ballot",
+    "guideId": "demo-guide-red"
+  },
+  "elections": [
+    {
+      "id": "sample-election",
+      "title": "2026 Sample General Election",
+      "date": "2026-11-03",
+      "type": "general",
+      "locale": "en-US",
+      "status": "fictional"
+    }
+  ],
+  "areaLevels": [
+    {
+      "id": "level-state",
+      "label": "State"
+    },
+    {
+      "id": "level-township",
+      "label": "Township"
+    },
+    {
+      "id": "level-precinct",
+      "label": "Precinct"
+    }
+  ],
+  "areas": [
+    {
+      "id": "sample-state",
+      "levelId": "level-state",
+      "label": "Michigan (fictional example)",
+      "parentId": null,
+      "ballotIds": []
+    },
+    {
+      "id": "sample-township",
+      "levelId": "level-township",
+      "label": "Sample Township",
+      "parentId": "sample-state",
+      "ballotIds": []
+    },
+    {
+      "id": "sample-precinct",
+      "levelId": "level-precinct",
+      "label": "Precinct DEMO",
+      "parentId": "sample-township",
+      "ballotIds": [
+        "demo-2026-ballot"
+      ]
+    },
+    {
+      "id": "sample-unavailable",
+      "levelId": "level-precinct",
+      "label": "Precinct UNAVAILABLE",
+      "parentId": "sample-township",
+      "ballotIds": []
+    }
+  ],
+  "ballots": [
+    {
+      "id": "demo-2026-ballot",
+      "electionId": "sample-election",
+      "title": "Fictional ballot interface demo",
+      "pages": [
+        {
+          "id": "demo-front",
+          "label": "Front",
+          "columns": 3
+        },
+        {
+          "id": "demo-back",
+          "label": "Back",
+          "columns": 3
+        }
+      ],
+      "groups": [
+        {
+          "id": "demo-partisan",
+          "title": "Partisan Section",
+          "category": "partisan"
+        },
+        {
+          "id": "demo-nonpartisan",
+          "title": "Nonpartisan Section",
+          "category": "nonpartisan"
+        },
+        {
+          "id": "demo-proposals",
+          "title": "Proposals",
+          "category": "proposals"
+        }
+      ],
+      "contests": [
+        {
+          "id": "demo-2026-ballot-race-01",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 1,
+          "kind": "straight-party",
+          "titleLines": [
+            "Straight Party Ticket"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-01-1",
+              "kind": "party",
+              "labelLines": [
+                "Example Group A"
+              ]
+            },
+            {
+              "id": "demo-choice-01-2",
+              "kind": "party",
+              "labelLines": [
+                "Example Group B"
+              ],
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-01-3",
+              "kind": "party",
+              "labelLines": [
+                "Example Group C"
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "demo-2026-ballot-race-02",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 1,
+          "kind": "ticket",
+          "titleLines": [
+            "Governor and Lieutenant Governor"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-02-1",
+              "kind": "ticket",
+              "labelLines": [
+                "Sample Person 2A",
+                "Sample Partner 1"
+              ],
+              "members": [
+                {
+                  "name": "Sample Person 2A",
+                  "role": "Governor"
+                },
+                {
+                  "name": "Sample Partner 1",
+                  "role": "Lieutenant Governor"
+                }
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-02-2",
+              "kind": "ticket",
+              "labelLines": [
+                "Sample Person 2B",
+                "Sample Partner 2"
+              ],
+              "members": [
+                {
+                  "name": "Sample Person 2B",
+                  "role": "Governor"
+                },
+                {
+                  "name": "Sample Partner 2",
+                  "role": "Lieutenant Governor"
+                }
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-02-3",
+              "kind": "ticket",
+              "labelLines": [
+                "Sample Person 2C",
+                "Sample Partner 3"
+              ],
+              "members": [
+                {
+                  "name": "Sample Person 2C",
+                  "role": "Governor"
+                },
+                {
+                  "name": "Sample Partner 3",
+                  "role": "Lieutenant Governor"
+                }
+              ],
+              "party": "Example Group C"
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-03",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "United States Senator"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-03-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 3A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-03-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 3B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-03-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-04",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Representative in Congress"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-04-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 4A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-04-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 4B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-04-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-05",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "State Representative"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-05-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 5A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-05-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 5B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-05-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "demo-2026-ballot-race-06",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "State Board of Education"
+          ],
+          "instruction": "Vote for not more than 2",
+          "maxSelections": 2,
+          "choices": [
+            {
+              "id": "demo-choice-06-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 6A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-06-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 6B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-06-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 6C"
+              ],
+              "party": "Example Group C"
+            },
+            {
+              "id": "demo-choice-06-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 6D"
+              ],
+              "party": "Example Group A"
+            },
+            {
+              "id": "demo-choice-06-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 2 choices."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-07",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "University Regents"
+          ],
+          "instruction": "Vote for not more than 2",
+          "maxSelections": 2,
+          "choices": [
+            {
+              "id": "demo-choice-07-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 7A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-07-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 7B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-07-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 7C"
+              ],
+              "party": "Example Group C"
+            },
+            {
+              "id": "demo-choice-07-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 7D"
+              ],
+              "party": "Example Group A"
+            },
+            {
+              "id": "demo-choice-07-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 2 choices."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-08",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "University Trustees"
+          ],
+          "instruction": "Vote for not more than 2",
+          "maxSelections": 2,
+          "choices": [
+            {
+              "id": "demo-choice-08-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 8A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-08-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 8B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-08-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 8C"
+              ],
+              "party": "Example Group C"
+            },
+            {
+              "id": "demo-choice-08-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 8D"
+              ],
+              "party": "Example Group A"
+            },
+            {
+              "id": "demo-choice-08-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 2 choices."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-09",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "University Governors"
+          ],
+          "instruction": "Vote for not more than 2",
+          "maxSelections": 2,
+          "choices": [
+            {
+              "id": "demo-choice-09-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 9A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-09-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 9B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-09-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 9C"
+              ],
+              "party": "Example Group C"
+            },
+            {
+              "id": "demo-choice-09-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 9D"
+              ],
+              "party": "Example Group A"
+            },
+            {
+              "id": "demo-choice-09-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "id": "demo-2026-ballot-race-10",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "County Prosecutor"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-10-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 10A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-10-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 10B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-10-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-11",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "County Sheriff"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-11-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 11A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-11-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 11B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-11-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-12",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "County Clerk"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-12-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 12A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-12-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 12B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-12-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-13",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "County Treasurer"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-13-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 13A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-13-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 13B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-13-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "demo-2026-ballot-race-14",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "Register of Deeds"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-14-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 14A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-14-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 14B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-14-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-15",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "Road Commission"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-15-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 15A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-15-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 15B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-15-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-16",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "Drain Commissioner"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-16-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 16A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-16-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 16B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-16-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-17",
+          "groupId": "demo-partisan",
+          "pageId": "demo-front",
+          "column": 3,
+          "kind": "candidate",
+          "titleLines": [
+            "County Commissioner"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-17-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 17A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-17-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 17B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-17-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "demo-2026-ballot-race-18",
+          "groupId": "demo-partisan",
+          "pageId": "demo-back",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Township Supervisor"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-18-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 18A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-18-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 18B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-18-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-19",
+          "groupId": "demo-partisan",
+          "pageId": "demo-back",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Township Clerk"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-19-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 19A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-19-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 19B"
+              ],
+              "party": "Example Group B",
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-19-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-20",
+          "groupId": "demo-partisan",
+          "pageId": "demo-back",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Township Treasurer"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-20-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 20A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-20-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 20B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-20-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-21",
+          "groupId": "demo-partisan",
+          "pageId": "demo-back",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Township Trustees"
+          ],
+          "instruction": "Vote for not more than 2",
+          "maxSelections": 2,
+          "choices": [
+            {
+              "id": "demo-choice-21-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 21A"
+              ],
+              "party": "Example Group A",
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-21-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 21B"
+              ],
+              "party": "Example Group B"
+            },
+            {
+              "id": "demo-choice-21-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 21C"
+              ],
+              "party": "Example Group C"
+            },
+            {
+              "id": "demo-choice-21-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 21D"
+              ],
+              "party": "Example Group A"
+            },
+            {
+              "id": "demo-choice-21-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "id": "demo-2026-ballot-race-22",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "Supreme Court Justice"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-22-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 22A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-22-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 22B"
+              ],
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-22-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-23",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "Supreme Court Justice — Partial Term"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-23-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 23A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-23-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 23B"
+              ]
+            },
+            {
+              "id": "demo-choice-23-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-24",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "Court of Appeals Judge"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-24-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 24A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-24-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 24B"
+              ]
+            },
+            {
+              "id": "demo-choice-24-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-25",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "Court of Appeals Judge — Partial Term"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-25-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 25A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-25-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 25B"
+              ],
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-25-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "demo-2026-ballot-race-26",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "Circuit Court Judge"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-26-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 26A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-26-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 26B"
+              ]
+            },
+            {
+              "id": "demo-choice-26-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-27",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "Probate Court Judge"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-choice-27-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 27A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-27-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 27B"
+              ]
+            },
+            {
+              "id": "demo-choice-27-3",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 5,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 1 choice."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-race-28",
+          "groupId": "demo-nonpartisan",
+          "pageId": "demo-back",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "School Board"
+          ],
+          "instruction": "Vote for not more than 3",
+          "maxSelections": 3,
+          "choices": [
+            {
+              "id": "demo-choice-28-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 28A"
+              ],
+              "details": {
+                "summary": "This is a fictional name used to test the ballot layout.",
+                "markdown": "## Sample information\n\nThis text is a format example. It does not describe a real candidate.\n\nAn editor can replace it with reviewed source text."
+              }
+            },
+            {
+              "id": "demo-choice-28-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 28B"
+              ],
+              "details": {
+                "summary": ""
+              }
+            },
+            {
+              "id": "demo-choice-28-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 28C"
+              ]
+            },
+            {
+              "id": "demo-choice-28-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person 28D"
+              ]
+            },
+            {
+              "id": "demo-choice-28-5",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 7,
+          "details": {
+            "summary": "This sample section shows how to mark no more than 3 choices."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-reading-room",
+          "groupId": "demo-proposals",
+          "pageId": "demo-back",
+          "column": 3,
+          "kind": "proposal",
+          "titleLines": [
+            "Proposal 1 — Sample reading room"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-2026-ballot-reading-room-yes",
+              "kind": "answer",
+              "labelLines": [
+                "Yes"
+              ],
+              "answer": "yes",
+              "details": {
+                "summary": "Yes would approve this fictional proposal."
+              }
+            },
+            {
+              "id": "demo-2026-ballot-reading-room-no",
+              "kind": "answer",
+              "labelLines": [
+                "No"
+              ],
+              "answer": "no",
+              "details": {
+                "summary": "No would reject this fictional proposal."
+              }
+            }
+          ],
+          "question": "Fictional question: Shall Sample Township open a public reading room?",
+          "weight": 6,
+          "details": {
+            "summary": "Read the full question. Select Yes to approve it or No to reject it."
+          }
+        },
+        {
+          "id": "demo-2026-ballot-meeting-date",
+          "groupId": "demo-proposals",
+          "pageId": "demo-back",
+          "column": 3,
+          "kind": "proposal",
+          "titleLines": [
+            "Proposal 2 — Sample meeting date"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "demo-2026-ballot-meeting-date-yes",
+              "kind": "answer",
+              "labelLines": [
+                "Yes"
+              ],
+              "answer": "yes",
+              "details": {
+                "summary": "Yes would approve this fictional proposal."
+              }
+            },
+            {
+              "id": "demo-2026-ballot-meeting-date-no",
+              "kind": "answer",
+              "labelLines": [
+                "No"
+              ],
+              "answer": "no",
+              "details": {
+                "summary": "No would reject this fictional proposal."
+              }
+            }
+          ],
+          "question": "Fictional question: Shall Sample Township move its sample monthly meeting to the first Monday?",
+          "weight": 6,
+          "details": {
+            "summary": "Read the full question. Select Yes to approve it or No to reject it."
+          }
+        }
+      ],
+      "subtitle": [
+        "Sample Township",
+        "Precinct DEMO"
+      ],
+      "districtLabels": [
+        "Sample Congressional District 9"
+      ],
+      "sourceIds": [
+        "demo-provenance"
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "sample-author",
+      "name": "Sample Guide Editor (fictional)",
+      "organization": "GOP style demonstration; fictional recommendations"
+    }
+  ],
+  "guides": [
+    {
+      "id": "demo-guide-red",
+      "ballotId": "demo-2026-ballot",
+      "title": "Sample Precinct Guide",
+      "authorId": "sample-author",
+      "color": "red",
+      "sectionOpinions": [
+        {
+          "contestId": "demo-2026-ballot-race-06",
+          "opinion": {
+            "text": "This sample header note belongs to the section itself."
+          }
+        },
+        {
+          "contestId": "demo-2026-ballot-race-11",
+          "opinion": {
+            "text": "This sample header note belongs to the section itself."
+          }
+        },
+        {
+          "contestId": "demo-2026-ballot-race-16",
+          "opinion": {
+            "text": "This sample header note belongs to the section itself."
+          }
+        },
+        {
+          "contestId": "demo-2026-ballot-race-21",
+          "opinion": {
+            "text": "This sample header note belongs to the section itself."
+          }
+        },
+        {
+          "contestId": "demo-2026-ballot-race-26",
+          "opinion": {
+            "text": "This sample header note belongs to the section itself."
+          }
+        },
+        {
+          "contestId": "demo-2026-ballot-race-05",
+          "opinion": {
+            "text": "This is a fictional guide note for a section with no information page."
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "choiceId": "demo-choice-01-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-02-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-02-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-03-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-04-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-05-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-05-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-06-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-06-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-06-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-06-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-06-5",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-07-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-07-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-07-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-07-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-07-5",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-08-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-08-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-08-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-08-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-08-5",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-09-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-09-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-09-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-09-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-09-5",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-10-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-11-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-11-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-12-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-13-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-14-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-14-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-15-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-16-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-17-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-17-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-18-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-19-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-20-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-20-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-21-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-21-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-21-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-21-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-21-5",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional choice in the sample guide. Stay within the choice limit."
+          }
+        },
+        {
+          "choiceId": "demo-choice-22-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-23-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-23-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-24-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-25-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-26-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-26-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample guide does not recommend this option. This note shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "demo-choice-27-1",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This is the main choice in this fictional guide. The note shows how an editor can explain a recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-2026-ballot-reading-room-yes",
+          "mark": "this",
+          "opinion": {
+            "text": "This fictional guide recommends YES to show a proposal recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-2026-ballot-meeting-date-no",
+          "mark": "this",
+          "opinion": {
+            "text": "This fictional guide recommends NO to show a proposal recommendation."
+          }
+        },
+        {
+          "choiceId": "demo-choice-01-2",
+          "mark": "none",
+          "opinion": {
+            "text": "This fictional example shows an opinion for an option that the guide does not recommend."
+          }
+        }
+      ],
+      "updatedAt": "2026-09-15T12:00:00Z"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-provenance",
+      "title": "Author-created B.8 interface sample",
+      "notes": "Fictional names, questions, dates and guide opinions. Office categories resemble earlier layout demonstrations. This is not an official ballot."
+    }
+  ],
+  "attachments": {
+    "compression": "gzip",
+    "encoding": "base64",
+    "items": []
+  }
+}

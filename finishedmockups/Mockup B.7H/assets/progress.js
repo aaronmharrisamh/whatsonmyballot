@@ -1,0 +1,10 @@
+import{ballotLayout}from'./minimap.js';
+const escape=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function sectionWeights(contests){const map=new Map(ballotLayout(contests).blocks.map(b=>[b.id,b.height]));return contests.map(r=>({id:r.id,weight:map.get(r.id)||1}));}
+export function renderProgress(contests,selectedId,count,pages=[]){
+ const weights=sectionWeights(contests),index=Math.max(0,contests.findIndex(r=>r.id===selectedId)),marked=contests.filter(r=>count(r.id)>0).length;
+ const pageIds=[...new Set(contests.map(r=>r.sourceRefs?.[0]?.viewerPage||1))],split=pageIds.length>1&&pageIds.every(p=>pages.some(d=>d.page===p));
+ const piece=(r)=>{const w=weights.find(x=>x.id===r.id),done=count(r.id)>0,current=r.id===selectedId;return '<span class="b-progress-piece'+(done?' is-done':'')+(current?' is-current':'')+'" data-progress-section="'+escape(r.id)+'" data-done="'+done+'" style="flex-grow:'+w.weight+'" title="'+escape(r.officialTitle)+(done?' — has saved choices':'')+'">'+(done?'<svg viewBox="0 0 16 16"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>':'')+'</span>';};
+ const groups=split?pageIds.map(p=>{const races=contests.filter(r=>r.sourceRefs?.[0]?.viewerPage===p),weight=races.reduce((sum,r)=>sum+weights.find(w=>w.id===r.id).weight,0);return '<div class="b-progress-page" data-progress-page="'+p+'" style="flex-grow:'+weight+'"><span class="b-progress-side">'+escape(pages.find(d=>d.page===p).label)+'</span><div class="b-progress-segments" aria-hidden="true">'+races.map(piece).join('')+'</div></div>';}).join(''):'<div class="b-progress-segments" aria-hidden="true">'+contests.map(piece).join('')+'</div>';
+ return '<div class="b-progress-line" role="group" aria-label="Ballot progress. Section '+(index+1)+' of '+contests.length+'. '+marked+' sections have saved choices."><div class="b-progress-pages">'+groups+'</div><strong aria-hidden="true">'+(index+1)+'/'+contests.length+'</strong></div>';
+}

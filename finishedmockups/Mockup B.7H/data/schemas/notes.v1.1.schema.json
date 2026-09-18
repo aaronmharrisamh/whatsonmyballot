@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "B.7H companion notes schema 1.1.0",
+  "description": "Header highlights are independent from choice recommendations. Runtime validation also checks immutable baseline IDs, labels, kinds, race IDs, one-sentence synopses, opinion attribution and safe HTTPS sources.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "datasetId",
+    "revision",
+    "records"
+  ],
+  "properties": {
+    "format": {
+      "const": "whatsonmyballot-notes"
+    },
+    "schemaVersion": {
+      "const": "1.1.0"
+    },
+    "datasetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "kind",
+              "raceId",
+              "label",
+              "synopsis",
+              "author",
+              "opinion",
+              "sourceUrl",
+              "headerHighlighted",
+              "headerColor"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "const": "section"
+              },
+              "raceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string"
+              },
+              "synopsis": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "author": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "opinion": {
+                "type": "string",
+                "maxLength": 4000
+              },
+              "sourceUrl": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "headerHighlighted": {
+                "type": "boolean"
+              },
+              "headerColor": {
+                "enum": [
+                  "blue",
+                  "green",
+                  "red",
+                  "yellow",
+                  "orange",
+                  "gray"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "kind",
+              "raceId",
+              "label",
+              "synopsis",
+              "author",
+              "opinion",
+              "sourceUrl"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "party",
+                  "candidate",
+                  "write-in"
+                ]
+              },
+              "raceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string"
+              },
+              "synopsis": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "author": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "opinion": {
+                "type": "string",
+                "maxLength": 4000
+              },
+              "sourceUrl": {
+                "type": "string",
+                "maxLength": 2000
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

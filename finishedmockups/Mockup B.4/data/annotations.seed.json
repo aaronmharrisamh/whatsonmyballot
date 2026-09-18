@@ -1,0 +1,968 @@
+{
+  "format": "whatsonmyballot-guide-annotations",
+  "schemaVersion": "1.0.0",
+  "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+  "revision": 0,
+  "records": [
+    {
+      "id": "option-819f8173-9a29-49f1-af76-22756d194a5e",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Democratic Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-6867076b-67fe-4378-b6ea-046196c73d83",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Republican Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-a55dcab1-f4a8-4ad0-abe4-7a764b5108ce",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Libertarian Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-def49e81-8695-4508-9e1a-c26b3515cbe7",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "U.S. Taxpayers Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-016cec63-1e8d-46a9-b407-83599d163529",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Green Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-183e40fc-f547-4e47-93eb-65195482ee5c",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Working Class Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "option-32ff6d85-8899-4d9c-adaf-47a160052449",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Natural Law Party",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-c8d82dba-ad1c-43bb-94d9-a3d4bdd3fb17",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Kamala D. Harris / Tim Walz",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-8752261f-9186-45e2-b425-aef28b2918f5",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Donald J. Trump / JD Vance",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-27755a94-3e5e-46a2-ba6d-94c93895f1c7",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Chase Oliver / Mike ter Maat",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-6ca395ef-a58c-41d3-a956-3b2cda9798ce",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Randall Terry / Stephen E. Broden",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9e54e4a6-b060-4efe-8faf-e4d6c946a668",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Jill Stein / Rudolph Ware",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-7600ddf2-bf78-4d8d-bfd8-2792e707cafa",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Robert F. Kennedy, Jr. / Nicole Shanahan",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-f052e16d-90f0-4d56-b52d-674d9b999c5c",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Joseph Kishore / Jerry White",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-049d5cf0-821f-42aa-a825-b57d77bb1c25",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Cornel West / Melina Abdullah",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-5ac76d70-3476-49f9-a646-1af056d0e60d",
+      "kind": "write-in",
+      "raceId": "contest-president",
+      "label": "Write-in 1 / Electors of President and Vice-President of the United States",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9678d3bc-f2d1-40e4-a3e9-eeae777173bc",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Elissa Slotkin",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-3af00ed9-873a-446c-8924-092ae5d7e590",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Mike Rogers",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-17c07789-d249-4306-996a-eb3a5718ab1b",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Joseph Solis-Mullen",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9fdee6b0-7419-4bd6-bf58-abe9126f2054",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Dave Stein",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9b774007-a191-4d88-96e6-d3a525b536b3",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Douglas P. Marsh",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-60b7f457-6f7c-4c12-9e6c-f7b6840608e3",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Doug Dern",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-83ebde8a-15d8-4385-89a3-3aa57fe26014",
+      "kind": "write-in",
+      "raceId": "contest-us-senate",
+      "label": "Write-in 1 / United States Senator",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9cc0f66b-8c82-4324-9e49-68cfc7be252d",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Clinton St Mosley",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-a3da8af4-a6d2-469e-8a66-57e2709b3c75",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Lisa McClain",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-adff20e6-de2c-4d7e-88f8-c242fd28423f",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Kevin Vayko",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-e675e76b-78d0-474d-8f6d-b21c2b5c6a43",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Jim Walkowicz",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-e4470849-6787-4ff0-bf42-39292aba27e7",
+      "kind": "write-in",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Write-in 1 / Representative in Congress 9th District",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-22faa6d1-7650-4c71-9dcb-b767a19d7eec",
+      "kind": "candidate",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Mark Putnam",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-c5284740-722c-4a49-9df7-d5342074f4c6",
+      "kind": "candidate",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Matthew Bierlein",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-7cfe3b32-7c81-4e7a-bf79-862d4cb7cf9d",
+      "kind": "write-in",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Write-in 1 / Representative in State Legislature 97th District",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-2581454d-9dd0-43ca-9192-f9d917c0e2b1",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Theodore Jones",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-29ae96dc-e4ef-41d8-a588-010a1696791d",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Adam Frederick Zemke",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-ad159ffe-43db-4530-89ca-842c7cee21df",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Tom McMillin",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-4bd8fba4-bbaf-4738-9b3d-29cea4304a82",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Nikki Snyder",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-1100ae88-113f-488b-9528-5398da99d30d",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Scotty Boman",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-e23d1220-94c1-4425-8c41-82e546244e9b",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Ted Gerrard",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-bd524b31-daa7-41e8-bad7-72a588ddab17",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Christine C. Schwartz",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-b3b4dc60-3229-4f99-8d89-54bc2cafe181",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Mary Anne Hering",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-4e0b53fd-6479-4ba2-b4a3-8c982b557b14",
+      "kind": "write-in",
+      "raceId": "contest-state-education",
+      "label": "Write-in 1 / Member of the State Board of Education",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f92639bc-503b-49a2-8ce1-714b0ce4c79e",
+      "kind": "write-in",
+      "raceId": "contest-state-education",
+      "label": "Write-in 2 / Member of the State Board of Education",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-43cf7e48-9c0c-4457-ad0b-aad641c12f8a",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Denise Ilitch",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-a7ee5c85-0cf1-4962-90e7-3e8a8998ba60",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Shauna Ryder Diggs",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-84df529d-6ce8-4bc1-826c-3c342f95cf77",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Carl Meyers",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-e45c8457-199a-427b-925b-4988035fed4c",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sevag Vartanian",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-d497149a-0020-44e5-98ef-ab47b20c25aa",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Andrew Chadderdon",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-d4224011-6e2c-4c4d-9f1b-ce959e075b09",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Donna M. Oetman",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9dcece88-e6a2-4c42-b2da-074daa1b9d35",
+      "kind": "write-in",
+      "raceId": "contest-um-regent",
+      "label": "Write-in 1 / Regent of the University of Michigan",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2a805796-1230-4bfa-a2f8-e989c147c4c5",
+      "kind": "write-in",
+      "raceId": "contest-um-regent",
+      "label": "Write-in 2 / Regent of the University of Michigan",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-17dd7b66-ec7e-46ce-9998-a1c48bda52b1",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Rebecca Bahar-Cook",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-d8b77848-43f4-49b6-985b-088057670746",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Thomas Stallworth, III",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-eeabc0e5-0d70-4c71-940a-a359cba6a6a1",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Mike Balow",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-aa27184e-17a2-4da3-a2f6-e80d7f2ae2b7",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Julie Maday",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-efc9815c-c305-47e3-8c84-23e31a463063",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Grant T. Baker",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-6d4a4c6a-34d4-4eb5-9f38-03771bffcf25",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Janet M. Sanger",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-64a54e55-8447-44fe-8804-30e27b7da87b",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "John Paul Sanger",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-25d4aa64-e409-45a1-9a48-63f3a8e64e9d",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "John Anthony La Pietra",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-76489e27-4b24-4ff7-ac49-47600f288b63",
+      "kind": "write-in",
+      "raceId": "contest-msu-trustee",
+      "label": "Write-in 1 / Trustee of Michigan State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f87c0346-991f-4db6-9bb8-cacb2df326e2",
+      "kind": "write-in",
+      "raceId": "contest-msu-trustee",
+      "label": "Write-in 2 / Trustee of Michigan State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-f9a7c0cb-6786-4a40-b2e6-e093ef6a5f95",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Rasha Demashkieh",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-e767aebf-b223-4332-a6b7-b0f0e5325c59",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Mark T. Gaffney",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-562e2c3a-132e-41d9-9e92-17f7c2e4f871",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Michael Busuito",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-f47fbb3b-cf1e-4e59-8b76-df800c9d64db",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sunny Reddy",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-93fc13f4-813f-44c2-b2d4-9b1c8b768af8",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Farid Ishac",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-53144ef5-227e-4d60-aa6c-bfef3dc25491",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "William Mohr II",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-580138fe-922f-4120-bdec-54d584330c6f",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sami Makhoul",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-27c09ff5-c369-40cb-a4ad-39d3acfc3057",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Suzanne Roehrig",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-8f17527c-f3d7-4c9a-9454-6fe4c3d10d65",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Kathleen Oakford",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-28e4762a-f3c6-4c9a-be34-77600d8026d9",
+      "kind": "write-in",
+      "raceId": "contest-wsu-governor",
+      "label": "Write-in 1 / Governor of Wayne State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f352146a-f577-4610-8ee4-340530793e5e",
+      "kind": "write-in",
+      "raceId": "contest-wsu-governor",
+      "label": "Write-in 2 / Governor of Wayne State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-561629cd-df0f-4d3d-804f-a220a4f102a5",
+      "kind": "candidate",
+      "raceId": "contest-county-prosecutor",
+      "label": "Erica K. Walle",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-77e3d132-2c73-4601-a88d-2917ba57136d",
+      "kind": "write-in",
+      "raceId": "contest-county-prosecutor",
+      "label": "Write-in 1 / Prosecuting Attorney",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-507739ff-48a8-42d5-9f7b-3d14b2ae7888",
+      "kind": "candidate",
+      "raceId": "contest-county-sheriff",
+      "label": "Miles Breinager",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-26084947-0cbb-4507-983d-1020cb552c6c",
+      "kind": "candidate",
+      "raceId": "contest-county-sheriff",
+      "label": "Ryan Robinson",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2eebf560-e94f-49fa-82d7-74c6bf6498a3",
+      "kind": "write-in",
+      "raceId": "contest-county-sheriff",
+      "label": "Write-in 1 / Sheriff",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-b46bd953-b56d-46b5-9e34-623dd8a1c861",
+      "kind": "candidate",
+      "raceId": "contest-county-clerk",
+      "label": "Jodi Fetting",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-e9582a8e-1b6e-41fc-a4a4-88715b0296d9",
+      "kind": "write-in",
+      "raceId": "contest-county-clerk",
+      "label": "Write-in 1 / Clerk",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-d7071c9f-2275-402a-a5f9-6c054167bdba",
+      "kind": "candidate",
+      "raceId": "contest-county-treasurer",
+      "label": "Ashley Bennett",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-1a802815-90f3-4d19-bb27-90c300d8002d",
+      "kind": "write-in",
+      "raceId": "contest-county-treasurer",
+      "label": "Write-in 1 / Treasurer",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-2424f3d9-6699-4c98-854c-8df83d1f6998",
+      "kind": "candidate",
+      "raceId": "contest-county-register",
+      "label": "Marianne Brandt",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-24ab7514-8b50-4eb6-9185-6e01cfe4a88e",
+      "kind": "write-in",
+      "raceId": "contest-county-register",
+      "label": "Write-in 1 / Register of Deeds",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-3b17353c-25ce-4971-a0a9-91cc5cd7b301",
+      "kind": "candidate",
+      "raceId": "contest-county-road",
+      "label": "Brian Schriber",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-1ce43445-a9cb-4fe7-a1c0-bbe7b14e5d54",
+      "kind": "candidate",
+      "raceId": "contest-county-road",
+      "label": "Duane Weber",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-b24ee127-0ab8-4b9c-9b1a-1359b485ada7",
+      "kind": "write-in",
+      "raceId": "contest-county-road",
+      "label": "Write-in 1 / County Road Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-3229b5de-af6a-499c-a9f1-567c58ad282c",
+      "kind": "write-in",
+      "raceId": "contest-county-road",
+      "label": "Write-in 2 / County Road Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-eaf9ffeb-0e0f-44b6-8856-674094b1368a",
+      "kind": "candidate",
+      "raceId": "contest-county-drain",
+      "label": "Dara Hood",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9e5fb7ca-9db1-4338-a3ea-525d71a80639",
+      "kind": "write-in",
+      "raceId": "contest-county-drain",
+      "label": "Write-in 1 / Drain Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-1a9ed9ba-1305-4295-86e7-1bcb35efaf16",
+      "kind": "candidate",
+      "raceId": "contest-county-commissioner-01",
+      "label": "Thomas Young",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9af08693-a929-4f54-a570-4629abcf7557",
+      "kind": "write-in",
+      "raceId": "contest-county-commissioner-01",
+      "label": "Write-in 1 / County Commissioner 1st District",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-77e93b49-1ac7-4946-b359-7a742cacf6c7",
+      "kind": "candidate",
+      "raceId": "contest-township-supervisor",
+      "label": "Steve Linzner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-de919ba7-acfa-48c0-8e29-3e0be3759ade",
+      "kind": "write-in",
+      "raceId": "contest-township-supervisor",
+      "label": "Write-in 1 / Supervisor",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-ba62454b-850f-4895-95a2-c7c0f110b6b8",
+      "kind": "candidate",
+      "raceId": "contest-township-clerk",
+      "label": "Jamie L. Schuette",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-8e48fa9f-0535-4f61-8283-21c326c23c9c",
+      "kind": "write-in",
+      "raceId": "contest-township-clerk",
+      "label": "Write-in 1 / Clerk",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-cc88e664-41f7-4606-940e-ad76a8f52742",
+      "kind": "candidate",
+      "raceId": "contest-township-treasurer",
+      "label": "Deana Jacoby",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-c38fafcc-ad91-40d0-b89d-e22b347ab823",
+      "kind": "write-in",
+      "raceId": "contest-township-treasurer",
+      "label": "Write-in 1 / Treasurer",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-8a5b35e9-72a9-4ac6-8322-18a114ca486e",
+      "kind": "candidate",
+      "raceId": "contest-township-trustee",
+      "label": "Carrie Anne Hines",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-cf30de82-c3cc-4f76-a353-137d157253ff",
+      "kind": "candidate",
+      "raceId": "contest-township-trustee",
+      "label": "Kathryn P. Sattelberg",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-040e0377-077e-4f18-877e-94ec74d85758",
+      "kind": "write-in",
+      "raceId": "contest-township-trustee",
+      "label": "Write-in 1 / Trustee",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2863f5e1-163f-497a-ac21-fd87d97f2354",
+      "kind": "write-in",
+      "raceId": "contest-township-trustee",
+      "label": "Write-in 2 / Trustee",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-52b50ad7-bbc0-4693-84e5-6328f485c850",
+      "kind": "candidate",
+      "raceId": "contest-supreme-full",
+      "label": "Andrew Fink",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-01be4026-29b1-4b4a-b8e2-8aea007e01b5",
+      "kind": "candidate",
+      "raceId": "contest-supreme-full",
+      "label": "Kimberly Ann Thomas",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-78571483-c53b-4885-9915-659e87bd0d69",
+      "kind": "write-in",
+      "raceId": "contest-supreme-full",
+      "label": "Write-in 1 / Justice of Supreme Court 8 Year Term",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-a241d1fc-09a6-4efa-af66-6104dcb1dd78",
+      "kind": "candidate",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Kyra Harris Bolden",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-29dea5cd-2676-44e9-baea-d8fce33646ad",
+      "kind": "candidate",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Patrick William O'Grady",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-744a6c5b-03b3-4c5a-ab96-c6277ffb1011",
+      "kind": "write-in",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Write-in 1 / Justice of Supreme Court Incumbent Position Partial Term Ending 01/01/2029",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-8c863ece-09d7-4f53-9eec-717120cb0f2a",
+      "kind": "candidate",
+      "raceId": "contest-appeals-04-full",
+      "label": "Stephen L. Borrello",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-af6357e0-bf1c-477f-8615-d9d323fa9eb5",
+      "kind": "write-in",
+      "raceId": "contest-appeals-04-full",
+      "label": "Write-in 1 / Judge of Court of Appeals 4th District Incumbent Position 6 Year Term",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-f17e9d40-2eb0-4a31-9dd9-902310428218",
+      "kind": "candidate",
+      "raceId": "contest-appeals-04-partial-2027",
+      "label": "Allie Greenleaf Maldonado",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-fb489854-a66a-470b-8a6f-4e65c2c2ec29",
+      "kind": "write-in",
+      "raceId": "contest-appeals-04-partial-2027",
+      "label": "Write-in 1 / Judge of Court of Appeals 4th District Incumbent Position Partial Term Ending 01/01/2027",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-3f656cbb-f10b-439d-bbaa-62b13dbee05e",
+      "kind": "candidate",
+      "raceId": "contest-circuit-54",
+      "label": "Amy Grace Gierhart",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-edb0f836-fc93-4ffd-96bd-aa70fa0872df",
+      "kind": "write-in",
+      "raceId": "contest-circuit-54",
+      "label": "Write-in 1 / Judge of Circuit Court 54th Circuit Incumbent Position",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-c49168a3-fbe1-4f08-aca0-c844fb68e23e",
+      "kind": "candidate",
+      "raceId": "contest-probate-tuscola",
+      "label": "Nancy L. Thane",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-d6ea3da9-be24-4718-a030-4a4bfeb85cda",
+      "kind": "write-in",
+      "raceId": "contest-probate-tuscola",
+      "label": "Write-in 1 / Judge of Probate Court Tuscola County Incumbent Position",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-9a2f8a13-1f74-4752-8296-88b90484e1df",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Terry Coleman",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-673fb8d1-ea91-4ba6-a058-4a31f0ab9f09",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Galen D. Smith",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-16fc882c-665b-4342-be83-3a581b813d4d",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Alex Vaiopoulos",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "candidate-b568b9f7-543b-4055-a66b-6ad94f30eb74",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Tom Wassa",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-488564c2-e866-4b29-9ce6-58185006169e",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 1 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-c8bf7963-fcc8-4a5c-ab46-5e5fd83108e3",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 2 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9b96fd5d-ff73-44ba-a012-5de9b05ecaba",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 3 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    }
+  ]
+}

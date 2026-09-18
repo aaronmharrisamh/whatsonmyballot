@@ -1,0 +1,1339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://whatsonmyballot.example/schemas/ballot-collection.v1.schema.json",
+  "title": "Portable ballot collection 1.0.0",
+  "type": "object",
+  "description": "Named record; unknown fields are rejected.",
+  "properties": {
+    "format": {
+      "const": "whatsonmyballot-collection",
+      "description": "Distinct from legacy single-ballot content exports."
+    },
+    "schemaVersion": {
+      "const": "1.0.0",
+      "description": "Collection contract version; independent from app version and revision."
+    },
+    "collectionId": {
+      "type": "string",
+      "description": "Stable collection identity.",
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000,
+      "description": "Saved author-content revision."
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC export timestamp."
+    },
+    "defaultSelection": {
+      "$ref": "#/$defs/defaultSelection",
+      "description": "Validated initial area/ballot/guide."
+    },
+    "elections": {
+      "type": "array",
+      "description": "Elections in this collection.",
+      "items": {
+        "$ref": "#/$defs/election",
+        "description": "Election."
+      },
+      "minItems": 1,
+      "maxItems": 200
+    },
+    "areaLevels": {
+      "type": "array",
+      "description": "Ordered hierarchy levels.",
+      "items": {
+        "$ref": "#/$defs/level",
+        "description": "Area level."
+      },
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "areas": {
+      "type": "array",
+      "description": "Area hierarchy.",
+      "items": {
+        "$ref": "#/$defs/area",
+        "description": "Area."
+      },
+      "minItems": 1,
+      "maxItems": 5000
+    },
+    "ballots": {
+      "type": "array",
+      "description": "Complete ballot styles.",
+      "items": {
+        "$ref": "#/$defs/ballot",
+        "description": "Ballot."
+      },
+      "minItems": 1,
+      "maxItems": 200
+    },
+    "authors": {
+      "type": "array",
+      "description": "Named guide/opinion authors.",
+      "items": {
+        "$ref": "#/$defs/author",
+        "description": "Author."
+      },
+      "minItems": 0,
+      "maxItems": 1000
+    },
+    "guides": {
+      "type": "array",
+      "description": "Zero, one or several guides per ballot.",
+      "items": {
+        "$ref": "#/$defs/guide",
+        "description": "Guide."
+      },
+      "minItems": 0,
+      "maxItems": 2000
+    },
+    "sources": {
+      "type": "array",
+      "description": "Optional provenance and useful links.",
+      "items": {
+        "$ref": "#/$defs/source",
+        "description": "Source."
+      },
+      "minItems": 0,
+      "maxItems": 5000
+    },
+    "attachments": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "compression": {
+          "const": "gzip",
+          "description": "Only attachment bytes use gzip."
+        },
+        "encoding": {
+          "const": "base64",
+          "description": "Canonical JSON-safe encoding of gzip bytes."
+        },
+        "items": {
+          "type": "array",
+          "description": "Shared resource items; IDs can be referenced more than once.",
+          "items": {
+            "$ref": "#/$defs/attachment",
+            "description": "Embedded attachment."
+          },
+          "minItems": 0,
+          "maxItems": 256
+        }
+      },
+      "required": [
+        "compression",
+        "encoding",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "authoring": {
+      "$ref": "#/$defs/authoring",
+      "description": "Optional permanent-blueprint documentation."
+    }
+  },
+  "required": [
+    "format",
+    "schemaVersion",
+    "collectionId",
+    "revision",
+    "exportedAt",
+    "defaultSelection",
+    "elections",
+    "areaLevels",
+    "areas",
+    "ballots",
+    "authors",
+    "guides",
+    "sources",
+    "attachments"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "details": {
+      "type": "object",
+      "description": "Optional content belonging only to this header or choice.",
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "Optional neutral overview. Blank means absent.",
+          "maxLength": 4000,
+          "minLength": 0
+        },
+        "markdown": {
+          "type": "string",
+          "description": "Optional readable Markdown body. No active HTML.",
+          "maxLength": 200000,
+          "minLength": 0
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Optional authored source references.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        },
+        "attachmentIds": {
+          "type": "array",
+          "description": "Optional informational documents or images.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "opinion": {
+      "type": "object",
+      "description": "An independently attributed guide opinion.",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The author’s words. Blank text means no opinion.",
+          "maxLength": 4000,
+          "minLength": 0
+        },
+        "authorId": {
+          "type": "string",
+          "description": "Optional author override; otherwise inherit the guide author.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Sources for this opinion.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "election": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Election ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Election heading.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Actual election date; do not change historical dates to the demo year."
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "general",
+            "primary",
+            "special"
+          ],
+          "description": "Election type."
+        },
+        "locale": {
+          "type": "string",
+          "description": "Language tag used for formatting, such as en-US.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "fictional",
+            "historical",
+            "current"
+          ],
+          "description": "Fictional samples and historical transcriptions must be identified accurately."
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Election source references.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "date",
+        "type",
+        "locale",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "level": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Area level ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "label": {
+          "type": "string",
+          "description": "District selector label.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "area": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Area ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "levelId": {
+          "type": "string",
+          "description": "Reference to areaLevels.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "label": {
+          "type": "string",
+          "description": "Area name.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "Parent area from the preceding level.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ballotIds": {
+          "type": "array",
+          "description": "Ballots available at this leaf area. Several leaves may share a ballot style.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "levelId",
+        "label",
+        "parentId",
+        "ballotIds"
+      ],
+      "additionalProperties": false
+    },
+    "page": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Page ID unique across the collection.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "label": {
+          "type": "string",
+          "description": "Optional Front/Back or source-side label.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "Number of columns on this page."
+        }
+      },
+      "required": [
+        "id",
+        "columns"
+      ],
+      "additionalProperties": false
+    },
+    "group": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Group ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Printed/display group heading.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "partisan",
+            "nonpartisan",
+            "proposals"
+          ],
+          "description": "Determines cheatsheet grouping, independently of party names."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "category"
+      ],
+      "additionalProperties": false
+    },
+    "member": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name printed within a joint ticket.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "role": {
+          "type": "string",
+          "description": "Office or role within the same voting option.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable choice ID; a write-in slot also has an ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "candidate",
+            "ticket",
+            "party",
+            "answer",
+            "write-in"
+          ],
+          "description": "Option mechanics; a ticket is one selectable option."
+        },
+        "labelLines": {
+          "type": "array",
+          "description": "Preserve label order.",
+          "items": {
+            "type": "string",
+            "description": "A printed label line.",
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "party": {
+          "type": "string",
+          "description": "Optional party label, copied from the ballot.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "designation": {
+          "type": "string",
+          "description": "Optional printed designation.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "members": {
+          "type": "array",
+          "description": "Ticket members; required semantically for ticket choices.",
+          "items": {
+            "$ref": "#/$defs/member",
+            "description": "Ticket member."
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "answer": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no"
+          ],
+          "description": "Machine-readable proposal answer; required for answer choices."
+        },
+        "imageAttachmentId": {
+          "type": "string",
+          "description": "Optional candidate image attachment.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "details": {
+          "$ref": "#/$defs/details",
+          "description": "This choice’s own optional information."
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Choice source references.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "labelLines"
+      ],
+      "additionalProperties": false
+    },
+    "contest": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Contest ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "groupId": {
+          "type": "string",
+          "description": "Owning ballot group.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "pageId": {
+          "type": "string",
+          "description": "Owning ballot page.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "One-based column on the assigned page."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "candidate",
+            "ticket",
+            "straight-party",
+            "proposal"
+          ],
+          "description": "Supported voting mechanics; unsupported mechanics are rejected."
+        },
+        "titleLines": {
+          "type": "array",
+          "description": "Printed office/title lines.",
+          "items": {
+            "type": "string",
+            "description": "Printed title line.",
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "maxItems": 12
+        },
+        "instruction": {
+          "type": "string",
+          "description": "Actual printed voting instruction.",
+          "maxLength": 4000,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "maxSelections": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "description": "Maximum personal selections; guide marks do not count."
+        },
+        "term": {
+          "type": "string",
+          "description": "Optional printed term.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "district": {
+          "type": "string",
+          "description": "Optional printed district.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "question": {
+          "type": "string",
+          "description": "Full proposal question; required for proposals.",
+          "maxLength": 200000,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "weight": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 100000,
+          "description": "Optional layout/progress weight."
+        },
+        "choices": {
+          "type": "array",
+          "description": "Complete ordered choice list, including write-in slots.",
+          "items": {
+            "$ref": "#/$defs/choice",
+            "description": "Choice in printed order."
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "details": {
+          "$ref": "#/$defs/details",
+          "description": "This contest header’s own optional information."
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Contest source references.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "groupId",
+        "pageId",
+        "column",
+        "kind",
+        "titleLines",
+        "instruction",
+        "maxSelections",
+        "choices"
+      ],
+      "additionalProperties": false
+    },
+    "ballot": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ballot-style ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "electionId": {
+          "type": "string",
+          "description": "Election for this ballot.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Ballot heading.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "subtitle": {
+          "type": "array",
+          "description": "Optional header lines.",
+          "items": {
+            "type": "string",
+            "description": "Subtitle line.",
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 10
+        },
+        "districtLabels": {
+          "type": "array",
+          "description": "Optional district header strip.",
+          "items": {
+            "type": "string",
+            "description": "District name/number as supplied.",
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 12
+        },
+        "sourceIds": {
+          "type": "array",
+          "description": "Optional source references; an embedded source PDF is never mandatory.",
+          "items": {
+            "type": "string",
+            "description": "Reference to a globally unique record ID.",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        },
+        "pages": {
+          "type": "array",
+          "description": "Ordered source pages.",
+          "items": {
+            "$ref": "#/$defs/page",
+            "description": "Page definition."
+          },
+          "minItems": 1,
+          "maxItems": 30
+        },
+        "groups": {
+          "type": "array",
+          "description": "Ordered group headings.",
+          "items": {
+            "$ref": "#/$defs/group",
+            "description": "Group definition."
+          },
+          "minItems": 1,
+          "maxItems": 50
+        },
+        "contests": {
+          "type": "array",
+          "description": "Reading order: page, then column, then contest.",
+          "items": {
+            "$ref": "#/$defs/contest",
+            "description": "Complete contest definition."
+          },
+          "minItems": 1,
+          "maxItems": 500
+        }
+      },
+      "required": [
+        "id",
+        "electionId",
+        "title",
+        "pages",
+        "groups",
+        "contests"
+      ],
+      "additionalProperties": false
+    },
+    "author": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Author ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Displayed opinion author.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "organization": {
+          "type": "string",
+          "description": "Optional organization.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "logoAttachmentId": {
+          "type": "string",
+          "description": "Optional image attachment for the author.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "sectionOpinion": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "contestId": {
+          "type": "string",
+          "description": "Target contest in this guide’s ballot.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "opinion": {
+          "$ref": "#/$defs/opinion",
+          "description": "Header-level opinion; never borrowed from a selected choice."
+        }
+      },
+      "required": [
+        "contestId",
+        "opinion"
+      ],
+      "additionalProperties": false
+    },
+    "recommendation": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "choiceId": {
+          "type": "string",
+          "description": "Target choice in this guide’s ballot.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "mark": {
+          "type": "string",
+          "enum": [
+            "none",
+            "this",
+            "or"
+          ],
+          "description": "THIS is recommended; OR is optional; none may retain an exception opinion."
+        },
+        "color": {
+          "type": "string",
+          "enum": [
+            "blue",
+            "green",
+            "red",
+            "yellow",
+            "orange",
+            "gray"
+          ],
+          "description": "A supported guide highlight preset."
+        },
+        "opinion": {
+          "$ref": "#/$defs/opinion",
+          "description": "Optional attributed opinion."
+        }
+      },
+      "required": [
+        "choiceId",
+        "mark"
+      ],
+      "additionalProperties": false
+    },
+    "guide": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Guide ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "ballotId": {
+          "type": "string",
+          "description": "Exactly one target ballot.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Guide name shown in District and outputs.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "authorId": {
+          "type": "string",
+          "description": "Default opinion author.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$",
+          "description": "Optional last authored update time."
+        },
+        "color": {
+          "type": "string",
+          "enum": [
+            "blue",
+            "green",
+            "red",
+            "yellow",
+            "orange",
+            "gray"
+          ],
+          "description": "A supported guide highlight preset."
+        },
+        "sectionOpinions": {
+          "type": "array",
+          "description": "Sparse header notes.",
+          "items": {
+            "$ref": "#/$defs/sectionOpinion",
+            "description": "Own contest opinion."
+          },
+          "minItems": 0,
+          "maxItems": 500
+        },
+        "recommendations": {
+          "type": "array",
+          "description": "Sparse list; missing entries mean no mark or opinion.",
+          "items": {
+            "$ref": "#/$defs/recommendation",
+            "description": "Own choice recommendation."
+          },
+          "minItems": 0,
+          "maxItems": 5000
+        }
+      },
+      "required": [
+        "id",
+        "ballotId",
+        "title",
+        "authorId",
+        "color",
+        "sectionOpinions",
+        "recommendations"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Source ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Source title.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "url": {
+          "type": "string",
+          "description": "Optional HTTPS URL without credentials.",
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "^https://",
+          "format": "uri"
+        },
+        "attachmentId": {
+          "type": "string",
+          "description": "Optional attached source document.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Optional publisher.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Optional source date."
+        },
+        "pages": {
+          "type": "array",
+          "description": "Optional source page references.",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000,
+            "description": "One-based source page."
+          },
+          "minItems": 1,
+          "maxItems": 100
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional provenance or transcription note.",
+          "maxLength": 4000,
+          "minLength": 0
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "additionalProperties": false
+    },
+    "attachment": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Attachment ID.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "fileName": {
+          "type": "string",
+          "description": "Display filename; no directories.",
+          "maxLength": 160,
+          "minLength": 1,
+          "pattern": "^[^\\\\/\\u0000-\\u001f]+$"
+        },
+        "mediaType": {
+          "type": "string",
+          "enum": [
+            "application/pdf",
+            "image/png",
+            "image/jpeg",
+            "image/webp",
+            "text/markdown",
+            "text/plain"
+          ],
+          "description": "Allowed embedded resource type."
+        },
+        "gzipBytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 25000000,
+          "description": "Actual compressed bytes before base64."
+        },
+        "rawBytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000000,
+          "description": "Actual bytes after decompression."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 of the actual uncompressed bytes, lowercase hex."
+        },
+        "data": {
+          "type": "string",
+          "description": "One complete gzip member encoded as canonical base64.",
+          "maxLength": 33333336,
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "fileName",
+        "mediaType",
+        "gzipBytes",
+        "rawBytes",
+        "sha256",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "defaultSelection": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "areaId": {
+          "type": "string",
+          "description": "Default available leaf area.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "ballotId": {
+          "type": "string",
+          "description": "Default ballot available in the area.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "guideId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "Default guide for the ballot, or null if none exists.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "areaId",
+        "ballotId",
+        "guideId"
+      ],
+      "additionalProperties": false
+    },
+    "authoring": {
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "overview": {
+          "type": "string",
+          "description": "Blueprint overview.",
+          "maxLength": 20000,
+          "minLength": 0
+        },
+        "instructions": {
+          "type": "array",
+          "description": "Transcription and round-trip steps.",
+          "items": {
+            "type": "string",
+            "description": "Authoring instruction.",
+            "maxLength": 10000,
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "maxItems": 100
+        },
+        "rules": {
+          "type": "array",
+          "description": "Rules outside the structural schema.",
+          "items": {
+            "type": "object",
+            "description": "Named record; unknown fields are rejected.",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Rule key.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "text": {
+                "type": "string",
+                "description": "Semantic or authoring rule.",
+                "maxLength": 10000,
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 100
+        },
+        "coverage": {
+          "type": "array",
+          "description": "Coverage of every field, including optional fields.",
+          "items": {
+            "type": "object",
+            "description": "Named record; unknown fields are rejected.",
+            "properties": {
+              "schemaPath": {
+                "type": "string",
+                "description": "JSON Schema definition/property path.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "note": {
+                "type": "string",
+                "description": "Explanation or location of its example.",
+                "maxLength": 4000,
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "schemaPath",
+              "note"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "examples": {
+          "type": "array",
+          "description": "Compact examples for optional/empty variants.",
+          "items": {
+            "type": "object",
+            "description": "Named record; unknown fields are rejected.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Example name.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "explanation": {
+                "type": "string",
+                "description": "How to apply this example.",
+                "maxLength": 10000,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "values": {
+                "description": "Illustrative JSON values; data only, never executable schema or code."
+              }
+            },
+            "required": [
+              "name",
+              "explanation",
+              "values"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "schema": {
+          "type": "object",
+          "description": "A documentation copy of the shipped schema. Never used to validate an import."
+        }
+      },
+      "required": [
+        "overview",
+        "instructions",
+        "rules",
+        "coverage",
+        "examples",
+        "schema"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

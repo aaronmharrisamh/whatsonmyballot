@@ -1,0 +1,14 @@
+/* B.7E: compact phone navigation follows the guide's own measured sections. */
+.b-guide-jumps{display:none}
+@media(max-width:800px){
+  .b-guide-review .b-guide-jumps{position:sticky;top:0;z-index:6;display:flex;flex-wrap:wrap;gap:6px;padding:8px 0;margin:0 0 14px;background:#fcfbf8;box-shadow:0 5px 9px -7px #18354f55}
+  .b-guide-jumps>[data-guide-jump]{--guide-chip-fill:#d8e6f1;--guide-chip-ink:#244f74;position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:center;flex:var(--guide-weight,1) 1 0;min-width:max-content;max-width:100%;min-height:44px;padding:7px 10px;border:1px solid #aebecb;border-radius:22px;background:#f4f7fa;color:var(--guide-chip-ink);font:650 13px/1.25 "Segoe UI",Arial,sans-serif;text-align:center;letter-spacing:0}
+  .b-guide-jumps>[data-guide-jump=partisan]{--guide-chip-fill:#f0d9dc;--guide-chip-ink:#84333c}
+  .b-guide-jumps>[data-guide-jump]::before{content:"";position:absolute;z-index:-1;inset:0;background:var(--guide-chip-fill);transform:scaleX(var(--guide-progress,0));transform-origin:left;pointer-events:none}
+  .b-guide-jumps>[data-guide-jump].is-current{border-color:var(--guide-chip-ink);box-shadow:inset 0 0 0 1px var(--guide-chip-ink)}
+  .b-guide-jumps>[data-guide-jump]:hover{background:#fff}
+  .b-guide-jumps>[data-guide-jump]:focus-visible{outline:3px solid #315b7a;outline-offset:2px}
+  .b-guide-review .b-review-capsule>h2:focus{outline:0}
+  .b-guide-review .b-review-capsule>h2:focus-visible{outline:3px solid #315b7a;outline-offset:3px}
+}
+@media print{.b-guide-jumps{display:none!important}}

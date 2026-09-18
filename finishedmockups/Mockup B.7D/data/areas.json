@@ -1,0 +1,94 @@
+{
+  "format": "whatsonmyballot-area-catalog",
+  "schemaVersion": "1.0.0",
+  "catalogId": "b7d-sample-areas",
+  "revision": 0,
+  "defaultAreaId": "precinct-demo",
+  "levels": [
+    {
+      "id": "district",
+      "label": "District"
+    },
+    {
+      "id": "county",
+      "label": "County"
+    },
+    {
+      "id": "community",
+      "label": "City or township"
+    },
+    {
+      "id": "precinct",
+      "label": "Precinct"
+    }
+  ],
+  "locations": [
+    {
+      "id": "district-example",
+      "level": "district",
+      "parentId": null,
+      "label": "Example District",
+      "ballotId": null
+    },
+    {
+      "id": "county-sample",
+      "level": "county",
+      "parentId": "district-example",
+      "label": "Sample County",
+      "ballotId": null
+    },
+    {
+      "id": "township-sample",
+      "level": "community",
+      "parentId": "county-sample",
+      "label": "Sample Township",
+      "ballotId": null
+    },
+    {
+      "id": "township-river",
+      "level": "community",
+      "parentId": "county-sample",
+      "label": "River Township",
+      "ballotId": null
+    },
+    {
+      "id": "precinct-demo",
+      "level": "precinct",
+      "parentId": "township-sample",
+      "label": "Precinct DEMO",
+      "ballotId": "ballot-example"
+    },
+    {
+      "id": "precinct-two",
+      "level": "precinct",
+      "parentId": "township-sample",
+      "label": "Precinct TWO",
+      "ballotId": null
+    },
+    {
+      "id": "precinct-river",
+      "level": "precinct",
+      "parentId": "township-river",
+      "label": "Precinct ONE",
+      "ballotId": null
+    }
+  ],
+  "ballots": [
+    {
+      "id": "ballot-example",
+      "datasetId": "b7d-fictional-ballot-demo",
+      "label": "Our example ballot",
+      "basePath": "./",
+      "pages": [
+        {
+          "page": 1,
+          "label": "Front"
+        },
+        {
+          "page": 2,
+          "label": "Back"
+        }
+      ]
+    }
+  ]
+}

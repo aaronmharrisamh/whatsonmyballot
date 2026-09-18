@@ -1,0 +1,722 @@
+
+:root{--lime:#c3f56b;--green-edge:#497315;--focus:#436f10}
+.b-canvas-body{position:relative;flex:1;min-height:0;overflow:hidden}.b-canvas-body .paper-viewport{position:absolute;inset:0;min-height:0;height:100%;width:100%;border:0;outline-offset:-4px}
+.b-section-nav{display:grid;grid-template-columns:1fr 76px 1fr;gap:8px}.b-section-nav>.btn{min-height:44px;gap:6px;font-size:14px;justify-content:center}.b-section-nav>.btn:last-child{justify-self:end}.b-section-nav>.btn:disabled{opacity:.45;cursor:default}
+.b-position{display:flex;flex-direction:column;align-items:center;line-height:1.5;color:#334b5a}.b-position strong{font-size:16px}.b-position span{font-size:10px;white-space:nowrap}
+.b-zoom-controls{width:100%;max-width:470px;gap:10px}.b-zoom-controls .btn{width:auto;flex:1;gap:8px;min-height:48px;padding:8px 11px}.b-zoom-controls .icon{width:23px;height:23px}.b-zoom-controls .btn[aria-pressed=true]{background:#203b40;color:var(--lime)}
+.b-ballot-section{position:relative;isolation:isolate;cursor:pointer}.b-ballot-section.is-focused{z-index:2}.b-ballot-section.is-focused::after{content:"";position:absolute;inset:0;pointer-events:none;border:calc(3px / var(--paper-scale,1)) solid var(--lime);outline:calc(1px / var(--paper-scale,1)) solid var(--green-edge);z-index:3;animation:b-breathe 3.5s ease-in-out infinite}
+.b-ballot-section.is-focused.focus-arriving::after{animation:b-focus-arrive 1000ms cubic-bezier(.2,.65,.2,1) both,b-breathe 3.5s 1000ms ease-in-out infinite}
+.b-focus-label{display:none;font-size:10px;line-height:1.4;align-items:center;gap:4px;margin-top:3px;color:var(--lime);font-weight:normal}.b-focus-label .icon{width:12px;height:12px}.is-focused .b-focus-label{display:flex}
+.b-race-heading{display:block}.b-race-heading .b-row-tools,.is-readable .b-race-heading .b-row-tools{flex-direction:row;justify-content:flex-end;margin-top:10px}
+.b-row-tools{gap:3px;flex:none;display:flex;align-items:center}.b-icon-btn,.b-race-heading .b-icon-btn{width:46px;height:46px;min-width:46px;min-height:46px;border:1px solid #8495a0;border-radius:5px;color:#415b6a;background:#fff}.b-icon-btn .icon{width:21px;height:21px}
+.is-focused .b-icon-btn{color:var(--lime);background:#203747;border-color:#203747}.is-focused .b-icon-btn:hover,.is-focused .b-icon-btn[aria-expanded=true]{background:#334d35;color:#d8ff98;border-color:#537629}
+.is-focused .candidate-choice input{background:#fffefb;border-color:#4a6924;box-shadow:inset 0 0 0 2px var(--lime)}
+.is-focused .candidate-choice input:checked,.is-focused .b-oval-demo.filled{background-color:var(--lime);border-color:#4b681e;box-shadow:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16'%3E%3Cpath d='m5 8 4 4 10-9' fill='none' stroke='%23233719' stroke-width='2.6'/%3E%3C/svg%3E")}
+.b-candidate.is-selected{background:#f0f6e7}.b-candidate .candidate-choice{gap:7px}.b-candidate .candidate-name{overflow-wrap:anywhere}.b-candidate .selected-word{color:#304b12;font-size:12px;font-weight:700}
+.b-reference-row{display:block;padding:0}.b-reference-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 8px}.b-reference-heading>span{font-size:14px;line-height:1.35;overflow-wrap:anywhere;min-width:0}
+.b-write-row{border-bottom:1px solid #c5cdd1}.b-write-open.btn{background:none;border:0;box-shadow:none;min-width:0;padding:5px 0;flex:1;text-align:left;justify-content:flex-start;gap:7px;font-size:14px;line-height:1.35}.b-write-open>span:nth-child(2){overflow-wrap:anywhere;min-width:0;flex:1}.b-write-open>.icon{width:16px;height:16px;flex:none}.is-focused .b-write-open>.icon{background:#203747;color:var(--lime);border-radius:2px;padding:2px;width:20px;height:20px}
+.b-inline{cursor:default;background:#f1f4ed}.b-inline .tag{color:#425137;background:#e1e8d9}.b-inline p{margin-bottom:0}.is-readable .b-row-tools{gap:4px}.is-readable .b-race-heading{display:block}.is-readable .b-icon-btn,.is-readable .b-race-heading .b-icon-btn{width:46px;min-width:46px;height:48px;min-height:48px}
+.is-readable .b-reference-heading{padding:11px 10px}.is-readable .b-reference-heading>span,.is-readable .b-write-open{font-size:17px}.is-readable .b-candidate-row{gap:7px}.is-readable .candidate-name{font-size:18px}
+.b-idle-hint{position:absolute;left:50%;bottom:28px;transform:translate(-50%,8px);display:flex;align-items:center;gap:9px;white-space:nowrap;z-index:5;background:#18354fee;color:#edffd6;border:1px solid #b0d772;border-radius:30px;padding:13px 21px;font-size:17px;box-shadow:0 5px 24px #172c3d35;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s}.b-idle-hint.is-visible{opacity:1;transform:translate(-50%,0)}.b-idle-hint .icon{width:24px;height:24px;color:var(--lime)}
+.b-opinion{padding:18px;background:#edf0ef;border:1px solid #b8c3c2;border-radius:8px;color:#35494e}.b-opinion-label{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700}.b-opinion-author{font-weight:600}.b-opinion-copy p{white-space:pre-wrap}.b-opinion-label .icon{width:24px;height:24px}.b-opinion+.edit-pill{margin-top:15px}
+@keyframes b-focus-arrive{from{transform:scale(1.4);opacity:.2}to{transform:scale(1);opacity:1}}
+@keyframes b-breathe{0%,100%{box-shadow:0 0 calc(9px / var(--paper-scale,1)) #9bde5a55,inset 0 0 calc(5px / var(--paper-scale,1)) #97d65922}50%{box-shadow:0 0 calc(20px / var(--paper-scale,1)) #9bde5a99,inset 0 0 calc(11px / var(--paper-scale,1)) #97d65944}}
+@media(max-width:500px){.b-section-nav{padding:6px;gap:5px;grid-template-columns:1fr 64px 1fr}.b-section-nav>.btn{padding:6px 9px;font-size:13px;min-height:44px}.b-position strong{font-size:15px}.b-zoom-strip{padding:7px}.b-zoom-controls{gap:6px}.b-zoom-controls .btn{font-size:12px;padding:8px 6px;gap:5px;min-height:48px}.b-zoom-controls .icon{width:20px;height:20px}.is-readable .b-candidate-row{padding:10px 8px;gap:5px}.is-readable .candidate-name{font-size:17px}.is-readable .b-row-tools{gap:3px}.is-readable .b-icon-btn{width:44px;min-width:44px}.b-idle-hint{font-size:15px;bottom:20px}}
+@media(max-height:520px){.b-section-nav>.btn{min-height:36px}.b-position{line-height:1.2}.b-position span{font-size:9px}.b-zoom-controls .btn{min-height:36px;padding:5px}.b-idle-hint{padding:8px 14px;bottom:10px}}
+@media(prefers-reduced-motion:reduce){.b-ballot-section.is-focused::after,.b-ballot-section.is-focused.focus-arriving::after{animation:none;box-shadow:0 0 8px #9bde5a77}.b-idle-hint{transition:none}}
+@media print{.b-ballot-section::after,.b-idle-hint{display:none!important}}
+
+@media(max-height:420px) and (min-width:501px){body[data-screen=home] .b-masthead{display:none}body[data-screen=home] .bottom-nav{min-height:46px}body[data-screen=home] .bottom-nav button{min-height:44px;font-size:11px}body[data-screen=home] .bottom-nav .icon{width:18px;height:18px}.b-workspace{padding:6px 14px}.b-view-tabs .btn,.b-find{min-height:40px}.b-section-nav>.btn{min-height:44px}.b-zoom-controls .btn{min-height:44px}}
+
+.paper-document[data-wide=true] .b-race-heading{display:flex;align-items:center;gap:20px}.paper-document[data-wide=true] .b-race-heading>div:first-child{flex:1;min-width:0}.paper-document[data-wide=true] .b-race-heading .b-row-tools{margin-top:0}
+
+/* Let the browser redraw crisp text after the zoom animation ends. */
+.paper-document{will-change:auto}
+
+/* B.3: controls appear only in the selected section without changing its geometry. */
+.b-ballot-section:not(.is-focused) .b-row-tools,.b-ballot-section:not(.is-focused) .b-inline-chevron{visibility:hidden;pointer-events:none}
+.b-focus-label{display:flex;visibility:hidden}.is-focused .b-focus-label{visibility:visible}
+.b-view-status{padding:9px 14px;background:#f4f6f5;border-bottom:1px solid #c2ccd3;flex:none;min-height:64px}
+.b-view-status>span{display:block;font-size:11px;line-height:1.35;color:#50616d}
+.b-view-status>strong{display:block;font-size:17px;line-height:1.3;margin-top:3px;font-weight:700;overflow-wrap:anywhere}
+.b-ballot-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:8px 10px;background:#f7f8f7;border-top:1px solid #c0ccd3;flex:none}
+.b-ballot-toolbar .btn{gap:6px;padding:7px 9px;font-size:14px;min-height:48px;min-width:0}
+.b-ballot-toolbar .icon{width:21px;height:21px;flex:none}
+.b-ballot-toolbar .btn[aria-pressed=true]{background:#203747;color:var(--lime);border-color:#203747}
+.b-ballot-toolbar .btn:disabled{opacity:.45;cursor:default}
+.b-text-toggle.btn{display:flex;flex:1;min-width:0;align-items:center;justify-content:flex-start;text-align:left;font:inherit;line-height:inherit;color:inherit;background:transparent;border:0;border-radius:3px;box-shadow:none;padding:3px 0;gap:7px;min-height:48px;white-space:normal}
+.b-text-toggle>span:first-child{min-width:0;overflow-wrap:anywhere}
+.b-text-toggle .candidate-name,.b-text-toggle .candidate-party{display:block}
+.b-text-toggle:hover{background:#f1f5ed}
+.b-inline-chevron{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;flex:none;background:#203747;color:var(--lime);border-radius:4px;width:22px;height:24px}
+.b-inline-chevron .icon{width:18px;height:18px;transition:transform .2s}
+.b-text-toggle[aria-expanded=true] .b-inline-chevron .icon{transform:rotate(180deg)}
+.b-row-tools{gap:5px}
+.b-icon-btn,.b-race-heading .b-icon-btn,.is-readable .b-icon-btn,.is-readable .b-race-heading .b-icon-btn{width:48px;min-width:48px;height:50px;min-height:50px;border-radius:7px}
+.b-icon-btn .icon,.is-readable .b-icon-btn .icon{width:25px;height:25px}
+.b-race-heading .b-row-tools{margin-top:8px}
+.b-race-heading>div:first-child{min-width:0}
+.b-tick,.b-write-tick.btn{position:relative;display:flex;align-items:center;justify-content:center;flex:none;width:48px;min-width:48px;min-height:48px;padding:0;background:transparent;border:0;border-radius:5px;cursor:pointer}
+.b-tick:focus-within,.b-write-tick:focus-visible{outline:3px solid #436f10;outline-offset:1px}
+.b-choice-mark{display:block;width:48px;height:32px;max-width:none;pointer-events:none}
+.b-candidate-row{gap:7px;padding:9px 7px}
+.b-inline,.is-readable .b-inline{border:0;border-left:3px solid #587d30;margin:2px 12px 12px;padding:5px 12px;background:#f3f5ef;animation:b-reveal .18s ease-out}
+.b-inline p,.is-readable .b-inline p{margin:0;font-size:15px;line-height:1.55}
+.is-readable .b-inline p{font-size:17px}
+.b-section-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.b-section-intro>div{min-width:0;flex:1}
+.b-section-intro p{font-size:13px;color:#536774;margin:8px 0}
+.b-minimap.btn{display:flex;flex:none;align-items:center;justify-content:center;width:92px;height:100px;padding:5px;background:#e9eef0;border:1px solid #b4c3cb;border-radius:7px}
+.b-minimap-svg{width:100%;height:100%;display:block}
+.is-readable .b-candidate-row{gap:7px;padding:11px 9px}
+.is-readable .b-text-toggle{min-height:50px}
+.is-readable .candidate-name{font-size:18px;line-height:1.4}
+.is-readable .b-row-tools{gap:5px}
+.b-race-heading .race-title .b-text-toggle{font:inherit}
+@media(max-width:500px){
+ .b-ballot-toolbar{gap:4px;padding:7px 5px}
+ .b-ballot-toolbar .btn{font-size:12px;gap:4px;padding:7px 3px;min-height:48px}
+ .b-ballot-toolbar .icon{width:18px;height:18px}
+ .b-view-status{padding:7px 10px;min-height:59px}
+ .b-view-status>strong{font-size:16px}
+ .b-section-view{padding:16px 10px}
+ .b-section-intro{gap:8px}
+ .b-section-intro h1{font-size:25px}
+ .b-minimap.btn{width:76px;height:92px}
+ .is-readable .b-candidate-row{gap:5px;padding:10px 6px}
+ .is-readable .candidate-name{font-size:17px}
+ .is-readable .b-row-tools{gap:4px}
+ .is-readable .b-tick,.is-readable .b-write-tick{width:44px;min-width:44px}
+ .is-readable .b-choice-mark{width:44px}
+ .is-readable .b-icon-btn{width:46px;min-width:46px}
+ .is-readable .b-text-toggle{gap:4px}
+ .is-readable .b-inline-chevron{width:18px;height:22px}
+}
+@media(max-width:350px){
+ .is-readable .b-candidate-row{display:grid;grid-template-columns:44px minmax(0,1fr) 48px;align-items:center}
+ .is-readable .b-candidate-row .b-row-tools{flex-direction:column;gap:6px}
+ .is-readable .b-icon-btn{width:48px;min-width:48px}
+}
+@media(max-height:520px){
+ .b-view-status{min-height:45px;padding:4px 10px}
+ .b-view-status>span{font-size:10px}.b-view-status>strong{font-size:14px;margin-top:0}
+ .b-ballot-toolbar{padding:4px 6px}.b-ballot-toolbar .btn{min-height:44px}
+}
+@media print{.b-row-tools,.b-inline-chevron,.b-ballot-toolbar,.b-minimap{display:none!important}}
+
+/* Native input owns the full tap target; the SVG is the only visible mark. */
+.b-tick input{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;clip:auto;opacity:0;z-index:1;cursor:pointer}
+
+/* A changing title must never resize or shift the zoom canvas. */
+.b-view-status{height:82px;min-height:82px;max-height:82px}
+.b-view-status>strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+@media(max-width:500px){.b-view-status{height:76px;min-height:76px;max-height:76px}}
+@media(max-height:520px){.b-view-status{height:64px;min-height:64px;max-height:64px}}
+
+@media(max-height:520px){.b-view-status{height:48px;min-height:48px;max-height:48px}.b-view-status>span{display:none}}
+
+/* B.3: readable sections first; the whole ballot is a separate dialog tool. */
+.b-section-view{padding-top:18px}
+.b-section-intro{margin-bottom:12px}
+.b-section-intro h1{margin:5px 0;font-size:28px}
+.b-section-intro p{margin:5px 0 0}
+.flow-action-inner{grid-template-columns:62px minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:10px;max-width:720px;padding:8px 16px}
+.flow-action-inner>.btn{min-height:52px;font-size:17px;padding:9px 10px}
+.b-dock-map.b-minimap.btn{flex-direction:column;gap:1px;width:62px;min-width:62px;height:56px;min-height:56px;padding:4px 8px;border-radius:8px;background:#edf1f2;border-color:#adbdc7;color:#28475c}
+.b-dock-map .b-minimap-svg{width:44px;height:34px;flex:none}
+.b-dock-map>span{font-size:10px;line-height:1.2;font-weight:650}
+.b-dock-map:hover{background:#e0e9e5}
+.b-ballot-dialog{position:fixed;inset:8px;margin:auto;padding:0;width:calc(100vw - 16px);height:calc(100dvh - 16px);max-width:none;max-height:none;overflow:hidden;border:1px solid #79909f;border-radius:14px;background:#f8faf8;color:var(--ink);box-shadow:0 20px 70px #06152266}
+.b-ballot-dialog[open]{display:flex;flex-direction:column}
+.b-ballot-dialog::backdrop{background:#071b2dcc;backdrop-filter:blur(3px)}
+.b-tool-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;flex:none;background:#fcfbf8;border-top:3px solid #ac4741;border-bottom:1px solid #c0cbd1}
+.b-tool-header h2{font:600 22px/1.3 "Segoe UI",Arial,sans-serif;margin:0;color:#18354f}
+.b-tool-header p{font-size:12px;line-height:1.4;color:#526675;margin:3px 0 0}
+.b-tool-close.btn{width:48px;min-width:48px;height:48px;min-height:48px;display:grid;place-items:center;padding:0;border-radius:50%;border-color:#9eafba;background:#fff}
+.b-tool-close .icon{width:24px;height:24px}
+.b-tool-canvas.b-canvas{flex:1;min-height:0;width:100%;border:0;border-radius:0;box-shadow:none}
+.b-tool-canvas .b-ballot-toolbar{gap:8px;padding:9px 12px max(9px,env(safe-area-inset-bottom));background:#fcfbf8}
+.b-tool-canvas .b-ballot-toolbar .btn{border-radius:24px;min-height:46px;font-size:14px}
+.b-ballot-dialog .b-choice-message{margin:0;max-height:80px;overflow:auto}
+.b-tool-canvas .b-view-status{height:76px;min-height:76px;max-height:76px;padding:7px 14px}
+.b-tool-canvas .b-view-status>strong{font-size:16px}
+@media(max-width:500px){
+ .b-section-view{padding:13px 10px 16px}
+ .b-section-intro h1{font-size:25px}
+ .flow-action-inner{gap:8px;padding:7px 10px;grid-template-columns:58px minmax(0,1fr) minmax(0,1.12fr)}
+ .flow-action-inner>.btn{font-size:16px;padding:8px}
+ .b-dock-map.b-minimap.btn{width:58px;min-width:58px}
+ .b-ballot-dialog{inset:6px;width:calc(100vw - 12px);height:calc(100dvh - 12px);border-radius:11px}
+ .b-tool-header{padding:8px 10px}
+ .b-tool-header h2{font-size:21px}
+ .b-tool-header p{font-size:11px}
+ .b-tool-canvas .b-ballot-toolbar{gap:4px;padding:8px 5px max(8px,env(safe-area-inset-bottom))}
+ .b-tool-canvas .b-ballot-toolbar .btn{font-size:12px;gap:4px;padding:7px 4px;min-height:46px}
+ .b-tool-canvas .b-ballot-toolbar .icon{width:18px;height:18px}
+}
+@media(max-height:520px){
+ .b-section-view{padding-top:10px}.b-section-intro h1{font-size:23px}
+ .b-tool-header{padding:5px 10px}.b-tool-header h2{font-size:19px}.b-tool-header p{font-size:11px}
+ .b-tool-canvas .b-view-status{height:46px;min-height:46px;max-height:46px;padding:4px 10px}
+ .b-tool-canvas .b-view-status>strong{font-size:14px}
+ .b-tool-canvas .b-ballot-toolbar{padding:5px 6px}.b-tool-canvas .b-ballot-toolbar .btn{min-height:44px}
+ .flow-action-inner{padding-top:5px;padding-bottom:5px}.b-dock-map.b-minimap.btn{height:50px;min-height:50px;padding-top:2px;padding-bottom:2px}
+ .b-dock-map .b-minimap-svg{height:30px}
+}
+@media(prefers-reduced-motion:reduce){.b-ballot-dialog::backdrop{backdrop-filter:none}}
+@media print{.b-ballot-dialog{display:none!important}.flow-actions{display:none!important}}
+
+/* Clear inherited size limits now that the ballot owns a full-screen tool. */
+.flow-actions{padding:0}
+.flow-action-inner{display:grid}
+.b-tool-canvas .paper-viewport{max-height:none}
+
+/* B.4: a quiet ballot clip, with guide symbols separate from personal circles. */
+:root{--focus:#285e89}
+.b-section-view{padding:16px 16px 54px}
+.b-section-intro h1{font:500 19px/1.35 "Segoe UI",Arial,sans-serif;letter-spacing:-.2px;margin:0}
+.b-section-intro h1 span{display:block;color:#264d6a;font-weight:650;font-size:22px;margin-top:3px}
+.b-readable-paper{box-shadow:0 6px 24px #233e501c,0 2px 5px #233e500d}
+.is-readable.b-ballot-section{border-color:#7a8b97;cursor:default}
+.is-readable.is-focused::after{display:none}
+.b-section-band,.is-readable .b-section-band{font-size:17px;line-height:1.35;padding:11px 14px;letter-spacing:.1px}
+.b-focus-label{display:none!important}
+.b-race-heading,.is-readable .b-race-heading{padding:16px 14px}
+.b-race-heading .race-title{font-size:22px;line-height:1.28}
+.b-ballot-text{min-width:0;flex:1}
+.b-ballot-text .candidate-name,.b-ballot-text .candidate-party{display:block}
+.b-candidate-row,.is-readable .b-candidate-row{display:grid;grid-template-columns:48px minmax(0,1fr) 34px;gap:6px 8px;padding:12px 10px;align-items:center}
+.b-candidate-row>.b-tick{grid-column:1;grid-row:1}
+.b-candidate-row>.b-ballot-text{grid-column:2;grid-row:1}
+.b-candidate-row>.b-guide-symbol{grid-column:3;grid-row:1}
+.b-candidate-row>.b-row-tools{grid-column:2 / 4;grid-row:2;justify-content:flex-end;flex-direction:row;margin-top:2px}
+.b-row-tools,.is-readable .b-row-tools{gap:8px}
+.b-opinion-chip.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:8px 12px;border-radius:8px;white-space:nowrap;line-height:1.2;font:600 15px/1.2 "Segoe UI",Arial,sans-serif}
+.b-opinion-chip>.icon{width:23px;height:23px;flex:none}
+.b-opinion-chevron{display:flex}
+.b-opinion-chevron .icon{width:18px;height:18px;transition:transform .2s}
+.b-opinion-chip[aria-expanded=true] .b-opinion-chevron .icon{transform:rotate(180deg)}
+.is-readable .b-icon-btn,.is-readable .b-opinion-chip,.is-readable.is-focused .b-icon-btn:hover,.is-readable.is-focused .b-opinion-chip:hover{background:#eaf1f7;color:#315b7a;border:1px solid #b8ccd9}
+.is-readable .b-icon-btn:hover,.is-readable .b-opinion-chip:hover{background:#dce9f2}
+.is-readable .b-opinion-chip[aria-expanded=true]{background:#dce9f2;color:#254d6b}
+.is-readable .b-tick:focus-within,.is-readable .b-write-tick:focus-visible{outline-color:#315b7a}
+.is-paper.is-focused .b-opinion-chip{color:var(--lime);background:#203747;border-color:#203747}
+.is-paper.is-focused .b-opinion-chip:hover,.is-paper.is-focused .b-opinion-chip[aria-expanded=true]{background:#334d35;color:#d8ff98}
+.b-icon-btn[aria-expanded=true]>.icon{transform:none}
+.b-candidate.candidate-card.is-selected{background:#f3f6f8}
+.b-candidate.candidate-card.has-guide-mark,.b-write-row.has-guide-mark{background:var(--guide-tint)}
+.b-guide-symbol{display:flex;align-items:center;justify-content:center;color:var(--guide-color,#b83d38)}
+.b-guide-symbol[hidden]{display:none}
+.b-guide-glyph{width:32px;height:32px;flex:none;opacity:.5}
+.b-guide-symbol .b-guide-glyph{width:34px}
+.b-inline-opinion{background:var(--guide-tint,#eff1f3);color:var(--guide-ink,#485761);border:0;border-left:3px solid var(--guide-color,#5f6c77);margin:0 12px 14px;padding:12px 13px;cursor:default;overflow-wrap:anywhere;animation:b-reveal .18s ease-out}
+.b-inline-opinion[hidden]{display:none}
+.b-opinion-heading{display:flex;align-items:flex-start;gap:8px;font:650 14px/1.4 "Segoe UI",Arial,sans-serif}
+.b-opinion-heading .icon{width:22px;height:22px;flex:none}
+.b-inline-author{font:500 12px/1.5 "Segoe UI",Arial,sans-serif;margin:4px 0 7px;color:inherit}
+.b-inline-opinion p{margin:6px 0;font-size:15px;line-height:1.55}
+.b-inline-opinion .b-inline-author{font-size:12px}
+.is-readable .b-inline-copy p{font-size:17px;line-height:1.55}
+.b-inline-opinion a{display:inline-flex;align-items:center;gap:5px;min-height:44px;color:inherit;text-decoration:underline;font-size:14px}
+.b-inline-opinion a .icon{width:18px;height:18px}
+.b-inline-opinion .edit-pill{display:inline-flex;margin-top:8px}
+.b-annotation-edit{padding:0 12px 10px}
+.b-annotation-edit .edit-pill{margin:0}
+.b-section-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;background:#f2f5f7;border-top:1px solid #cad3da}
+.b-race-status,.is-readable .b-race-status{background:none;padding:0;font:14px/1.45 "Segoe UI",Arial,sans-serif;flex:1}
+.b-clear-chip.btn{border-radius:24px;min-height:44px;white-space:nowrap;font-size:12px;gap:0;padding:7px 11px;background:#fff;border-color:#bac9d3;color:#315773}
+.is-paper:not(.is-focused) .b-clear-chip,.is-paper:not(.is-focused) .b-annotation-edit{visibility:hidden;pointer-events:none}
+.b-guide-options{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:7px 0 12px}
+.b-guide-toggle{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;min-height:44px;cursor:pointer;color:#3c5365}
+.b-guide-toggle input{width:21px;height:21px;margin:0;accent-color:#315b7a}
+.b-guide-key{display:flex;align-items:center;gap:3px;color:#72514e;font-size:10px}
+.b-guide-key .b-guide-glyph{width:22px;height:22px}
+.b-progress-line{display:flex;align-items:center;gap:10px;padding:8px 0 0}
+.b-progress-line>strong{font:600 13px/1.4 "Segoe UI",Arial,sans-serif;color:#345975;min-width:36px;text-align:right}
+.b-progress-segments{display:flex;align-items:center;gap:2px;flex:1;height:20px;min-width:0}
+.b-progress-piece{display:flex;align-items:center;justify-content:center;flex-basis:0;min-width:0;height:5px;border-radius:12px;background:#7899b1;position:relative;color:#284d69}
+.b-progress-piece.is-done{height:13px;background:#e0eaf1}
+.b-progress-piece svg{display:block;width:100%;max-width:13px;height:13px}
+.b-progress-piece.is-current{height:10px;background:#315f82;box-shadow:0 0 0 2px #315f821c;animation:b-progress-pulse 2.8s ease-in-out infinite}
+.b-progress-piece.is-current.is-done{height:14px;color:#fff}
+@keyframes b-progress-pulse{50%{box-shadow:0 0 0 4px #315f8221;background:#547d9c}}
+.flow-action-inner{grid-template-columns:116px minmax(0,1fr) minmax(0,1.06fr);gap:10px;padding:8px 16px;align-items:center;min-height:72px;position:relative}
+.flow-action-inner>.btn{min-height:50px;font-size:16px;padding:8px 9px}
+.b-dock-map.b-minimap.btn{width:116px;min-width:116px;height:108px;min-height:108px;margin-top:-40px;padding:6px 9px;gap:4px;border-radius:11px;background:#edf2f5;border-color:#aebfca;box-shadow:0 -3px 12px #1b3d5012;z-index:2}
+.b-dock-map .b-minimap-svg{width:90px;height:76px}
+.b-dock-map>span{font-size:12px;line-height:1.2;color:#264c68}
+.b-ballot-dialog{inset:22px;width:calc(100vw - 44px);height:calc(100dvh - 44px);border-radius:16px;border-color:#9babb6}
+.b-ballot-dialog::backdrop{background:#071b2d99;backdrop-filter:blur(1px)}
+.b-tool-header{padding:10px 12px;gap:8px}
+.b-tool-header h2{font:650 19px/1.3 "Segoe UI",Arial,sans-serif}
+.b-tool-header h2 span{display:block;font-size:12px;font-weight:500;margin-top:2px}
+.b-tool-close.btn{width:44px;min-width:44px;height:44px;min-height:44px}
+.b-tool-canvas .b-canvas-body{padding-right:48px}
+.b-tool-canvas .paper-viewport{right:48px;width:calc(100% - 48px)}
+.b-zoom-slider{position:absolute;right:2px;top:50%;transform:translateY(-50%);width:44px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#3f5b6f;font-size:21px;background:#e5ebef;border-radius:24px;user-select:none}
+.b-zoom-slider input{writing-mode:vertical-lr;direction:rtl;appearance:auto;inline-size:160px;block-size:44px;accent-color:#3d6580;margin:0;cursor:pointer;touch-action:none}
+.b-section-zoom.btn{display:flex;align-items:center;justify-content:center;gap:4px;cursor:pointer;padding:6px;min-width:0}
+.b-section-zoom input{width:17px;height:17px;flex:none;margin:0;accent-color:#315a75}
+.b-section-zoom .icon{width:18px;height:18px}
+.b-tool-canvas .b-ballot-toolbar{grid-template-columns:1fr 1.22fr .82fr .9fr;gap:5px;padding:8px 6px}
+.b-tool-canvas .b-ballot-toolbar .btn{font-size:12px;gap:4px;padding:7px 5px;min-height:46px}
+.b-tool-canvas .b-ballot-toolbar .icon{width:17px;height:17px}
+.b-example-preview{margin:15px 0}
+.b-example-preview summary{padding:12px;background:#edf2f6;border:1px solid #bfd0dc;border-radius:7px;min-height:48px;cursor:pointer;font-size:15px}
+.b-example-rows{margin-top:12px;border:1px solid #c8b9b7}
+.b-example-row{display:grid;grid-template-columns:minmax(0,1fr) 38px;gap:6px;padding:13px;background:var(--guide-tint);color:var(--guide-ink);border-bottom:1px solid #dac7c5}
+.b-example-row .b-inline-opinion{grid-column:1 / -1;margin:0;padding-left:9px}
+.b-example-row>p{grid-column:1 / -1}
+.b-import-mark{border-bottom:1px solid #c9d3da;padding:10px 0}
+@media(min-width:650px){
+ .is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) 34px auto}
+ .is-readable .b-candidate-row>.b-row-tools{grid-column:4;grid-row:1}
+ .b-tool-header h2 span{display:inline;font-size:17px}
+}
+@media(max-width:500px){
+ .b-section-view{padding:13px 12px 53px}
+ .b-section-intro h1{font-size:16px}
+ .b-section-intro h1 span{font-size:20px}
+ .is-readable .candidate-name{font-size:18px}
+ .is-readable .b-race-heading .b-row-tools{flex-direction:row}
+ .is-readable .b-tick{width:48px;min-width:48px}
+ .is-readable .b-choice-mark{width:48px}
+ .is-readable .b-icon-btn{width:48px;min-width:48px}
+ .flow-action-inner{grid-template-columns:112px minmax(0,1fr) minmax(0,1.06fr);gap:8px;padding:8px 12px}
+ .b-dock-map.b-minimap.btn{width:112px;min-width:112px;height:108px;min-height:108px}
+ .b-ballot-dialog{inset:14px;width:calc(100vw - 28px);height:calc(100dvh - 28px)}
+ .b-tool-header h2{font-size:18px}
+ .b-tool-canvas .b-ballot-toolbar .icon{width:16px;height:16px}
+ .b-tool-canvas .b-section-zoom .icon{display:none}
+}
+@media(max-width:350px){
+ .b-guide-key{display:none}
+ .b-candidate-row,.is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) 28px;gap:5px}
+ .b-candidate-row .b-row-tools,.is-readable .b-candidate-row .b-row-tools{flex-direction:row;gap:8px}
+ .b-opinion-chip.btn{padding:8px;font-size:14px;gap:5px}
+ .b-guide-glyph{width:28px}
+ .flow-action-inner{grid-template-columns:108px minmax(0,1fr) minmax(0,1.06fr);gap:6px;padding:8px}
+ .b-dock-map.b-minimap.btn{width:108px;min-width:108px}
+ .flow-action-inner>.btn{font-size:14px;padding:7px 5px;gap:3px}
+ .b-tool-canvas .b-ballot-toolbar{gap:3px;padding:7px 4px}
+ .b-tool-canvas .b-ballot-toolbar .btn{font-size:11px;gap:2px;padding:6px 3px}
+}
+@media(max-height:520px){
+ .b-ballot-dialog{inset:10px;width:calc(100vw - 20px);height:calc(100dvh - 20px)}
+ .b-tool-header{padding:5px 10px}
+ .b-tool-header h2 span{display:inline;font-size:12px}
+ .b-zoom-slider input{inline-size:95px}
+ .b-zoom-slider{gap:1px}
+ .b-dock-map.b-minimap.btn{height:76px;min-height:76px;margin-top:-22px}
+ .b-dock-map .b-minimap-svg{height:48px}
+ .flow-action-inner{min-height:62px}
+}
+@media(prefers-reduced-motion:reduce){.b-progress-piece.is-current{animation:none}}
+@media print{.b-guide-options,.b-progress-line,.b-row-tools,.b-annotation-edit{display:none!important}}
+
+/* B.5: paper keeps its portrait geometry; only the active clip opens its tools. */
+.b-demo-label{font-size:11px!important;letter-spacing:.15px;color:#667581!important;margin:6px 0 0!important}
+.b-tools-slot,.b-opinion-slot{display:grid;grid-template-rows:1fr;min-width:0;transition:grid-template-rows 420ms cubic-bezier(.22,.7,.18,1)}
+.b-reveal-inner{min-height:0;overflow:hidden}
+.b-opinion-slot[data-open=false]{grid-template-rows:0fr}
+.b-candidate-row>.b-tools-slot{grid-column:2 / 4;grid-row:2;min-width:0}
+.b-tools-slot .b-row-tools{justify-content:flex-end;padding-top:6px}
+.b-race-heading>.b-tools-slot .b-row-tools{margin-top:0}
+.b-guide-glyph,.b-guide-symbol .b-guide-glyph{width:48px;height:32px}
+.b-guide-key .b-guide-glyph{width:30px;height:22px}
+.b-candidate-row,.is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) 48px}
+.b-adjacent{display:flex;margin:13px 0}
+.b-adjacent-back{justify-content:flex-start}
+.b-adjacent-next{justify-content:flex-end;margin-top:17px}
+.b-step-chip.btn{display:flex;align-items:center;gap:7px;max-width:94%;min-height:44px;padding:8px 13px;background:#fdfefd;border:1px solid #b9cbd6;border-radius:25px;color:#335a76;box-shadow:0 4px 13px #233e5017;font:500 13px/1.4 "Segoe UI",Arial,sans-serif;text-align:left}
+.b-step-chip>span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-width:0}
+.b-step-chip .icon{width:17px;height:17px;flex:none}
+.b-step-chip:hover{background:#edf4f8;box-shadow:0 5px 16px #233e5024}
+.b-dock-map>span{font-size:11px}
+.b-ballot-dialog{inset:38px;width:calc(100vw - 76px);height:calc(100dvh - 76px);border-radius:18px}
+.b-tool-header h2{font-size:18px}
+.b-tool-header h2 span{font-size:11px}
+.b-tool-canvas .paper-viewport{right:58px;width:calc(100% - 58px);background-color:#e8edf0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M9 12h6m-3-3v6' fill='none' stroke='%2393a7b6' stroke-opacity='.32' stroke-width='1'/%3E%3C/svg%3E");background-size:24px 24px}
+.b-tool-canvas .b-canvas-body{padding-right:58px;background:#e8edf0}
+.paper-document{width:1020px;min-height:2040px;padding:64px 65px 72px 77px;background:#ffffeb;border:1px solid #929b9e;box-shadow:0 15px 42px #203c4d45,0 3px 8px #203c4d2e;transition:none!important;isolation:isolate;font-family:Arial,sans-serif;will-change:transform}
+.paper-document::before{content:"";position:absolute;left:25px;right:25px;top:25px;height:25px;background:repeating-linear-gradient(90deg,#30373c 0 8px,transparent 8px 29px);pointer-events:none;opacity:.65}
+.paper-document::after{content:"FICTIONAL SAMPLE";position:absolute;top:900px;left:40px;transform:rotate(-48deg);font:500 90px/1 Arial,sans-serif;letter-spacing:5px;color:#476c9820;white-space:nowrap;pointer-events:none;z-index:0}
+.paper-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:0;align-items:start;position:relative;z-index:1}
+.paper-column{min-width:0}
+.b-paper-heading{text-align:center;height:145px;border:0;padding:9px 0 16px;margin:0 0 16px;color:#27313a}
+.b-paper-eyebrow{font:bold 18px/1.3 Arial,sans-serif;letter-spacing:.2px}
+.b-paper-heading h2{font:bold 19px/1.3 Arial,sans-serif;margin:8px 0 4px}
+.b-paper-heading p{font:600 15px/1.35 Arial,sans-serif;margin:3px 0}
+.b-paper-heading .b-paper-demo-note{font-size:12px;font-weight:400}
+.paper-document[data-page="2"] .b-paper-heading{height:66px;margin-bottom:14px}
+.paper-document[data-page="2"] .b-paper-heading h2,.paper-document[data-page="2"] .b-paper-heading p:not(.b-paper-demo-note){display:none}
+.is-paper.b-ballot-section{margin:0;border:1px solid #535d65;background:transparent;isolation:auto;overflow:visible;cursor:pointer}
+.is-paper.b-ballot-section+.b-ballot-section{border-top:0}
+.is-paper .b-section-band{background:#b6bbbf;color:#242e36;border-bottom:1px solid #535d65;padding:4px 5px;text-align:center;font:bold 17px/1.25 Arial,sans-serif;letter-spacing:0}
+.is-paper .b-category-band{background:#858d93;color:#fff}
+.is-paper .b-race-heading{display:block;padding:8px 6px;background:#d9dcde;text-align:center;border-bottom:1px solid #535d65}
+.is-paper .b-race-heading .race-title{font:700 16px/1.15 Arial,sans-serif;letter-spacing:0}
+.is-paper .b-limit{font:13px/1.25 Arial,sans-serif;color:#922f27;margin:4px 0 0}
+.is-paper .b-reference-note{font:11px/1.4 Arial,sans-serif;padding:0 7px;max-height:0;overflow:hidden;transition:max-height 420ms,padding 420ms}
+.is-paper.is-expanded .b-reference-note{max-height:90px;padding:8px 7px}
+.is-paper .b-candidate-row{display:grid;grid-template-columns:30px minmax(0,1fr) 34px;gap:0 4px;align-items:center;padding:3px 5px}
+.is-paper .b-candidate-row>.b-guide-symbol{grid-column:1;grid-row:1}
+.is-paper .b-candidate-row>.b-ballot-text{grid-column:2;grid-row:1;text-align:right}
+.is-paper .b-candidate-row>.b-tick{grid-column:3;grid-row:1;width:34px;min-width:34px;min-height:28px}
+.is-paper .b-choice-mark{width:34px;height:23px}
+.is-paper .b-guide-symbol .b-guide-glyph{width:30px;height:22px}
+.is-paper .candidate-name{font:600 14px/1.16 Arial,sans-serif;overflow-wrap:anywhere}
+.is-paper .candidate-party{font:11px/1.2 Arial,sans-serif;margin-top:1px}
+.is-paper .b-candidate-row>.b-tools-slot{grid-column:1 / -1;grid-row:2}
+.is-paper .b-tools-slot,.is-paper .b-opinion-slot{grid-template-rows:0fr}
+.is-paper.is-expanded .b-tools-slot,.is-paper.is-expanded .b-opinion-slot[data-open=true]{grid-template-rows:1fr}
+.is-paper .b-tools-slot .b-row-tools{padding:5px 0 2px;margin:0;gap:7px;justify-content:flex-end;visibility:visible}
+.is-paper .b-opinion-chip.btn{min-height:44px;font-size:14px;padding:7px 11px}
+.is-paper .b-icon-btn{height:44px;min-height:44px;width:44px;min-width:44px}
+.is-paper .b-inline-opinion{margin:3px 7px 8px;padding:9px;border-left-width:2px;text-align:left}
+.is-paper .b-inline-opinion p{font-size:14px;line-height:1.45}
+.is-paper .b-inline-opinion .b-inline-author{font-size:11px}
+.is-paper .b-opinion-heading{font-size:12px;gap:6px}
+.is-paper .b-opinion-heading .icon{width:19px;height:19px}
+.is-paper .b-section-footer{max-height:0;overflow:hidden;padding:0 7px;border-top-width:0;transition:max-height 420ms,padding 420ms}
+.is-paper.is-expanded .b-section-footer{max-height:90px;padding:7px;border-top-width:1px}
+.is-paper .b-race-status{font-size:12px}
+.is-paper:not(.is-expanded) .b-annotation-edit{display:none}
+.b-paper-foot{position:relative;z-index:1;font:600 13px/1.5 Arial,sans-serif;margin-top:35px;padding-top:14px;border-top:1px solid #829097}
+.is-paper.b-ballot-section.is-focused::after,.is-paper.b-ballot-section.is-focused.focus-arriving::after{display:none!important}
+.b-focus-frame{position:absolute;pointer-events:none;z-index:6;border:2px solid #a6e64e;outline:1px solid #517728;border-radius:1px;box-shadow:0 0 5px #94c64e66}
+.b-focus-frame::before{content:"";position:absolute;inset:-1px;box-shadow:0 0 13px #91d03e66,inset 0 0 5px #91d03e22;animation:b5-aura 5s ease-in-out infinite}
+.b-focus-frame.is-arriving::after{content:"";position:absolute;inset:-1px;border:2px solid #b5ee65;animation:b5-arrive 1000ms cubic-bezier(.22,.7,.18,1) both}
+.b-focus-frame[hidden]{display:none}
+@keyframes b5-aura{50%{opacity:.45}}
+@keyframes b5-arrive{from{transform:scale(1.2);opacity:.7}to{transform:scale(1);opacity:0}}
+.b-section-indicator.btn{position:absolute;transform:translate(-50%,-50%);z-index:8;display:flex;align-items:center;gap:7px;width:max-content;max-width:min(200px,calc(100% - 16px));min-height:44px;padding:8px 11px;border:1px solid #7d9a63;border-radius:24px;background:#f1f8e9;color:#36522a;box-shadow:0 4px 15px #1c354830;font:600 12px/1.3 "Segoe UI",Arial,sans-serif}
+.b-section-indicator[hidden]{display:none}
+.b-section-indicator span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-align:left}
+.b-section-indicator .icon{width:19px;height:19px;flex:none}
+.b-zoom-slider{right:4px;width:48px;padding:4px 2px;gap:4px;background:#f5f8fa;border:1px solid #b6c7d2;border-radius:28px;box-shadow:0 4px 14px #29445815}
+.b-zoom-step.btn{width:42px;min-width:42px;height:42px;min-height:42px;padding:0;display:grid;place-items:center;border:0;border-radius:50%;background:transparent;color:#355a75;font:400 26px/1 "Segoe UI",Arial,sans-serif}
+.b-zoom-step:hover{background:#dfeaf1}
+.b-zoom-slider input{inline-size:150px;block-size:42px;margin:0;accent-color:#426985}
+@media(min-width:650px){
+ .is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) 48px auto}
+ .is-readable .b-candidate-row>.b-tools-slot{grid-column:4;grid-row:1}
+ .is-readable .b-tools-slot .b-row-tools{padding-top:0}
+}
+@media(max-width:500px){
+ .b-ballot-dialog{inset:30px;width:calc(100vw - 60px);height:calc(100dvh - 60px)}
+ .b-tool-header{padding:8px;gap:5px}
+ .b-tool-header h2{font-size:17px}
+ .b-tool-header h2 span{font-size:10px}
+ .b-tool-canvas .b-ballot-toolbar{gap:3px;padding:7px 4px}
+ .b-tool-canvas .b-ballot-toolbar .btn{font-size:11px;padding:6px 3px;gap:3px}
+ .b-tool-canvas .b-ballot-toolbar .icon{width:15px;height:15px}
+ .b-guide-toggle{font-size:14px}
+}
+@media(max-width:350px){
+ .b-candidate-row,.is-readable .b-candidate-row{grid-template-columns:44px minmax(0,1fr) 44px;gap:5px}
+ .is-readable .b-candidate-row>.b-tools-slot{grid-column:2 / 4;grid-row:2}
+ .b-guide-symbol .b-guide-glyph{width:44px}
+ .b-tool-header h2 span{display:none}
+ .b-tool-canvas .b-ballot-toolbar .btn{font-size:10px}
+ .b-tool-canvas .b-ballot-toolbar{grid-template-columns:1.1fr 1fr 1fr 1fr}
+}
+@media(max-height:520px){
+ .b-ballot-dialog{inset:26px;width:calc(100vw - 52px);height:calc(100dvh - 52px)}
+ .b-tool-header{padding:4px 8px}
+ .b-tool-header h2 span{display:inline;font-size:10px}
+ .b-zoom-slider{max-height:calc(100% - 12px);padding:2px;gap:0}
+ .b-zoom-step.btn{height:36px;min-height:36px;flex:none}
+ .b-zoom-slider input{inline-size:65px;min-inline-size:26px;flex:1}
+ .b-tool-canvas .b-ballot-toolbar{padding:4px}
+ .b-tool-canvas .b-ballot-toolbar .btn{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+ .b-tools-slot,.b-opinion-slot,.is-paper .b-reference-note,.is-paper .b-section-footer{transition:none}
+ .b-focus-frame::before,.b-focus-frame::after{animation:none!important}
+}
+@media print{.b-adjacent,.b-tools-slot,.b-zoom-slider,.b-focus-frame,.b-section-indicator{display:none!important}}
+
+/* Match the source page header spacing and compact row rhythm. */
+.paper-document{padding-top:115px}
+.paper-document::before{top:60px}
+.paper-document[data-page="2"]{padding-top:60px}
+.paper-document[data-page="2"] .b-paper-heading{height:50px}
+.is-paper:not(.is-expanded) .b-candidate-row{padding-top:2px;padding-bottom:2px}
+.is-paper:not(.is-expanded) .candidate-name{font-size:13px}
+.is-paper:not(.is-expanded) .candidate-party{font-size:10.5px}
+
+/* B.9A: guide hints share the personal oval; a saved choice always wins. */
+.b-oval-stack{position:relative;display:block;width:48px;height:32px;flex:none}
+.b-oval-stack .b-guide-symbol{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;color:var(--guide-color,#b83d38)}
+.b-oval-stack .b-guide-symbol[hidden]{display:none}
+.b-oval-stack .b-guide-glyph{display:block;width:100%;height:100%;opacity:.5}
+.b-oval-stack:has(.b-guide-symbol:not([hidden]))>.b-choice-mark{opacity:0}
+.b-oval-stack:has(.b-guide-symbol:not([hidden]))::before{content:"";position:absolute;inset:6px 5px;border-radius:50%;box-shadow:0 0 8px 2px color-mix(in srgb,var(--guide-color) 30%,transparent);animation:b7c-guide-aura 5s ease-in-out infinite;pointer-events:none}
+.b-guide-outline{stroke-dasharray:12 4;animation:b7c-guide-outline 8s linear infinite}
+@keyframes b7c-guide-outline{to{stroke-dashoffset:-64}}
+@keyframes b7c-guide-aura{50%{box-shadow:0 0 12px 3px color-mix(in srgb,var(--guide-color) 15%,transparent)}}
+.is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) auto;gap:8px}
+.is-readable .b-candidate-row>.b-ballot-text{grid-column:2;grid-row:1}
+.is-readable .b-candidate-row>.b-tools-slot{grid-column:3;grid-row:1}
+.is-readable .b-candidate-row>.b-tick{grid-column:1;grid-row:1}
+.b-tools-slot .b-row-tools,.is-readable .b-tools-slot .b-row-tools{padding:0;margin:0;gap:6px;flex-direction:row}
+.b-row-tools .b-opinion-chip.btn,.b-row-tools .b-icon-btn,.is-readable .b-row-tools .b-icon-btn{display:grid;place-items:center;min-width:44px;width:44px;min-height:44px;height:44px;padding:8px;border-radius:7px;border:1px solid #adbfcd;background:#eaf2f8;color:#315c7c}
+.b-row-tools .b-opinion-chip .icon,.b-row-tools .b-icon-btn .icon{width:23px;height:23px}
+.has-guide-mark .b-row-tools .btn,.has-guide-mark .b-row-tools .b-icon-btn{background:var(--guide-tint);color:var(--guide-ink);border-color:color-mix(in srgb,var(--guide-color) 45%,white)}
+.b-row-tools .btn:hover,.b-row-tools .btn[aria-expanded=true]{box-shadow:inset 0 0 0 1px currentColor;filter:brightness(.98)}
+.b-inline-opinion,.is-paper .b-inline-opinion{background:#edf3f8;color:#315570;border-color:#6f91ac}
+.b-inline-opinion.is-guide-opinion{background:var(--guide-tint);color:var(--guide-ink);border-color:var(--guide-color)}
+.b-step-chip.btn{background:#18354f;color:#fff;border-color:#18354f;border-radius:8px;box-shadow:0 4px 12px #18354f26}
+.b-step-chip.btn:hover{background:#244b68;color:#fff}
+.b-guide-options{margin:8px 0 17px}
+.b-guide-toggle{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:44px;cursor:pointer;font-size:15px;font-weight:600;color:#355670}
+.b-guide-toggle>input{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer}
+.b-switch-track{display:block;position:relative;width:44px;height:26px;border-radius:20px;border:1px solid #8396a4;background:#d5dee4;flex:none;transition:background .2s}
+.b-switch-track::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 4px #21394b40;transition:transform .2s}
+.b-guide-toggle>input:checked+.b-switch-track{background:#315c7c;border-color:#315c7c}
+.b-guide-toggle>input:checked+.b-switch-track::after{transform:translateX(18px)}
+.b-guide-toggle>input:focus-visible+.b-switch-track{outline:3px solid #477b9d;outline-offset:3px}
+.b-progress-line{gap:10px;align-items:flex-end}
+.b-progress-pages{display:flex;gap:13px;min-width:0;flex:1}
+.b-progress-page{min-width:0;flex-basis:0;position:relative}
+.b-progress-page+.b-progress-page::before{content:"";position:absolute;left:-7px;top:5px;bottom:0;border-left:1px solid #aab9c5}
+.b-progress-side{display:block;font-size:10px;line-height:1.5;letter-spacing:.6px;font-weight:650;text-transform:uppercase;color:#526b7d;margin-bottom:5px}
+.b-progress-pages>.b-progress-segments{width:100%}
+.b-progress-page .b-progress-segments{width:100%;gap:2px}
+.b-progress-piece{min-width:3px}
+.b-progress-line>strong{padding-bottom:1px}
+
+/* All paper controls are present. Only guide-marked opinions open automatically. */
+.b-ballot-dialog{inset:34px;width:calc(100vw - 68px);height:calc(100dvh - 68px)}
+.b-tool-canvas .paper-viewport{inset:0;width:100%;height:100%;right:0}
+.b-tool-canvas .b-canvas-body{padding-right:0}
+.paper-document,.paper-document[data-page="2"]{background:#fff;min-height:2040px;padding:48px 48px 55px;isolation:isolate}
+.paper-document::before,.paper-document::after{content:none;display:none}
+.b-paper-heading,.paper-document[data-page="2"] .b-paper-heading{height:auto;min-height:80px;margin:0 0 24px;padding:8px 0 18px;border-bottom:1px solid #95a1aa}
+.paper-document[data-page="2"] .b-paper-heading h2,.paper-document[data-page="2"] .b-paper-heading p:not(.b-paper-demo-note){display:block}
+.paper-document .b-paper-heading h2{font-size:23px}
+.paper-document .b-paper-heading p{font-size:14px}
+.is-paper .b-candidate-row,.is-paper:not(.is-expanded) .b-candidate-row{grid-template-columns:34px minmax(0,1fr) 61px;gap:5px;padding:6px 5px;align-items:center}
+.is-paper .b-candidate-row>.b-tick{grid-column:1;grid-row:1;width:34px;min-width:34px;min-height:30px}
+.is-paper .b-candidate-row>.b-ballot-text{grid-column:2;grid-row:1;text-align:left}
+.is-paper .b-candidate-row>.b-tools-slot{grid-column:3;grid-row:1}
+.is-paper .b-oval-stack{width:34px;height:23px}
+.is-paper .b-oval-stack .b-guide-glyph{width:34px;height:23px}
+.is-paper .b-oval-stack:has(.b-guide-symbol:not([hidden]))::before{inset:4px}
+.is-paper .candidate-name,.is-paper:not(.is-expanded) .candidate-name{font:600 13px/1.3 Arial,sans-serif}
+.is-paper .candidate-party,.is-paper:not(.is-expanded) .candidate-party{font:11px/1.3 Arial,sans-serif}
+.is-paper .b-tools-slot{grid-template-rows:1fr}
+.is-paper .b-opinion-slot[data-open=true]{grid-template-rows:1fr}
+.is-paper .b-opinion-slot[data-open=false]{grid-template-rows:0fr}
+.is-paper .b-row-tools,.b-ballot-section:not(.is-focused) .b-row-tools{visibility:visible;pointer-events:auto}
+.is-paper .b-tools-slot .b-row-tools{padding:0;gap:3px;margin:0;flex-direction:row}
+.is-paper .b-row-tools .b-opinion-chip.btn,.is-paper .b-row-tools .b-icon-btn{width:28px;min-width:28px;height:28px;min-height:28px;border-radius:5px;padding:4px}
+.is-paper .b-row-tools .btn .icon{width:17px;height:17px}
+.is-paper .b-race-heading .b-row-tools{justify-content:center;margin-top:7px}
+.is-paper .b-inline-opinion{font:12px/1.45 Arial,sans-serif;margin:2px 6px 8px;padding:7px}
+.is-paper .b-inline-opinion p{font-size:12px;line-height:1.45}
+.is-paper .b-inline-opinion .b-inline-author{font-size:10px}
+.is-paper .b-opinion-heading{font-size:11px;gap:5px}
+.is-paper .b-opinion-heading .icon{width:15px;height:15px}
+.is-paper .b-section-footer{max-height:none;padding:6px 7px;border-top-width:1px}
+.is-paper .b-reference-note{max-height:none;padding:7px}
+.is-paper .b-clear-chip.btn{min-height:28px;font-size:10px;padding:4px 6px}
+.is-paper .b-race-status{font-size:10px}
+.is-paper .b-annotation-edit{display:block}
+.b-zoom-slider{right:12px;z-index:10;width:48px;background:#18354fee;color:#fff;border:1px solid #ffffff66;box-shadow:0 5px 22px #122d4b30;backdrop-filter:blur(6px)}
+.b-zoom-step.btn{color:#fff}
+.b-zoom-step.btn:hover{background:#ffffff22;color:#fff}
+.b-zoom-slider input{accent-color:#fff}
+.b-tool-canvas .b-ballot-toolbar .btn[aria-pressed=true]{background:#18354f;color:#fff}
+
+/* District picker and app menu keep unavailable areas selectable. */
+.b-district{max-width:650px;margin:auto}
+.b-district h1{font-size:30px;margin:10px 0}
+.b-current-area{padding:13px 15px;background:#eaf0f4;border:1px solid #c4d0d9;border-radius:9px;margin:16px 0}
+.b-current-area>strong{font-size:12px;color:#506a7e}
+.b-current-area>p{font-size:15px;line-height:1.5;margin:4px 0 0}
+.b-area-card{padding:18px;background:#fff;border:1px solid #bfccd5;border-radius:10px;box-shadow:0 5px 20px #18354f0d}
+.b-area-key{display:flex;align-items:center;gap:7px;font-size:12px;color:#496a7c;margin:0 0 15px}
+.b-area-key .icon,.b-area-value>.icon,.b-area-options .icon,.b-area-preview .icon{width:20px;height:24px;flex:none;color:#42657b}
+.b-area-known{display:flex;justify-content:space-between;gap:15px;align-items:baseline;padding:7px 0;line-height:1.4}
+.b-area-known>span,.b-area-field>span{font-size:13px;color:#4c6577}
+.b-area-known>strong{font-size:14px;text-align:right}
+.b-area-field{margin-top:15px}
+.b-area-field>span{display:block;font-weight:650;margin-bottom:6px}
+.b-area-picker{position:relative}
+.b-area-picker>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:50px;padding:10px;border:1px solid #aebfcd;border-radius:7px;cursor:pointer;background:#f9fbfd;font-size:15px;line-height:1.4}
+.b-area-picker>summary::-webkit-details-marker{display:none}
+.b-area-value{display:flex;align-items:center;gap:7px;min-width:0}
+.b-area-picker>summary>.icon{width:18px;flex:none}
+.b-area-picker[open]>summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.b-area-options{border:1px solid #aebfcd;border-top:0;border-radius:0 0 7px 7px;background:#fff;max-height:270px;overflow:auto}
+.b-area-options>button{display:flex;align-items:center;flex-wrap:wrap;gap:7px;min-height:50px;width:100%;border:0;border-bottom:1px solid #d9e2e8;padding:10px;text-align:left;color:#18354f;background:#fff;font:inherit;font-size:14px;cursor:pointer}
+.b-area-options>button:last-child{border-bottom:0}
+.b-area-options>button[aria-selected=true]{background:#e9f0f6;font-weight:650}
+.b-area-options>button:hover{background:#f1f5f8}
+.b-area-options>button.no-ballot{color:#496273;background:linear-gradient(#ffffff33,#ffffff33),#f6f8fa}
+.b-area-options>button.no-ballot>span:not(.sr-only){opacity:.8}
+.b-area-options>button small{display:block;width:100%;padding-left:27px;color:#4e6575;font-size:11px}
+.b-area-empty-icon{width:20px;flex:none}
+.b-area-preview{display:flex;gap:9px;align-items:center;padding:15px 0;font-size:14px;color:#395b72;line-height:1.5}
+.b-use-area.btn{width:100%;min-height:48px;border-radius:8px}
+.b-menu-dialog{position:fixed;inset:74px 14px auto auto;margin:0;width:min(320px,calc(100vw - 28px));max-height:calc(100dvh - 100px);padding:18px;overflow:auto;border:1px solid #c0cdd6;border-radius:12px;background:#fff;color:#18354f;box-shadow:0 15px 60px #0d263b50}
+.b-menu-dialog::backdrop{background:#0e263b66}
+.b-menu-dialog>header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.b-menu-dialog h2{margin:0;font-size:21px}
+.b-menu-close.btn{width:44px;height:44px;min-height:44px;padding:8px;border-radius:50%}
+.b-menu-item.btn,.b-demo-flyout>summary{display:flex;align-items:center;justify-content:flex-start;gap:10px;width:100%;min-height:48px;padding:11px 10px;font-size:16px;background:#fff;border:0;border-bottom:1px solid #d9e2e8;border-radius:0;color:#234861;list-style:none;text-align:left;cursor:pointer}
+.b-demo-flyout>summary::-webkit-details-marker{display:none}
+.b-demo-flyout>summary>span{flex:1}
+.b-demo-flyout>summary>.icon:last-child{width:17px}
+.b-demo-flyout>div{padding-left:17px;background:#f2f6f9}
+.b-demo-flyout .b-menu-item.btn{background:#f2f6f9;font-size:14px}
+.b-menu-dialog .btn:disabled{opacity:.45;cursor:default}
+.bottom-nav button:disabled{opacity:.45;cursor:default}
+.bottom-nav .icon{flex:none}
+@media(max-width:500px){
+ .b-ballot-dialog{inset:27px;width:calc(100vw - 54px);height:calc(100dvh - 54px)}
+ .b-zoom-slider{right:8px;width:44px}
+ .b-zoom-step.btn{width:38px;min-width:38px}
+ .b-zoom-slider input{block-size:38px}
+ .is-readable .b-candidate-row{grid-template-columns:48px minmax(0,1fr) auto;gap:7px}
+ .is-readable .candidate-name{font-size:17px}
+ .is-readable .b-candidate-row>.b-tools-slot{grid-column:3;grid-row:1}
+ .is-readable .b-candidate-row .b-row-tools{flex-direction:column;gap:5px}
+ .is-readable .b-row-tools .btn{width:44px;min-width:44px}
+ .b-area-card{padding:14px}
+}
+@media(max-height:520px){
+ .b-ballot-dialog{inset:23px;width:calc(100vw - 46px);height:calc(100dvh - 46px)}
+ .b-menu-dialog{inset:12px 12px auto auto;max-height:calc(100dvh - 24px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .b-guide-outline,.b-oval-stack:has(.b-guide-symbol:not([hidden]))::before{animation:none}
+ .b-guide-outline{stroke-dasharray:none}
+ .b-switch-track,.b-switch-track::after{transition:none}
+}
+@media print{.b-menu-dialog,.b-guide-options,.b-guide-symbol{display:none!important}}
+
+/* Row color wins over the older selected-section button palette. */
+.b-ballot-section .b-row-tools .btn,.b-ballot-section.is-focused .b-row-tools .btn{background:#eaf2f8;color:#315c7c;border-color:#adbfcd}
+.b-ballot-section .has-guide-mark .b-row-tools .btn,.b-ballot-section.is-focused .has-guide-mark .b-row-tools .btn{background:var(--guide-tint);color:var(--guide-ink);border-color:color-mix(in srgb,var(--guide-color) 45%,white)}
+
+/* B.9A: suggestions surround an empty oval; personal choices fill it. */
+.b-ballot-section [data-guide-row][hidden],.b-ballot-section [data-show-all-row][hidden],.b-no-recommendations[hidden]{display:none!important}
+.b-ballot-section .b-candidate-row{grid-template-columns:76px minmax(0,1fr) auto}
+.b-ballot-section .b-candidate-row>.b-tick{width:76px;min-width:76px;min-height:78px;align-self:center}
+.b-ballot-section .b-oval-stack{width:76px;height:78px;display:block}
+.b-ballot-section .b-oval-stack>.b-choice-mark{position:absolute;left:14px;top:28px;width:48px;height:32px;opacity:1}
+.b-ballot-section .b-oval-stack .b-guide-glyph{width:76px;height:78px;opacity:1;overflow:visible}
+.b-ballot-section .b-oval-stack .b-guide-symbol{position:absolute;inset:0;width:76px;height:78px}
+.b-guide-arrow{animation:b-guide-point 2.8s ease-in-out infinite;opacity:.65}
+.b-guide-outline,.b-guide-or-label{opacity:.6}
+.b-guide-caption{font-family:Arial,sans-serif;letter-spacing:-.12px}
+.b-ballot-section .b-oval-stack:has(.b-guide-symbol:not([hidden]))::before{inset:34px 20px 24px;border-radius:50%}
+.b-oval-stack[data-personal=true] .b-guide-arrow,.b-guide-symbol[hidden] *{animation:none!important}
+@keyframes b-guide-point{0%,100%{transform:translateY(-2px)}50%{transform:translateY(1px)}}
+.b-ballot-section .b-row-tools .b-opinion-chip.is-empty{opacity:.4;border-style:dashed;cursor:default;box-shadow:none}
+.b-show-all{padding:9px 14px;border-top:1px solid #d4dfe6;color:#355670}
+.b-show-all label{display:flex;align-items:center;gap:9px;min-height:44px;width:fit-content;cursor:pointer;font-size:14px}
+.b-show-all input{width:20px;height:20px;accent-color:#315c7c;flex:none}
+.b-no-recommendations{margin:18px 14px;padding:13px 15px;border-radius:8px;background:#edf3f8;color:#355670;text-align:center;font-size:14px;line-height:1.6}
+.b-back-start{justify-content:flex-end;margin-top:10px;margin-bottom:20px}
+.b-viewer-filter{flex:none;position:relative;z-index:2;padding:0 18px;border-bottom:1px solid #cdd9e2;background:#f7fafc}
+.b-viewer-filter .b-guide-toggle{font-size:13px;min-height:44px;gap:8px}
+.b-ballot-dialog[open]{display:flex;flex-direction:column}
+.b-tool-canvas{flex:1;min-height:0}
+.is-paper .b-candidate-row,.is-paper:not(.is-expanded) .b-candidate-row{grid-template-columns:55px minmax(0,1fr) 61px;gap:4px}
+.is-paper .b-candidate-row>.b-tick{width:55px;min-width:55px;min-height:57px}
+.is-paper .b-oval-stack{width:55px;height:57px}
+.is-paper .b-oval-stack>.b-choice-mark{left:10.13px;top:20.26px;width:34.74px;height:23.16px}
+.is-paper .b-oval-stack .b-guide-symbol,.is-paper .b-oval-stack .b-guide-glyph{width:55px;height:56.45px}
+.is-paper .b-oval-stack:has(.b-guide-symbol:not([hidden]))::before{inset:24px 14px 18px}
+.is-paper .b-show-all{padding:4px 7px}
+.is-paper .b-show-all label{min-height:28px;font:11px Arial,sans-serif;gap:6px}
+.is-paper .b-show-all input{width:16px;height:16px}
+.is-paper .b-no-recommendations{font:12px/1.5 Arial,sans-serif;margin:9px 7px;padding:9px}
+@media(max-width:500px){
+ .is-readable .b-candidate-row{grid-template-columns:76px minmax(0,1fr) 44px;gap:5px;padding-left:7px;padding-right:7px}
+ .is-readable .candidate-name{font-size:16px}
+ .b-viewer-filter{padding:0 12px}
+}
+@media(prefers-reduced-motion:reduce){.b-guide-arrow{animation:none}}
+
+/* B.9A: keep guide meaning visible around a marked oval. */
+.b-oval-stack[data-personal=true] .b-guide-outline{display:none}
+.b-ballot-section .b-oval-stack[data-personal=true]::before{display:none}
+.b-oval-stack[data-personal=true] .b-guide-arrow,.b-oval-stack[data-personal=true] .b-guide-or-label{animation:none!important;transform:none}
+.b-ballot-section .b-row-tools .b-icon-btn.is-empty{opacity:.4;border-style:dashed;cursor:default;box-shadow:none}
+.b-back-start[hidden]{display:none!important}
+.b-tool-canvas .b-ballot-toolbar{grid-template-columns:1fr 1fr 1fr}
+.b-all-button.btn{position:absolute;right:12px;bottom:12px;z-index:11;width:48px;height:48px;min-width:48px;min-height:48px;padding:11px;border-radius:12px;background:#18354f;color:#fff;border:1px solid #ffffffaa;box-shadow:0 4px 16px #18354f44}
+.b-all-button.btn:hover{background:#244b68;color:#fff}
+.b-all-button .icon{width:24px;height:24px}
+.b-all-button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.b-ballot-dialog[data-snap=false] .b-focus-frame,.b-ballot-dialog[data-snap=false] .b-section-indicator{display:none!important}
+@media(max-height:520px){.b-all-button.btn{width:44px;height:44px;min-width:44px;min-height:44px;right:8px;bottom:8px}.b-tool-canvas .b-zoom-slider{top:10px;transform:none;height:calc(100% - 76px);min-height:86px}.b-tool-canvas .b-zoom-slider input{min-height:0}}
+.b-ballot-section .b-oval-stack[data-personal=true]>.b-choice-mark{opacity:1}
+
+/* B.9A: header opinions belong inside the heading, under its controls. */
+.b-race-heading>.b-opinion-slot .b-inline-opinion{margin:12px 0 0;text-align:left}
+.is-paper .b-race-heading>.b-opinion-slot .b-inline-opinion{margin:8px 0 0}
+.b-ballot-section .b-row-tools .b-header-opinion-highlight.btn,.b-ballot-section .b-row-tools .b-header-opinion-highlight.btn:hover,.b-ballot-section .b-row-tools .b-header-opinion-highlight.btn[aria-expanded=true]{background:var(--guide-tint);color:var(--guide-ink);border-color:var(--guide-color)}
+/* Pointer marks have no surrounding rectangle. Keyboard navigation retains a visible cue. */
+.b-ballot-section .b-tick:focus-within{outline:none}
+.b-ballot-section .b-tick:has(input:focus-visible),.b-ballot-section .b-write-tick:focus-visible{outline:3px solid var(--guide-color,#315b7a);outline-offset:2px}
+.b-header-highlight-field{display:flex;align-items:center;gap:10px;min-height:48px;font-weight:600}
+.b-header-highlight-field input{width:22px;height:22px;flex:none}
+.is-paper .b-category-band{background:#5c6871;color:#fff}
+
+/* B.9A: capsule boundaries retained from B.7D. */
+body[data-screen=review] .main-inner{max-width:1160px}
+.review-content.b-guide-review{max-width:1120px}
+.b-review-columns{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
+.b-review-capsule{--review-group-color:#244f74;min-width:0;margin:0 0 22px;border:1px solid var(--review-group-color);border-radius:16px;background:#fff;box-shadow:0 4px 16px #18354f0d;overflow:clip}
+.b-review-capsule[data-review-category=partisan]{--review-group-color:#943943}
+.b-review-capsule>h2{margin:0;padding:15px 18px;font:700 20px/1.3 "Segoe UI",Arial,sans-serif;letter-spacing:.015em;background:var(--review-group-color);color:#fff}
+.b-review-capsule .review-section{margin:0;padding:0 18px}
+.b-review-capsule .review-section+.review-section{border-top:1px solid #bdcbd5}
+.b-review-capsule .b-review-subheading{margin:0 -18px;padding:12px 18px;background:#f0f4f7;color:#334e63;font:700 16px/1.4 "Segoe UI",Arial,sans-serif}
+.b-review-capsule .review-row{grid-template-columns:minmax(0,1fr);padding:16px 0;overflow-wrap:anywhere}
+.b-review-capsule .review-row:last-child{border-bottom:0}
+.b-review-capsule .b-review-race-title{font:650 18px/1.45 "Segoe UI",Arial,sans-serif;margin:0 0 8px;color:#18354f}
+@media(min-width:801px){.b-review-columns.has-two-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.review-content.b-guide-review{padding:18px 12px 28px}.b-review-capsule>h2{padding:14px 15px;font-size:19px}.b-review-capsule .review-section{padding:0 15px}.b-review-capsule .b-review-subheading{margin-inline:-15px;padding-inline:15px}}
+@media print{.review-content.b-guide-review{padding:0;max-width:none}.b-review-columns{display:block}.b-review-capsule{box-shadow:none;overflow:visible;border-radius:9px;margin-bottom:18px}.b-review-capsule>h2{break-after:avoid;print-color-adjust:exact;font-size:14pt}.b-review-capsule .b-review-subheading{break-after:avoid}.b-review-capsule .b-review-race-title{font-size:12pt}.b-review-capsule .review-row{padding:10px 0}}
+
+/* B.9A: author recommendations and opinions, with no practice marks. */
+.b-cheatsheet-choice{min-width:0;border-left:3px solid var(--guide-color,#5f6c77);background:var(--guide-tint,#eff1f3);color:var(--guide-ink,#485761);padding:10px 12px;margin:2px 0}
+.b-cheatsheet-kind{display:flex;align-items:center;gap:7px;font-size:12px;line-height:1.4;font-weight:700;margin-bottom:5px}
+.b-cheatsheet-kind .icon{width:17px;height:17px}
+.b-cheatsheet-or{display:inline-block;font-size:12px;font-weight:800}
+.b-cheatsheet-name{display:block;font-size:17px;line-height:1.4}
+.b-cheatsheet-opinion{margin-top:8px}
+.b-cheatsheet-author{display:flex;align-items:flex-start;gap:6px;font-size:12px;line-height:1.45}
+.b-cheatsheet-author .icon{width:16px;height:16px;margin-top:1px}
+.b-cheatsheet-opinion p{font-size:15px;line-height:1.45;margin:6px 0 0}
+.b-cheatsheet-opinion a{display:inline-flex;align-items:center;gap:5px;min-height:44px;color:inherit;font-size:14px}
+.b-cheatsheet-opinion a .icon{width:16px;height:16px}
+.b-cheatsheet-empty{padding:20px;border:1px solid #b5c5d0;border-radius:14px;background:#fff;color:#36526a}
+.b-guide-review .review-controls{margin-bottom:18px}
+@media print{.b-guide-jumps{display:none!important}.b-cheatsheet-choice{print-color-adjust:exact}.b-cheatsheet-opinion p{font-size:10pt}.b-cheatsheet-name{font-size:11pt}.b-cheatsheet-opinion a{min-height:0}}
+
+/* B.9A complete-ballot file controls. */
+.b-file-actions{display:flex;gap:10px;flex-wrap:wrap}.b-ballot-files input[type=file]{max-width:100%;min-height:48px}.b-ballot-files{margin-top:12px}.b-ballot-files button{overflow-wrap:anywhere}.b-embedded-photo{max-width:160px;height:auto}
+
+.b-area-known strong,.b-current-area p{overflow-wrap:anywhere;min-width:0}.b-brand small{max-width:min(65vw,650px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.b-file-actions .btn{max-width:100%}
+
+/* Keep readable page labels within their own sheet at overview zoom. */
+.b-paper-side-label{box-sizing:border-box;max-width:min(var(--page-width,1020px),calc(var(--page-width,1020px)*var(--paper-scale,1)/.4375));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Small failure notice only; successful file drops add no interface chrome. */
+.b-import-error{position:fixed;inset:auto 12px 88px;z-index:100;display:flex;align-items:flex-start;gap:12px;max-width:44rem;margin-inline:auto;padding:12px 12px 12px 16px;border:1px solid #a6453a;border-radius:10px;background:#fff5f2;color:#6d251f;box-shadow:0 6px 24px #18354f24;font-size:16px;line-height:1.4;overflow-wrap:anywhere}
+.b-import-error span{flex:1;max-height:30vh;overflow:auto}
+.b-import-error button{flex:none;width:40px;height:40px;border:1px solid currentColor;border-radius:8px;background:white;color:inherit;font-size:24px;cursor:pointer}
+.b-guide-toggle input:disabled~.b-switch-track{opacity:.55}
+@media print{.b-import-error{display:none!important}}
+
+/* Designer credit is the final link in the existing app menu. */
+.b-designer-credit{display:flex;align-items:center;justify-content:center;min-height:44px;margin:5px 0 0;padding:8px 4px;color:#234861;font:500 13px/1.5 "Segoe UI",Arial,sans-serif;text-align:center;text-decoration:underline;text-underline-offset:3px;overflow-wrap:break-word}
+.b-designer-credit:hover{color:#102e46;text-decoration-thickness:2px}

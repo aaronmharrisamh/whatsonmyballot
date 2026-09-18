@@ -1,0 +1,2648 @@
+{
+  "format": "whatsonmyballot-collection",
+  "schemaVersion": "1.0.0",
+  "collectionId": "schema-blueprint-v1",
+  "revision": 0,
+  "exportedAt": "2026-09-15T12:00:00Z",
+  "defaultSelection": {
+    "areaId": "sample-precinct",
+    "ballotId": "blueprint-ballot",
+    "guideId": "blueprint-guide-red"
+  },
+  "elections": [
+    {
+      "id": "sample-election",
+      "title": "2026 Sample General Election",
+      "date": "2026-11-03",
+      "type": "general",
+      "locale": "en-US",
+      "status": "fictional",
+      "sourceIds": [
+        "source-layout"
+      ]
+    }
+  ],
+  "areaLevels": [
+    {
+      "id": "level-state",
+      "label": "State"
+    },
+    {
+      "id": "level-township",
+      "label": "Township"
+    },
+    {
+      "id": "level-precinct",
+      "label": "Precinct"
+    }
+  ],
+  "areas": [
+    {
+      "id": "sample-state",
+      "levelId": "level-state",
+      "label": "Michigan (fictional example)",
+      "parentId": null,
+      "ballotIds": []
+    },
+    {
+      "id": "sample-township",
+      "levelId": "level-township",
+      "label": "Sample Township",
+      "parentId": "sample-state",
+      "ballotIds": []
+    },
+    {
+      "id": "sample-precinct",
+      "levelId": "level-precinct",
+      "label": "Precinct DEMO",
+      "parentId": "sample-township",
+      "ballotIds": [
+        "blueprint-ballot"
+      ]
+    },
+    {
+      "id": "sample-unavailable",
+      "levelId": "level-precinct",
+      "label": "Precinct UNAVAILABLE",
+      "parentId": "sample-township",
+      "ballotIds": []
+    },
+    {
+      "id": "second-precinct",
+      "levelId": "level-precinct",
+      "label": "Precinct SECOND",
+      "parentId": "sample-township",
+      "ballotIds": [
+        "second-ballot"
+      ]
+    },
+    {
+      "id": "shared-style-precinct",
+      "levelId": "level-precinct",
+      "label": "Precinct SHARED STYLE",
+      "parentId": "sample-township",
+      "ballotIds": [
+        "blueprint-ballot"
+      ]
+    }
+  ],
+  "ballots": [
+    {
+      "id": "blueprint-ballot",
+      "electionId": "sample-election",
+      "title": "Fictional sample ballot",
+      "pages": [
+        {
+          "id": "blueprint-page",
+          "columns": 2,
+          "label": "Front"
+        },
+        {
+          "id": "blueprint-back",
+          "label": "Back",
+          "columns": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": "blueprint-partisan",
+          "title": "Partisan Section",
+          "category": "partisan"
+        },
+        {
+          "id": "blueprint-nonpartisan",
+          "title": "Nonpartisan Section",
+          "category": "nonpartisan"
+        },
+        {
+          "id": "blueprint-proposals",
+          "title": "Proposals",
+          "category": "proposals"
+        }
+      ],
+      "contests": [
+        {
+          "id": "blueprint-ballot-straight-party",
+          "groupId": "blueprint-partisan",
+          "pageId": "blueprint-page",
+          "column": 1,
+          "kind": "straight-party",
+          "titleLines": [
+            "straight party"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "blueprint-party-a",
+              "kind": "party",
+              "labelLines": [
+                "Example Party A"
+              ]
+            },
+            {
+              "id": "blueprint-party-b",
+              "kind": "party",
+              "labelLines": [
+                "Example Party B"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blueprint-ballot-joint-ticket",
+          "groupId": "blueprint-partisan",
+          "pageId": "blueprint-page",
+          "column": 1,
+          "kind": "ticket",
+          "titleLines": [
+            "joint ticket"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "blueprint-ticket-a",
+              "kind": "ticket",
+              "labelLines": [
+                "Sample Rowan / Sample Lee"
+              ],
+              "party": "Example Party A",
+              "members": [
+                {
+                  "name": "Sample Rowan",
+                  "role": "Governor"
+                },
+                {
+                  "name": "Sample Lee",
+                  "role": "Lieutenant Governor"
+                }
+              ]
+            },
+            {
+              "id": "blueprint-ticket-b",
+              "kind": "ticket",
+              "labelLines": [
+                "Sample Morgan / Sample Dale"
+              ],
+              "members": [
+                {
+                  "name": "Sample Morgan",
+                  "role": "Governor"
+                },
+                {
+                  "name": "Sample Dale",
+                  "role": "Lieutenant Governor"
+                }
+              ]
+            },
+            {
+              "id": "blueprint-ticket-write",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in ticket"
+              ]
+            }
+          ],
+          "term": "4 years",
+          "district": "Statewide",
+          "details": {
+            "summary": "One mark selects both people on a ticket.",
+            "markdown": "## Ticket example\n\nThis text is a format example.",
+            "sourceIds": [
+              "source-layout"
+            ],
+            "attachmentIds": [
+              "asset-example-pdf"
+            ]
+          },
+          "sourceIds": [
+            "source-layout"
+          ]
+        },
+        {
+          "id": "blueprint-ballot-sample-board",
+          "groupId": "blueprint-nonpartisan",
+          "pageId": "blueprint-page",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "sample board"
+          ],
+          "instruction": "Vote for not more than 3",
+          "maxSelections": 3,
+          "choices": [
+            {
+              "id": "blueprint-board-0",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Board Person 1"
+              ],
+              "designation": "Example designation",
+              "imageAttachmentId": "asset-pixel",
+              "sourceIds": [
+                "source-layout"
+              ],
+              "details": {
+                "markdown": "A fictional profile.",
+                "attachmentIds": [
+                  "asset-example-md"
+                ],
+                "sourceIds": [
+                  "source-website"
+                ]
+              }
+            },
+            {
+              "id": "blueprint-board-1",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Board Person 2"
+              ],
+              "details": {
+                "summary": "",
+                "markdown": "",
+                "sourceIds": [],
+                "attachmentIds": []
+              }
+            },
+            {
+              "id": "blueprint-board-2",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Board Person 3"
+              ]
+            },
+            {
+              "id": "blueprint-board-3",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Board Person 4"
+              ]
+            },
+            {
+              "id": "blueprint-board-4",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Board Person 5"
+              ]
+            },
+            {
+              "id": "blueprint-write-in",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ],
+          "weight": 2.5
+        },
+        {
+          "id": "blueprint-ballot-no-guide-marks",
+          "groupId": "blueprint-nonpartisan",
+          "pageId": "blueprint-page",
+          "column": 2,
+          "kind": "candidate",
+          "titleLines": [
+            "no guide marks"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "blueprint-empty-a",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person"
+              ]
+            },
+            {
+              "id": "blueprint-empty-write",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blueprint-ballot-sample-proposal",
+          "groupId": "blueprint-proposals",
+          "pageId": "blueprint-back",
+          "column": 1,
+          "kind": "proposal",
+          "titleLines": [
+            "sample proposal"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "blueprint-ballot-sample-proposal-yes",
+              "kind": "answer",
+              "labelLines": [
+                "Yes"
+              ],
+              "answer": "yes",
+              "details": {
+                "summary": "Yes would approve the fictional question."
+              }
+            },
+            {
+              "id": "blueprint-ballot-sample-proposal-no",
+              "kind": "answer",
+              "labelLines": [
+                "No"
+              ],
+              "answer": "no",
+              "details": {
+                "summary": "No would reject the fictional question."
+              }
+            }
+          ],
+          "question": "Fictional question: Shall the sample township open a public reading room?"
+        }
+      ],
+      "subtitle": [
+        "Author blueprint, not a voter recommendation"
+      ],
+      "districtLabels": [
+        "Sample District 9"
+      ],
+      "sourceIds": [
+        "source-layout"
+      ]
+    },
+    {
+      "id": "second-ballot",
+      "electionId": "sample-election",
+      "title": "Fictional sample ballot",
+      "pages": [
+        {
+          "id": "second-page",
+          "columns": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": "second-nonpartisan",
+          "title": "Nonpartisan Section",
+          "category": "nonpartisan"
+        }
+      ],
+      "contests": [
+        {
+          "id": "second-ballot-single-race",
+          "groupId": "second-nonpartisan",
+          "pageId": "second-page",
+          "column": 1,
+          "kind": "candidate",
+          "titleLines": [
+            "single race"
+          ],
+          "instruction": "Vote for not more than 1",
+          "maxSelections": 1,
+          "choices": [
+            {
+              "id": "second-candidate",
+              "kind": "candidate",
+              "labelLines": [
+                "Sample Person"
+              ]
+            },
+            {
+              "id": "second-write",
+              "kind": "write-in",
+              "labelLines": [
+                "Write-in"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "sample-author",
+      "name": "Sample Guide Editor (fictional)",
+      "organization": "GOP style demonstration; fictional recommendations",
+      "logoAttachmentId": "asset-pixel"
+    },
+    {
+      "id": "second-author",
+      "name": "Second Sample Author"
+    }
+  ],
+  "guides": [
+    {
+      "id": "blueprint-guide-red",
+      "ballotId": "blueprint-ballot",
+      "title": "Fictional guide",
+      "authorId": "sample-author",
+      "color": "red",
+      "sectionOpinions": [
+        {
+          "contestId": "blueprint-ballot-straight-party",
+          "opinion": {
+            "text": ""
+          }
+        },
+        {
+          "contestId": "blueprint-ballot-sample-board",
+          "opinion": {
+            "text": "This is a sample header opinion.",
+            "authorId": "second-author",
+            "sourceIds": [
+              "source-layout"
+            ]
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "choiceId": "blueprint-party-a",
+          "mark": "this",
+          "opinion": {
+            "text": "This sample entry shows a recommended party option."
+          }
+        },
+        {
+          "choiceId": "blueprint-party-b",
+          "mark": "none",
+          "opinion": {
+            "text": "This sample entry shows an exception opinion."
+          }
+        },
+        {
+          "choiceId": "blueprint-ticket-a",
+          "mark": "this",
+          "color": "red",
+          "opinion": {
+            "text": "This sample entry shows a joint ticket recommendation."
+          }
+        },
+        {
+          "choiceId": "blueprint-board-0",
+          "mark": "this",
+          "opinion": {
+            "text": "This is the main example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-board-1",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-board-2",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-board-3",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-board-4",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-write-in",
+          "mark": "or",
+          "opinion": {
+            "text": "This is an optional example choice."
+          }
+        },
+        {
+          "choiceId": "blueprint-ballot-sample-proposal-yes",
+          "mark": "this",
+          "opinion": {
+            "text": "This sample guide uses Yes to show the format."
+          }
+        }
+      ],
+      "updatedAt": "2026-09-15T12:00:00Z"
+    },
+    {
+      "id": "blueprint-guide-blue",
+      "ballotId": "blueprint-ballot",
+      "title": "Fictional guide",
+      "authorId": "second-author",
+      "color": "blue",
+      "sectionOpinions": [],
+      "recommendations": [
+        {
+          "choiceId": "blueprint-ballot-sample-proposal-no",
+          "mark": "this",
+          "color": "blue",
+          "opinion": {
+            "text": "This second sample guide uses No."
+          }
+        }
+      ]
+    },
+    {
+      "id": "second-guide",
+      "ballotId": "second-ballot",
+      "title": "Fictional guide",
+      "authorId": "sample-author",
+      "color": "red",
+      "sectionOpinions": [],
+      "recommendations": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-layout",
+      "title": "Author-created fictional layout",
+      "publisher": "Sample author",
+      "date": "2026-09-15",
+      "pages": [
+        1,
+        2
+      ],
+      "notes": "Fictional data. No official ballot is claimed."
+    },
+    {
+      "id": "source-website",
+      "title": "Example website placeholder",
+      "url": "https://example.org/"
+    },
+    {
+      "id": "source-attachment",
+      "title": "Tiny attachment format example",
+      "attachmentId": "asset-example-pdf"
+    }
+  ],
+  "attachments": {
+    "compression": "gzip",
+    "encoding": "base64",
+    "items": [
+      {
+        "id": "asset-pixel",
+        "fileName": "sample-pixel.png",
+        "mediaType": "image/png",
+        "gzipBytes": 86,
+        "rawBytes": 68,
+        "sha256": "12c5f2d047c104162162d8a5a74281257ecd3b38e225d4fb8bda77e3427d65dd",
+        "data": "H4sIAAAAAAAACusM8HPn5ZLiYmBg4PX0cAliYGBgBGEOFgYGhq0yPEwMDAzcni6OIRW3kv/8l2dgZmZieL+YP5qBgYHB09XPZZ1TQhMA6TPjTEQAAAA="
+      },
+      {
+        "id": "asset-example-pdf",
+        "fileName": "example.pdf",
+        "mediaType": "application/pdf",
+        "gzipBytes": 337,
+        "rawBytes": 612,
+        "sha256": "74e745f31c88e077b7988b14e5ba6b2fad9834b9fc25d79967e138cbc80c904f",
+        "data": "H4sIAAAAAAAACm1RW2vCMBR+76/4XoTtYSbpDQXxQacMdhPtm/gQ7VErNZH2OHS/fqQtU9aFEJLvnO+SpDN7nj6pbugpSNj1wRsMIJLriSDGmnVudxAzvaMSPiTmGA49Mqlr9FuEuk+8ZmmJZeDaVxBjezYMdUcM/iW6tSDDjY94pzTTI3vBUkIiiCWUL1cQcyrtudhQCcefWsP1RiFsAropxtYwGS4R/YkdttwrDbE4r7k6OlBBjHRJdeWF8i/ibKPvVKI7lTcyO94j7rl6yQXpozdKqkgqRrKFH6IvkaR4SDJzhWbWm/3R3ZUu+njKqYsPy9BY6zy33H1EcsAkcV6NXON6KWjrScSe/B2IoyiIsMUN66OumBsW9VqYUlEL80PVwgJ1h3Ghs5yK6tqL7JsQQ8ytdf/bvHLJuuAqZ+j3vU5n8jn1fgDkQDirZAIAAA=="
+      },
+      {
+        "id": "asset-example-md",
+        "fileName": "example.md",
+        "mediaType": "text/markdown",
+        "gzipBytes": 79,
+        "rawBytes": 59,
+        "sha256": "e81cccda9dadaeafb928d4890633f9f549f745eabd89076fc741a26a2f347cac",
+        "data": "H4sIAAAAAAAAClNWcK1IzC3ISeXiCi1OVShKTUxJTMpJVfBNLMpOyS/PU8jMU0hJLUnMzClWKM9IzVMoyC8uzkzKSdXjAgDUIR6iOwAAAA=="
+      },
+      {
+        "id": "asset-example-text",
+        "fileName": "example.txt",
+        "mediaType": "text/plain",
+        "gzipBytes": 52,
+        "rawBytes": 32,
+        "sha256": "179164b2a4a419373c85fac6eb463b705eb97f8c6df630f98dc28591d0504855",
+        "data": "H4sIAAAAAAAACgvOTczJUQgNcdO1UEgsKUlMzshNzStRSK1IzC3ISdXjAgAmPYZ8IAAAAA=="
+      }
+    ]
+  },
+  "authoring": {
+    "overview": "SCHEMASAMPLE.JSON is a permanent, importable blueprint for schema 1.0.0. It is different from the normal app demo. Read the embedded schema, descriptions, rules, and coverage before transcribing ballots. Documentation is data, never a replacement validator.",
+    "instructions": [
+      "Copy source facts from the supplied ballot files. Keep election date, jurisdiction, official title, instructions, full proposal question, choice limits, parties, and printed names. Report missing or unclear facts; do not guess.",
+      "Use one collection with elections, ordered areaLevels, parented areas, and complete ballot styles. Several leaf areas can share a style. Only explicit assignments make a ballot available.",
+      "Give every record a globally unique lowercase ID. Use letters, numbers and hyphens, starting with a letter or number, at most 100 characters. Keep stable IDs through edits and update references together.",
+      "Transcribe each page in column order, then top to bottom. Page columns range from 1 to 6. Give a page a Front or Back label only when useful. Ballots do not require two pages, three columns, straight party, or an attached PDF.",
+      "Copy all options, including write-in slots. Joint ticket members form one choice. Proposals require one Yes and one No option plus the full question. Do not convert ranked-choice or other unsupported rules into ordinary contests.",
+      "Keep guides separate from facts. Leave guides empty, or leave recommendations and sectionOpinions empty, until an identified author supplies them. Do not invent endorsements or persuasive claims.",
+      "For each guide, mark recommended choices this, alternatives or, and exceptions none. Guide marks may exceed a personal selection limit. Omitted choice entries mean no recommendation and no opinion. Nonempty opinions inherit the guide author unless authorId overrides it.",
+      "Header details and header opinions are independent of all choice content. Missing or whitespace-only content is valid. Use details.sourceIds for useful information links; ordinary sourceIds are provenance only.",
+      "Keep descriptions and Markdown readable in JSON. Do not include scripts, executable HTML, local paths, or active content. External links use HTTPS without credentials. Render imported words as text or sanitized Markdown.",
+      "Attachments alone use one gzip member encoded as canonical base64. Supply real bytes, compressed and raw byte counts, and SHA-256 of raw bytes. Never invent encoded bytes or a digest. Omit an unavailable attachment and let Admin add it later.",
+      "Do not attach generated guides or ballot printouts by default. PDFs, PNG/JPEG/WebP, and UTF-8 Markdown/text are optional author resources. Application SVG icons are not imported attachment types.",
+      "Validate the entire collection, including relationships and attachments. Correct JSN diagnostics by path and record ID. A JSON Schema check alone is not sufficient.",
+      "Import replaces the current author collection only after every record and attachment passes. Export includes all supported author content and no personal marks, drafts, or view state. Reimport to verify an edit cycle.",
+      "Keep this bundled blueprint unchanged. Save a separate file for transcribed data. You may omit the authoring object from ordinary collections. Imported authoring.schema is documentation only."
+    ],
+    "rules": [
+      {
+        "id": "versions",
+        "text": "format=whatsonmyballot-collection; schemaVersion=1.0.0; app version is separate. revision is a nonnegative author revision. exportedAt is a UTC timestamp."
+      },
+      {
+        "id": "limits",
+        "text": "Maximum file: 25,000,000 actual UTF-8 bytes, including whitespace and base64. Maximum expanded content: 100,000,000 bytes. Expanded size is compact JSON with only attachment data properties omitted plus each unique decoded attachment once. Actual byte counts, not declarations, enforce limits."
+      },
+      {
+        "id": "ownership",
+        "text": "All record IDs are unique across elections, levels, areas, ballots, pages, groups, contests, choices, authors, guides, sources and attachments. Choice ownership is its enclosing contest; contest/page/group ownership is its ballot. Guide targets must belong to its ballot."
+      },
+      {
+        "id": "hierarchy",
+        "text": "Root areas use the first level. A parent uses the immediately preceding level. Only leaf areas receive ballots. Every ballot must be assigned. Default area and ballot must match, and a non-null default guide must target that ballot."
+      },
+      {
+        "id": "layout",
+        "text": "Contest array order follows page order, then one-based column number, then top-to-bottom order. Each declared page and group has at least one contest. Blank columns are allowed. weight is optional and never a voting rule."
+      },
+      {
+        "id": "mechanics",
+        "text": "Candidate contests allow candidate and write-in choices; ticket contests allow ticket and write-in choices; straight-party contests use party choices and maxSelections=1; proposals use exactly Yes/No answer choices and maxSelections=1. Ticket choices require members. Each maxSelections is at least 1 and no greater than the available options."
+      },
+      {
+        "id": "recommendations",
+        "text": "this and or produce guide hints; none may have an exception opinion. Multiple this and or entries are allowed, even beyond the voter limit. This example has six guide marks for a choose-three race. These are not saved personal choices."
+      },
+      {
+        "id": "availability",
+        "text": "Blank text means no opinion. Each header and choice checks its own content. No inheritance from selected candidates. Unresolvable sources are invalid; title-only sources do not enable a magnifier."
+      },
+      {
+        "id": "attachments",
+        "text": "Allow PDF, PNG, JPEG, WebP, text/markdown, text/plain. Match actual decoded bytes to metadata, media signatures and SHA-256. File signatures are format checks, not a malware scanner. Native gzip requires a current browser with Compression Streams and Web Crypto."
+      },
+      {
+        "id": "unsupported",
+        "text": "Reject unknown fields, unsupported versions/mechanics and any invalid included record with JSN-E01 through JSN-E09. No legacy B.7 migration or automatic merge is included."
+      }
+    ],
+    "coverage": [
+      {
+        "schemaPath": "#/properties/format",
+        "note": "Distinct from legacy single-ballot content exports."
+      },
+      {
+        "schemaPath": "#/properties/schemaVersion",
+        "note": "Collection contract version; independent from app version and revision."
+      },
+      {
+        "schemaPath": "#/properties/collectionId",
+        "note": "Stable collection identity."
+      },
+      {
+        "schemaPath": "#/properties/revision",
+        "note": "Saved author-content revision."
+      },
+      {
+        "schemaPath": "#/properties/exportedAt",
+        "note": "UTC export timestamp."
+      },
+      {
+        "schemaPath": "#/properties/defaultSelection",
+        "note": "Validated initial area/ballot/guide."
+      },
+      {
+        "schemaPath": "#/properties/elections",
+        "note": "Elections in this collection."
+      },
+      {
+        "schemaPath": "#/properties/areaLevels",
+        "note": "Ordered hierarchy levels."
+      },
+      {
+        "schemaPath": "#/properties/areas",
+        "note": "Area hierarchy."
+      },
+      {
+        "schemaPath": "#/properties/ballots",
+        "note": "Complete ballot styles."
+      },
+      {
+        "schemaPath": "#/properties/authors",
+        "note": "Named guide/opinion authors."
+      },
+      {
+        "schemaPath": "#/properties/guides",
+        "note": "Zero, one or several guides per ballot."
+      },
+      {
+        "schemaPath": "#/properties/sources",
+        "note": "Optional provenance and useful links."
+      },
+      {
+        "schemaPath": "#/properties/attachments",
+        "note": "Named record; unknown fields are rejected."
+      },
+      {
+        "schemaPath": "#/properties/attachments/properties/compression",
+        "note": "Only attachment bytes use gzip."
+      },
+      {
+        "schemaPath": "#/properties/attachments/properties/encoding",
+        "note": "Canonical JSON-safe encoding of gzip bytes."
+      },
+      {
+        "schemaPath": "#/properties/attachments/properties/items",
+        "note": "Shared resource items; IDs can be referenced more than once."
+      },
+      {
+        "schemaPath": "#/properties/authoring",
+        "note": "Optional permanent-blueprint documentation."
+      },
+      {
+        "schemaPath": "#/$defs/details/properties/summary",
+        "note": "Optional neutral overview. Blank means absent."
+      },
+      {
+        "schemaPath": "#/$defs/details/properties/markdown",
+        "note": "Optional readable Markdown body. No active HTML."
+      },
+      {
+        "schemaPath": "#/$defs/details/properties/sourceIds",
+        "note": "Optional authored source references."
+      },
+      {
+        "schemaPath": "#/$defs/details/properties/attachmentIds",
+        "note": "Optional informational documents or images."
+      },
+      {
+        "schemaPath": "#/$defs/opinion/properties/text",
+        "note": "The author’s words. Blank text means no opinion."
+      },
+      {
+        "schemaPath": "#/$defs/opinion/properties/authorId",
+        "note": "Optional author override; otherwise inherit the guide author."
+      },
+      {
+        "schemaPath": "#/$defs/opinion/properties/sourceIds",
+        "note": "Sources for this opinion."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/id",
+        "note": "Election ID."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/title",
+        "note": "Election heading."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/date",
+        "note": "Actual election date; do not change historical dates to the demo year."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/type",
+        "note": "Election type."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/locale",
+        "note": "Language tag used for formatting, such as en-US."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/status",
+        "note": "Fictional samples and historical transcriptions must be identified accurately."
+      },
+      {
+        "schemaPath": "#/$defs/election/properties/sourceIds",
+        "note": "Election source references."
+      },
+      {
+        "schemaPath": "#/$defs/level/properties/id",
+        "note": "Area level ID."
+      },
+      {
+        "schemaPath": "#/$defs/level/properties/label",
+        "note": "District selector label."
+      },
+      {
+        "schemaPath": "#/$defs/area/properties/id",
+        "note": "Area ID."
+      },
+      {
+        "schemaPath": "#/$defs/area/properties/levelId",
+        "note": "Reference to areaLevels."
+      },
+      {
+        "schemaPath": "#/$defs/area/properties/label",
+        "note": "Area name."
+      },
+      {
+        "schemaPath": "#/$defs/area/properties/parentId",
+        "note": "See the matching schema definition and author instructions."
+      },
+      {
+        "schemaPath": "#/$defs/area/properties/ballotIds",
+        "note": "Ballots available at this leaf area. Several leaves may share a ballot style."
+      },
+      {
+        "schemaPath": "#/$defs/page/properties/id",
+        "note": "Page ID unique across the collection."
+      },
+      {
+        "schemaPath": "#/$defs/page/properties/label",
+        "note": "Optional Front/Back or source-side label."
+      },
+      {
+        "schemaPath": "#/$defs/page/properties/columns",
+        "note": "Number of columns on this page."
+      },
+      {
+        "schemaPath": "#/$defs/group/properties/id",
+        "note": "Group ID."
+      },
+      {
+        "schemaPath": "#/$defs/group/properties/title",
+        "note": "Printed/display group heading."
+      },
+      {
+        "schemaPath": "#/$defs/group/properties/category",
+        "note": "Determines cheatsheet grouping, independently of party names."
+      },
+      {
+        "schemaPath": "#/$defs/member/properties/name",
+        "note": "Name printed within a joint ticket."
+      },
+      {
+        "schemaPath": "#/$defs/member/properties/role",
+        "note": "Office or role within the same voting option."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/id",
+        "note": "Stable choice ID; a write-in slot also has an ID."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/kind",
+        "note": "Option mechanics; a ticket is one selectable option."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/labelLines",
+        "note": "Preserve label order."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/party",
+        "note": "Optional party label, copied from the ballot."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/designation",
+        "note": "Optional printed designation."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/members",
+        "note": "Ticket members; required semantically for ticket choices."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/answer",
+        "note": "Machine-readable proposal answer; required for answer choices."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/imageAttachmentId",
+        "note": "Optional candidate image attachment."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/details",
+        "note": "This choice’s own optional information."
+      },
+      {
+        "schemaPath": "#/$defs/choice/properties/sourceIds",
+        "note": "Choice source references."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/id",
+        "note": "Contest ID."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/groupId",
+        "note": "Owning ballot group."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/pageId",
+        "note": "Owning ballot page."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/column",
+        "note": "One-based column on the assigned page."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/kind",
+        "note": "Supported voting mechanics; unsupported mechanics are rejected."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/titleLines",
+        "note": "Printed office/title lines."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/instruction",
+        "note": "Actual printed voting instruction."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/maxSelections",
+        "note": "Maximum personal selections; guide marks do not count."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/term",
+        "note": "Optional printed term."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/district",
+        "note": "Optional printed district."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/question",
+        "note": "Full proposal question; required for proposals."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/weight",
+        "note": "Optional layout/progress weight."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/choices",
+        "note": "Complete ordered choice list, including write-in slots."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/details",
+        "note": "This contest header’s own optional information."
+      },
+      {
+        "schemaPath": "#/$defs/contest/properties/sourceIds",
+        "note": "Contest source references."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/id",
+        "note": "Ballot-style ID."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/electionId",
+        "note": "Election for this ballot."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/title",
+        "note": "Ballot heading."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/subtitle",
+        "note": "Optional header lines."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/districtLabels",
+        "note": "Optional district header strip."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/sourceIds",
+        "note": "Optional source references; an embedded source PDF is never mandatory."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/pages",
+        "note": "Ordered source pages."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/groups",
+        "note": "Ordered group headings."
+      },
+      {
+        "schemaPath": "#/$defs/ballot/properties/contests",
+        "note": "Reading order: page, then column, then contest."
+      },
+      {
+        "schemaPath": "#/$defs/author/properties/id",
+        "note": "Author ID."
+      },
+      {
+        "schemaPath": "#/$defs/author/properties/name",
+        "note": "Displayed opinion author."
+      },
+      {
+        "schemaPath": "#/$defs/author/properties/organization",
+        "note": "Optional organization."
+      },
+      {
+        "schemaPath": "#/$defs/author/properties/logoAttachmentId",
+        "note": "Optional image attachment for the author."
+      },
+      {
+        "schemaPath": "#/$defs/sectionOpinion/properties/contestId",
+        "note": "Target contest in this guide’s ballot."
+      },
+      {
+        "schemaPath": "#/$defs/sectionOpinion/properties/opinion",
+        "note": "Header-level opinion; never borrowed from a selected choice."
+      },
+      {
+        "schemaPath": "#/$defs/recommendation/properties/choiceId",
+        "note": "Target choice in this guide’s ballot."
+      },
+      {
+        "schemaPath": "#/$defs/recommendation/properties/mark",
+        "note": "THIS is recommended; OR is optional; none may retain an exception opinion."
+      },
+      {
+        "schemaPath": "#/$defs/recommendation/properties/color",
+        "note": "A supported guide highlight preset."
+      },
+      {
+        "schemaPath": "#/$defs/recommendation/properties/opinion",
+        "note": "Optional attributed opinion."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/id",
+        "note": "Guide ID."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/ballotId",
+        "note": "Exactly one target ballot."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/title",
+        "note": "Guide name shown in District and outputs."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/authorId",
+        "note": "Default opinion author."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/updatedAt",
+        "note": "Optional last authored update time."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/color",
+        "note": "A supported guide highlight preset."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/sectionOpinions",
+        "note": "Sparse header notes."
+      },
+      {
+        "schemaPath": "#/$defs/guide/properties/recommendations",
+        "note": "Sparse list; missing entries mean no mark or opinion."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/id",
+        "note": "Source ID."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/title",
+        "note": "Source title."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/url",
+        "note": "Optional HTTPS URL without credentials."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/attachmentId",
+        "note": "Optional attached source document."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/publisher",
+        "note": "Optional publisher."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/date",
+        "note": "Optional source date."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/pages",
+        "note": "Optional source page references."
+      },
+      {
+        "schemaPath": "#/$defs/source/properties/notes",
+        "note": "Optional provenance or transcription note."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/id",
+        "note": "Attachment ID."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/fileName",
+        "note": "Display filename; no directories."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/mediaType",
+        "note": "Allowed embedded resource type."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/gzipBytes",
+        "note": "Actual compressed bytes before base64."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/rawBytes",
+        "note": "Actual bytes after decompression."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/sha256",
+        "note": "SHA-256 of the actual uncompressed bytes, lowercase hex."
+      },
+      {
+        "schemaPath": "#/$defs/attachment/properties/data",
+        "note": "One complete gzip member encoded as canonical base64."
+      },
+      {
+        "schemaPath": "#/$defs/defaultSelection/properties/areaId",
+        "note": "Default available leaf area."
+      },
+      {
+        "schemaPath": "#/$defs/defaultSelection/properties/ballotId",
+        "note": "Default ballot available in the area."
+      },
+      {
+        "schemaPath": "#/$defs/defaultSelection/properties/guideId",
+        "note": "See the matching schema definition and author instructions."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/overview",
+        "note": "Blueprint overview."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/instructions",
+        "note": "Transcription and round-trip steps."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/rules",
+        "note": "Rules outside the structural schema."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/rules/items/properties/id",
+        "note": "Rule key."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/rules/items/properties/text",
+        "note": "Semantic or authoring rule."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/coverage",
+        "note": "Coverage of every field, including optional fields."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/coverage/items/properties/schemaPath",
+        "note": "JSON Schema definition/property path."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/coverage/items/properties/note",
+        "note": "Explanation or location of its example."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/examples",
+        "note": "Compact examples for optional/empty variants."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/examples/items/properties/name",
+        "note": "Example name."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/examples/items/properties/explanation",
+        "note": "How to apply this example."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/examples/items/properties/values",
+        "note": "Illustrative JSON values; data only, never executable schema or code."
+      },
+      {
+        "schemaPath": "#/$defs/authoring/properties/schema",
+        "note": "A documentation copy of the shipped schema. Never used to validate an import."
+      }
+    ],
+    "examples": [
+      {
+        "name": "No guide",
+        "explanation": "For a valid variant of this entire blueprint, replace guides with [] and defaultSelection.guideId with null. The contract tests verify this variant.",
+        "values": {
+          "guides": [],
+          "guideId": null
+        }
+      },
+      {
+        "name": "No recommendations",
+        "explanation": "The second ballot has one empty guide. The first ballot also has a race with no guide marks. Keep every race in the cheatsheet.",
+        "values": {
+          "recommendations": [],
+          "sectionOpinions": []
+        }
+      },
+      {
+        "name": "Color presets",
+        "explanation": "Use a guide default and optional choice override. All six values are supported.",
+        "values": [
+          "blue",
+          "green",
+          "red",
+          "yellow",
+          "orange",
+          "gray"
+        ]
+      },
+      {
+        "name": "Optional content",
+        "explanation": "Omitted details, an empty object, and blank strings are valid. Whitespace alone is not an opinion.",
+        "values": {
+          "details": {
+            "summary": "",
+            "markdown": "",
+            "sourceIds": [],
+            "attachmentIds": []
+          },
+          "opinion": {
+            "text": " "
+          }
+        }
+      },
+      {
+        "name": "Media types",
+        "explanation": "The fixture embeds tiny valid PNG/PDF/Markdown/text. JPEG and WebP use the same encoding fields with their own real file bytes. Never change mediaType without changing and validating the bytes.",
+        "values": [
+          "application/pdf",
+          "image/png",
+          "image/jpeg",
+          "image/webp",
+          "text/markdown",
+          "text/plain"
+        ]
+      },
+      {
+        "name": "Page labels and layouts",
+        "explanation": "The second ballot is a single unlabelled one-column page without a straight-party contest or mandatory PDF. The first is a two-column Front and one-column Back.",
+        "values": {
+          "columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "optionalWeight": 2.5
+        }
+      },
+      {
+        "name": "Correcting an error",
+        "explanation": "For JSN-E05 at /ballots/0/contests/0/pageId, use an existing page ID from that same ballot. Do not remove the contest.",
+        "values": {
+          "code": "JSN-E05",
+          "path": "/ballots/0/contests/0/pageId"
+        }
+      },
+      {
+        "name": "Fact status",
+        "explanation": "Use historical for a supplied 2024 ballot with its actual date. current means current source facts; fictional means invented demonstration data.",
+        "values": {
+          "status": [
+            "fictional",
+            "historical",
+            "current"
+          ],
+          "type": [
+            "general",
+            "primary",
+            "special"
+          ]
+        }
+      }
+    ],
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://whatsonmyballot.example/schemas/ballot-collection.v1.schema.json",
+      "title": "Portable ballot collection 1.0.0",
+      "type": "object",
+      "description": "Named record; unknown fields are rejected.",
+      "properties": {
+        "format": {
+          "const": "whatsonmyballot-collection",
+          "description": "Distinct from legacy single-ballot content exports."
+        },
+        "schemaVersion": {
+          "const": "1.0.0",
+          "description": "Collection contract version; independent from app version and revision."
+        },
+        "collectionId": {
+          "type": "string",
+          "description": "Stable collection identity.",
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000,
+          "description": "Saved author-content revision."
+        },
+        "exportedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$",
+          "description": "UTC export timestamp."
+        },
+        "defaultSelection": {
+          "$ref": "#/$defs/defaultSelection",
+          "description": "Validated initial area/ballot/guide."
+        },
+        "elections": {
+          "type": "array",
+          "description": "Elections in this collection.",
+          "items": {
+            "$ref": "#/$defs/election",
+            "description": "Election."
+          },
+          "minItems": 1,
+          "maxItems": 200
+        },
+        "areaLevels": {
+          "type": "array",
+          "description": "Ordered hierarchy levels.",
+          "items": {
+            "$ref": "#/$defs/level",
+            "description": "Area level."
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "areas": {
+          "type": "array",
+          "description": "Area hierarchy.",
+          "items": {
+            "$ref": "#/$defs/area",
+            "description": "Area."
+          },
+          "minItems": 1,
+          "maxItems": 5000
+        },
+        "ballots": {
+          "type": "array",
+          "description": "Complete ballot styles.",
+          "items": {
+            "$ref": "#/$defs/ballot",
+            "description": "Ballot."
+          },
+          "minItems": 1,
+          "maxItems": 200
+        },
+        "authors": {
+          "type": "array",
+          "description": "Named guide/opinion authors.",
+          "items": {
+            "$ref": "#/$defs/author",
+            "description": "Author."
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        },
+        "guides": {
+          "type": "array",
+          "description": "Zero, one or several guides per ballot.",
+          "items": {
+            "$ref": "#/$defs/guide",
+            "description": "Guide."
+          },
+          "minItems": 0,
+          "maxItems": 2000
+        },
+        "sources": {
+          "type": "array",
+          "description": "Optional provenance and useful links.",
+          "items": {
+            "$ref": "#/$defs/source",
+            "description": "Source."
+          },
+          "minItems": 0,
+          "maxItems": 5000
+        },
+        "attachments": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "compression": {
+              "const": "gzip",
+              "description": "Only attachment bytes use gzip."
+            },
+            "encoding": {
+              "const": "base64",
+              "description": "Canonical JSON-safe encoding of gzip bytes."
+            },
+            "items": {
+              "type": "array",
+              "description": "Shared resource items; IDs can be referenced more than once.",
+              "items": {
+                "$ref": "#/$defs/attachment",
+                "description": "Embedded attachment."
+              },
+              "minItems": 0,
+              "maxItems": 256
+            }
+          },
+          "required": [
+            "compression",
+            "encoding",
+            "items"
+          ],
+          "additionalProperties": false
+        },
+        "authoring": {
+          "$ref": "#/$defs/authoring",
+          "description": "Optional permanent-blueprint documentation."
+        }
+      },
+      "required": [
+        "format",
+        "schemaVersion",
+        "collectionId",
+        "revision",
+        "exportedAt",
+        "defaultSelection",
+        "elections",
+        "areaLevels",
+        "areas",
+        "ballots",
+        "authors",
+        "guides",
+        "sources",
+        "attachments"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "details": {
+          "type": "object",
+          "description": "Optional content belonging only to this header or choice.",
+          "properties": {
+            "summary": {
+              "type": "string",
+              "description": "Optional neutral overview. Blank means absent.",
+              "maxLength": 4000,
+              "minLength": 0
+            },
+            "markdown": {
+              "type": "string",
+              "description": "Optional readable Markdown body. No active HTML.",
+              "maxLength": 200000,
+              "minLength": 0
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Optional authored source references.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            },
+            "attachmentIds": {
+              "type": "array",
+              "description": "Optional informational documents or images.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "opinion": {
+          "type": "object",
+          "description": "An independently attributed guide opinion.",
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "The author’s words. Blank text means no opinion.",
+              "maxLength": 4000,
+              "minLength": 0
+            },
+            "authorId": {
+              "type": "string",
+              "description": "Optional author override; otherwise inherit the guide author.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Sources for this opinion.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        "election": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Election ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "title": {
+              "type": "string",
+              "description": "Election heading.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "date": {
+              "type": "string",
+              "format": "date",
+              "description": "Actual election date; do not change historical dates to the demo year."
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "general",
+                "primary",
+                "special"
+              ],
+              "description": "Election type."
+            },
+            "locale": {
+              "type": "string",
+              "description": "Language tag used for formatting, such as en-US.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "fictional",
+                "historical",
+                "current"
+              ],
+              "description": "Fictional samples and historical transcriptions must be identified accurately."
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Election source references.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "date",
+            "type",
+            "locale",
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "level": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Area level ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "label": {
+              "type": "string",
+              "description": "District selector label.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "id",
+            "label"
+          ],
+          "additionalProperties": false
+        },
+        "area": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Area ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "levelId": {
+              "type": "string",
+              "description": "Reference to areaLevels.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "label": {
+              "type": "string",
+              "description": "Area name.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "parentId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Parent area from the preceding level.",
+                  "maxLength": 100,
+                  "minLength": 1,
+                  "pattern": "^[a-z0-9][a-z0-9-]*$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ballotIds": {
+              "type": "array",
+              "description": "Ballots available at this leaf area. Several leaves may share a ballot style.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "levelId",
+            "label",
+            "parentId",
+            "ballotIds"
+          ],
+          "additionalProperties": false
+        },
+        "page": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Page ID unique across the collection.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "label": {
+              "type": "string",
+              "description": "Optional Front/Back or source-side label.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "columns": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 6,
+              "description": "Number of columns on this page."
+            }
+          },
+          "required": [
+            "id",
+            "columns"
+          ],
+          "additionalProperties": false
+        },
+        "group": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Group ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "title": {
+              "type": "string",
+              "description": "Printed/display group heading.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "category": {
+              "type": "string",
+              "enum": [
+                "partisan",
+                "nonpartisan",
+                "proposals"
+              ],
+              "description": "Determines cheatsheet grouping, independently of party names."
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "category"
+          ],
+          "additionalProperties": false
+        },
+        "member": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name printed within a joint ticket.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "role": {
+              "type": "string",
+              "description": "Office or role within the same voting option.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "name",
+            "role"
+          ],
+          "additionalProperties": false
+        },
+        "choice": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Stable choice ID; a write-in slot also has an ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "candidate",
+                "ticket",
+                "party",
+                "answer",
+                "write-in"
+              ],
+              "description": "Option mechanics; a ticket is one selectable option."
+            },
+            "labelLines": {
+              "type": "array",
+              "description": "Preserve label order.",
+              "items": {
+                "type": "string",
+                "description": "A printed label line.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 1,
+              "maxItems": 10
+            },
+            "party": {
+              "type": "string",
+              "description": "Optional party label, copied from the ballot.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "designation": {
+              "type": "string",
+              "description": "Optional printed designation.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "members": {
+              "type": "array",
+              "description": "Ticket members; required semantically for ticket choices.",
+              "items": {
+                "$ref": "#/$defs/member",
+                "description": "Ticket member."
+              },
+              "minItems": 1,
+              "maxItems": 10
+            },
+            "answer": {
+              "type": "string",
+              "enum": [
+                "yes",
+                "no"
+              ],
+              "description": "Machine-readable proposal answer; required for answer choices."
+            },
+            "imageAttachmentId": {
+              "type": "string",
+              "description": "Optional candidate image attachment.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "details": {
+              "$ref": "#/$defs/details",
+              "description": "This choice’s own optional information."
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Choice source references.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "labelLines"
+          ],
+          "additionalProperties": false
+        },
+        "contest": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Contest ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "groupId": {
+              "type": "string",
+              "description": "Owning ballot group.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "pageId": {
+              "type": "string",
+              "description": "Owning ballot page.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "column": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 6,
+              "description": "One-based column on the assigned page."
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "candidate",
+                "ticket",
+                "straight-party",
+                "proposal"
+              ],
+              "description": "Supported voting mechanics; unsupported mechanics are rejected."
+            },
+            "titleLines": {
+              "type": "array",
+              "description": "Printed office/title lines.",
+              "items": {
+                "type": "string",
+                "description": "Printed title line.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 1,
+              "maxItems": 12
+            },
+            "instruction": {
+              "type": "string",
+              "description": "Actual printed voting instruction.",
+              "maxLength": 4000,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "maxSelections": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50,
+              "description": "Maximum personal selections; guide marks do not count."
+            },
+            "term": {
+              "type": "string",
+              "description": "Optional printed term.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "district": {
+              "type": "string",
+              "description": "Optional printed district.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "question": {
+              "type": "string",
+              "description": "Full proposal question; required for proposals.",
+              "maxLength": 200000,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "weight": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 100000,
+              "description": "Optional layout/progress weight."
+            },
+            "choices": {
+              "type": "array",
+              "description": "Complete ordered choice list, including write-in slots.",
+              "items": {
+                "$ref": "#/$defs/choice",
+                "description": "Choice in printed order."
+              },
+              "minItems": 1,
+              "maxItems": 500
+            },
+            "details": {
+              "$ref": "#/$defs/details",
+              "description": "This contest header’s own optional information."
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Contest source references.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "groupId",
+            "pageId",
+            "column",
+            "kind",
+            "titleLines",
+            "instruction",
+            "maxSelections",
+            "choices"
+          ],
+          "additionalProperties": false
+        },
+        "ballot": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Ballot-style ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "electionId": {
+              "type": "string",
+              "description": "Election for this ballot.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "title": {
+              "type": "string",
+              "description": "Ballot heading.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "subtitle": {
+              "type": "array",
+              "description": "Optional header lines.",
+              "items": {
+                "type": "string",
+                "description": "Subtitle line.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 0,
+              "maxItems": 10
+            },
+            "districtLabels": {
+              "type": "array",
+              "description": "Optional district header strip.",
+              "items": {
+                "type": "string",
+                "description": "District name/number as supplied.",
+                "maxLength": 160,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 0,
+              "maxItems": 12
+            },
+            "sourceIds": {
+              "type": "array",
+              "description": "Optional source references; an embedded source PDF is never mandatory.",
+              "items": {
+                "type": "string",
+                "description": "Reference to a globally unique record ID.",
+                "maxLength": 100,
+                "minLength": 1,
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "minItems": 0,
+              "maxItems": 1000,
+              "uniqueItems": true
+            },
+            "pages": {
+              "type": "array",
+              "description": "Ordered source pages.",
+              "items": {
+                "$ref": "#/$defs/page",
+                "description": "Page definition."
+              },
+              "minItems": 1,
+              "maxItems": 30
+            },
+            "groups": {
+              "type": "array",
+              "description": "Ordered group headings.",
+              "items": {
+                "$ref": "#/$defs/group",
+                "description": "Group definition."
+              },
+              "minItems": 1,
+              "maxItems": 50
+            },
+            "contests": {
+              "type": "array",
+              "description": "Reading order: page, then column, then contest.",
+              "items": {
+                "$ref": "#/$defs/contest",
+                "description": "Complete contest definition."
+              },
+              "minItems": 1,
+              "maxItems": 500
+            }
+          },
+          "required": [
+            "id",
+            "electionId",
+            "title",
+            "pages",
+            "groups",
+            "contests"
+          ],
+          "additionalProperties": false
+        },
+        "author": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Author ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "name": {
+              "type": "string",
+              "description": "Displayed opinion author.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "organization": {
+              "type": "string",
+              "description": "Optional organization.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "logoAttachmentId": {
+              "type": "string",
+              "description": "Optional image attachment for the author.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "sectionOpinion": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "contestId": {
+              "type": "string",
+              "description": "Target contest in this guide’s ballot.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "opinion": {
+              "$ref": "#/$defs/opinion",
+              "description": "Header-level opinion; never borrowed from a selected choice."
+            }
+          },
+          "required": [
+            "contestId",
+            "opinion"
+          ],
+          "additionalProperties": false
+        },
+        "recommendation": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "choiceId": {
+              "type": "string",
+              "description": "Target choice in this guide’s ballot.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "mark": {
+              "type": "string",
+              "enum": [
+                "none",
+                "this",
+                "or"
+              ],
+              "description": "THIS is recommended; OR is optional; none may retain an exception opinion."
+            },
+            "color": {
+              "type": "string",
+              "enum": [
+                "blue",
+                "green",
+                "red",
+                "yellow",
+                "orange",
+                "gray"
+              ],
+              "description": "A supported guide highlight preset."
+            },
+            "opinion": {
+              "$ref": "#/$defs/opinion",
+              "description": "Optional attributed opinion."
+            }
+          },
+          "required": [
+            "choiceId",
+            "mark"
+          ],
+          "additionalProperties": false
+        },
+        "guide": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Guide ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "ballotId": {
+              "type": "string",
+              "description": "Exactly one target ballot.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "title": {
+              "type": "string",
+              "description": "Guide name shown in District and outputs.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "authorId": {
+              "type": "string",
+              "description": "Default opinion author.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$",
+              "description": "Optional last authored update time."
+            },
+            "color": {
+              "type": "string",
+              "enum": [
+                "blue",
+                "green",
+                "red",
+                "yellow",
+                "orange",
+                "gray"
+              ],
+              "description": "A supported guide highlight preset."
+            },
+            "sectionOpinions": {
+              "type": "array",
+              "description": "Sparse header notes.",
+              "items": {
+                "$ref": "#/$defs/sectionOpinion",
+                "description": "Own contest opinion."
+              },
+              "minItems": 0,
+              "maxItems": 500
+            },
+            "recommendations": {
+              "type": "array",
+              "description": "Sparse list; missing entries mean no mark or opinion.",
+              "items": {
+                "$ref": "#/$defs/recommendation",
+                "description": "Own choice recommendation."
+              },
+              "minItems": 0,
+              "maxItems": 5000
+            }
+          },
+          "required": [
+            "id",
+            "ballotId",
+            "title",
+            "authorId",
+            "color",
+            "sectionOpinions",
+            "recommendations"
+          ],
+          "additionalProperties": false
+        },
+        "source": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Source ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "title": {
+              "type": "string",
+              "description": "Source title.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "url": {
+              "type": "string",
+              "description": "Optional HTTPS URL without credentials.",
+              "maxLength": 2000,
+              "minLength": 1,
+              "pattern": "^https://",
+              "format": "uri"
+            },
+            "attachmentId": {
+              "type": "string",
+              "description": "Optional attached source document.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "publisher": {
+              "type": "string",
+              "description": "Optional publisher.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "date": {
+              "type": "string",
+              "format": "date",
+              "description": "Optional source date."
+            },
+            "pages": {
+              "type": "array",
+              "description": "Optional source page references.",
+              "items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10000,
+                "description": "One-based source page."
+              },
+              "minItems": 1,
+              "maxItems": 100
+            },
+            "notes": {
+              "type": "string",
+              "description": "Optional provenance or transcription note.",
+              "maxLength": 4000,
+              "minLength": 0
+            }
+          },
+          "required": [
+            "id",
+            "title"
+          ],
+          "additionalProperties": false
+        },
+        "attachment": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Attachment ID.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "fileName": {
+              "type": "string",
+              "description": "Display filename; no directories.",
+              "maxLength": 160,
+              "minLength": 1,
+              "pattern": "^[^\\\\/\\u0000-\\u001f]+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "enum": [
+                "application/pdf",
+                "image/png",
+                "image/jpeg",
+                "image/webp",
+                "text/markdown",
+                "text/plain"
+              ],
+              "description": "Allowed embedded resource type."
+            },
+            "gzipBytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 25000000,
+              "description": "Actual compressed bytes before base64."
+            },
+            "rawBytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000000,
+              "description": "Actual bytes after decompression."
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$",
+              "description": "SHA-256 of the actual uncompressed bytes, lowercase hex."
+            },
+            "data": {
+              "type": "string",
+              "description": "One complete gzip member encoded as canonical base64.",
+              "maxLength": 33333336,
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "id",
+            "fileName",
+            "mediaType",
+            "gzipBytes",
+            "rawBytes",
+            "sha256",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        "defaultSelection": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "areaId": {
+              "type": "string",
+              "description": "Default available leaf area.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "ballotId": {
+              "type": "string",
+              "description": "Default ballot available in the area.",
+              "maxLength": 100,
+              "minLength": 1,
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "guideId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "description": "Default guide for the ballot, or null if none exists.",
+                  "maxLength": 100,
+                  "minLength": 1,
+                  "pattern": "^[a-z0-9][a-z0-9-]*$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "areaId",
+            "ballotId",
+            "guideId"
+          ],
+          "additionalProperties": false
+        },
+        "authoring": {
+          "type": "object",
+          "description": "Named record; unknown fields are rejected.",
+          "properties": {
+            "overview": {
+              "type": "string",
+              "description": "Blueprint overview.",
+              "maxLength": 20000,
+              "minLength": 0
+            },
+            "instructions": {
+              "type": "array",
+              "description": "Transcription and round-trip steps.",
+              "items": {
+                "type": "string",
+                "description": "Authoring instruction.",
+                "maxLength": 10000,
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 1,
+              "maxItems": 100
+            },
+            "rules": {
+              "type": "array",
+              "description": "Rules outside the structural schema.",
+              "items": {
+                "type": "object",
+                "description": "Named record; unknown fields are rejected.",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Rule key.",
+                    "maxLength": 100,
+                    "minLength": 1,
+                    "pattern": "^[a-z0-9][a-z0-9-]*$"
+                  },
+                  "text": {
+                    "type": "string",
+                    "description": "Semantic or authoring rule.",
+                    "maxLength": 10000,
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 100
+            },
+            "coverage": {
+              "type": "array",
+              "description": "Coverage of every field, including optional fields.",
+              "items": {
+                "type": "object",
+                "description": "Named record; unknown fields are rejected.",
+                "properties": {
+                  "schemaPath": {
+                    "type": "string",
+                    "description": "JSON Schema definition/property path.",
+                    "maxLength": 160,
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "note": {
+                    "type": "string",
+                    "description": "Explanation or location of its example.",
+                    "maxLength": 4000,
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "schemaPath",
+                  "note"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 500
+            },
+            "examples": {
+              "type": "array",
+              "description": "Compact examples for optional/empty variants.",
+              "items": {
+                "type": "object",
+                "description": "Named record; unknown fields are rejected.",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Example name.",
+                    "maxLength": 160,
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "explanation": {
+                    "type": "string",
+                    "description": "How to apply this example.",
+                    "maxLength": 10000,
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "values": {
+                    "description": "Illustrative JSON values; data only, never executable schema or code."
+                  }
+                },
+                "required": [
+                  "name",
+                  "explanation",
+                  "values"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "maxItems": 100
+            },
+            "schema": {
+              "type": "object",
+              "description": "A documentation copy of the shipped schema. Never used to validate an import."
+            }
+          },
+          "required": [
+            "overview",
+            "instructions",
+            "rules",
+            "coverage",
+            "examples",
+            "schema"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

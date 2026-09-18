@@ -1,0 +1,512 @@
+{
+  "format": "whatsonmyballot-ballot",
+  "schemaVersion": "1.0.0",
+  "id": "schemaexample-fictional-ballot",
+  "title": "Fictional example — every supported ballot feature",
+  "revision": 0,
+  "_instructions": "This permanent, valid JSON blueprint is independent of whichever ballot is currently imported. It is fictional and is not an official ballot. This one complete file is sufficient to give an AI: all required fields, optional shapes, enums and rules are explained below. The formal data/ballot.schema.json is an optional extra reference, not required to use this blueprint. Ask the AI to produce one self-contained ballot JSON and preserve the format/version. Never invent ballot facts, sources, candidate photos, author attributions, gzip, base64, byte counts, or hashes. Use supplied/verified facts and actual file bytes. If unable to read/compress/hash an optional file, omit it AND every reference to it. The supplied generated files here are working fictional examples and must not be relabelled as official documents.\n\nREQUIRED ROOT FIELDS: format exactly whatsonmyballot-ballot; schemaVersion exactly 1.0.0; id unique string; title nonblank string; revision nonnegative integer; exactly one election object, exactly one area object; nonempty groups, pages, contests arrays. OPTIONAL ROOT FIELDS: authors, sources, attachments arrays (omission means empty), _instructions string, _comment string. No extra keys, JavaScript comments, trailing commas, HTML, scripts, saved visitor selections, drafts, reader preferences, or camera positions. Documentation belongs in _instructions and _comment and stays ordinary JSON text. Every supported record object may have optional _comment.\n\nREQUIRED ELECTION FIELDS: date as YYYY-MM-DD, title, type nonblank descriptive string (for example general or primary), isDemo boolean. All required AREA fields: state, stateCode, county, municipality, precinct, districts array of {label,value}; county/municipality/precinct can be empty strings and districts can be empty. Do not replace missing factual details with invented values.\n\nAUTHOR shape {id,name}, both required. All opinions must refer to an existing author. SOURCE shape {id,title,url?,attachmentId?}; id/title required and at least one of HTTPS url or attachmentId required; both can be present. All IDs across ballot, authors, sources, attachments, groups, pages, columns, contests and options must be globally unique, 1-120 characters, begin with a letter or digit, and otherwise use letters, digits, dot, underscore or hyphen. References must exactly match IDs. HTTPS links cannot contain credentials.\n\nGROUP shape {id,title,category}, all required; category is partisan, nonpartisan, proposals or other. Groups supply guide grouping; array order is meaningful. PAGE shape {id,label,columns}, all required, with 1-12 columns. COLUMN shape {id,contestIds}, both required. Pages (1-100) and columns are ordered reading order, not a fixed two-page layout. Every page needs a contest. A column can be empty. Place every contest exactly once across all columns, with no unknown or repeated references. Any ballot may omit straight-party voting or a group category.\n\nCONTEST required {id,groupId,title,kind,maxSelections,instructions,options}; optional subtitle, details, opinion. kind is candidate, straight-party, proposal or retention. maxSelections is a positive integer no greater than option count; proposal, retention and straight-party contests require 1. Candidate contests allow multiple selections when the ballot says so. instructions may be empty but should copy actual voter instructions when known. Candidate contest options use kind candidate or write-in; straight-party uses party; proposal and retention use choice. Candidate tickets can be one candidate option with all ticket names in label. Never infer author THIS/OR marks from visitor practice choices.\n\nOPTION required {id,kind,label}; optional party string, photoAttachmentId, website HTTPS URL, details, recommendation, opinion. OPTION kind is candidate, party, choice or write-in. photoAttachmentId must reference an image attachment. Write-ins are their own options. Proposal/retention answer labels need not be Yes/No: use actual wording. RECOMMENDATION shape {mark,color}, both required if present; mark is this, or or none; color is red, orange, yellow, green, blue or gray. Omission means no recommendation. Multiple OR alternatives are permitted independently of maxSelections; annotations do not cast votes.\n\nDETAILS optional shape {summary?,paragraphs?,markdown?,sourceIds?}. summary is a string; paragraphs is an ordered string array; markdown is readable Markdown text; sourceIds is an array of known source IDs. Empty object, empty strings, and empty arrays intentionally mean no own details. Do not inherit another option or party's content. Markdown supports headings, paragraphs, emphasis, lists, images and safe links. Embedded Markdown images must reference image attachments. Embedded links use attachment: followed by a known attachment ID. Raw HTML and active URL schemes are prohibited. Reference-style Markdown links follow the same restrictions.\n\nOPINION shape {authorId,text,sourceIds?}, authorId and text required if present; text is plain text and may be empty for an intentionally blank note. sourceIds optionally supports claims using existing sources. Only a CONTEST opinion also accepts highlighted boolean and color from the six-color palette. A highlighted header notice is separate from recommendations and does not cast a vote. Omitted highlight is false; omitted header color uses the app default blue. An empty opinion does not create a clickable note.\n\nATTACHMENT required {id,fileName,mimeType,encoding,data,uncompressedBytes,sha256}. fileName is a simple file name with no path separators. mimeType is application/pdf, image/png, image/jpeg, image/webp, image/gif, text/plain or text/markdown; HTML and SVG files are not supported. encoding is exactly gzip-base64. Only attachment bytes are compressed; all other JSON content remains readable. data must be canonical base64 of an actual gzip byte stream. uncompressedBytes is the original file byte length; sha256 is the 64-character lowercase SHA-256 of those original bytes. Generate these values with tools, never prediction. App helpers encodeAttachment and prepareResources perform the encoding and integrity checks. Limits: JSON 25 MiB UTF-8, individual expanded file 25 MiB, combined expanded files 100 MiB, 100 attachments. Decoding is streamed and bounded, with size/hash/type checks before a new ballot is activated. Future schema versions require a real migration; unknown versions are rejected.\n\nFEATURE INDEX: party-selection demonstrates optional straight-party; city-council demonstrates multiple candidates, six colors, THIS/OR/none, a photo, website, write-in and blank own details; library-proposal demonstrates proposal wording, Markdown, PDF/text sources and a highlighted header; judge-retention demonstrates retention; school-board demonstrates a different nonpartisan contest; advisory-question demonstrates an other group. Three pages with different column counts demonstrate flexible layout. Every person, organization, jurisdiction and recommendation here is fictional.",
+  "_comment": "Permanent downloadable example. App imports never replace this bundled file.",
+  "election": {
+    "date": "2030-11-05",
+    "title": "Fictional demonstration election",
+    "type": "general",
+    "isDemo": true,
+    "_comment": "Required object: exactly one election. The future date is fictional, not a published election schedule."
+  },
+  "area": {
+    "state": "Example State",
+    "stateCode": "EX",
+    "county": "Example County",
+    "municipality": "Example City",
+    "precinct": "Demo precinct 1",
+    "districts": [
+      {
+        "label": "Council district",
+        "value": "Example district A"
+      }
+    ],
+    "_comment": "Exactly one fictional voting area; empty optional geographic levels use empty strings."
+  },
+  "authors": [
+    {
+      "id": "author-editor",
+      "name": "Fictional Example Editor"
+    },
+    {
+      "id": "author-reviewer",
+      "name": "Fictional Example Reviewer"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-pdf",
+      "title": "Generated fictional PDF example",
+      "attachmentId": "file-example-pdf"
+    },
+    {
+      "id": "source-background",
+      "title": "Generated fictional plain-text document",
+      "attachmentId": "file-example-text"
+    },
+    {
+      "id": "source-markdown",
+      "title": "Generated fictional Markdown document",
+      "attachmentId": "file-example-markdown"
+    },
+    {
+      "id": "source-website",
+      "title": "Reserved example website, not evidence of ballot facts",
+      "url": "https://example.org/"
+    },
+    {
+      "id": "source-both",
+      "title": "Source with an external address and embedded copy",
+      "url": "https://example.org/example-document",
+      "attachmentId": "file-example-text",
+      "_comment": "Both link forms are supported. This reserved URL is illustrative, not a claimed official document."
+    }
+  ],
+  "attachments": [
+    {
+      "id": "file-example-pdf",
+      "fileName": "fictional-schema-reference.pdf",
+      "mimeType": "application/pdf",
+      "encoding": "gzip-base64",
+      "data": "H4sIAAAAAAAACm2SX2vbMBTF3/0pzkugg7Wy/K8tlD4krRlsYyH1W+mDYl0nKrZUrJuR7dMPKaYN9YQQ1k/3nnuu5MX6ob6UV0UikcJtX5O7O4jmzxtBrBSr3u0g1mpHHhlSbHB/n5DVITCbJZzixHejPZ7zEP4CsXIHy5Bnifl/E8M6kuWpjvhJ2qilO+I5RYpKZri+zV4gNuTdYWzJI+TXzvLpQ6KYDIYpVs4yWfYoP9kuZtWjhng6bDluA5QQS+XpdPKN+t/EplVnKuWZyg+yO95DVrFJzyOpIVk20ZO8QdOhLHCdpWg0LmrTsnFW9diqvncM3+5pUKCjGt56+oLmFSku8xgdFWRQuGj2xmNHlkbFpNGZnqBpcNZzIB7KgoYtaU0a64f6K6zjAF3Xmda817uKFR6b0MhkdWrpOFKXpKiS9H2gKsu8RIcPdovTif1g5c2MSVnOWFbIGcvlGeNRmZ7GeKdP5i+hgtg4F36e6Qk9q5GjzzLLksXi8Ved/AP7/PY2wQIAAA==",
+      "uncompressedBytes": 705,
+      "sha256": "68d51fa46aa59c1b60bd936768820142deb650f4b0fd01176bef22191f78e8e1",
+      "_comment": "Optional file, generated from real bytes. SHA-256 and uncompressedBytes describe the original bytes; data is real gzip encoded as canonical base64. Omit the file and all references if its bytes cannot be produced."
+    },
+    {
+      "id": "file-example-photo",
+      "fileName": "fictional-placeholder.png",
+      "mimeType": "image/png",
+      "encoding": "gzip-base64",
+      "data": "H4sIAAAAAAAACusM8HPn5ZLiYmBg4PX0cAliYGBgAmEONgYGhqJtvCoMDAxini6OIRVzkgP6Zv79f/h6/H9JB5YOZoaMbO73/3yFDzMwMDB4uvq5rHNKaAIA89/lck8AAAA=",
+      "uncompressedBytes": 79,
+      "sha256": "5565d67e5873a6a9b57ee7a05bd42e8d1eeced9483c38eb176b49e7351391c35",
+      "_comment": "Optional file, generated from real bytes. SHA-256 and uncompressedBytes describe the original bytes; data is real gzip encoded as canonical base64. Omit the file and all references if its bytes cannot be produced."
+    },
+    {
+      "id": "file-example-text",
+      "fileName": "fictional-background.txt",
+      "mimeType": "text/plain",
+      "encoding": "gzip-base64",
+      "data": "H4sIAAAAAAAACh3MwQ0DIQwEwP9VsRVQRp55pQGwl5x1BEvYKLruI2UKmIdJms860Kpc7+V7KtRlfziz4HUyiHYnA18uglNcqWg38iTatqFI91GOp8N7N7F/NoYnepUM1EXUCK6kluMHx7Q6CXIAAAA=",
+      "uncompressedBytes": 114,
+      "sha256": "1e09f2ae021aa189d9cc2cd5c5e93f5b24763cac403ca46d1d50200dd0400dd1",
+      "_comment": "Optional file, generated from real bytes. SHA-256 and uncompressedBytes describe the original bytes; data is real gzip encoded as canonical base64. Omit the file and all references if its bytes cannot be produced."
+    },
+    {
+      "id": "file-example-markdown",
+      "fileName": "fictional-explanation.md",
+      "mimeType": "text/markdown",
+      "encoding": "gzip-base64",
+      "data": "H4sIAAAAAAAACk3LMUoEQRAF0LxP8cFsYCcSb6CBoIJ6geqp705hT3XTVYurpxczwxe8GzzYltZdGngdTVz+VMr7bgELLMuTzE/tX74siOyTCvMwJQRbP8ZkBBWSKdt+0HMt5YRXikptxJAp5yljR/KamDzEPHDxf9ccuRNVWuuJx7eX57WccH9UqlLxYY2o38nAJYjzjw2IK6oE727X8gvmq8yaxAAAAA==",
+      "uncompressedBytes": 196,
+      "sha256": "1277c596d811ac2c92b540433c505ba595f63888c49be79f65585ce79af3c296",
+      "_comment": "Optional file, generated from real bytes. SHA-256 and uncompressedBytes describe the original bytes; data is real gzip encoded as canonical base64. Omit the file and all references if its bytes cannot be produced."
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-partisan",
+      "title": "Partisan",
+      "category": "partisan"
+    },
+    {
+      "id": "group-nonpartisan",
+      "title": "Nonpartisan",
+      "category": "nonpartisan"
+    },
+    {
+      "id": "group-proposals",
+      "title": "Proposals",
+      "category": "proposals"
+    },
+    {
+      "id": "group-other",
+      "title": "Advisory",
+      "category": "other"
+    }
+  ],
+  "pages": [
+    {
+      "id": "page-one",
+      "label": "Page 1 — City offices",
+      "columns": [
+        {
+          "id": "column-one",
+          "contestIds": [
+            "party-selection",
+            "city-council"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page-two",
+      "label": "Page 2 — Schools and courts",
+      "columns": [
+        {
+          "id": "column-two-a",
+          "contestIds": [
+            "school-board"
+          ]
+        },
+        {
+          "id": "column-two-b",
+          "contestIds": [
+            "judge-retention"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page-three",
+      "label": "Page 3 — Questions",
+      "columns": [
+        {
+          "id": "column-three",
+          "contestIds": [
+            "library-proposal",
+            "advisory-question"
+          ]
+        }
+      ]
+    }
+  ],
+  "contests": [
+    {
+      "id": "party-selection",
+      "groupId": "group-partisan",
+      "title": "Fictional straight-party selection",
+      "kind": "straight-party",
+      "maxSelections": 1,
+      "instructions": "Select one party if you choose to use this fictional demonstration section.",
+      "details": {
+        "summary": "This optional contest demonstrates party choices.",
+        "paragraphs": [],
+        "sourceIds": []
+      },
+      "options": [
+        {
+          "id": "party-forward",
+          "kind": "party",
+          "label": "Fictional Forward Party",
+          "recommendation": {
+            "mark": "this",
+            "color": "red"
+          },
+          "opinion": {
+            "authorId": "author-editor",
+            "text": "A fictional demonstration of a party recommendation."
+          }
+        },
+        {
+          "id": "party-common",
+          "kind": "party",
+          "label": "Fictional Common Ground Party",
+          "recommendation": {
+            "mark": "or",
+            "color": "orange"
+          },
+          "details": {}
+        }
+      ]
+    },
+    {
+      "id": "city-council",
+      "groupId": "group-partisan",
+      "title": "Fictional City Council",
+      "subtitle": "Two seats · Four-year terms",
+      "kind": "candidate",
+      "maxSelections": 2,
+      "instructions": "Vote for not more than 2.",
+      "details": {
+        "summary": "A multiple-selection contest with candidate and write-in choices.",
+        "paragraphs": [
+          "Each candidate has independent details, opinions, and recommendations."
+        ],
+        "markdown": "## Example materials\n\nRead the [embedded PDF](attachment:file-example-pdf) or the [plain-text background](attachment:file-example-text).\n\n- These are generated sample documents.\n- Names and recommendations are fictional.",
+        "sourceIds": [
+          "source-pdf",
+          "source-background"
+        ]
+      },
+      "opinion": {
+        "authorId": "author-editor",
+        "text": "This highlighted section note demonstrates a header opinion; it does not select candidates.",
+        "sourceIds": [
+          "source-background"
+        ],
+        "highlighted": true,
+        "color": "blue"
+      },
+      "options": [
+        {
+          "id": "candidate-alex",
+          "kind": "candidate",
+          "label": "Alex Example",
+          "party": "Fictional Forward Party",
+          "photoAttachmentId": "file-example-photo",
+          "website": "https://example.org/alex",
+          "details": {
+            "summary": "A fictional candidate with a generated placeholder image.",
+            "paragraphs": [
+              "The two-by-two PNG is a file-format demonstration, not a photograph of a real person."
+            ],
+            "markdown": "**Background:** read the [Markdown attachment](attachment:file-example-markdown).\n\n![Generated fictional placeholder](attachment:file-example-photo)",
+            "sourceIds": [
+              "source-markdown",
+              "source-website"
+            ]
+          },
+          "recommendation": {
+            "mark": "this",
+            "color": "red"
+          },
+          "opinion": {
+            "authorId": "author-editor",
+            "text": "Example recommendation text for Alex.",
+            "sourceIds": [
+              "source-background"
+            ]
+          }
+        },
+        {
+          "id": "candidate-blair",
+          "kind": "candidate",
+          "label": "Blair Sample",
+          "party": "Fictional Common Ground Party",
+          "details": {
+            "summary": "",
+            "paragraphs": [],
+            "markdown": "",
+            "sourceIds": []
+          },
+          "recommendation": {
+            "mark": "or",
+            "color": "orange"
+          },
+          "opinion": {
+            "authorId": "author-reviewer",
+            "text": "An alternative recommendation from another fictional author."
+          }
+        },
+        {
+          "id": "candidate-casey",
+          "kind": "candidate",
+          "label": "Casey Demo",
+          "party": "",
+          "recommendation": {
+            "mark": "or",
+            "color": "yellow"
+          },
+          "opinion": {
+            "authorId": "author-editor",
+            "text": "",
+            "sourceIds": [],
+            "_comment": "Intentionally empty note. Its opinion button is unavailable."
+          }
+        },
+        {
+          "id": "candidate-drew",
+          "kind": "candidate",
+          "label": "Drew Placeholder",
+          "recommendation": {
+            "mark": "or",
+            "color": "green"
+          },
+          "details": {},
+          "_comment": "Empty details object intentionally supplies no own content."
+        },
+        {
+          "id": "candidate-ellis",
+          "kind": "candidate",
+          "label": "Ellis Illustration",
+          "recommendation": {
+            "mark": "none",
+            "color": "blue"
+          },
+          "opinion": {
+            "authorId": "author-reviewer",
+            "text": "An opinion can exist without a recommendation."
+          }
+        },
+        {
+          "id": "candidate-frankie",
+          "kind": "candidate",
+          "label": "Frankie Fiction",
+          "recommendation": {
+            "mark": "or",
+            "color": "gray"
+          }
+        },
+        {
+          "id": "council-write-in",
+          "kind": "write-in",
+          "label": "Write-in",
+          "details": {
+            "summary": "A separate write-in slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "school-board",
+      "groupId": "group-nonpartisan",
+      "title": "Fictional School Board",
+      "kind": "candidate",
+      "maxSelections": 1,
+      "instructions": "Vote for not more than 1.",
+      "opinion": {
+        "authorId": "author-editor",
+        "text": "",
+        "highlighted": false,
+        "color": "gray"
+      },
+      "options": [
+        {
+          "id": "school-morgan",
+          "kind": "candidate",
+          "label": "Morgan Demo",
+          "recommendation": {
+            "mark": "this",
+            "color": "green"
+          }
+        },
+        {
+          "id": "school-robin",
+          "kind": "candidate",
+          "label": "Robin Example"
+        },
+        {
+          "id": "school-write-in",
+          "kind": "write-in",
+          "label": "Write-in"
+        }
+      ]
+    },
+    {
+      "id": "judge-retention",
+      "groupId": "group-nonpartisan",
+      "title": "Fictional judicial retention question",
+      "kind": "retention",
+      "maxSelections": 1,
+      "instructions": "Shall fictional Judge Jordan Example be retained? Select one.",
+      "details": {
+        "summary": "A retention contest uses its actual answer wording as choice labels."
+      },
+      "options": [
+        {
+          "id": "retention-yes",
+          "kind": "choice",
+          "label": "Yes",
+          "recommendation": {
+            "mark": "this",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "retention-no",
+          "kind": "choice",
+          "label": "No",
+          "details": {
+            "summary": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "library-proposal",
+      "groupId": "group-proposals",
+      "title": "Fictional library proposal",
+      "subtitle": "Demonstration question",
+      "kind": "proposal",
+      "maxSelections": 1,
+      "instructions": "Select Yes or No.",
+      "details": {
+        "summary": "Would you support the fictional library demonstration?",
+        "paragraphs": [
+          "This text is not an official legal proposal and asserts no tax, cost, or statutory facts."
+        ],
+        "markdown": "### Supporting example documents\n\nThe [generated PDF](attachment:file-example-pdf) and [generated text](attachment:file-example-text) demonstrate portable attachments.\n\n**Important:** all content in this blueprint is fictional.",
+        "sourceIds": [
+          "source-pdf",
+          "source-background",
+          "source-both"
+        ]
+      },
+      "opinion": {
+        "authorId": "author-reviewer",
+        "text": "A highlighted proposal opinion appears independently of its Yes/No recommendations.",
+        "highlighted": true,
+        "color": "orange",
+        "sourceIds": [
+          "source-pdf"
+        ]
+      },
+      "options": [
+        {
+          "id": "library-yes",
+          "kind": "choice",
+          "label": "Yes",
+          "details": {
+            "summary": "The affirmative answer."
+          },
+          "recommendation": {
+            "mark": "this",
+            "color": "yellow"
+          },
+          "opinion": {
+            "authorId": "author-reviewer",
+            "text": "A fictional affirmative recommendation."
+          }
+        },
+        {
+          "id": "library-no",
+          "kind": "choice",
+          "label": "No",
+          "recommendation": {
+            "mark": "none",
+            "color": "gray"
+          }
+        }
+      ]
+    },
+    {
+      "id": "advisory-question",
+      "groupId": "group-other",
+      "title": "Fictional advisory choice",
+      "kind": "proposal",
+      "maxSelections": 1,
+      "instructions": "Select one option.",
+      "options": [
+        {
+          "id": "advisory-a",
+          "kind": "choice",
+          "label": "Plan A",
+          "recommendation": {
+            "mark": "or",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "advisory-b",
+          "kind": "choice",
+          "label": "Plan B",
+          "recommendation": {
+            "mark": "or",
+            "color": "gray"
+          }
+        },
+        {
+          "id": "advisory-neither",
+          "kind": "choice",
+          "label": "Neither plan"
+        }
+      ]
+    }
+  ]
+}

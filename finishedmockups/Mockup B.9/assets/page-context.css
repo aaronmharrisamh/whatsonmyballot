@@ -1,0 +1,12 @@
+/* The page label is fixed by the app grid, outside the scrollable content. */
+.app-layout.has-page-context{grid-template-rows:auto auto minmax(0,1fr) auto auto}
+.b-page-context{display:flex;align-items:center;justify-content:center;min-height:46.25px;margin:0;padding:7px 22px;background:#edf2f6;color:#244761;border-bottom:1px solid #d5dfe7;font:650 18.75px/1.4 "Segoe UI",Arial,sans-serif;letter-spacing:.01em}
+.b-page-context-inner{display:inline-flex;align-items:center;justify-content:center;gap:9px;max-width:100%;text-align:center}
+.b-page-context .icon{width:24px;height:24px;flex:none}
+.b-cheatsheet-kind .b-guide-choice-symbol{display:block;flex:none;width:46px;height:38px;overflow:visible}
+.b-cheatsheet-kind{min-height:38px;gap:8px}
+@media(max-width:800px){
+ .app-layout.has-page-context.has-guide-nav{grid-template-rows:auto auto auto minmax(0,1fr) auto auto}
+ .b-page-context{padding:6px 14px;min-height:42.5px;font-size:17.5px}
+}
+@media print{.b-page-context{display:none!important}}

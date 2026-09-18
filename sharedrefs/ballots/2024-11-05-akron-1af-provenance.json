@@ -1,0 +1,42 @@
+{
+  "format": "whatsonmyballot-source-excerpt",
+  "schemaVersion": "1.0.0",
+  "electionDate": "2024-11-05",
+  "jurisdiction": "Akron Township",
+  "precinct": "1AF",
+  "county": "Tuscola County",
+  "state": "Michigan",
+  "congressionalDistrict": "9",
+  "publisher": "Tuscola County",
+  "originalUrl": "https://www.tuscolacounty.org/elections/2024/11/2024-11-05%20Sample%20Ballots.pdf",
+  "retrievedOn": "2026-09-12",
+  "originalFile": "2024-11-05-tuscola-county-sample-ballots.pdf",
+  "originalSha256": "1e9681a2e417fd1e880d1f6014626b0c00476ad0639934707cd850135dc8bd25",
+  "originalBytes": 10305068,
+  "originalPageCount": 140,
+  "originalViewerPages": [
+    1,
+    2
+  ],
+  "excerptFile": "2024-11-05-akron-township-precinct-1af-sample-ballot.pdf",
+  "excerptSha256": "4a8b90925a739712f0f7489547c45b7afeadf1a002f22843b72823d0ad981c72",
+  "excerptBytes": 147891,
+  "excerptPageCount": 2,
+  "runtimeFile": "sharedrefs/ballots/2024-11-05-akron-1af.pdf",
+  "method": "Copy source pages 1 and 2 with pdf-lib 1.17.1; preserve page content; set excerpt metadata.",
+  "verification": "Original and excerpt have identical extracted text and rendered PNG hashes for both pages.",
+  "rendering": {
+    "tool": "pdfjs-dist 6.3.289 / @napi-rs/canvas 1.0.9",
+    "scale": 1.5,
+    "pages": [
+      {
+        "page": 1,
+        "renderedPngSha256": "f1a8045de762f5598c618305c4b14b0526676e511d83a24994e80ca7cda5c44c"
+      },
+      {
+        "page": 2,
+        "renderedPngSha256": "52b04db83f16b561f143208a39eade31209ff4ec74117e645688f53bf0dc1fd1"
+      }
+    ]
+  }
+}

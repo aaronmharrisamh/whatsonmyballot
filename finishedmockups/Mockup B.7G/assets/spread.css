@@ -1,0 +1,8 @@
+/* B.7G: one camera contains two separate, equal-height ballot sheets. */
+.b-paper-spread{position:absolute;display:grid;grid-template-columns:repeat(2,1020px);gap:48px;width:2088px;margin:0;padding:0;border:0;background:transparent;color:#182631;transform-origin:top left;user-select:none;transition:none!important;will-change:transform;font:16px/1.25 Arial,sans-serif}
+.b-paper-side{position:relative;display:flex;flex-direction:column;min-width:0;align-self:stretch}
+.b-paper-side-label{align-self:center;width:max-content;margin:0 0 16px;padding:0 8px;font:700 32px/1.25 Arial,sans-serif;letter-spacing:.3px;text-align:center;color:#334b5a;transform:scale(max(1,calc(.4375 / var(--paper-scale,1))));transform-origin:center bottom}
+.b-ballot-sheet{position:relative;box-sizing:border-box;flex:1;width:1020px;min-height:2040px;margin:0;padding:48px 48px 55px;background:#fff;border:1px solid #929b9e;box-shadow:0 15px 42px #203c4d45,0 3px 8px #203c4d2e;isolation:isolate}
+.b-ballot-sheet .b-paper-heading{height:auto;min-height:80px;margin:0 0 24px;padding:8px 0 18px;border-bottom:1px solid #95a1aa}
+.b-ballot-sheet .b-paper-heading h2{font-size:23px}
+.b-ballot-sheet .b-paper-heading p{font-size:14px}

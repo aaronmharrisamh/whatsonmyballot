@@ -1,0 +1,4460 @@
+{
+  "format": "whatsonmyballot-release",
+  "appVersion": "0.3.19",
+  "release": "v0.3.19",
+  "preparedOn": "2026-09-18",
+  "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+  "datasets": [
+    {
+      "ballotId": "b9a-fictional-ballot-demo",
+      "format": "whatsonmyballot-ballot",
+      "schemaVersion": "1.0.0",
+      "kind": "portable-ballot-demo"
+    },
+    {
+      "ballotId": "b9-fictional-ballot-demo",
+      "format": "whatsonmyballot-ballot",
+      "schemaVersion": "1.0.0",
+      "kind": "portable-ballot-demo"
+    },
+    {
+      "datasetId": "mi-2024-11-05-tuscola-akron-1af",
+      "kind": "historical-reference"
+    },
+    {
+      "datasetId": "b5-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b6-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7b-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7c-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7d-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7e-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7f-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7g-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "datasetId": "b7h-fictional-ballot-demo",
+      "kind": "fictional-ui-demo"
+    },
+    {
+      "collectionId": "b8-fictional-collection",
+      "format": "whatsonmyballot-collection",
+      "schemaVersion": "1.0.0",
+      "kind": "fictional-collection-demo"
+    }
+  ],
+  "stagedMockups": [
+    {
+      "mockup": "B.8",
+      "completedParts": 4,
+      "totalParts": 4,
+      "targetVersion": "0.2.0",
+      "status": "outmoded"
+    }
+  ],
+  "activeMockup": "B.9A",
+  "schemaVersion": "1.0.0",
+  "baseDatasetVersion": "1.0.0",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5583,
+      "sha256": "f1973ff92d3100f2daf78f0b142b6e9c0074630c232000118b8dc814db6ead62"
+    },
+    {
+      "path": "finishedmockups/Mockup A/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "finishedmockups/Mockup A/README.md",
+      "bytes": 530,
+      "sha256": "d498221e4285bf9b85e31ac302ee51880f8ec5a873d4a6f1db9fc4e91802a583"
+    },
+    {
+      "path": "finishedmockups/Mockup A/app.html",
+      "bytes": 1119,
+      "sha256": "16db5c21dd4035f1eb63493205907a5ce8c08b2534de94d76fa1be066ebea179"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/app.css",
+      "bytes": 21815,
+      "sha256": "cb2099e9ec49239e7716286ceb5d2ac14597097349db70101ff9dce8aab2e5f1"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/app.js",
+      "bytes": 53088,
+      "sha256": "35dc24afda96e59237c9c42512f9bf65032c6b34d480bbf9b17d2dbfc5e7c3a9"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/ballot-mark.svg",
+      "bytes": 296,
+      "sha256": "92ab7eb4229e48a89a35be90a135eac7cd8fdf15ee481c3d46ce0e30c23863b4"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-contract.js",
+      "bytes": 5695,
+      "sha256": "b0772d3e98ee7b2fc88ef746dc6b2c199a3a6cbffd162ce7c7dce67d2e4e479d"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-fields.js",
+      "bytes": 5996,
+      "sha256": "94fee2736d2a37dab2a59466a95f857e6fe70a4ffd45c729f9af61f7ebec1efc"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-renderer.js",
+      "bytes": 1363,
+      "sha256": "676ca6bb279d1708865c6d32c96d2799ede0b435d53c0870742e6f101d1d9cf0"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/content-store.js",
+      "bytes": 6352,
+      "sha256": "82e45833ad4b6821ca3390c34c71f3cea93ff151e354adb06c525c7002f2eaee"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/model.js",
+      "bytes": 6400,
+      "sha256": "1b2548b37d6a0ecfbfd0f7795060667f6578f43ec84a694b15cb90b4376a7e48"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/paper.js",
+      "bytes": 4827,
+      "sha256": "8df1bb4443e485a5931e276589ebcbe1cfd76623d48a70228b8f060f79d4ebc4"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/portrait-placeholder.svg",
+      "bytes": 331,
+      "sha256": "d1a793a253614c72d61eff1980fc97ca20f0e073657796fcf362833fa2dd2f7b"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a1.png",
+      "bytes": 38239,
+      "sha256": "0452478bf48173d683f180c4fafb57278c38848d21986859e06124c5ec9dcadc"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a2.png",
+      "bytes": 38255,
+      "sha256": "b9fbe27e42978d5969f72f475bf1ee1cc1906e8768d44afb21778aae3099dffb"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a3.png",
+      "bytes": 38467,
+      "sha256": "430d9dd3f3650ff0f034656ed375c20d99f3f7bebf6cd2fee619345d691f4d63"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a4.png",
+      "bytes": 38714,
+      "sha256": "c9cbed38252594ae4038a7719d819007d899a3ed9acb9718923e849ee31b1857"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/previews/a5.png",
+      "bytes": 37634,
+      "sha256": "f94f1f3e370b944a9f0d4582e0fbdef36f754a11cb92dbedd7558f61cd906aed"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shared.js",
+      "bytes": 2502,
+      "sha256": "8641c3d6e35f7a1bf3c2023581e65e54943eaae4d4ff768f213847bce794c971"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shell.css",
+      "bytes": 10846,
+      "sha256": "691edc41b473f76a11256110609e6fcfe758227d750f1753ea249604a0efc64e"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/shell.js",
+      "bytes": 11424,
+      "sha256": "2b549e47a160b84e1a438aa8a3f42b7409106eb85011f2dc6c36e8d7c827ae81"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/README.md",
+      "bytes": 1302,
+      "sha256": "19df42ebd28058cb3d194c8af641f1513e0f824e5930a71aec451db31a2a4f26"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/ajv-formats.LICENSE",
+      "bytes": 1074,
+      "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/ajv.LICENSE",
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/dompurify-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/marked-LICENSE.txt",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/marked.esm.js",
+      "bytes": 43991,
+      "sha256": "4f7117dd998780fe6fa17a25d06489b8ddaabda73d3a5a9451cb400f1925c56d"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/purify.min.js",
+      "bytes": 29369,
+      "sha256": "f263b05369e050fa175d4ecb9c9358eb4253602d510297adfb31df48b2f1c4d5"
+    },
+    {
+      "path": "finishedmockups/Mockup A/assets/vendor/validate-content.js",
+      "bytes": 294653,
+      "sha256": "1e8d9b85b916067da2691b1294ae3ac40e21e0113a3b6e32467dea81340dfcd5"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/ballot.seed.json",
+      "bytes": 255338,
+      "sha256": "62e483bb3a4177e774414584c8240e869f5c852a883b1e84f44fff9a39491fbd"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/schemas/ballot-content.v1.schema.json",
+      "bytes": 45243,
+      "sha256": "c30e93effbce574b89fa84a900309c5925b498578eb5a8c7b9af1d3011d652bb"
+    },
+    {
+      "path": "finishedmockups/Mockup A/data/variants.json",
+      "bytes": 2900,
+      "sha256": "19e098ac016beb1b4d8b544afa6d0ef24f48a4804f627f647d6112aa533f452a"
+    },
+    {
+      "path": "finishedmockups/Mockup A/index.html",
+      "bytes": 2324,
+      "sha256": "e3e2fb3c941102aabf2613a183ce2a4807818d1b9becd2228f20ddff9089fb3a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/README.md",
+      "bytes": 172,
+      "sha256": "1ef5f2783a9125ed407d72711273f36fb89d73f9191e1168e331ddbd556e8bc7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/app.html",
+      "bytes": 1178,
+      "sha256": "af8bd63c380e045b4a152af7ac115f8946e51ad5a29011503cb8f523513f2a94"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/app.css",
+      "bytes": 7328,
+      "sha256": "e31cf01f6c49e722039a28a4be0783fa5636bc819d4cd5bbe7658dffa51636d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/app.js",
+      "bytes": 65283,
+      "sha256": "4f6622c150326d5e72f3f1728d1504271d814c423b6712ab4548ae4398e05dcc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/idle-hint.js",
+      "bytes": 1247,
+      "sha256": "5e23f167e4413b68bf91bc3da8cece6e165594410b4ae85e81c6a230031fc614"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/paper.js",
+      "bytes": 7016,
+      "sha256": "09dfbb649467e65409f0b844d7dfb1ed8c3c518c51652c6589383d7c67ce1f87"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/desktop.png",
+      "bytes": 170451,
+      "sha256": "63db0a7681f6b1e71684414805bf3d6be4a8521f18ee76d08466c459ce8ed591"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/mobile.png",
+      "bytes": 72886,
+      "sha256": "7730b92489264fc40e84cedf6d33e051bde90b97b65681771fe43835c1331f1a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/previews/section-mobile.png",
+      "bytes": 49867,
+      "sha256": "99ba156bfd303280d16dc33869ac045b54351d073f947f7f224e254392d182a4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/assets/shell.js",
+      "bytes": 4474,
+      "sha256": "e2de713528b10c3b8406618ab3a5d6bf480e28603e9ff5703ba02f19ffcf5694"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/data/notes.seed.json",
+      "bytes": 49516,
+      "sha256": "9768f36bbbba8d1ff290fe0ea5cf964baf6037e7a7572f2fdc02825684333220"
+    },
+    {
+      "path": "finishedmockups/Mockup B.1/index.html",
+      "bytes": 1937,
+      "sha256": "b3a420330a955337ac5a7eb75371e3e10e2214937c5c4084a857e92ed6acc927"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/README.md",
+      "bytes": 327,
+      "sha256": "e63141236bf8b2385139f91e86a02c7ff79d4244e45351a0430a99d1566c0649"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/app.html",
+      "bytes": 1178,
+      "sha256": "59aa598006e9458ea9e13119109eb15025edeeb35c4f13e978f163cf2ed1f0b1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/app.css",
+      "bytes": 13223,
+      "sha256": "e1c7742e7e839f8304eedebefce52b95ddd01529acd57be281858b4fa707b851"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/app.js",
+      "bytes": 68397,
+      "sha256": "fd50c1b0f6b5c6477a97b8dbaeef95c32ccc2f0488ced7b81f87421b7d5cad07"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/idle-hint.js",
+      "bytes": 1247,
+      "sha256": "5e23f167e4413b68bf91bc3da8cece6e165594410b4ae85e81c6a230031fc614"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/lime-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "a4b927614d111ee6c8ff0f4f1e08067cce0054c36d3e8ed9e6aa923b3156d84d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/lime-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "46e55680e76067e3a9a9067f8a2e207373ed3661b231567d7e6e6ea0d152619e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/lime-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "4cac77a4db85c364ad54515b2a036421ede760f7dda5398a64f1c2247e3edbd8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/lime-checked.svg",
+      "bytes": 283,
+      "sha256": "394d264127125c1794dca383428b115ee91a0bda31c8bb3a9fa24292af2112bb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/lime-empty.svg",
+      "bytes": 160,
+      "sha256": "d208efbbb7168fc71bf23dafa49169dc9377b0dbefc3dc46b2ddfa1d0801e7d5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/slate-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "8895feb64f5e562c154fd1f63fead26c1bbc853a7d9c975bf9bec32df7d3c2c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/slate-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "eaec81bba15ea04e941163aeacf121537724b8f6a1f43b534b0d0f6ab3461847"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/slate-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "13268112b60c7ba28156b200c2880aee8a76dfee020a5d3a8217d83933cd3e93"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/slate-checked.svg",
+      "bytes": 283,
+      "sha256": "fb2459e98da8056c92c9c7076e54f431017a5983d6c0d4b4ac1fc40baa7743c8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/marks/slate-empty.svg",
+      "bytes": 160,
+      "sha256": "812027d4b13563193f5ae1813d19634d565638e22cae47c10231513a3a63cd28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/paper.js",
+      "bytes": 8727,
+      "sha256": "eb330c092dfc7523fb217e78fac7317c665e539c2c8f8165095d9af1ac204795"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/previews/desktop.png",
+      "bytes": 118792,
+      "sha256": "6781f54bf6203c8d6fcf6705024013a64e277de4261b809761a2db7d90dbb034"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/previews/mobile.png",
+      "bytes": 53800,
+      "sha256": "058cd210b65c79c9a3d1b31a7aac509017f4372b1a1ba94aada468326e71b970"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/previews/section-mobile.png",
+      "bytes": 48801,
+      "sha256": "aa8769861d4c4bf70f0adf101d5dfdbc1546274c9b8c31aa9c948eda4fa1c262"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/assets/shell.js",
+      "bytes": 4628,
+      "sha256": "3c0e3a8e0c5aa676eafa49bf4ded6f53c15bd56808377e08ab36832e414d2ec4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/data/notes.seed.json",
+      "bytes": 65518,
+      "sha256": "49eeba6fac2af9f5a45d62d1fc37e524791d4a2f553e8cd3ac4cd6e03b2c48a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.2/index.html",
+      "bytes": 1937,
+      "sha256": "16a1d35b55aa895b685a570e1e0396ebd2feda637807844c78dc35279f983468"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/README.md",
+      "bytes": 387,
+      "sha256": "580ca8c3a40edb02393642a342b8529b94e6e233c4858d4e7baf3af9172a338b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/app.html",
+      "bytes": 1274,
+      "sha256": "5655fa4f9019f2c8203d7fbc6455fd476f5673e02ad22b966661cd666e20794d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/app.css",
+      "bytes": 17316,
+      "sha256": "bedb1336a361a79617b703199d7bbdda44da16b2da46859de0c47be01ce79064"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/app.js",
+      "bytes": 72921,
+      "sha256": "b03f52d153a69beae08a6b8b57b051edd1b95685b1b7d55213a93ea01db4cd15"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "a4b927614d111ee6c8ff0f4f1e08067cce0054c36d3e8ed9e6aa923b3156d84d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "46e55680e76067e3a9a9067f8a2e207373ed3661b231567d7e6e6ea0d152619e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "4cac77a4db85c364ad54515b2a036421ede760f7dda5398a64f1c2247e3edbd8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-checked.svg",
+      "bytes": 283,
+      "sha256": "394d264127125c1794dca383428b115ee91a0bda31c8bb3a9fa24292af2112bb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/lime-empty.svg",
+      "bytes": 160,
+      "sha256": "d208efbbb7168fc71bf23dafa49169dc9377b0dbefc3dc46b2ddfa1d0801e7d5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-1-of-2.svg",
+      "bytes": 291,
+      "sha256": "8895feb64f5e562c154fd1f63fead26c1bbc853a7d9c975bf9bec32df7d3c2c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-1-of-3.svg",
+      "bytes": 291,
+      "sha256": "eaec81bba15ea04e941163aeacf121537724b8f6a1f43b534b0d0f6ab3461847"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-2-of-3.svg",
+      "bytes": 291,
+      "sha256": "13268112b60c7ba28156b200c2880aee8a76dfee020a5d3a8217d83933cd3e93"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-checked.svg",
+      "bytes": 283,
+      "sha256": "fb2459e98da8056c92c9c7076e54f431017a5983d6c0d4b4ac1fc40baa7743c8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/marks/slate-empty.svg",
+      "bytes": 160,
+      "sha256": "812027d4b13563193f5ae1813d19634d565638e22cae47c10231513a3a63cd28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/paper.js",
+      "bytes": 8727,
+      "sha256": "eb330c092dfc7523fb217e78fac7317c665e539c2c8f8165095d9af1ac204795"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/ballot-mobile.png",
+      "bytes": 58207,
+      "sha256": "f789dc973edb441bca57c1c413ef3d73418559cb8bc695010eeca6beb776dd79"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/desktop.png",
+      "bytes": 511697,
+      "sha256": "134ec14ae741522646e220692a1a15f597934f9a94b0313f844289e4798c9174"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/mobile.png",
+      "bytes": 48223,
+      "sha256": "061ae236dd1bd78dba11b37beaef1a08a33d68f7c80db4853635d061088887c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/previews/section-mobile.png",
+      "bytes": 50011,
+      "sha256": "c1afd393078ab38f52ea423d6048d8eb2899a1bcad29b0dd6e6394f5f1b48ee7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/assets/shell.js",
+      "bytes": 4600,
+      "sha256": "82ad145ad3aa45983ac66a06ea4e2e74afd7bf4bf9ee053649e8be36993d39a3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/data/notes.seed.json",
+      "bytes": 65518,
+      "sha256": "49eeba6fac2af9f5a45d62d1fc37e524791d4a2f553e8cd3ac4cd6e03b2c48a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.3/index.html",
+      "bytes": 1925,
+      "sha256": "6132fbedfc5a7c55118ade75b48c90ceb325f636ddac880b87e922adbacb4e78"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/README.md",
+      "bytes": 889,
+      "sha256": "0df2b1f6db94a32e94fb2ac622be5ee7cc5a72c5a185b73af1d3f7190e0fc66c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/app.html",
+      "bytes": 1274,
+      "sha256": "2b8cfddf8f36d53b113db680b4d3fa3da585989468b6eabd71781551497f4908"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/app.css",
+      "bytes": 28364,
+      "sha256": "719567e51d66da0300939420f10727110317f41d44951ee2a62cba0f2c487268"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/app.js",
+      "bytes": 87425,
+      "sha256": "80c5a4b009b028669fd6f838bbc91ace51549e59b4a57dad4d4da8182a1a0283"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/lime-empty.svg",
+      "bytes": 148,
+      "sha256": "e4936b21461c8963702ea14d9a8a4f842c3fb41e61545cfe1ee3ba1393273485"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/lime-filled.svg",
+      "bytes": 148,
+      "sha256": "819903ccd92ae1a1be3d503d154697f93aef5c4a829dad8bde5e95c67694caf0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/slate-empty.svg",
+      "bytes": 148,
+      "sha256": "26b1a5029b887ffd5dcb06cb5abca0d6285444b3b7702607e9dcef352130a500"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/marks/slate-filled.svg",
+      "bytes": 148,
+      "sha256": "440902718d4fe55cce5cb9bc4ec146d6bb754af64445c19cc843ae3bf2f9b73e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/paper.js",
+      "bytes": 8892,
+      "sha256": "44c086ab32f0e53206380efa0af562599efe7b4bd92face56c1334fff1dcb106"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/ballot-mobile.png",
+      "bytes": 59452,
+      "sha256": "c316989f5e536dffad6bcc279db5cbe8ef20d0df2f8aa5350cb5b8247f9a56b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/desktop.png",
+      "bytes": 476893,
+      "sha256": "57d2979fc00aa79b8e4e3b9cd9836e910faa2c9e003b76b8727a78506a8c48f4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/mobile.png",
+      "bytes": 49964,
+      "sha256": "ec9f843efc583d0387207ddbe792c536241ac7cabd9752203beb344d3c3a9002"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/previews/section-mobile.png",
+      "bytes": 49324,
+      "sha256": "520e6c08b1e6369d23f81b5b83cadcbe6f38041f19b9a250bd51501f88753231"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/progress.js",
+      "bytes": 1482,
+      "sha256": "cbd16b168ab29c6f2518c7eea66ca6fb8cbda8189ed5c1040ce8177a084226fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/assets/shell.js",
+      "bytes": 4525,
+      "sha256": "7198cec64a780326ea495131533b468963b3dc94017224725347d20973a23c2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/annotations.seed.json",
+      "bytes": 27722,
+      "sha256": "cd14a9d76bf8ea765e2b9e85065ba54fc6c83517035de5cc8cd7148b684818bb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/data/notes.seed.json",
+      "bytes": 65518,
+      "sha256": "49eeba6fac2af9f5a45d62d1fc37e524791d4a2f553e8cd3ac4cd6e03b2c48a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.4/index.html",
+      "bytes": 1914,
+      "sha256": "6ec9c02c081bd17703ce4aaa79f40d0e62f6e0f0b72649660a537d144b23e11b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/README.md",
+      "bytes": 1124,
+      "sha256": "3ed573f34bf81d0f126f55e7d0179dce3a0e89a4f889ba938e1995422c388365"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/app.html",
+      "bytes": 1274,
+      "sha256": "953851ae7ff24a5cd22bae2c66fa967c7bfc909460ce1c2d1ad578169b5227ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/app.css",
+      "bytes": 39175,
+      "sha256": "4b22817dc018f97bf96d261b90e70eebd8e8eb33c0cdb6dd6ce0c97255bc3b15"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/app.js",
+      "bytes": 92792,
+      "sha256": "3494cee3db8b2588b069b2126d85309e95221b2a9410e55a3cf407cf5d604161"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/lime-filled.svg",
+      "bytes": 158,
+      "sha256": "d793b5ce22e823119841f845822722987efb85e4abb68a8234be9dc8c36c6548"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/marks/slate-filled.svg",
+      "bytes": 158,
+      "sha256": "ad7cd3a483965a7545d302a59641e952e481c78d02c2e81c15402b313bf4878d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/paper.js",
+      "bytes": 10078,
+      "sha256": "967b02f90310ef163e7923b20e487b0699f1e6f9ebf424883ffb7fae0439abcd"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/ballot-mobile.png",
+      "bytes": 114059,
+      "sha256": "39ee5b4995a33fc78821309936bf46048d3b8c647cb9a4b663f6689c8dc3e1c5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/desktop.png",
+      "bytes": 483603,
+      "sha256": "df8d0936c2602f51c161291c3dfd276b801cb96d5dc3ce7b630b3294823babbe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/mobile.png",
+      "bytes": 55182,
+      "sha256": "9f6a72dacfea475ad5c18545178c6ea00682d1983e1fb6a455c415b5f83ac1fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/previews/section-mobile.png",
+      "bytes": 49324,
+      "sha256": "520e6c08b1e6369d23f81b5b83cadcbe6f38041f19b9a250bd51501f88753231"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/progress.js",
+      "bytes": 1482,
+      "sha256": "cbd16b168ab29c6f2518c7eea66ca6fb8cbda8189ed5c1040ce8177a084226fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/assets/shell.js",
+      "bytes": 4726,
+      "sha256": "63137a4b2ab6a39bd638a857e6bee6c3b1c5f3ce00a7a51b3a50081f647a7350"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/annotations.seed.json",
+      "bytes": 25413,
+      "sha256": "1124199a9e68ca88d9acec538bbf8af4fe651bfc04453a95081206ff906414a7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/ballot.seed.json",
+      "bytes": 240318,
+      "sha256": "5d381ae0fad4a0126a0158bd27646e0e92b628e12a9079543e9f8dd41d453a7c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "e207da4c430361fefcee25422c62454cd0f7252093787ad85765fa0366233875"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/notes.seed.json",
+      "bytes": 63331,
+      "sha256": "ab487de7b1e5cae32b8d6fc4448b48dd0a34b7714fd420db0aab82304160930d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/data/variants.json",
+      "bytes": 2893,
+      "sha256": "05e179c9107d0a48e95d513df670eb11146cd3539bb50872986b024a3c944b1d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.5/index.html",
+      "bytes": 1915,
+      "sha256": "0ea88cf543b2c4e82974f4d10049ce280dad4b347c9faba871c1d56b36d14446"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/README.md",
+      "bytes": 1246,
+      "sha256": "3f15a8185cae7172545268cf97b18604de90c098544de1d90de9f48d7e9093a6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/app.html",
+      "bytes": 1340,
+      "sha256": "a1a7298a0ff4f7379d0cedf45ca9dee422706af7e257ae4f38ce082db39fcd01"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/app.css",
+      "bytes": 52092,
+      "sha256": "eff5f2ab0978f7efffdf14ae9aaeee5be237cc81d67510f3265422ebe7f6bdc5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/app.js",
+      "bytes": 101898,
+      "sha256": "6294060ddb3245b0e0f641ab19d3b1048f719176264263fd6b021a34c61188d0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/marks/lime-filled.svg",
+      "bytes": 158,
+      "sha256": "d793b5ce22e823119841f845822722987efb85e4abb68a8234be9dc8c36c6548"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/marks/slate-filled.svg",
+      "bytes": 158,
+      "sha256": "ad7cd3a483965a7545d302a59641e952e481c78d02c2e81c15402b313bf4878d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/paper.js",
+      "bytes": 10632,
+      "sha256": "b2ccd31414280a4686a759239d2f9c68c3a0a8d7dc215d5038a34fdd3eee20ae"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/previews/ballot-mobile.png",
+      "bytes": 86254,
+      "sha256": "c0ff7aa78a4aeb3a82e2b739c2718d795f2512fa7de6622447bf8178ed9a3094"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/previews/desktop.png",
+      "bytes": 474628,
+      "sha256": "581967d128a3b152b3a898d9695c108aeddac34d66b997a4906cd3f3d0058b03"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/previews/mobile.png",
+      "bytes": 51937,
+      "sha256": "00a247092e3d955ddabb5acdb7a77aebfd559be8bacf15492d4e6558f01e4aef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/previews/section-mobile.png",
+      "bytes": 42540,
+      "sha256": "1f5be90c57500a3cd4de0a74af9a3bd81ce9e4e66b9bb714d7e24c0b2efb4ee5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/assets/shell.js",
+      "bytes": 4660,
+      "sha256": "587cbc00c664e59e171c916523f795a4206727df5a21cacaf4312f7095085d6e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/annotations.seed.json",
+      "bytes": 25413,
+      "sha256": "836ced32467f8885df06d05a3659af8616434013104326c4c71b54f68a826bd5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/areas.json",
+      "bytes": 1921,
+      "sha256": "338cb06c0a47fa2885967c7e7adce198ed2250c6b183f7f8f22fdefdab847eb5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/ballot.seed.json",
+      "bytes": 240318,
+      "sha256": "d6496fa15f6d0ff58ef725316abe14f35842ac97805f0ab41dcdbc4e0cc9e436"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "89c534c14c6d5625f0fe14ce660eb32d214991eb867011eb054abd0d50d46f05"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/notes.seed.json",
+      "bytes": 63331,
+      "sha256": "4fe80c21355350735279bdeec10abbb3e0f40bc3baee7b44b7740cd3e95ce941"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/data/variants.json",
+      "bytes": 2893,
+      "sha256": "901dfbccbd209c6e99cf4c8df697cf653d5614512b5215d1d6041bea3e05b64f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.6/index.html",
+      "bytes": 1915,
+      "sha256": "5115ea58b1856c0a56bf0a6f939b09ba13d066378dd958acbe4913d7c067356f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/README.md",
+      "bytes": 969,
+      "sha256": "239f1a5dd10d8df977ebb00b1555e3e70d6968a3507e4994920e567897cba1d5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/app.html",
+      "bytes": 1340,
+      "sha256": "a09373f6e80ea67786e14a67140ffd53062d4a44f07fe5744d02938f7d0a33ad"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/app.css",
+      "bytes": 55394,
+      "sha256": "82e6a8a21ae84ef415631ce1b96031ed61c42379729250a1b75722662fa90f83"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/app.js",
+      "bytes": 106642,
+      "sha256": "0bbaff5457f3f41991b24652e30471a3db52716446196a1217cb31978f0f71a9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/lime-filled.svg",
+      "bytes": 158,
+      "sha256": "d793b5ce22e823119841f845822722987efb85e4abb68a8234be9dc8c36c6548"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/marks/slate-filled.svg",
+      "bytes": 158,
+      "sha256": "ad7cd3a483965a7545d302a59641e952e481c78d02c2e81c15402b313bf4878d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/notes.js",
+      "bytes": 4664,
+      "sha256": "d576c561714bedcccb99993e8e0818abd4a7cf9a069d475d7b664b68b1fe10ce"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/paper.js",
+      "bytes": 11809,
+      "sha256": "c82cf02b8e2005e9f4a568c838766ba6b1d0ff633db636b4430326c3a00fa3ea"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/ballot-mobile.png",
+      "bytes": 83578,
+      "sha256": "ed252b2bfa3a63e4786fe1cdb93bb129cb1228d5e9f8d75d8139d4326398065b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/desktop.png",
+      "bytes": 479623,
+      "sha256": "e3d9e931c035e7b0aa9ba757a49d78b45cef05736869062c85213bcc2c5b12ff"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/mobile.png",
+      "bytes": 53430,
+      "sha256": "0f44c7968120ce570459e7f3bbdb5c45a9105c83524c3c53babb4d3a5c14b04c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/previews/section-mobile.png",
+      "bytes": 47593,
+      "sha256": "a4936e9dbab3f0aade3b9df70b93800f9a25e4d08c66b0be8cc7d0df6257da09"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/assets/shell.js",
+      "bytes": 4436,
+      "sha256": "a4a2c43157b9d13a969a8f162fd630436a4908cc1c2afe837971940a589a7284"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/annotations.seed.json",
+      "bytes": 25417,
+      "sha256": "02d1af940e499311f93d8dd680a4d4941889247875b2942975e14c1fa0729e8f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/areas.json",
+      "bytes": 1921,
+      "sha256": "9def10abc274b8a72609624d4c41405b3a075b10aabb6a2b567d3bf58c4b8413"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/ballot.seed.json",
+      "bytes": 240318,
+      "sha256": "c872f3693a92faa9f887bda35df7f48e1548828ac425324a08adc8383f8466a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "8be462ef850b08909557b555c65f30d50971fe2b12088062123c1c0ed29c5520"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/notes.seed.json",
+      "bytes": 58744,
+      "sha256": "34b6143c90196545d06820f5e45c1d7a2df28fda510821b5835bce6b56b259a5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/data/variants.json",
+      "bytes": 2893,
+      "sha256": "98365b92d6c6783edd409ffb5c09b75813d887cd6b6a8347892223e235773c39"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7/index.html",
+      "bytes": 1922,
+      "sha256": "062438418b7af62a097035ac1de7531a54504ff6edc118515a0cf45c25fb7054"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/README.md",
+      "bytes": 896,
+      "sha256": "494d6d035bd6c651349ca589bfe2ec47d46b64fac1f0b669d74ed6d6966c70e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/app.html",
+      "bytes": 1341,
+      "sha256": "e8261a22efb87cd71aba3af37c713605dffa29b1bfa598853309fbbd3bf310e1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/app.css",
+      "bytes": 56859,
+      "sha256": "e5db5092c1b6d78b317c392952ba44b35a251f697c69f7cdaa464d6d60d1e1d1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/app.js",
+      "bytes": 107614,
+      "sha256": "166633a46395fa7557be493612fca55efb32416c7b6068c08148b6c7655f1484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "c58b1b092caf6c243fe838c1623173ededf2f970a516c0fffc43fcf39c2b341e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/notes.js",
+      "bytes": 4684,
+      "sha256": "9431a14fbec5a62ebc3e5e0620fa234f4a215813ecc41156daded516e21a290f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/paper.js",
+      "bytes": 11973,
+      "sha256": "488624c3c4a07aa4248afd96c540a804457e0f3f3f39bef67764ecb6cb812567"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/previews/ballot-mobile.png",
+      "bytes": 85962,
+      "sha256": "8ebc9eaae0581050c9344fb06ac10534b262eba5b0d39591600c7cd2bcd4b3b1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/previews/desktop.png",
+      "bytes": 479948,
+      "sha256": "e8dc4dbc3e1b42e2beab417d5849c80d1f6e54941c4d917d5fbeb46de71e3a58"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/previews/mobile.png",
+      "bytes": 53406,
+      "sha256": "42e0ec913d5fbe937117e9e4d05b14a81ad9c0a14fdc5f5f430e61a9669fb16b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/previews/section-mobile.png",
+      "bytes": 47826,
+      "sha256": "b583f41bc25f0c199ff73ba435d68404300dc3dd44212731225283cb77d95423"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/assets/shell.js",
+      "bytes": 4694,
+      "sha256": "a5c08b0703d3e16663eea82dabee3b6af98346d2366484b9ba2b833449f46a21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "b9e171a47d43f469b4d1a544ca333e46e3d0f09a4f5aec75ab4483ce4a0f6c2d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/areas.json",
+      "bytes": 1923,
+      "sha256": "e2da39cec399ffbf92e24527d1343f31c6b4ccabcb124a572d4dc55ef5aa9c46"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "295611686be97a1380bcead3eddb126a288a2c589ac422e3ea2dc2b32b312312"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "fcee4eea6ad5abb7772e747efb962313d198e59dfc11ccbb03ccfeff9813c1a6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/notes.seed.json",
+      "bytes": 58465,
+      "sha256": "79aeb2a21dd35afa3cea16e1d9021b0646b24022d0e88d32c11276a36bb640ca"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/data/variants.json",
+      "bytes": 2894,
+      "sha256": "7076162d6a465c5d13f9dfca43fc37bd34e1a309203d18f5629d7d84008baf8b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7B/index.html",
+      "bytes": 1929,
+      "sha256": "e06c1c5e30e67b7529495c25ab6dd7c2a5956a986fcd7150d694498c99af1ed6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/README.md",
+      "bytes": 896,
+      "sha256": "3adbd909d1bb97dbb87732f0c2ab5a947144a74db0145d3d0373989036797342"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/app.html",
+      "bytes": 1389,
+      "sha256": "2ba93a87d86a11538e8a810a63a1d43890e8a6b03f1f1751a9b362dfc27690df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/app.css",
+      "bytes": 57928,
+      "sha256": "2239c3ea02c7a34e723aeaff2367c2835db29435d077fe6a043be875c11f2526"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/app.js",
+      "bytes": 109310,
+      "sha256": "c5a63346ac295d037250b9719bd52b7534eae70cc44ec5d156fb031f5a459de7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "cd1a31e1f97f923d7276ade72b49fe13d3ec70693aaee0e2d371ce9e6a2a966f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "4a1c8167ed6cd9d5b263ac8fcbb0ea98bb645bd0f28bd5adf0ce0538fa46bd48"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/paper.js",
+      "bytes": 12482,
+      "sha256": "968ed7ce102ca9cf85fbcc31b179cd03e176dc24471a2c6e692fbedb785cced8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/ballot-mobile.png",
+      "bytes": 86401,
+      "sha256": "13c87509b465affdd5cddb8108bd74afd96df2a4852a42ad954bb804b702dfcb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/desktop.png",
+      "bytes": 479964,
+      "sha256": "3eb3f3c67886c23ee1bf1b36986799ef84b5275dbcdf96407189d81439b171d9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/mobile.png",
+      "bytes": 53462,
+      "sha256": "8e72d61bc8f123a297865d7a5c2c41a1fa843655f0147f6061b1752295abe389"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/section-mobile.png",
+      "bytes": 48330,
+      "sha256": "5cbd8fa3c64e8cba710f3e3986aa4d093759aafcae788a778300bcf5f248ddee"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/shell.js",
+      "bytes": 4694,
+      "sha256": "14ce153e974542ab954d635baa9139112501038f04fd523a915f95e0d3169c41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "82627bfda97fce8ae39d2b83ebb0b3f8301be0b55c175f9d51ca8f45e04f8ab1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "b9e0017c2412a585d3ff8955b3509fa1574b1886d82b4729d030ad5ee7766307"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/areas.json",
+      "bytes": 1923,
+      "sha256": "4c8f9f87dd143c1c169a71db9595329882267bff1140c33d5abffe45aeb31f24"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "ea15e96ea3b3553e6bfc81cbbf2e562b8821a90d7d92e7aa82ebd13af325a7df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "9f7212101a9aadc9e347a3155a9474cf4a88cddc512b340c2cea864a43240ce5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "da1b5095b6463c7be2693c5777ecbb29940feccee3797bc072e1135ad46f1412"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "7e0f0a6480d59dd59ba1e63446fdb3e708b13fd9c7f6eb5fb7086d25b9c66a53"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/data/variants.json",
+      "bytes": 2894,
+      "sha256": "671885884e9aa43a7c422b2007be3a2bf1b622bb35e8f9b44863d0660bea5920"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7C/index.html",
+      "bytes": 1929,
+      "sha256": "df8da35732242aad771ce27dd2abc0890a5f6d056fcf8f40a9559a54a74db4d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/README.md",
+      "bytes": 896,
+      "sha256": "938a02162a22d35467ac17bf74b5fbc665a964ae263f5b0f4b149baaa0780038"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/app.html",
+      "bytes": 1389,
+      "sha256": "9c7ba2d22eeb05a2fff7d527c1b057f38712fc96b293fd3531c64b4e6c7e15bc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/app.css",
+      "bytes": 60005,
+      "sha256": "a5508d84d1d1daeea0b4f820850710aa8f12b08a9fea3b95d693eaece3aea07b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/app.js",
+      "bytes": 110151,
+      "sha256": "c783127d1e8a55ebee7a4ad01a6aaf7bce2712adcc323cd1046a1b23d8a43c1d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "f17336d113c7c48360fed839411320c1433cd3122ba43c1fa985847a873c3ca6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "d19aa63aff8137fdad5abd92c75eb457a7d0656230d6468f1d8b934de0b16ca3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/paper.js",
+      "bytes": 12963,
+      "sha256": "e33acc170be6e31a2ca596af058dcfd1ce4674197c6c19a7a367309c7641cc77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/ballot-mobile.png",
+      "bytes": 84768,
+      "sha256": "5765846cb61236b862d609a7e076b9a2244e4e59daf1940716bdfe86005a4e61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/desktop.png",
+      "bytes": 480240,
+      "sha256": "c95260ed85a7209e840ddb9a3058b62a538552e54c5007fadd83d7dd584e5d8f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/guide-desktop.png",
+      "bytes": 140866,
+      "sha256": "f6f42c0c628894a405989f6fb4a93df6ab75e3c21fbdf421b5c518b2e38f1d72"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/guide-mobile.png",
+      "bytes": 37446,
+      "sha256": "0ceea8f5f9e47de3ef0cbe88e5279fc137bce2aa51b8f7d3761a95bfd2c6f96e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/mobile.png",
+      "bytes": 53572,
+      "sha256": "d225558f10c22e77da3f27811131bc2b19762a2256188ff03bc0a9ca562ca5bd"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/section-mobile.png",
+      "bytes": 48364,
+      "sha256": "c107e497f3d6e6fa61ac8ebebaf62cc9def6a4fc5a010898e17216b5e1dff998"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/shell.js",
+      "bytes": 4877,
+      "sha256": "3f17e6d921f23dca5a812afba99a468a4d8956a8380c6a1872ce17bf2f4e2000"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "17482af13a197aad01b5b5abfaea9f32f47d99ec400fcdbad49c40e11837aa2c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "a6bcf16db8457079653a2a08ad12ec9baa05d797d1dd9c6822435fa84641529b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/areas.json",
+      "bytes": 1923,
+      "sha256": "c32cbc4d8b5ceb87f1b3a068dccce62f91ea1943ac1abe8fe3be88b57ef7ee50"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "676e94c6a4439a9f4a42aac78c2bfe13d2fc42657bc0f94ea7fe1e24d63064ca"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "5e6d6467bfd5a889d8cc4bdbd9ad39da71ea364ddd950a72a263f1500b7f9c4d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "99f85f928af443cabe038ca4ad0e0c82820d1cf1f4e334c49ad012da8502866c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "22018e01a868dd53a2fbb823eeea0e4614d6e79731b9de6089d7963a4338ff91"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/data/variants.json",
+      "bytes": 2894,
+      "sha256": "52e79d50fac616ad46ee978ce2e9b27235df67785f6d901cf4ec36d08a73a4a6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7D/index.html",
+      "bytes": 1929,
+      "sha256": "70742a6179b1cc8e6fae724917ff38df2e3bc768871d808bd82e24f1272b4634"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/README.md",
+      "bytes": 896,
+      "sha256": "c8826cb6bd06fc36c8589bd9c6b2528bba5c2c25976e3029b3c509b72be9709c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/app.html",
+      "bytes": 1440,
+      "sha256": "5f08e14b9bbb5b85c2617072968d4d72ad376304e8fc7eda5ae79c6f053a12f3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/app.css",
+      "bytes": 61367,
+      "sha256": "390123de545b2c15cc6416b81ee21c82d3cdc2a23dbe46ef468ebc570000be40"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/app.js",
+      "bytes": 110371,
+      "sha256": "c7fd0375ad07a7d82e0153cafea2367cff9b2cfbdda4fe85521f55f5899ec649"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/cheatsheet.js",
+      "bytes": 2199,
+      "sha256": "8e97a5316ccc126e0e08c89abb0f174ea355302a283966d0941813c1c0992f2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "1375296cb4b14c38c56abf4a4574dfd75d98e7431d31258663de4a62044dd284"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/guide-nav.css",
+      "bytes": 1589,
+      "sha256": "d3ff19254dc55d53b00cf6d3446ccc1cac544ed22165870f89ba4574183fd44f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/guide-nav.js",
+      "bytes": 5620,
+      "sha256": "6dd7a04680589fbd40401f5a853b1dabcacb62c0d7a2e77ccae843fa91f8ff88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "8d731e3ea8160e14c64ff68f5dc5f5e48377679b80d9e44ac79d94db934c66e5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/paper.js",
+      "bytes": 12963,
+      "sha256": "e33acc170be6e31a2ca596af058dcfd1ce4674197c6c19a7a367309c7641cc77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/ballot-mobile.png",
+      "bytes": 84735,
+      "sha256": "b5f6ee73567da330618f438047e806ed74b6382c57c53f1f61aaf64878aea4c9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/desktop.png",
+      "bytes": 480074,
+      "sha256": "ef7d3c235c47df7a12b745e88a62e1bb9cda4f9a7541dca2e8fbce7aaaa52525"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/guide-desktop.png",
+      "bytes": 150622,
+      "sha256": "ae05f5e09bd9762f50431e24ad0ff42e8539cd4c916716f82ffdd322c5f3d10b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/guide-mobile.png",
+      "bytes": 42329,
+      "sha256": "6b4cd22df78e489a61d483f396fc02885ff5a1b70a2471ea6ad710dc71670771"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/mobile.png",
+      "bytes": 53554,
+      "sha256": "ff5dae6d8224c17970d1de13b3c540caa228d6cb5ca01414c5e646aa13a967c4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/section-mobile.png",
+      "bytes": 49724,
+      "sha256": "881a5fc7fd34cd475ca26c10b2b465998341f3c416d4b768a63cfdb4208612db"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/shell.js",
+      "bytes": 4853,
+      "sha256": "3378a924c7396c953bfad2a4d89126051e7e8b1b1c933e243dfd3e94bb306d13"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "6362de40764a602bd7d7c7af0cb98b2f91d7dd81a8f77b48053c10bb1aa504d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "582e5b1acb53f9865f2a28a4a7398283779012b41edf02df03d91a57aae5321a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/areas.json",
+      "bytes": 1923,
+      "sha256": "56da417852e82b851816a490c34c42841bde768f9f907404739255935b39173d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "16d06b0bac2f3d6a7b14cd06715ce8c62dc4ea489ed2b33675ce90c8347e6873"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "63acdfdef4b2a5083d1cf015a84c2b780f5ccb318285a50df7d12943144ea4fa"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "2bec1077b8f4f75b35c309a1501330f069d367c9e31ff211cd9c624fcb8d7e47"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "d32c1fd018bcb7b936d25253c6babdf3ec63278569212819cbe2870ba97d1995"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/data/variants.json",
+      "bytes": 2894,
+      "sha256": "090fefe74164516f72eef178893bf616f0e62e5bd7684983ed5871d0b9d03e6d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7E/index.html",
+      "bytes": 1929,
+      "sha256": "0b1d7cb6b26aeec02702510e8ed97c0b740a29d7aef325de745db39f3aeacd8b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/README.md",
+      "bytes": 896,
+      "sha256": "aa4775ab8b19192f71a37e04f21f975ae8b68208b855b24688fa1db34e906764"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/app.html",
+      "bytes": 1546,
+      "sha256": "d93d9c7dce62b5fa530c7d80e261ee7e516be243948ec7c42e74c9af7700ceec"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/app.css",
+      "bytes": 61367,
+      "sha256": "2ec346968cdb46e38489d30f4fcfec64a56eb06090c4e3ab8540b0c9beb96904"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/app.js",
+      "bytes": 113505,
+      "sha256": "993852b3f955b21c318df7f29f59b74d41bb3831e5a877873406257fb4659d6d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/cheatsheet.js",
+      "bytes": 2199,
+      "sha256": "8e97a5316ccc126e0e08c89abb0f174ea355302a283966d0941813c1c0992f2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "c6a5bec626204a9f39c8b2a1bab417f8e033400fcfc3c7b75a70b3ab4459e709"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/guide-nav.css",
+      "bytes": 1942,
+      "sha256": "0cc8b194ffb1fcebed6d33e0e2c13a386d3af8429c4102ec2489cb54821c2f89"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/guide-nav.js",
+      "bytes": 5560,
+      "sha256": "0b003bf04e6cefa12697f156780c052e38bb7ce23fa9907e9e1b1a8c0142206b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "352fc5526e05aef2151f8ccc91b1afe454fab3fee3b2565f2614905ace306fd7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/outputs.css",
+      "bytes": 2528,
+      "sha256": "91a0857cda125a647e5e72cfb052bddc297da5d26a9754f9cb3e05cb3e12a966"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/outputs.js",
+      "bytes": 12254,
+      "sha256": "28f367137d548d0894cca2f04abb9c4626eb9ae1d0eacbeac5bdd5d5924fd63f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/paper.js",
+      "bytes": 14344,
+      "sha256": "a132d9461c80ca0db9c18ceac5a59c907cf9666af99813b9276f70206d042edf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/ballot-mobile.png",
+      "bytes": 80616,
+      "sha256": "075c44bfaabd7c76bcc651677520454f133a4171783457759b1627566ed21e4c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/desktop.png",
+      "bytes": 479932,
+      "sha256": "bc96597361151ee891873d1b01aa3654fbde4f6ec00f500106b5e6f7e50016c1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/guide-desktop.png",
+      "bytes": 150538,
+      "sha256": "8a262f21b0423c0aa00d9a07c632020ed1f0e4d61c82ed1970b9be136e65b073"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/guide-mobile.png",
+      "bytes": 42687,
+      "sha256": "66c2346698d53806137b9dc1d12a64e0961d7e17a5a9c121fd6be5544cd92728"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/mobile.png",
+      "bytes": 53550,
+      "sha256": "04b209e325d7b0db392e623a8582e00af52faa1edac42dc1ade73fe4c3583af2"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/section-mobile.png",
+      "bytes": 49724,
+      "sha256": "881a5fc7fd34cd475ca26c10b2b465998341f3c416d4b768a63cfdb4208612db"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/shell.js",
+      "bytes": 5151,
+      "sha256": "694bc0c41c7e5db3ba9e575054c84f46c9ffe8d1d3708d972794dd06483bfea0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "b77c02ecbe583df1a7db6c53b0f48228f13d142702942727024fb7e4a06728cc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/manifest.json",
+      "bytes": 1001,
+      "sha256": "8d1dfa113e2c11974f41bcf1da99afacaf53100519c50c1e0befb2a59ee608d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/vendor/pdf/vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/assets/viewer-controls.css",
+      "bytes": 1830,
+      "sha256": "9c711f4c99f1b59f6818b030b8d96e8ad28f9eea3c8733fee545dc686610da47"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "754098e4d0143c95c9854b7e21034fb38b13c910e46c9244e2030b1ee8f5452f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/areas.json",
+      "bytes": 1923,
+      "sha256": "bdc39994e88cf0a69df56b436408c7de2fd648c33473db2eeb19e2b5e2d8b790"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "3cf4ccca2e885cf62ec942eb01ae9540e998f9cc506d1121b8d09d24176392c8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "2bedc3893e364086a9f9e61d969adf663760f5f6dfeca02f7018bd3e53d4bf53"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "068a34d0f3ffd71256c5a3b4fd5bd8ca90d467ced078472bfcdba713b141bd8d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "4912cec59020f12fb8ce678669d9e9375e430c30be514c76aa2f2e0507476e9c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/data/variants.json",
+      "bytes": 2894,
+      "sha256": "09089bb611334b8d0d8bdb9df2035fcad496cddd9347fb7af3818b5ac5b97a41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7F/index.html",
+      "bytes": 1929,
+      "sha256": "795ce42e0f2503ac750b6067383624f7a03027d9fa0f4ead436b22160cd4dff3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/README.md",
+      "bytes": 896,
+      "sha256": "6f2a6933ac66b4734ae082ba24f5e3e63a5a6c8f09d45c627260a38cd665045e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/app.html",
+      "bytes": 1600,
+      "sha256": "4dcecfa393adf466d29968cbf3fee8768c7394f748643958e4d15db29172a2c6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/app.css",
+      "bytes": 61367,
+      "sha256": "4cf228171f1e576ee8ba5692af44c1b3c3588b7f53acb6e8f9079ae6ce7199fb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/app.js",
+      "bytes": 114157,
+      "sha256": "9a313a065da83db0740e9d1d2c2c3940a940e9e3ea410bc200ebb2efab6f678f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/cheatsheet.js",
+      "bytes": 2199,
+      "sha256": "8e97a5316ccc126e0e08c89abb0f174ea355302a283966d0941813c1c0992f2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "a6585c70a46b222f8a4f58ffd68de8697628bcded82ce936416c8977fac9272b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/guide-nav.css",
+      "bytes": 1942,
+      "sha256": "e92714e6045dbf9a809e39f32a7e18c6dda9bb79f1b410ca52fee96ee036b732"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/guide-nav.js",
+      "bytes": 5560,
+      "sha256": "0b003bf04e6cefa12697f156780c052e38bb7ce23fa9907e9e1b1a8c0142206b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/guide-symbols.js",
+      "bytes": 676,
+      "sha256": "7a5a1b75147ec534788ec392664f2ebbf4da5cffbab7a293196b8c9a46206f0c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "2a56258fd40d3ad5238aaf7c3144a0c1acbf9bb16e2b9d3963197a76e7c4d5b9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/outputs.css",
+      "bytes": 3293,
+      "sha256": "bb33ce9171fbec7ae53a528fdd08390b150c6bea049658e5ed61a0e571d82f21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/outputs.js",
+      "bytes": 12711,
+      "sha256": "815a60347f3954d6bca8dd04bdf417caca4a86ebec46f53d91c0bb7135494588"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/page-context.css",
+      "bytes": 862,
+      "sha256": "8ed00d53a332441d15353e4921d5bfb66cb6bc2d08f87e20abe0824a12604f70"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/paper.js",
+      "bytes": 14727,
+      "sha256": "d3ea58e50e01253e6e51a31733cb7d3da8ea571016a508c66f76af763e42e174"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/ballot-mobile.png",
+      "bytes": 83152,
+      "sha256": "ade5324a65a3eac8b1443b19965d2064bf888629d886a71e66d6dec6dfffb551"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/desktop.png",
+      "bytes": 479365,
+      "sha256": "5babcb527d19258c7471434cd7b6e6af8044752cc96e33b62a3b4503c84137a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/guide-desktop.png",
+      "bytes": 148975,
+      "sha256": "b4b261594a80b4bba097797918092863435981ffd48b780c9e6b79c2457fa66d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/guide-mobile.png",
+      "bytes": 41905,
+      "sha256": "42feba28ccd9ebd20466a1a466d40771f096aab880ab5a64a748c50cf8fa5664"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/mobile.png",
+      "bytes": 51700,
+      "sha256": "72daeecc888fe51245b2afa117c0a4d73f22036672161a59e1f8fc7cd40bc040"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/section-mobile.png",
+      "bytes": 50147,
+      "sha256": "90a8f507aadb61b3bb35300e88d1813c152715afd9681ca7fd0ca06eb3bbb797"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/shell.js",
+      "bytes": 5151,
+      "sha256": "93a31fcf6ec87774f550730d6f5dd2d4e8d9578a115c7ac1d7fe0c2e5e9ec054"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "4f88a132a43cb75704e52e8617834ce2b923185bbf9252aefd2933c4ed3fb9f4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/manifest.json",
+      "bytes": 1001,
+      "sha256": "8d1dfa113e2c11974f41bcf1da99afacaf53100519c50c1e0befb2a59ee608d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/vendor/pdf/vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/assets/viewer-controls.css",
+      "bytes": 1788,
+      "sha256": "da22a79af597f838d518818ea34cbc541d5c88f98307b228c5030b6ba5d8416c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "3bb159dae67889835bcf3b16ad2ac20fe6721373401768ff51c6c9522ea8b66b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/areas.json",
+      "bytes": 1923,
+      "sha256": "e132eedf3d1cbe1749d2669d00c3ef595b935ee7d63382c5788df5bbbde666d2"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "22394e3c1141235f9ef1e80e6e58f35ac637d151033196a4e199e72fa25dc2de"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "60c81c816c67418f6ea013b5c79b71000774c22fda8f78c967056a04772b6920"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "9e194e57bb065dc2bdd8b3cb334cd0f64e59bf5f7589c9e57b86cfc056be05df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "5f053ef85604e95dbbdeb02885063b429f515a63e80c842c54aed6ec48cab427"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/data/variants.json",
+      "bytes": 2894,
+      "sha256": "476bdf51ec07067b8b99b18cd5b49c9c74f68ca51fd37eb9d26fb2d816f4b099"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7G/index.html",
+      "bytes": 1944,
+      "sha256": "d9b833e82e618e66ad8f2d6505f0d19cafc9654b75484e070a61f88d93e21474"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/README.md",
+      "bytes": 896,
+      "sha256": "6fda4aa3e3e05278b39efd1825f17d459612d2791ebaa255ae9166a7d59d3f79"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/app.html",
+      "bytes": 1600,
+      "sha256": "573d7acad8344f3619becd3db0903cf77c398b4ea0a75361b64e51bfc46650ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/app.css",
+      "bytes": 61367,
+      "sha256": "f2c071fbcae9b51029d8ceea0815fd6ec0b13db2180971c587efd14adef7a782"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/app.js",
+      "bytes": 114486,
+      "sha256": "3543e6e9145a61f69a4a85c480c10a7606e39e05c73667a0a02abd83302fa3f4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/areas.js",
+      "bytes": 3719,
+      "sha256": "885627c839e62639fbcdcf720294b1a82a457e70bc48b9b2d3aed0b3f21c91b0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/cheatsheet.js",
+      "bytes": 2199,
+      "sha256": "8e97a5316ccc126e0e08c89abb0f174ea355302a283966d0941813c1c0992f2b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/detail-content.js",
+      "bytes": 2692,
+      "sha256": "f254548b264ce86105e72b98b29bb1cfbd4e162a8e9c233b1e045a1ef7df6d7f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/guide-nav.css",
+      "bytes": 1942,
+      "sha256": "0105a21295687667dfb74a2ed6905109703209e1dac565f3b04d19f8791da106"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/guide-nav.js",
+      "bytes": 5560,
+      "sha256": "0b003bf04e6cefa12697f156780c052e38bb7ce23fa9907e9e1b1a8c0142206b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/guide-symbols.js",
+      "bytes": 676,
+      "sha256": "7a5a1b75147ec534788ec392664f2ebbf4da5cffbab7a293196b8c9a46206f0c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/guide.js",
+      "bytes": 2270,
+      "sha256": "a22cc5599286968721eeff5a27cd58507bcee4ec65c925569796d2ac85c4a078"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/minimap.js",
+      "bytes": 2326,
+      "sha256": "84b397d3dfafb1a5dc2b236dd9440ab4e1a4ae0e57091f0f6e482af188eed360"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/notes.js",
+      "bytes": 5979,
+      "sha256": "5a808fed3cc5f429f6748a12dbc328e1379840b15fb2c7f6d890a64a77824767"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/outputs.css",
+      "bytes": 3292,
+      "sha256": "e2a3d5d25dd10ef13577ff1b83158ebb9fcfa49d3b8dd35b2b933111315cb528"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/outputs.js",
+      "bytes": 13637,
+      "sha256": "1d72c2d259361022d1317bac6994110937fc00e5999b4458b212a090714706ba"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/page-context.css",
+      "bytes": 1001,
+      "sha256": "537ce922af8f16167a40e716729ab766fcfc5dc84e64abffdf04911bca490861"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/paper.js",
+      "bytes": 17468,
+      "sha256": "a0e1eeb3eca61efc79af1c2d31e668fd23663fe4b6b422041065ad5ae1bda92c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/ballot-mobile.png",
+      "bytes": 82922,
+      "sha256": "51fe9cc0664a67ae1c8499b7441bbb1c20135e57b086c15b90b9a3930295030e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/desktop.png",
+      "bytes": 478883,
+      "sha256": "600bdd5b0763b1a7283f7c7b6c557fe4f452bb0c31a92068d27940b27dae3b63"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/guide-desktop.png",
+      "bytes": 148064,
+      "sha256": "2fd6c915f149e1096d44d0aaa4cf7ee1f052f6886cd87feac71ffe7d9b26fc28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/guide-mobile.png",
+      "bytes": 42102,
+      "sha256": "bdfbd64dea1523ec644aaa23a80bcd27442d2fab338b1c80d596a7a4135a3efe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/mobile.png",
+      "bytes": 51070,
+      "sha256": "674ae536dbf0bf99936a43fbd99102167a68b1ddc57ebe049fb512e40e7c0974"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/section-mobile.png",
+      "bytes": 49416,
+      "sha256": "90fd50f66a656ffe4fa3711f700a6018dcda796c6397ec5285e5ac216648948f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/progress.js",
+      "bytes": 2075,
+      "sha256": "b06c093d65e8195b2f328812815926d2fec856e41556d23885b1b7d29d66c0e7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/shell.js",
+      "bytes": 5413,
+      "sha256": "d81bd496b7e0f0b2f535e8f4c94b5d78640eb0f42b2ee9b6e42c08e7b432cb2f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/spread.css",
+      "bytes": 1206,
+      "sha256": "546915721d8d685fa053315ffacde5b8554c7a3f0a9f083daa3ea2a4d911333a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/manifest.json",
+      "bytes": 1001,
+      "sha256": "8d1dfa113e2c11974f41bcf1da99afacaf53100519c50c1e0befb2a59ee608d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/vendor/pdf/vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/assets/viewer-controls.css",
+      "bytes": 1788,
+      "sha256": "93a571e9fe7212bd580bb1f5e991858135519e6d7294197ab4a9db5236cb1cdf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "30ee44b265fc772dd66f1c7d61f3d4d432372806fc2e31855151a626f9409af8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/areas.json",
+      "bytes": 1923,
+      "sha256": "41e5520d198b4a69bd83b99dc8884544efeb32881ac7fe5a6d49bed8dad546a0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "e660d43dfdf56dadfb9f3298636ec3612e4987be73755f76404c53fb8952647e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "28717c710ac9896d7ba09f00ddd75fbaf30209dca322b980c44848ffac5eef7c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "c74d37662397803086587d8d06cfcf3b73634db8386ae13537bb2b7b4cd55513"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "55268b9cee9cb6ad8d1f3ac26b971b04a68353a93b240572ea6642742376d606"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/data/variants.json",
+      "bytes": 2894,
+      "sha256": "537ca66ff922ece4d612ed694db5a6badfaea476bc8fd7919dabd070027f5450"
+    },
+    {
+      "path": "finishedmockups/Mockup B.7H/index.html",
+      "bytes": 1942,
+      "sha256": "a6194a94fcd7327e5520bfc0d400c8b2c5842bd5a6a6639faf5c52dd5ea9a0dd"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/README.md",
+      "bytes": 637,
+      "sha256": "30b81d140a9dba750d92cd2b19ca43c6c1450136a1355f0de6c3909c501c7ec1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/app.html",
+      "bytes": 1383,
+      "sha256": "9fe694fab00ee6f0128920ebd54af3e4c360513980f0dd548cafbbf60740b780"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/app.css",
+      "bytes": 20691,
+      "sha256": "c8c5fb7dded80d7b4cec0883b83942f7e9887ed7f112bd46d7aab339195d4144"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/app.js",
+      "bytes": 30827,
+      "sha256": "dc94ed15f6c09b54e2fec52384d1bc55bb349883f5261b3df55c9854f0566ee3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/attachments.js",
+      "bytes": 6917,
+      "sha256": "4a315aa2bfdb0eb411ea0d114e53996ba104b124da1f6065e088a25ddc4d8172"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/ballot-camera.js",
+      "bytes": 15383,
+      "sha256": "ebfc1f51e71c9d5fb204fdde044be7ed34ade8c57199733529207a8d5264e0c1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/ballot-ui.js",
+      "bytes": 13196,
+      "sha256": "301f703cf4498968d0e0dcf1595f3e4ee8e6fc174253f89c394fa93e8debbd6c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-client.js",
+      "bytes": 1737,
+      "sha256": "c1bec0eed6f58b41f3cf0717b5ec5dae99189328a0ab65efc8cca0125df55ad4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-contract.js",
+      "bytes": 12423,
+      "sha256": "a1088272e7b9e38f8dd3708ff34161c5ba7f9525ada9e9c5fd519833a421cd12"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-errors.js",
+      "bytes": 2818,
+      "sha256": "82b41549a29e6da340a66d18e42d6e2b227592f606b771428d33b6abb881c2fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-model.js",
+      "bytes": 4210,
+      "sha256": "38d843041c20da7487864fb7c187e50dcecdfc5c57b43fa8aed2a5fdfd736c3d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-session.js",
+      "bytes": 5579,
+      "sha256": "1156c813250ce693c1150608557e2e881fbd7ab13d69d2d0b75163f8beb407e9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-store.js",
+      "bytes": 7525,
+      "sha256": "074627271d2e1170ec90bed11c5df5a634f940e3ce899df9c17ee5154712d508"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/collection-worker.js",
+      "bytes": 848,
+      "sha256": "718e9a638aff7883268bd43230e9c86fc3c98c00fbbbf979032f77466db2a49e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/drop-import.js",
+      "bytes": 1705,
+      "sha256": "f9889e6992ffcf47d3d3ea295102a3b8b62b3507a44c6dfa12875ff6c726208a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/editor-adapters.js",
+      "bytes": 9438,
+      "sha256": "1863ee7952e1fbe1a69a70666d57c5a1a94a20f24517a1b5af0ce5bf8ce6c74f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/guide-output.js",
+      "bytes": 2341,
+      "sha256": "e7e2d3c5152681ab8d0f8a2dd63335a6a2a0067804201e5c53099a04cc03976c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/guide-view.js",
+      "bytes": 8272,
+      "sha256": "66ea523ffb3e70c271865b3668814d63ab45430ffc58f4087b03df5c8ff7b574"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/guide.css",
+      "bytes": 8097,
+      "sha256": "9ee4cf80f636c55147f94cf7da9bbcd017188c41c4a3681c05c8d09a6e21f9a8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/import-coordinator.js",
+      "bytes": 1852,
+      "sha256": "ea1b2be7cbe9d4c8369978a696cfb75d4507f1b1d6a6524beaa5cf9edaf34102"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/output-controller.js",
+      "bytes": 3435,
+      "sha256": "8c4f3476087c2c2dc48da9ce7d70e2493d83592285dd2b0928c7d39a0e9787d2"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/pdf-client.js",
+      "bytes": 3450,
+      "sha256": "42c607aabc6ff2cb6d2aec0bec4639c2a45d9fb9f0cc5fce1694dea4e52d281e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/pdf-layout.js",
+      "bytes": 6516,
+      "sha256": "a335fbc4e8b7c90057d03ac3e440b7d5c4f64de3a0f70f2c6565156f1e7cf1d7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/pdf-worker.js",
+      "bytes": 1026,
+      "sha256": "90f6dd11d877ff96df22e529b170f29845dac9d1303a7258327d1668542d5b9c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/previews/ballot.png",
+      "bytes": 88314,
+      "sha256": "0f32b3f3777739057208a3c4fb68ea55ce1916f1b16ad8661405cca781c317c7"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/previews/desktop.png",
+      "bytes": 124883,
+      "sha256": "200bd2d0f049338e031be56031de849298ec46565aed0b125ac48a81a8e3631c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/previews/guide-phone.png",
+      "bytes": 40105,
+      "sha256": "e5b302ae869ac8c84eab2796e0ec05daca7f7cb69efaa693c5815fcb585c8a6b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/previews/guide.png",
+      "bytes": 69373,
+      "sha256": "d4669ff6b54a645c081506ffb9ab12f58aec25ea0884f94cef325b3106da3771"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/previews/phone.png",
+      "bytes": 40666,
+      "sha256": "efc1c52057b9cea44d0d737d0f2ecd0fcb6a0d944fb6a9e3e660b05c242b8780"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/shell.css",
+      "bytes": 3197,
+      "sha256": "f3cedec5ea0381dff9a96539891f9423e2ac5d05259bf14af74d213f70d5d905"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/shell.js",
+      "bytes": 4744,
+      "sha256": "3ac734c5a9b3d63d87b0ff4af4102c2b6d389ecef3f02cdd36b17dffc43b57bc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/ui-utils.js",
+      "bytes": 2071,
+      "sha256": "e81bc5eef1190432a55e79412ef8ae5cd22693a683ea9dafe5973c75babaf238"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/ajv-formats.LICENSE",
+      "bytes": 1074,
+      "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/ajv.LICENSE",
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/DEPENDENCY-NOTICES.txt",
+      "bytes": 38301,
+      "sha256": "6676b8eda65f0248169647c2a732a7d88cd9753306242492cc0c020d7948687b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/PDF-DEPENDENCIES.json",
+      "bytes": 1203,
+      "sha256": "c397f0a69a79a750d877d1d7587cedeb403868d8707dd434d001ed8f09e7e615"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/Roboto.OFL.txt",
+      "bytes": 4394,
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/pdfmake-0.3.11.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/pdfmake.LICENSE",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/roboto-coverage.json",
+      "bytes": 925,
+      "sha256": "69c4258fd1e00ef28934a7579cb94419447214aadf95fcf2505fc390c728e209"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/roboto-vfs.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/pdf/svg-to-pdfkit.LICENSE",
+      "bytes": 1093,
+      "sha256": "97a9a454169e8bb54afa875ba1741ac77f2a3b8cfac57e06c7e54f4467776ed8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/vendor/validate-collection.js",
+      "bytes": 199364,
+      "sha256": "6a8695631774b1a2cb3367327acf4815429699f3652c94910117b73423359041"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/assets/views.js",
+      "bytes": 7359,
+      "sha256": "bef195de603518fe47c52790a9c3d3919fd49cc784957c27e19818c1b842d4d6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/data/demo.collection.json",
+      "bytes": 65448,
+      "sha256": "0cbf55ae5188bc260ac979b61d006cdb6ec8ad3a08c93554f51d36bc10a03643"
+    },
+    {
+      "path": "finishedmockups/Mockup B.8/index.html",
+      "bytes": 2001,
+      "sha256": "7af2a250648fcb1dfdfea59b8a773942ddce999001f66ad98010844aea832475"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/README.md",
+      "bytes": 676,
+      "sha256": "b738b13bf2f6d3507e01307264eaeb13d45ceda9d18cd25791976a96ebe4e676"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/SCHEMAEXAMPLE.json",
+      "bytes": 23431,
+      "sha256": "f7a9a69bbab58f25f27d1539596a07de6ab34faf126014bde5acc76373a0a185"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/app.html",
+      "bytes": 1599,
+      "sha256": "7bd25ba177b8cbbb72b639e74d11b97578900f9c3a8e7e02df4c03f8510c5420"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/app.css",
+      "bytes": 62129,
+      "sha256": "d4fd7a5d2d5d8b0b5e5ccbe0aac4b1ba1664515694a7ae522761aea6f657e5fe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/app.js",
+      "bytes": 115743,
+      "sha256": "3f20e8e7ef0ace2a67b2020ba38309ace81a78540be79266b6aca1e86cafde41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/areas.js",
+      "bytes": 3720,
+      "sha256": "31240a5a2d217cbd521f1d4361ef113ec995d84ab489b414c2a276ebe032ac17"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/ballot-adapter.js",
+      "bytes": 19957,
+      "sha256": "0969eb0c6a104107d5bc3898b6d6dd37870dbfd07c2a7e3bfbbb8a3868389cfc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/ballot-contract.js",
+      "bytes": 10318,
+      "sha256": "0aaeb34f1b017e86db47e3d1b4e2d97b410c33f9a3da8ab93cf505a05f83cbaf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/ballot-resources.js",
+      "bytes": 7233,
+      "sha256": "4c94a4133163f87d7bfed88f15fc3742013e6584a57edb50e10f1f67257504ae"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/ballot-schema-validator.js",
+      "bytes": 118976,
+      "sha256": "c495811d3f5f7739e86587139c51935fea3b2c539fa5e7ca9edf786a2274bf5d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/ballot-workspace.js",
+      "bytes": 3655,
+      "sha256": "5856e48cfe60bf2d03a9eb89b365b90299a07f9fdfbd367f90c8ffca3b15df19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/cheatsheet.js",
+      "bytes": 2502,
+      "sha256": "8a83d97883e6fa7c70facc5027d24b2740de5c16f0f7fa92cd8542617a303b3f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/content-contract.js",
+      "bytes": 4536,
+      "sha256": "c0a06cfb0294dc186e98c3474bc405b68f809a5d9445301857de0a73acaec9eb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/content-fields.js",
+      "bytes": 5025,
+      "sha256": "aaa38b1164440ab40ee0ef3c442e33e229a43f1e000e7cd3f0ceadf7ea4b1422"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/content-renderer.js",
+      "bytes": 1798,
+      "sha256": "79cbd81af57d8602dccc0f8e776ea2045891d4e2b7412b4210b4f7869c17ac6d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/content-store.js",
+      "bytes": 7765,
+      "sha256": "39a615ae486adf7c9335580b492a7a6369fbbbbc3ac5203a5b0c742e49ef68d6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/detail-content.js",
+      "bytes": 2726,
+      "sha256": "8320c6297ddb9c34f5e4bfc0a13349c78ebe4515be8933723669d988730815b4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/guide-nav.css",
+      "bytes": 1941,
+      "sha256": "ab02ae6b0e4f08024199b993f7aa345ef6d21e3d364d0c07d0e995018c576082"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/guide-nav.js",
+      "bytes": 5560,
+      "sha256": "0b003bf04e6cefa12697f156780c052e38bb7ce23fa9907e9e1b1a8c0142206b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/guide-symbols.js",
+      "bytes": 676,
+      "sha256": "7a5a1b75147ec534788ec392664f2ebbf4da5cffbab7a293196b8c9a46206f0c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/guide.js",
+      "bytes": 7472,
+      "sha256": "7fce0181d79eace20e25bde1a4f9971f96a7acb727a583a1455a409222e01abb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/layout.js",
+      "bytes": 2687,
+      "sha256": "3a9eb4c382b960fcdd2d15ea54efd02d63b7b59ea5d55ec130738ebc6622150c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/minimap.js",
+      "bytes": 2441,
+      "sha256": "7891b48ff17795b5ba79984a592844a20c6673320850e87ca68de536b4a11f41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/notes.js",
+      "bytes": 6585,
+      "sha256": "7d0ce9893456d91af4663e51b3a6585a86a639566f2845035d204b4b11a20ae4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/outputs.css",
+      "bytes": 3323,
+      "sha256": "43c21f8bf90a37259ae7535c0b9269cbd3ea2163658cbe23e765906822724b2e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/outputs.js",
+      "bytes": 14733,
+      "sha256": "770cf152fdb4024a3fcbb448a744ccc9a0ac2cb05208ce1dfce27566aabcfe09"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/page-context.css",
+      "bytes": 1001,
+      "sha256": "537ce922af8f16167a40e716729ab766fcfc5dc84e64abffdf04911bca490861"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/paper.js",
+      "bytes": 17468,
+      "sha256": "a0e1eeb3eca61efc79af1c2d31e668fd23663fe4b6b422041065ad5ae1bda92c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/admin-mobile.png",
+      "bytes": 42863,
+      "sha256": "e9584c0058882e0e6d6da2dd16c620446863511c3be92b226e4316e4815a2814"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/ballot-mobile.png",
+      "bytes": 80513,
+      "sha256": "80af4a3a9a75628f1fffdeff9e957f1e13fd03dcd4df98934a8290d8b592aecf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/desktop.png",
+      "bytes": 478179,
+      "sha256": "ee999d146e036759f7b46970024c3942c1ff86062840353bcf74fbd31a88395f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/guide-desktop.png",
+      "bytes": 147738,
+      "sha256": "891c82a2e2d10c1318035c93faca402386b581ff0be331640d3df2043ef2c66c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/guide-mobile.png",
+      "bytes": 42102,
+      "sha256": "bdfbd64dea1523ec644aaa23a80bcd27442d2fab338b1c80d596a7a4135a3efe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/mobile.png",
+      "bytes": 49949,
+      "sha256": "4ede9d6a1c34555376da2852a58417471cc97e5a441ad4bf610a2245106a7574"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/section-mobile.png",
+      "bytes": 50109,
+      "sha256": "a5b59d4beabf8c202c9a515f49530c56bd9dc90aba4518795685a1ac1d79423c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/progress.js",
+      "bytes": 2143,
+      "sha256": "f86539dfb09ecd3a6a3e74e2c8168fda02bf8987e449c726fba78d248f3ca27b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/shell.css",
+      "bytes": 2087,
+      "sha256": "69983c659f01f1e79f9c75e8feee685647757ba988015dd1bf3006cd70513edc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/shell.js",
+      "bytes": 5410,
+      "sha256": "25c07c33e3953dd8a8f0fa32c1b0cdd373a0c303058976b43f7dd598408e0d1b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/spread.css",
+      "bytes": 1518,
+      "sha256": "35b1f3da171fa616ab73e929feddd362b9d2eb317f9f43e05f78918ca3810e03"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/ajv-formats.LICENSE",
+      "bytes": 1074,
+      "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/ajv.LICENSE",
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/manifest.json",
+      "bytes": 1001,
+      "sha256": "8d1dfa113e2c11974f41bcf1da99afacaf53100519c50c1e0befb2a59ee608d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/vendor/pdf/vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/assets/viewer-controls.css",
+      "bytes": 1787,
+      "sha256": "786282bbb68107eb7ef88197f5b8df162db5e77237aa259a5c603aa39845ff7b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/annotations.seed.json",
+      "bytes": 25419,
+      "sha256": "4df8cf97ee8d8ba9e3af6835a0621ad8a522fd724570a4a5d873264d420b99ff"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/areas.json",
+      "bytes": 1921,
+      "sha256": "931655c5a950703319e766824420dd8d20dc202877d368cf636020fecdbfc8a5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/ballot.schema.json",
+      "bytes": 16875,
+      "sha256": "59c97f48673afb113eb854b2d1b159d6578aae66a08e85baa6181527cd5fcf64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/ballot.seed.json",
+      "bytes": 240320,
+      "sha256": "f3ba1f74373f039b30fd1cd4758705cc9dfa0e72579192700a0a00de493fea6e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/default-ballot.json",
+      "bytes": 431340,
+      "sha256": "ffb1acf960c3c6ea1927cc1ea66d8b955e83cfd4ac790b856ea4b12a6e909873"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/demo-choices.seed.json",
+      "bytes": 4495,
+      "sha256": "cb5104637374ce7441e3a1ed5ef219438d53d2345a7f40af7b8e925db979dd4d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/notes.seed.json",
+      "bytes": 60196,
+      "sha256": "f1c39552bbe7cefe30cfe278a15c72d8e49c182f76bb70956b5c2bf0a61a1050"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3765,
+      "sha256": "0755e250392736911e8415bf5c590d34d53a75d9013d83cb746958e40d6452e3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/data/variants.json",
+      "bytes": 2893,
+      "sha256": "03d5d65fc181b34f631203bd51630045f059ad95b98cabb36154db2ebf7c3722"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9/index.html",
+      "bytes": 1935,
+      "sha256": "3938ba879067d251cc50d79ddab9a56bdb8fa0ccf0c18fb38ad4978a1f5405ec"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/README.md",
+      "bytes": 687,
+      "sha256": "39aacf42b01c3990ab2f88dd6b80625fd9fbd19ffd48bdc46903f0a442f54cf6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/SCHEMAEXAMPLE.json",
+      "bytes": 23431,
+      "sha256": "f7a9a69bbab58f25f27d1539596a07de6ab34faf126014bde5acc76373a0a185"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/app.html",
+      "bytes": 1600,
+      "sha256": "daf61a0d0d4a60f6ecd91c6fe59cd36dd2f743e84238ebf8d5bf100056d9e249"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/annotations.js",
+      "bytes": 4172,
+      "sha256": "daa6603b04480cb8dd2cab4b9973ad4d684c1a936fc9c47c190fa5c6b5c9da77"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/app.css",
+      "bytes": 63306,
+      "sha256": "6c14b02717b7d0a20c2972d8d920731bcf4e19450a44bc3f6f46e94c398b9a16"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/app.js",
+      "bytes": 119815,
+      "sha256": "12421ef88f910de1bb70f0497cb8cb9aa1622298efa5f7cf2d665349b3465e8c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/areas.js",
+      "bytes": 3720,
+      "sha256": "31240a5a2d217cbd521f1d4361ef113ec995d84ab489b414c2a276ebe032ac17"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/ballot-adapter.js",
+      "bytes": 19960,
+      "sha256": "de246b43de34020e639382c8fd3214bc4ba1fe3336b460db32a5ed3eb02bfcbb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/ballot-contract.js",
+      "bytes": 10318,
+      "sha256": "0aaeb34f1b017e86db47e3d1b4e2d97b410c33f9a3da8ab93cf505a05f83cbaf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/ballot-resources.js",
+      "bytes": 7233,
+      "sha256": "4c94a4133163f87d7bfed88f15fc3742013e6584a57edb50e10f1f67257504ae"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/ballot-schema-validator.js",
+      "bytes": 118976,
+      "sha256": "c495811d3f5f7739e86587139c51935fea3b2c539fa5e7ca9edf786a2274bf5d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/ballot-workspace.js",
+      "bytes": 3574,
+      "sha256": "1e9385c45ff308014883e9dbf6b43c4585bcac2e217ab034d18361f61d65efb0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/cheatsheet.js",
+      "bytes": 2502,
+      "sha256": "8a83d97883e6fa7c70facc5027d24b2740de5c16f0f7fa92cd8542617a303b3f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/content-contract.js",
+      "bytes": 4536,
+      "sha256": "c0a06cfb0294dc186e98c3474bc405b68f809a5d9445301857de0a73acaec9eb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/content-fields.js",
+      "bytes": 5025,
+      "sha256": "aaa38b1164440ab40ee0ef3c442e33e229a43f1e000e7cd3f0ceadf7ea4b1422"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/content-renderer.js",
+      "bytes": 1798,
+      "sha256": "79cbd81af57d8602dccc0f8e776ea2045891d4e2b7412b4210b4f7869c17ac6d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/content-store.js",
+      "bytes": 7765,
+      "sha256": "39a615ae486adf7c9335580b492a7a6369fbbbbc3ac5203a5b0c742e49ef68d6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/demo.js",
+      "bytes": 2292,
+      "sha256": "012bb5c7637c7032496eb206770fa6116623a6c8bd04f7bce98f1c6db4dba6df"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/detail-content.js",
+      "bytes": 2727,
+      "sha256": "f0141fc32b04a93e48b04c31c51791bd959bf46870d2c14b61959050afeff442"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/file-drop.js",
+      "bytes": 1601,
+      "sha256": "afa054d5b31d446ab40b27c0effef59282c15bd278b2379380331ca86c2900e9"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/guide-nav.css",
+      "bytes": 1942,
+      "sha256": "17d220dab61f355193f67f3659ab0eefb1ef8b6ec19701abdcc1cda402e20a5a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/guide-nav.js",
+      "bytes": 5560,
+      "sha256": "0b003bf04e6cefa12697f156780c052e38bb7ce23fa9907e9e1b1a8c0142206b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/guide-symbols.js",
+      "bytes": 676,
+      "sha256": "7a5a1b75147ec534788ec392664f2ebbf4da5cffbab7a293196b8c9a46206f0c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/guide.js",
+      "bytes": 7473,
+      "sha256": "7ddfdd5ae2bd48d05e0034a7a149b741786b8fe6ec35f3d7919fc4205383ac0b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/idle-hint.js",
+      "bytes": 1287,
+      "sha256": "3b5f9badc79a858ddbcf9f7b28c99873053e265324a3bffafab8b920e433009f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/layout.js",
+      "bytes": 2687,
+      "sha256": "3a9eb4c382b960fcdd2d15ea54efd02d63b7b59ea5d55ec130738ebc6622150c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/blue-filled.svg",
+      "bytes": 223,
+      "sha256": "99b407044e964194cfc3faab9ac3ecee88ab9b883782470e9551c23d71fe4011"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/gray-filled.svg",
+      "bytes": 223,
+      "sha256": "f710effb6297ba3e73f5632e24c2e1fce54c0a05178706b7a098324863945f28"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/green-filled.svg",
+      "bytes": 223,
+      "sha256": "35bd6c34ab57d3359260da381e209914ff70a7eccc220e3f84ff1f0afb3355a1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/lime-empty.svg",
+      "bytes": 158,
+      "sha256": "4530ae909ed3d5480432dc73ed27467b15558abdee106963ba1ddfad0458cfc1"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/lime-filled.svg",
+      "bytes": 211,
+      "sha256": "eccfd572adf3819eddfde3cb483c463365b544f9170fb1eda7e5d4a37a7458f6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/orange-filled.svg",
+      "bytes": 223,
+      "sha256": "4d963623b0f0f6f7751d97a47b4ddbf20708a367eeab2cccb7c44c9a1d315a9e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/red-filled.svg",
+      "bytes": 223,
+      "sha256": "d33f2f99a5636ea6d01956065cadf7b6f16c1a1b3d83445684ae017ea545e5d8"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/slate-empty.svg",
+      "bytes": 158,
+      "sha256": "74938b94b5cd781bacd3c6385c479f59347f6c6a052ca50aceb59f3abc913171"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/slate-filled.svg",
+      "bytes": 211,
+      "sha256": "686bdeb9d16457f868788e7f4a0f9d9780bac8cac501bcc0fc58a930aca4354a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/marks/yellow-filled.svg",
+      "bytes": 223,
+      "sha256": "53a7c35288d1c9751fc820d0b6713faeaacfda489df9f7e7f47c1ad79bb8ce21"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/minimap.js",
+      "bytes": 2441,
+      "sha256": "7891b48ff17795b5ba79984a592844a20c6673320850e87ca68de536b4a11f41"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/notes.js",
+      "bytes": 6586,
+      "sha256": "3a1ea925af5dc4f68f4c525a90ae3b335ebb3fee1ae1b5e821493dfd7591cbc3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/outputs.css",
+      "bytes": 3323,
+      "sha256": "43c21f8bf90a37259ae7535c0b9269cbd3ea2163658cbe23e765906822724b2e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/outputs.js",
+      "bytes": 14734,
+      "sha256": "460000dbebbb636332b1d7616facd2cef89f4197fc1a3a093a7aa6e09dc6778f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/page-context.css",
+      "bytes": 1001,
+      "sha256": "537ce922af8f16167a40e716729ab766fcfc5dc84e64abffdf04911bca490861"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/paper.js",
+      "bytes": 17468,
+      "sha256": "a0e1eeb3eca61efc79af1c2d31e668fd23663fe4b6b422041065ad5ae1bda92c"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/admin-mobile.png",
+      "bytes": 42854,
+      "sha256": "11d873402ee2e16deb3b0d11ded047c0fda2993342bf3dde9fb335f1944a7a9a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/ballot-mobile.png",
+      "bytes": 80606,
+      "sha256": "abae4aa83cc4ebb9430e363e9f996f5181c7f13f3232d6d5a4f152ff0dd0d6d6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/desktop.png",
+      "bytes": 482224,
+      "sha256": "352c4af9853b763dceac9359a2172509ce7815ebe241fdc75f4618e88c5a4db2"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/guide-desktop.png",
+      "bytes": 148223,
+      "sha256": "42e06c510f59b0862dceee252fc07a02702978f6ced0030d473958a702f54ee0"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/guide-mobile.png",
+      "bytes": 42102,
+      "sha256": "bdfbd64dea1523ec644aaa23a80bcd27442d2fab338b1c80d596a7a4135a3efe"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/mobile.png",
+      "bytes": 50111,
+      "sha256": "12f067150e18e9cc2ea31344bd6a641731b45dbfd789c011707548b73637af3d"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/section-mobile.png",
+      "bytes": 50179,
+      "sha256": "25023b120d197e07afeed12054ce84ebc40c615649bde390a0f009af08efc20a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/spread-desktop.png",
+      "bytes": 140388,
+      "sha256": "0c5c7c436ffb559529000723ce1966ea7f4d4567813385514530c38ffcd5ce64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/previews/spread-mobile.png",
+      "bytes": 101960,
+      "sha256": "33181a6a5a28b304673d63741e3f13f24806151dcee72c90e3737814d560024a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/progress.js",
+      "bytes": 2143,
+      "sha256": "f86539dfb09ecd3a6a3e74e2c8168fda02bf8987e449c726fba78d248f3ca27b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/shell.css",
+      "bytes": 3382,
+      "sha256": "4140857fc26c7b3bd9cd17f22ba3563375184415380bf7c496c2841a16d0b1b3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/shell.js",
+      "bytes": 7206,
+      "sha256": "09aedebce0ced102a0f2529cc41e45c33abb51f86b9cf573747ec3ec208d5bdb"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/spread.css",
+      "bytes": 1519,
+      "sha256": "82150283169be4caca9ecc797404323935b6627565165d4c9d88863163272343"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/ajv-formats.LICENSE",
+      "bytes": 1074,
+      "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/ajv.LICENSE",
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/manifest.json",
+      "bytes": 1001,
+      "sha256": "8d1dfa113e2c11974f41bcf1da99afacaf53100519c50c1e0befb2a59ee608d3"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/vendor/pdf/vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/assets/viewer-controls.css",
+      "bytes": 1788,
+      "sha256": "8bc06a4cf2c494d145d8a07324827ba18787e0d4585046f1371cab517fac7117"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/annotation-examples.json",
+      "bytes": 1626,
+      "sha256": "d934161c4ae6e308c29220d21e81dd2005565ab0f177541496ce24789f07e443"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/annotations.seed.json",
+      "bytes": 25420,
+      "sha256": "87221942469f595e982214a712ab9a112dd42cb9e4b9ad9cdaaf713401b335f5"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/areas.json",
+      "bytes": 1922,
+      "sha256": "0e0ea561e73d757dcbc154bb7dcc2d033f4369958cbf3d0a418f59c711701181"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/ballot.schema.json",
+      "bytes": 16875,
+      "sha256": "59c97f48673afb113eb854b2d1b159d6578aae66a08e85baa6181527cd5fcf64"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/ballot.seed.json",
+      "bytes": 240321,
+      "sha256": "2d007c770efb17b46020b42fcf7bf9cf11973480e9dbfd1350dba84eef744dd6"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/default-ballot.json",
+      "bytes": 431342,
+      "sha256": "0b0bc93ebd6b0413fe4ef7e86bb7fedbaa9e5a2a6a8ceb837f041045eb956a4b"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/demo-choices.seed.json",
+      "bytes": 4496,
+      "sha256": "02ed915fd4d80de1348bf2922904107822b294ddc310577bde440e20cf9e1d6f"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/notes.seed.json",
+      "bytes": 60197,
+      "sha256": "eac31a7e3562af423a300017b02fd0a67a907de84da1825d0e564b7c51fdcb6e"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/schemas/areas.v1.schema.json",
+      "bytes": 3930,
+      "sha256": "5cf34d1599a0bac319a38698ad18c7020f457176f829c41ed1267eb161e39c61"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/schemas/notes.v1.1.schema.json",
+      "bytes": 3766,
+      "sha256": "ef701880b4e35eb8b2f72ad695f4276ac95486d8d2910685f47815ad021884ee"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/data/variants.json",
+      "bytes": 2894,
+      "sha256": "07f1da8b0a769d125429ec16f04ca767aecde6ff12d2bfb1c891b9940cd2491a"
+    },
+    {
+      "path": "finishedmockups/Mockup B.9A/index.html",
+      "bytes": 2209,
+      "sha256": "29a94b40620488d8c6f7461a5a2c6aa5de1bdc1518dc65d8e207327ff9164a54"
+    },
+    {
+      "path": "finishedmockups/Mockup B/README.md",
+      "bytes": 600,
+      "sha256": "d6a6ff174a6341464883a3517966b9810ee846a6b08790a21eb66b7b855d598e"
+    },
+    {
+      "path": "finishedmockups/Mockup B/app.html",
+      "bytes": 1118,
+      "sha256": "b9736c6a883fd000eb58cba5fe0da649f38e6059fc70f6b60d98069c6c184281"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/app.css",
+      "bytes": 16070,
+      "sha256": "10674a4f450eda085e508052ae530a12f5daf971e3bc5a88ec40f9d862ad1c06"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/app.js",
+      "bytes": 52179,
+      "sha256": "f4588b9d65cbd9946a5df947953364bed23639ff9e58c49198665cee01836af0"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/flag-mark.svg",
+      "bytes": 397,
+      "sha256": "3a3c10af4cda2f3596d0ab8756e6b0092057e19217a9924faf851db9686f58ef"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/paper.js",
+      "bytes": 5631,
+      "sha256": "d38344afbaa09899dc0d75ffa9d22e69112ffe15853134c1d56e2e364eab2e10"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-desktop.png",
+      "bytes": 237547,
+      "sha256": "eb009b106b70147eed40fbada90a2d9a28040e799581841d7768af04bb4a49af"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-mobile.png",
+      "bytes": 93044,
+      "sha256": "2f33e6c1395a86da08b54c064063642dbd6a2e018751fcbfd867b983e4a300f2"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-section-desktop.png",
+      "bytes": 135407,
+      "sha256": "d50c749ebbfd8d86c3e8498671eb8ab3c167f7819b996b4a5b04b057d3bed16b"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/previews/b1-section-mobile.png",
+      "bytes": 50879,
+      "sha256": "7a4ec84d037105cad35736fa2a566626d98b78add6e70c738330e333bbb9364f"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/shell.css",
+      "bytes": 1907,
+      "sha256": "fb4d86578d96952bdd9f3920a2e3f8645aeb1e1cde5baad6513ac7487bfc7b5e"
+    },
+    {
+      "path": "finishedmockups/Mockup B/assets/shell.js",
+      "bytes": 4422,
+      "sha256": "e05d2b5831f669bbeadd8e00cdab1c38a3964d7886e6a5c798408957f023fe1f"
+    },
+    {
+      "path": "finishedmockups/Mockup B/index.html",
+      "bytes": 1930,
+      "sha256": "8003142495a90db9fe03b50fc25ea95d219bb83cf7167efd7d9555b6fc30f1e3"
+    },
+    {
+      "path": "finishedmockups/README.md",
+      "bytes": 4993,
+      "sha256": "b9bfeee4bf0a7d61d14c29eee48d7e66597c472f5c5d1766ad53d90058b2e4a5"
+    },
+    {
+      "path": "finishedmockups/index.html",
+      "bytes": 17743,
+      "sha256": "7142153f6cafc64473a0fedb0d287c4a4da946a7c78c168a3a4ea2e819abaaf8"
+    },
+    {
+      "path": "finishedmockups/landing.css",
+      "bytes": 2320,
+      "sha256": "b545afa4ac0f7936480b4cf64a0ff9599a1decfc7370e80ed70cdb8997e93042"
+    },
+    {
+      "path": "finishedmockups/mockups.json",
+      "bytes": 313,
+      "sha256": "0d3970e8334a97c1b46c702915d483ee4e44dd2923940d43e49276eea2d232ee"
+    },
+    {
+      "path": "index.html",
+      "bytes": 322,
+      "sha256": "a53f9bad2b4de04c02a75896ede1f27da42c05b1f923aeb7161e1c92965e6c5e"
+    },
+    {
+      "path": "preview.mjs",
+      "bytes": 2348,
+      "sha256": "8e27e17cf41313a3c8e7a48059d5160290fb52f4b4a8d7a7b26ebc1492547431"
+    },
+    {
+      "path": "sharedrefs/README.md",
+      "bytes": 2140,
+      "sha256": "36158825a962d6607e5212cc8f44d9937d24eebeb83367dbd62912405d3e212a"
+    },
+    {
+      "path": "sharedrefs/ballots/2024-11-05-akron-1af-provenance.json",
+      "bytes": 1553,
+      "sha256": "05c2bb26b89b768d79921c467054e5cfd98dafc4c6a482d6270b21f25aae0cfa"
+    },
+    {
+      "path": "sharedrefs/ballots/2024-11-05-akron-1af.pdf",
+      "bytes": 147891,
+      "sha256": "4a8b90925a739712f0f7489547c45b7afeadf1a002f22843b72823d0ad981c72"
+    },
+    {
+      "path": "sharedrefs/candidates/profile-example.md",
+      "bytes": 1381,
+      "sha256": "5b6f51acfe7d618975b1446d9287203500396ee9c3f57bcaad352037f8c4dcfa"
+    },
+    {
+      "path": "sharedrefs/mockup-a/CONTENT.md",
+      "bytes": 9097,
+      "sha256": "3afa27e24450cf60c1f350dd2a891a628e497627a4c066e91f02e07f94a8f72d"
+    },
+    {
+      "path": "sharedrefs/mockup-a/HOSTING.md",
+      "bytes": 2129,
+      "sha256": "f75c2e7156d0b9ff6df660647c3e18ff6764740e2b882c2d5578dc3e5b4fb310"
+    },
+    {
+      "path": "sharedrefs/mockup-a/README.md",
+      "bytes": 9634,
+      "sha256": "53c7d35d8a002534ea2abec962d49e075b140da7855e4e6b200b25fe82b7d674"
+    },
+    {
+      "path": "sharedrefs/mockup-a/REVIEW.md",
+      "bytes": 5239,
+      "sha256": "e11aa166beb5e95a199b47bb4dc179ac95ecaea3c15ec790fc1f1afca36e91bc"
+    },
+    {
+      "path": "sharedrefs/mockup-a/VERIFICATION.md",
+      "bytes": 9691,
+      "sha256": "c036258750f2971bcf8334a15bffe9184f0f928a2500c597f6a8ec87905349d9"
+    },
+    {
+      "path": "sharedrefs/mockup-b.1/README.md",
+      "bytes": 4328,
+      "sha256": "fe73aa0d933d9b6d6bd201adfd6de03310b50adb1f386c0390ba30cf18386c93"
+    },
+    {
+      "path": "sharedrefs/mockup-b.1/VERIFICATION.md",
+      "bytes": 1441,
+      "sha256": "16295c6a4fa6b1ce4ccc2ea603b5ae4eac544395087c86de5c8803093742a101"
+    },
+    {
+      "path": "sharedrefs/mockup-b.2/README.md",
+      "bytes": 3798,
+      "sha256": "50e2cccc4dcde295e478658954c1653b3cc88b0fe1ab282a3523a06f78451325"
+    },
+    {
+      "path": "sharedrefs/mockup-b.2/VERIFICATION.md",
+      "bytes": 2115,
+      "sha256": "8384be1b836ba5d629241918502dc4be1d20ff0fb4fc8c93738939ba6cb8dded"
+    },
+    {
+      "path": "sharedrefs/mockup-b.3/README.md",
+      "bytes": 3259,
+      "sha256": "3f6bca993c4c8023eab6f19f40043424c11116edde77808d775a7393d82234fe"
+    },
+    {
+      "path": "sharedrefs/mockup-b.3/VERIFICATION.md",
+      "bytes": 2515,
+      "sha256": "8481a1ca446b26e0d253c359371779626cb643ad26fbbbfbfe014f8c8604793e"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/ANNOTATIONS.md",
+      "bytes": 2511,
+      "sha256": "b2ea6f40497bd7d43840fe2766ce1133664ae806151a89279c990bfac647149d"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/README.md",
+      "bytes": 3425,
+      "sha256": "1fd159cbe36b75999631d05378b7c2abdbf771a736e12ffd5724f249f1b547a5"
+    },
+    {
+      "path": "sharedrefs/mockup-b.4/VERIFICATION.md",
+      "bytes": 3649,
+      "sha256": "b28e7e5c968dd6812af577f4f59e56b79ff397a2180a29fbf13e973886c79565"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/DATA.md",
+      "bytes": 2445,
+      "sha256": "ccecb3dc0bd772536a82e7b0f789dbeaef08dbc530a19c5edffa553e2f534c43"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/README.md",
+      "bytes": 2864,
+      "sha256": "ea97334f19970b2cc191042958c18a35db2615b85b02e98203ab1e96fd87d3c1"
+    },
+    {
+      "path": "sharedrefs/mockup-b.5/VERIFICATION.md",
+      "bytes": 3232,
+      "sha256": "96b942a9d2d6b77af9298aa5e5da36e0eab66619ce07086a657ebaa004212efb"
+    },
+    {
+      "path": "sharedrefs/mockup-b.6/AREAS.md",
+      "bytes": 2958,
+      "sha256": "fdde9f0e1fd9947846d59aa4077ecdda8f848260163a1da46f82a97d04363dd3"
+    },
+    {
+      "path": "sharedrefs/mockup-b.6/README.md",
+      "bytes": 3251,
+      "sha256": "92586982a78959fafc23b696a4f8ba4385c6e0cb19cd6863d3653eb9ff1cae6b"
+    },
+    {
+      "path": "sharedrefs/mockup-b.6/VERIFICATION.md",
+      "bytes": 3305,
+      "sha256": "8a7895b3c6a6921797620b0ffe9d4d988e480e5dfa21a0f8549021722646bcbf"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7/BEHAVIOR.md",
+      "bytes": 2271,
+      "sha256": "3d462503c4eeddd4259c98879391b9e679aee301cc12f093a4994ba99019ec4a"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7/README.md",
+      "bytes": 1360,
+      "sha256": "116ef365b1dca0b6522ce61e0476c3e927cc50a3966c8fe6f97b98edf43c8297"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7/VERIFICATION.md",
+      "bytes": 1367,
+      "sha256": "21bfaac748464948ef5688768104759fe9b8e5c72e88aaae2bde8de9e7fa9ed3"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7b/BEHAVIOR.md",
+      "bytes": 2471,
+      "sha256": "eeeba70f76118ec44a3726508405e65744108200b1cbe77a32750d4fbbb56a4c"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7b/README.md",
+      "bytes": 1532,
+      "sha256": "d743ef1fbf5925bbb7b1447f7183299c16824453bc48befde87f3bd5a6b8daaf"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7b/VERIFICATION.md",
+      "bytes": 1797,
+      "sha256": "4a70e8a547d0a962dca1a86b82f787fa9bdf7dac41dd8da00f68d7f3c7d9f8ea"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7c/BEHAVIOR.md",
+      "bytes": 2911,
+      "sha256": "baac903c474e80d136e5ece79eb42a8c0a3e13afd9b910837ad2b014bf6e4819"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7c/README.md",
+      "bytes": 1521,
+      "sha256": "82e25d177a673f406d788ddb840ed91daddb95e78acb3c8fd54a9608638811a9"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7c/VERIFICATION.md",
+      "bytes": 2232,
+      "sha256": "c2cc0e55839f9602e91eb03a45c8f448ef5d678a127bb3d5cfbf90dbc77c52c8"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7d/BEHAVIOR.md",
+      "bytes": 1853,
+      "sha256": "34c65cdf0c6318d394a0f85f4a86a9ae5298ac063e542b953923571315f14aa5"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7d/README.md",
+      "bytes": 1060,
+      "sha256": "cdd167f52546ebb3ad80584c6d24c9b0d69fc3422b36af048c85b483df80eae3"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7d/VERIFICATION.md",
+      "bytes": 1808,
+      "sha256": "8f4c2d99511dd2eb792550d97aefd7628bcd9b28ea8cfcb3b54ea138c797b231"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7e/BEHAVIOR.md",
+      "bytes": 1735,
+      "sha256": "ea3bf38318cbca779ecc613183ae9791d349f89b64c38aefe788292d8cf345fd"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7e/README.md",
+      "bytes": 1352,
+      "sha256": "f41127475624cd0d3b88f44de57e4755e43dfaf84c58f7fba8c2a1e87685e2cb"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7e/VERIFICATION.md",
+      "bytes": 2195,
+      "sha256": "02f458121b1e7ae15d460637440454b16c7652dc7c09d87705e0310d45eec6bf"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7f/BEHAVIOR.md",
+      "bytes": 2949,
+      "sha256": "0098f56d197eb2a35beb3c124c9b4219119b344651c916549c315dbfa4e109e5"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7f/README.md",
+      "bytes": 1247,
+      "sha256": "aec7fe059cf89b2a6b1baebb5783704bd33760a90491e5c40a83fa997c2b72a6"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7f/VERIFICATION.md",
+      "bytes": 3146,
+      "sha256": "1b3242e4ee2b8204fe6ca44cd2dc28d72761c9a0ec5ba5d818c7e0bf1f126191"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7g/BEHAVIOR.md",
+      "bytes": 2701,
+      "sha256": "bbde03a39fe35290d149be740dd10a7bd5841ff0f9b251116939a437ce50ea3a"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7g/README.md",
+      "bytes": 1375,
+      "sha256": "c576af2d19c5b64795021e16de3650530062a5ec7b656a2220fb78a5ca9c2ce6"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7g/VERIFICATION.md",
+      "bytes": 3057,
+      "sha256": "5b6fe4ebf7e5c0a4bdf74c1a701ab28617b298f5710c46324e1941c9407d5884"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7h/BEHAVIOR.md",
+      "bytes": 2384,
+      "sha256": "6b64f68ccf245a15760e1238e77bdbe07d63440a2a8da65dd4f753eb64eb5c99"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7h/README.md",
+      "bytes": 1248,
+      "sha256": "193a6df56e21244a3399e8a49c6a5635c9ee3c4f09b304fef2929ad3b7a3cdd3"
+    },
+    {
+      "path": "sharedrefs/mockup-b.7h/VERIFICATION.md",
+      "bytes": 3287,
+      "sha256": "e7c218d35c4ccf64511766637103da17d492c18a1dbe2d2f31ebf5b98a35fb8e"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/AUTHORING.md",
+      "bytes": 6775,
+      "sha256": "60ba51bfb8a0e556606a1b77ac5460b813bfdb3cf49772cb4d7bbf59ed21f367"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/BALLOT-UI.md",
+      "bytes": 4101,
+      "sha256": "b64fbddfa892f819f4132c850ba5f8e435eeb25389c6650d0527c620e70ec9a2"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/CONTRACT.md",
+      "bytes": 10522,
+      "sha256": "166212d6ead04e3d72127a0499905b4c3c8bcaec7162543a53b79c0cecd38a5d"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/ERRORS.md",
+      "bytes": 2280,
+      "sha256": "9e5db1b5d95f0a15f3ac18fff7b364b7331776dcfb537de52163d6042b68e1c0"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/OUTPUTS.md",
+      "bytes": 5464,
+      "sha256": "59c1dcd4882cf40133c9445c49d61857de0313d549444cb9413cc4bc27c83080"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/PART2-VERIFICATION.md",
+      "bytes": 2286,
+      "sha256": "d34ad70383a36089669bff22186170a16808c6c5b0b0710abec55bf5187bbe1f"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/PART3-VERIFICATION.md",
+      "bytes": 2098,
+      "sha256": "4639d563db7f614ca9fd15c5835d45a1f05d2b44a623a7f4f9c4faa5f6e3cd6e"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/PART4-VERIFICATION.md",
+      "bytes": 2769,
+      "sha256": "5120ddbe5fdb4aea6d1a9a2d8d7b2453b2f233b8b2e69a53ad6c6d366cd7e592"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/README.md",
+      "bytes": 1748,
+      "sha256": "2c82c34801526c55b8a8bfe95064dbaf73caf557c4f7331bbcd5a1691d7910e3"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/SCHEMASAMPLE.JSON",
+      "bytes": 86629,
+      "sha256": "a95c53b5136b0fea7abefd4168596422f53a85dea3302930e42f4227ed76dae4"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/VERIFICATION.md",
+      "bytes": 2346,
+      "sha256": "c51289367b5d2ad35e29446ddc0186132ba7415fa04ec7b3fb92db08490b3eea"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/WORKSPACE.md",
+      "bytes": 5656,
+      "sha256": "609b610d8dc1284f4be9bd7bb91ee7c3f5752b39f323d23f8b7691b856d6d377"
+    },
+    {
+      "path": "sharedrefs/mockup-b.8/ballot-collection.v1.schema.json",
+      "bytes": 37439,
+      "sha256": "cc851bcdb9f933281fcd0db79943f157be17317d8057a1f2e28bba8214fdf415"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9/BEHAVIOR.md",
+      "bytes": 1479,
+      "sha256": "41015eb70e84a2168bd47f953d571bed26e7c0f30ba2a527554137c2b74f1b24"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9/CONTRACT.md",
+      "bytes": 6346,
+      "sha256": "fe4237a57d3a111b34507e781e714b717fc39375190ca7accfc9795eee28db8d"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9/README.md",
+      "bytes": 998,
+      "sha256": "ba0794dccf26046b445a0fb07fa1338d215f6f2f0dc7a9f2828aec192d17ee02"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9/VERIFICATION.md",
+      "bytes": 2118,
+      "sha256": "97917f20bd02353f9e352e55b031e7761f4c6729dbb2fec215294d514607f7ca"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9a/BEHAVIOR.md",
+      "bytes": 1072,
+      "sha256": "8e0c86974eebe97e3d980facfcafe7b513ac9deba2e22431d32ec051e884460b"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9a/CONTRACT.md",
+      "bytes": 370,
+      "sha256": "c836fb2812efa7bc70c7e6f9e0f6886df9a595ae0cc5a8337d6124ca3009b3c5"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9a/README.md",
+      "bytes": 945,
+      "sha256": "278fdf7fa130a34da2e070d372b19d570428709a180355a9d7e0322fe0525941"
+    },
+    {
+      "path": "sharedrefs/mockup-b.9a/VERIFICATION.md",
+      "bytes": 1675,
+      "sha256": "486d3623a0d858c24a47af176633e749f06f7ce01f0be1425505b448f652986e"
+    },
+    {
+      "path": "sharedrefs/mockup-b/README.md",
+      "bytes": 4261,
+      "sha256": "74fa48b24fc54cd5852008235120f5289c719d470ef1a71d67633348be87614f"
+    },
+    {
+      "path": "sharedrefs/mockup-b/VERIFICATION.md",
+      "bytes": 1811,
+      "sha256": "946b45ba811362f39f129391b85caf341e46a4b49946395ba213e0c07995787e"
+    },
+    {
+      "path": "sharedrefs/registry.js",
+      "bytes": 549,
+      "sha256": "b30cf974e1c8b7b16ae034537b929cd14f0041882debdc648c8c59b5408624c3"
+    },
+    {
+      "path": "version.js",
+      "bytes": 91,
+      "sha256": "268049434a2cece3a86d9e42eff293e3f1b08d5b8188384a4ff7eb444d96ede3"
+    }
+  ]
+}

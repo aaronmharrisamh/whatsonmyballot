@@ -1,0 +1,21 @@
+/* B.7F: dark section navigation and white floating camera controls. */
+.b-tool-canvas .b-ballot-toolbar [data-action="section-prev"],
+.b-tool-canvas .b-ballot-toolbar [data-action="section-next"]{background:#18354f;color:#fff;border-color:#18354f;border-radius:8px}
+.b-tool-canvas .b-ballot-toolbar [data-action="section-prev"]:hover,
+.b-tool-canvas .b-ballot-toolbar [data-action="section-next"]:hover{background:#244b68;color:#fff}
+.b-tool-canvas .b-section-zoom.btn{background:#fff;color:#274c68;border-color:#b6c6d2}
+.b-tool-canvas .b-zoom-slider{background:#fff;color:#18354f;border:1px solid #bccbd5;box-shadow:0 4px 18px #18354f26;backdrop-filter:none}
+.b-tool-canvas .b-zoom-step.btn{color:#18354f;background:#fff}
+.b-tool-canvas .b-zoom-step.btn:hover{background:#eaf1f6;color:#18354f}
+.b-tool-canvas .b-zoom-slider input{accent-color:#315d7d}
+.b-tool-canvas .b-all-button.btn{background:#fff;color:#18354f;border-color:#b4c4d0;box-shadow:0 4px 16px #18354f30}
+.b-tool-canvas .b-all-button.btn:hover{background:#eaf1f6;color:#18354f}
+.b-tool-canvas .b-all-button.btn:focus-visible{outline:3px solid #315d7d;outline-offset:2px}
+.b-tool-canvas .b-section-indicator.btn{background:#fff;color:#274c68;border-color:#b4c4d0}
+.b-snap-adjacent{display:none;padding:7px}
+.b-ballot-dialog[data-snap="true"] .is-paper.is-focused>.b-snap-adjacent{display:flex}
+.b-snap-adjacent-back{justify-content:flex-start;border-bottom:1px solid #c4ced6}
+.b-snap-adjacent-next{justify-content:flex-end;border-top:1px solid #c4ced6}
+.is-paper .b-snap-adjacent .b-step-chip.btn{max-width:100%;min-height:44px;padding:7px 9px;font-size:12px;line-height:1.35;box-shadow:0 3px 9px #18354f20}
+.is-paper .b-snap-adjacent .b-step-chip>span{display:block;overflow:visible;-webkit-line-clamp:unset}
+@media print{.b-snap-adjacent{display:none!important}}

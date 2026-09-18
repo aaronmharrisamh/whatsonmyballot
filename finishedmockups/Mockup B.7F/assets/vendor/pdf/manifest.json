@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "pdfmakeVersion": "0.3.11",
+  "source": "npm:pdfmake@0.3.11",
+  "files": [
+    {
+      "path": "pdfmake.min.js",
+      "bytes": 1053972,
+      "sha256": "faaee53f8dcf48b0934553665809d8180e20e435b654f633df2f18f9dbdeaa88"
+    },
+    {
+      "path": "vfs_fonts.js",
+      "bytes": 854725,
+      "sha256": "1483ed267fe00ad90a3834441b019d856dd41ed079b2614404b2fcef425db6fc"
+    },
+    {
+      "path": "glyphs.json",
+      "bytes": 952,
+      "sha256": "6adaa9ce4d81e154ab100629af28210c04163b1e305c902dbf57489110533484"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1113,
+      "sha256": "ab919430421c2e244dbb8694d70916eae16235b75c0ea07e9a6c67cd4265c954"
+    },
+    {
+      "path": "Roboto-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 636,
+      "sha256": "6398cd3474b9ca0bbf6df2f28dfa8848348b1c2d986054508fc6866562beda19"
+    }
+  ]
+}

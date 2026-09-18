@@ -1,0 +1,968 @@
+{
+  "format": "whatsonmyballot-guide-annotations",
+  "schemaVersion": "1.0.0",
+  "datasetId": "b7b-fictional-ballot-demo",
+  "revision": 0,
+  "records": [
+    {
+      "id": "demo-group-01",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group A",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-02",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-03",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group C",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-04",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group D",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-05",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group E",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-06",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group F",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-group-07",
+      "kind": "party",
+      "raceId": "contest-straight-party",
+      "label": "Example Group G",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-001",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 01A / Sample Person 01B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-002",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 02A / Sample Person 02B",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-003",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 03A / Sample Person 03B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-004",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 04A / Sample Person 04B",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-005",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 05A / Sample Person 05B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-006",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 06A / Sample Person 06B",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-007",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 07A / Sample Person 07B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-008",
+      "kind": "candidate",
+      "raceId": "contest-president",
+      "label": "Sample Person 08A / Sample Person 08B",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-5ac76d70-3476-49f9-a646-1af056d0e60d",
+      "kind": "write-in",
+      "raceId": "contest-president",
+      "label": "Write-in 1 / Electors of President and Vice-President of the United States",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-009",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 09",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-010",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 10",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-011",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 11",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-012",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 12",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-013",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 13",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-014",
+      "kind": "candidate",
+      "raceId": "contest-us-senate",
+      "label": "Sample Person 14",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-83ebde8a-15d8-4385-89a3-3aa57fe26014",
+      "kind": "write-in",
+      "raceId": "contest-us-senate",
+      "label": "Write-in 1 / United States Senator",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-015",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Sample Person 15",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-016",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Sample Person 16",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-017",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Sample Person 17",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-018",
+      "kind": "candidate",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Sample Person 18",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-e4470849-6787-4ff0-bf42-39292aba27e7",
+      "kind": "write-in",
+      "raceId": "contest-us-house-mi-09",
+      "label": "Write-in 1 / Representative in Congress 9th District",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-019",
+      "kind": "candidate",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Sample Person 19",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-020",
+      "kind": "candidate",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Sample Person 20",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "write-in-7cfe3b32-7c81-4e7a-bf79-862d4cb7cf9d",
+      "kind": "write-in",
+      "raceId": "contest-state-house-mi-97",
+      "label": "Write-in 1 / Representative in State Legislature 97th District",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-021",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 21",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-022",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 22",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-023",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 23",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-024",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 24",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-025",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 25",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-026",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 26",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-027",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 27",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-028",
+      "kind": "candidate",
+      "raceId": "contest-state-education",
+      "label": "Sample Person 28",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-4e0b53fd-6479-4ba2-b4a3-8c982b557b14",
+      "kind": "write-in",
+      "raceId": "contest-state-education",
+      "label": "Write-in 1 / Member of the State Board of Education",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f92639bc-503b-49a2-8ce1-714b0ce4c79e",
+      "kind": "write-in",
+      "raceId": "contest-state-education",
+      "label": "Write-in 2 / Member of the State Board of Education",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-029",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 29",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-030",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 30",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-031",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 31",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-032",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 32",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-033",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 33",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-034",
+      "kind": "candidate",
+      "raceId": "contest-um-regent",
+      "label": "Sample Person 34",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9dcece88-e6a2-4c42-b2da-074daa1b9d35",
+      "kind": "write-in",
+      "raceId": "contest-um-regent",
+      "label": "Write-in 1 / Regent of the University of Michigan",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2a805796-1230-4bfa-a2f8-e989c147c4c5",
+      "kind": "write-in",
+      "raceId": "contest-um-regent",
+      "label": "Write-in 2 / Regent of the University of Michigan",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-035",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 35",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-036",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 36",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-037",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 37",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-038",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 38",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-039",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 39",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-040",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 40",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-041",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 41",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-042",
+      "kind": "candidate",
+      "raceId": "contest-msu-trustee",
+      "label": "Sample Person 42",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-76489e27-4b24-4ff7-ac49-47600f288b63",
+      "kind": "write-in",
+      "raceId": "contest-msu-trustee",
+      "label": "Write-in 1 / Trustee of Michigan State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f87c0346-991f-4db7b-9bb8-cacb2df326e2",
+      "kind": "write-in",
+      "raceId": "contest-msu-trustee",
+      "label": "Write-in 2 / Trustee of Michigan State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-043",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 43",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-044",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 44",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-045",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 45",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-046",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 46",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-047",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 47",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-048",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 48",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-049",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 49",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-050",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 50",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-051",
+      "kind": "candidate",
+      "raceId": "contest-wsu-governor",
+      "label": "Sample Person 51",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-28e4762a-f3c6-4c9a-be34-77600d8026d9",
+      "kind": "write-in",
+      "raceId": "contest-wsu-governor",
+      "label": "Write-in 1 / Governor of Wayne State University",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "write-in-f352146a-f577-4610-8ee4-340530793e5e",
+      "kind": "write-in",
+      "raceId": "contest-wsu-governor",
+      "label": "Write-in 2 / Governor of Wayne State University",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-052",
+      "kind": "candidate",
+      "raceId": "contest-county-prosecutor",
+      "label": "Sample Person 52",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-77e3d132-2c73-4601-a88d-2917ba57136d",
+      "kind": "write-in",
+      "raceId": "contest-county-prosecutor",
+      "label": "Write-in 1 / Prosecuting Attorney",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-053",
+      "kind": "candidate",
+      "raceId": "contest-county-sheriff",
+      "label": "Sample Person 53",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-054",
+      "kind": "candidate",
+      "raceId": "contest-county-sheriff",
+      "label": "Sample Person 54",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2eebf560-e94f-49fa-82d7-74c6bf6498a3",
+      "kind": "write-in",
+      "raceId": "contest-county-sheriff",
+      "label": "Write-in 1 / Sheriff",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-055",
+      "kind": "candidate",
+      "raceId": "contest-county-clerk",
+      "label": "Sample Person 55",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-e9582a8e-1b6e-41fc-a4a4-88715b0296d9",
+      "kind": "write-in",
+      "raceId": "contest-county-clerk",
+      "label": "Write-in 1 / Clerk",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-056",
+      "kind": "candidate",
+      "raceId": "contest-county-treasurer",
+      "label": "Sample Person 56",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-1a802815-90f3-4d19-bb27-90c300d8002d",
+      "kind": "write-in",
+      "raceId": "contest-county-treasurer",
+      "label": "Write-in 1 / Treasurer",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-057",
+      "kind": "candidate",
+      "raceId": "contest-county-register",
+      "label": "Sample Person 57",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-24ab7514-8b50-4eb7b-9185-6e01cfe4a88e",
+      "kind": "write-in",
+      "raceId": "contest-county-register",
+      "label": "Write-in 1 / Register of Deeds",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-058",
+      "kind": "candidate",
+      "raceId": "contest-county-road",
+      "label": "Sample Person 58",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-059",
+      "kind": "candidate",
+      "raceId": "contest-county-road",
+      "label": "Sample Person 59",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-b24ee127-0ab8-4b9c-9b1a-1359b485ada7",
+      "kind": "write-in",
+      "raceId": "contest-county-road",
+      "label": "Write-in 1 / County Road Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-3229b5de-af6a-499c-a9f1-567c58ad282c",
+      "kind": "write-in",
+      "raceId": "contest-county-road",
+      "label": "Write-in 2 / County Road Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-060",
+      "kind": "candidate",
+      "raceId": "contest-county-drain",
+      "label": "Sample Person 60",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9e5fb7ca-9db1-4338-a3ea-525d71a80639",
+      "kind": "write-in",
+      "raceId": "contest-county-drain",
+      "label": "Write-in 1 / Drain Commissioner",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-061",
+      "kind": "candidate",
+      "raceId": "contest-county-commissioner-01",
+      "label": "Sample Person 61",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9af08693-a929-4f54-a570-4629abcf7557",
+      "kind": "write-in",
+      "raceId": "contest-county-commissioner-01",
+      "label": "Write-in 1 / County Commissioner 1st District",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-062",
+      "kind": "candidate",
+      "raceId": "contest-township-supervisor",
+      "label": "Sample Person 62",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-de919ba7-acfa-48c0-8e29-3e0be3759ade",
+      "kind": "write-in",
+      "raceId": "contest-township-supervisor",
+      "label": "Write-in 1 / Supervisor",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-063",
+      "kind": "candidate",
+      "raceId": "contest-township-clerk",
+      "label": "Sample Person 63",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-8e48fa9f-0535-4f61-8283-21c326c23c9c",
+      "kind": "write-in",
+      "raceId": "contest-township-clerk",
+      "label": "Write-in 1 / Clerk",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-064",
+      "kind": "candidate",
+      "raceId": "contest-township-treasurer",
+      "label": "Sample Person 64",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-c38fafcc-ad91-40d0-b89d-e22b347ab823",
+      "kind": "write-in",
+      "raceId": "contest-township-treasurer",
+      "label": "Write-in 1 / Treasurer",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-065",
+      "kind": "candidate",
+      "raceId": "contest-township-trustee",
+      "label": "Sample Person 65",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-066",
+      "kind": "candidate",
+      "raceId": "contest-township-trustee",
+      "label": "Sample Person 66",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-040e0377-077e-4f18-877e-94ec74d85758",
+      "kind": "write-in",
+      "raceId": "contest-township-trustee",
+      "label": "Write-in 1 / Trustee",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "write-in-2863f5e1-163f-497a-ac21-fd87d97f2354",
+      "kind": "write-in",
+      "raceId": "contest-township-trustee",
+      "label": "Write-in 2 / Trustee",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-067",
+      "kind": "candidate",
+      "raceId": "contest-supreme-full",
+      "label": "Sample Person 67",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-068",
+      "kind": "candidate",
+      "raceId": "contest-supreme-full",
+      "label": "Sample Person 68",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "write-in-78571483-c53b-4885-9915-659e87bd0d69",
+      "kind": "write-in",
+      "raceId": "contest-supreme-full",
+      "label": "Write-in 1 / Justice of Supreme Court 8 Year Term",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-069",
+      "kind": "candidate",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Sample Person 69",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-070",
+      "kind": "candidate",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Sample Person 70",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "write-in-744a6c5b-03b3-4c5a-ab96-c6277ffb1011",
+      "kind": "write-in",
+      "raceId": "contest-supreme-partial-2029",
+      "label": "Write-in 1 / Justice of Supreme Court Incumbent Position Partial Term Ending 01/01/2029",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-071",
+      "kind": "candidate",
+      "raceId": "contest-appeals-04-full",
+      "label": "Sample Person 71",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-af6357e0-bf1c-477f-8615-d9d323fa9eb5",
+      "kind": "write-in",
+      "raceId": "contest-appeals-04-full",
+      "label": "Write-in 1 / Judge of Court of Appeals 4th District Incumbent Position 6 Year Term",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-072",
+      "kind": "candidate",
+      "raceId": "contest-appeals-04-partial-2027",
+      "label": "Sample Person 72",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-fb489854-a66a-470b-8a6f-4e65c2c2ec29",
+      "kind": "write-in",
+      "raceId": "contest-appeals-04-partial-2027",
+      "label": "Write-in 1 / Judge of Court of Appeals 4th District Incumbent Position Partial Term Ending 01/01/2027",
+      "mark": "or",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-073",
+      "kind": "candidate",
+      "raceId": "contest-circuit-54",
+      "label": "Sample Person 73",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-edb0f836-fc93-4ffd-96bd-aa70fa0872df",
+      "kind": "write-in",
+      "raceId": "contest-circuit-54",
+      "label": "Write-in 1 / Judge of Circuit Court 54th Circuit Incumbent Position",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-074",
+      "kind": "candidate",
+      "raceId": "contest-probate-tuscola",
+      "label": "Sample Person 74",
+      "mark": "this",
+      "color": "red"
+    },
+    {
+      "id": "write-in-d6ea3da9-be24-4718-a030-4a4bfeb85cda",
+      "kind": "write-in",
+      "raceId": "contest-probate-tuscola",
+      "label": "Write-in 1 / Judge of Probate Court Tuscola County Incumbent Position",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-075",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Sample Person 75",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-076",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Sample Person 76",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-077",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Sample Person 77",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "demo-candidate-078",
+      "kind": "candidate",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Sample Person 78",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-488564c2-e866-4b29-9ce6-58185006169e",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 1 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-c8bf7963-fcc8-4a5c-ab46-5e5fd83108e3",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 2 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    },
+    {
+      "id": "write-in-9b96fd5d-ff73-44ba-a012-5de9b05ecaba",
+      "kind": "write-in",
+      "raceId": "contest-school-akron-fairgrove",
+      "label": "Write-in 3 / School Board Member Akron-Fairgrove Schools",
+      "mark": "none",
+      "color": "red"
+    }
+  ]
+}
